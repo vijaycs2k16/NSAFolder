@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="nexrise.publication.in.nexrise.TimetableFeature.HolidaysListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:id="@+id/relative">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height50"
+        android:textSize="@dimen/headings"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_weight="2.0"
+        android:paddingLeft="@dimen/padding15"
+        android:gravity="center_vertical"
+        android:text="Holidays"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height35"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_weight="1"
+        >
+
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_more_menu"
+            android:background="#dfdcdc"
+            android:id="@+id/holidayGridButton"
+            />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_grid_layout"
+            android:id="@+id/holidayListButton"
+            android:background="#dfdcdc"
+            android:layout_marginLeft="@dimen/margin3"
+            />
+    </LinearLayout>
+        </LinearLayout>
+
+       <!-- <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_grid_layout"
+            android:id="@+id/holidayListButton" />
+
+        <ImageButton
+            android:layout_toLeftOf="@+id/holidayListButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_more_menu2"
+            android:id="@+id/holidayGridButton" />-->
+
+        <TableLayout
+            android:layout_below="@id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/holidays_table_layout"
+            android:layout_marginTop="@dimen/margin15">
+
+            <!--<TableRow
+                android:minHeight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:background="@drawable/border_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:text="S.no"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/common_text_size"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:background="@drawable/border_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/common_text_size"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1.5"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Festival"/>
+
+                <TextView
+                    android:background="@drawable/border_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/common_text_size"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1.0"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Date"/>
+            </TableRow>
+
+-->
+        </TableLayout>
+
+
+    </LinearLayout>
+
+

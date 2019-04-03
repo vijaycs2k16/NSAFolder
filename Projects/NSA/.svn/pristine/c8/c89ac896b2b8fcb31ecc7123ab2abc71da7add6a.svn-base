@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "688121029390",
+    "firebase_url": "https://nexschoolapp-9e69f.firebaseio.com",
+    "project_id": "nexschoolapp-9e69f",
+    "storage_bucket": "nexschoolapp-9e69f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688121029390:android:baad3814933263d0",
+        "android_client_info": {
+          "package_name": "nexrise.tech.android.peters"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688121029390-qtmmnl1qqm60iv8u2om974m62evh2krg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtzaq9DwnR5b6jaIIOIN7WVlJ5p0D7NpI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,183 @@
+    <section class="forms" id="example-print">
+<div class="_invoiceTemplate invoic-width">
+        <div class="extractPdf">
+            <div id="logo" class="topbarLogo">
+                <img src="http://localhost.com:8089/images/logo2.png" style="height: 60px;margin-left: -4px;margin-bottom: 5px;"/>
+            </div>
+
+            <div class="row" style="margin-top: 10px;">
+                <label class="col-sm-3 paddingLeftMd font-14">GST : 33ANYPS0005L3ZN</label>
+            </div>
+            <div class="row" style="margin-top: 10px;">
+                <span class="col-sm-6 paddingLeftMd font-14"><b><%= model.center ? (model.center.centerAddress).replace(/,/g , ',<br/>') : '' %></b></span>
+            </div>
+            <span class="width-50-percent text-left heading"><h1><b>Enrollment and Fees Receipt</b></h1></span>
+            <br><br><br><br><br>
+            <div class="row" style="margin-top: 10px;">
+                <label class="col-sm-3 paddingLeftMd font-14">Date : <span id="toDate"><%= (model.installmentDetails && model.installmentDetails.length > 0) ? model.installmentDetails[0].date : (model.bookingDetails && model.bookingDetails.length > 0) ? model.bookingDetails[0].date : '' %></span></label>
+                <label class="col-sm-3 font-14"></label>
+                <label class="col-sm-3 font-14"></label>
+                <label class="col-sm-3 font-14">Receipt  No: <span id="receiptNo"></span></label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 paddingLeftMd form-control-label">Student Name</label>
+                <label class="col-sm-4 form-control-label" id="student-name">: <%=model.student ? model.student.studentName : '' %></label>
+                <label class="col-sm-2 form-control-label">Register Number</label>
+                <label class="col-sm-4 form-control-label" id="registration_no">: <%=model.student ? model.student.registrationNo : '' %></label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 paddingLeftMd form-control-label">Course</label>
+                <label class="col-sm-4 form-control-label" id="course-name">: <%=model.course ? model.course.courseName : '' %></label>
+                <label class="col-sm-2 form-control-label">Batch</label>
+                <label class="col-sm-4 form-control-label" id="batch-name">: <%=model.batch ? model.batch.batchName : '' %></label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 paddingLeftMd form-control-label">Center Code</label>
+                <label class="col-sm-4 form-control-label" id="center-code">: <%=model.center ? model.center.centerCode : '' %></label>
+                <label class="col-sm-2 form-control-label">Center Address</label>
+                <label class="col-sm-4 form-control-label" id="center-address">: <%=model.center ? model.center.centerAddress : '' %></label>
+            </div>
+            <span class="width-50-percent text-left heading"><h1><b>NSA LMS Login Details</b></h1></span>
+            <br><br><br><br><br>
+            <div class="row font-14">
+                <label class="col-sm-2 paddingLeftMd form-control-label">User Id</label>
+                <label class="col-sm-4 form-control-label" id="user-id">: <%=model.student ? model.student.studentEmail : '' %></label>
+                <label class="col-sm-2 form-control-label">Password</label>
+                <label class="col-sm-4 form-control-label" id="pass-word">: <%=model.student ? model.student.studentPassword : '' %></label>
+            </div>
+            <span class="width-50-percent text-left heading"><h1><b>Fee Installment Details</b></h1></span>
+            <br><br><br><br><br>
+            <!--<table class="table table-bordered" id="feeTable">
+                <thead id="headCal" class="text-center"><tr><th></th><th>Amount</th><th>1st Installment</th><th>2nd Installment</th><th>3rd Installment</th></tr></thead>
+                <tbody id="bodyCal" class="text-right"><tr> <td>Admission Fees </td>                     <td>1618.8</td>                     <td>1618.8</td>                     <td> - </td> <td> - </td>                    </tr><tr> <td>Book Fees </td>                     <td>4856.6</td>                     <td>4856.6</td>                     <td> - </td> <td> - </td>                    </tr><tr> <td>Tution Fees </td>                     <td>14569.6</td>                     <td>4856.6</td>                     <td>4856.6</td>                     <td>4856.6</td>                     </tr><tr> <td>Technology Fees </td>                     <td>9713.1</td>                     <td>3237.7</td>                     <td>3237.7</td>                     <td>3237.7</td>                     </tr><tr> <td>Exam Fees </td>                     <td>1618.8</td>                     <td>539.6</td>                     <td>539.6</td>                     <td>539.6</td>                     </tr><tr> <th>GST 18% </th>                     <th>2622.6</th>                     <th>874.20</th>                     <th>874.20</th>                     <th>874.20</th>                     </tr></tbody><tfoot id="footCal" class="text-right"><tr><th>Total</th><th>35000</th><th>15984</th><th>9508</th><th>9508</th></tr></tfoot>
+            </table>-->
+
+            <table class="  table-bordered">
+                <colgroup>
+                    <col width="50%">
+                    <col width="50%">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>Fee Type</th>
+                    <th>Full Payment</th>
+                </tr>
+                </thead>
+                <tbody class="text-right-align">
+                <%model.feeTypeDetails.forEach(function(feeType, index){ %>
+                <tr>
+                    <td><%= feeType.feeTypeName%></td>
+                    <td>
+                        <%= (feeType.fullAmount).toFixed(1) %>
+                    </td>
+
+
+                </tr>
+                <% }) %>
+                </tbody>
+                <tfoot class="text-right-align">
+                <tr><th>GST 18%</th><th><%= (model.gstAmount).toFixed(1) %></th></tr>
+                <tr><th>Total</th><th><%= Math.round(+model.courseAmount +  +model.gstAmount) %></th></tr>
+                </tfoot>
+            </table>
+
+            <span class="width-50-percent text-left heading"><h1><b>Payment Details</b></h1></span>
+            <br><br><br><br><br>
+
+            <table class="table-bordered" style="font-weight: bolder">
+                <colgroup>
+                    <col width="14%">
+                    <col width="14%">
+                    <col width="14%">
+                    <col width="14%">
+                    <col width="14%">
+                    <col width="14%">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th> Type</th>
+                    <th> Pay Type</th>
+                    <th> Amount</th>
+                    <th> Tax No</th>
+                    <th> Date</th>
+                    <th> Bank</th>
+                    <th> Status</th>
+                </tr>
+                </thead>
+                <tbody >
+                <% if(model.installmentDetails && model.installmentDetails.length > 0) {
+                    model.installmentDetails.forEach(function(install, index){ %>
+                <tr>
+                    <td class="text-center">Install- <%= (index + 1) %></td>
+                    <td class="text-center">
+                        <%= install.paymentMode %>
+                    </td>
+                    <td class="text-center">
+                        <%= Math.round(+install.amount) %>
+                    </td>
+                    <td class="text-center">
+                        <%= install.transactionResId ? install.transactionResId : ' - ' %>
+                    </td>
+                    <td class="text-center"><%= install.date %></td>
+                    <td class="text-center"> - </td>
+                    <td class="text-center">
+                        <%= install.isPaid ? 'Success' : 'Failed' %>
+                    </td>
+                </tr>
+                <% }) } %>
+                <% if(model.bookingDetails && model.bookingDetails.length > 0) {
+                model.bookingDetails.forEach(function(install, index){ %>
+                <tr>
+                    <td class="text-center">Booking Amount</td>
+                    <td class="text-center">
+                        <%= install.paymentMode %>
+                    </td>
+                    <td class="text-center">
+                        <%= Math.round(+install.amount) %>
+                    </td>
+                    <td class="text-center">
+                        <%= install.transactionResId ? install.transactionResId : ' - ' %>
+                    </td>
+                    <td class="text-center"><%= moment(install.date).format('ll') %></td>
+                    <td class="text-center"> - </td>
+                    <td class="text-center">
+                        <%= install.isPaid ? 'Success' : 'Failed' %>
+                    </td>
+                </tr>
+                <% }) } %>
+
+                </tbody>
+            </table><br/><br/>
+            <div class="form-group row">
+                <label class="col-sm-12 paddingLeftMd" style="line-height: 1.5">(Cheque payments are subject to realisation)</label>
+                <label class="col-sm-12 paddingLeftMd" style="line-height: 1.5"><b>Terms and Conditions:</b></label>
+
+            </div>
+            <br><br>
+            <div class="form-group row">
+                <label class="col-sm-3 form-control-label">Authorized Signature</label>
+            </div>
+        </div>
+
+
+
+
+
+</div></div></section>
+
+
+    <!--<div class="notes">
+        <div class="head">Notes</div>
+        <div>Thanks for your business</div>
+    </div>-->
+    <div class="line"></div>
+    <div class="formContentWrap">
+        <div class="formContentTitle">
+            <span class="closeBtn backBtn"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 align-center">
+            <button type="button" class="btn blue slim" id="printInfo">Print</button>
+        </div>
+    </div>

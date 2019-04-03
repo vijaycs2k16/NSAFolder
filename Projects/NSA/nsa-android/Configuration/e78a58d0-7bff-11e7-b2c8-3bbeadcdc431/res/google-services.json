@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "424970851839",
+    "firebase_url": "https://st-patricks-dindigul-88795.firebaseio.com",
+    "project_id": "st-patricks-dindigul-88795",
+    "storage_bucket": "st-patricks-dindigul-88795.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424970851839:android:65a65d38d85a31fe",
+        "android_client_info": {
+          "package_name": "patricks.management.in.dindigul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424970851839-5hbfartkcs48f51kf2nd3q186qrq6ibd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgfG779IKmZoyVKfOpic59h-0z5OwFJFs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

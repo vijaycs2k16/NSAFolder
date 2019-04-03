@@ -1,0 +1,29 @@
+<div id="searchContainer"></div>
+<div class="_tableWrap _tablePurchasePaymentsWrap">
+    <table class="list task-list stripedList">
+        <col width="50px">
+        <col width="100px">
+        <col width="100px">
+        <col width="100px">
+        <col width="100px">
+        <thead>
+        <tr>
+            <th class="">
+                <label class="_customCHeckbox">
+                    <input type="checkbox" id="checkAll"/>
+                    <span></span>
+                </label>
+            </th>
+            <th class="oe_sortable sortDn text-left" data-sort="createdBy.date">Transaction Date<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable text-left" data-sort="description">Reason<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable text-left" data-sort="warehouse.name">Product<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable text-left" data-sort="createdBy.user.login">Adjusted Quantity<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+
+        </thead>
+        <tbody id="listTable" class="enableTableOdd"></tbody>
+    </table>
+</div>

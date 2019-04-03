@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:id="@+id/relative">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height50"
+        android:textSize="@dimen/headings"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_weight="2.0"
+        android:paddingLeft="@dimen/padding15"
+        android:id="@+id/eventTypeName"
+        android:gravity="center_vertical"
+        android:text="Events for Class 12th"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height35"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_weight="1"
+        >
+
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_more_menu"
+            android:background="#dfdcdc"
+            android:id="@+id/imageButton6"
+            />
+
+        <ImageButton
+            android:layout_width="@dimen/width40"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_grid_layout"
+            android:id="@+id/imageButton5"
+            android:background="#dfdcdc"
+            android:layout_marginLeft="@dimen/margin3"
+            />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/events_table_layout"
+        android:layout_below="@id/relative"
+        android:layout_marginTop="@dimen/margin15">
+
+    </TableLayout>
+    </ScrollView>
+
+
+</LinearLayout>

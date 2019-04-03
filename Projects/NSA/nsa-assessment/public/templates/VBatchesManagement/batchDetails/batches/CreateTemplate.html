@@ -1,0 +1,108 @@
+<div class="form-holder _newForm">
+    <form method="post" action="" id="invoiceForm">
+        <h4 class="_dialogMainTitle">New Batch</h4>
+        <div class="_formWrap _enlargedItemMargin newItem">
+            <div class="_formBlock _equal">
+                <div class="_animateInputBox _withInfo">
+                    <input type="text"
+                           class="_animate "
+                           id="name"
+                           required
+                           value=""/>
+                    <label class="_animate">Batch Name<span class="text-danger">*</span></label>
+                    <span class="tips icon-info" data-id="name"></span>
+                </div>
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Center<span class="text-danger">*</span></span>
+                    <div class="_newSelectListWrap">
+                        <a id="center"
+                           name="course"
+                           class="current-selected"
+                           data-id=""
+                           href="javascript:;">Select Center</a>
+                    </div>
+                    <span class="tips icon-info" data-id="center"></span>
+                </div>
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Course<span class="text-danger">*</span></span>
+                    <div class="_newSelectListWrap">
+                        <a id="course"
+                           name="course"
+                           class="current-selected"
+                           data-id=""
+                           href="javascript:;">Select Course</a>
+                    </div>
+                    <span class="tips icon-info" data-id="course"></span>
+                </div>
+
+                <div class="_animateTextareaBox ">
+                    <div class="datafield _inputwrap">
+                        <input class="_animate extrainfo"
+                               type="text"
+                               name="startDate"
+                               id="startDate"
+                               value=""
+                               readonly />
+                    </div>
+                    <label for="startDate" class="_animate">Start Date<span class="text-danger">*</span></label>
+                </div>
+                <!--<div class="_animateTextareaBox ">
+                    <div class="datafield _inputwrap">
+                        <input class="_animate extrainfo"
+                               type="text"
+                               name="endDate"
+                               id="endDate"
+                               value=""
+                               readonly />
+                    </div>
+                    <label for="endDate" class="_animate">End Date</label>
+                </div>-->
+                <div class="_animateInputBox">
+                    <span class="_staticLabel">End Date</span>
+                    <span id="endDate" class="_staticInfo">
+                        </span>
+                </div>
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Batch Status</span>
+                </div>
+                <div class="container">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-6">
+                            <div class="_tipsWrap">
+                                <label for="yes" class="">Active</label>
+                                <input type="radio"
+                                       name="status"
+                                       id="yes"
+                                       class="_circleRadioRadiance"
+                                       checked=""
+                                       value="1">
+                                <label for="yes"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                                <span class="tips icon-info"
+                                      data-id="yes"></span>
+                            </div>
+                        </div>
+                        <div class="_circleRadioRadianceWrap col m-6">
+                            <div class="_tipsWrap">
+                                <label for="no" class="">Deactive</label>
+                                <input type="radio"
+                                       name="status"
+                                       id="no"
+                                       value="0"
+                                       class="_circleRadioRadiance"
+                                >
+                                <label for="no"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                                <span class="tips icon-info"
+                                      data-id="no"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>

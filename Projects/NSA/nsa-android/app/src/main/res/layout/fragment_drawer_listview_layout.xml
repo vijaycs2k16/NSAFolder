@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:background="@color/layoutBackground">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height50"
+        android:paddingLeft="@dimen/padding15"
+        android:paddingRight="@dimen/padding10"
+        android:id="@+id/draw_imageview"/>
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height50"
+        android:id="@+id/draw_textview"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding15"
+        android:layout_weight="2.5"
+        android:textSize="@dimen/common_text_size"
+        android:textColor="@color/colorBlack"
+        android:layout_marginBottom="@dimen/margin5"
+        />
+
+    <LinearLayout
+        android:layout_height="@dimen/height50"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:id="@+id/drawer_linear"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/minHeight22"
+            android:minWidth= "@dimen/minWidth22"
+            android:id="@+id/drawer_badge_layout"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:background="@drawable/badge">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:id="@+id/badge_text"
+                android:text=""
+                android:textSize="@dimen/text8"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

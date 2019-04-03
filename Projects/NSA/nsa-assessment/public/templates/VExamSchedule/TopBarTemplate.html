@@ -1,0 +1,17 @@
+<h3>Assessment Creation</h3>
+<div id="createBtnHolder" class="btnsBlock">
+    <%if (data.create) { %>
+    <%if (App.currentUser.profile.profileName !== 'Student') { %>
+    <a href="javascript:;" class="btn blue slim icon-plus" title="Create" id="top-bar-createBtn">New</a>
+    <% if(data.delete) { %>
+    <a href="javascript:;" class="btn blue slim" title="Remove" id="top-bar-deleteBtn">Delete</a>
+    <% } %>
+    <% } %>
+    <% } %>
+</div>
+
+<div id="dateFilter" class="vocationFilter _filterDropDownWrap"></div>
+
+<div id="template-switcher" class="template-switcher right">
+
+</div>

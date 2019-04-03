@@ -1,0 +1,11 @@
+<h3><%=contentHeader%></h3>
+<div id="createBtnHolder" class="btnsBlock">
+    <% if(data.create) { %>
+    <a href="javascript:;" class="btn blue slim icon-plus" title="Create" id="top-bar-createBtn">New</a>
+    <% } %>
+    <a href="javascript:;" class="btn blue slim" title="Edit" id="top-bar-editBtn">Edit</a>
+    <a href="javascript:;" class="btn blue slim" title="Save" id="top-bar-saveBtn">Save</a>
+    <% if(data.delete) { %>
+    <a href="javascript:;" class="btn blue slim" title="Remove" id="top-bar-deleteBtn">Delete</a>
+    <% } %>
+</div>

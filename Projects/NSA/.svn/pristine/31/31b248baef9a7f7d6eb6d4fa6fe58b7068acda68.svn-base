@@ -1,0 +1,51 @@
+<% var isStudent =  App.currentUser.student != null ? true : false
+var isEmployee =  App.currentUser.employee != null ? true : false%>
+<div class="_breadcrunmbs">
+    <span class="_breadcrunmbItem"> Notifications</span>
+</div>
+<div class="form-holder tabsHolder">
+    <div class="inner">
+        <ul class="dialog-tabs _forOverview">
+            <% if(!isStudent && !isEmployee) {%>
+            <li>
+                <a href="javascript:;" class="active">Students</a>
+            </li>
+            <li>
+                <a href="javascript:;">Employees</a>
+            </li>
+            <li>
+                <a href="javascript:;">Others</a>
+            </li>
+            <% } else if(isStudent) {%>
+            <li>
+                <a href="javascript:;" class="active">Students</a>
+            </li>
+            <% } else if(isEmployee) {%>
+            <li>
+                <a href="javascript:;">Employees</a>
+            </li>
+            <% } %>
+        </ul>
+        <div class="clearfix"></div>
+        <div class="dialog-tabs-items">
+            <% if(!isStudent && !isEmployee) {%>
+            <div class="dialog-tabs-item active" id="courseTab">
+            </div>
+            <div class="dialog-tabs-item" id="subjectTab">
+            </div>
+            <div class="dialog-tabs-item" id="topicsTab">
+            </div>
+            <div class="dialog-tabs-item" id="subjectTopicsTab">
+            </div>
+            <% } else if(isStudent) {%>
+            <div class="dialog-tabs-item active" id="courseTab">
+            </div>
+            <% } else if(isEmployee) {%>
+            <div class="dialog-tabs-item active"id="subjectTab">
+            </div>
+            <% } %>
+
+        </div>
+    </div>
+</div>
+

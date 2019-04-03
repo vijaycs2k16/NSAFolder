@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding3"
+        android:paddingRight="@dimen/padding3"
+        android:paddingBottom="@dimen/padding5"
+        android:paddingTop="@dimen/padding5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorWhite"
+            android:layout_weight="3">
+
+            <ImageView
+                android:layout_width="@dimen/width5"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/svgLayoutIconColor"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="3">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:minHeight="@dimen/height30">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/common_text_size"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/height10"
+                        android:text="@string/award_name"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:text=":"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:gravity="center_vertical"
+                        android:id="@+id/award"
+                        android:textSize="@dimen/common_text_size"
+                        android:text="Award Name"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/height30"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_weight="0.9"
+                        android:textSize="@dimen/common_text_size"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/height10"
+                        android:text="@string/date_of_issue"
+                        android:id="@+id/textView44" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:text=":"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_weight="0.9"
+                        android:textSize="@dimen/common_text_size"
+                        android:id="@+id/date_issue"
+                        android:text="Dateasdasds"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height1"
+                    android:background="@color/overlayForegroundColor" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/height30"
+                    android:layout_weight="3">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_weight="0.9"
+                        android:id="@+id/category"
+                        android:textSize="@dimen/common_text_size"
+                        android:textStyle="bold"
+                        android:text="@string/no_of_students"
+                        android:paddingLeft="@dimen/height10"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:text=":"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="students"
+                        android:textSize="@dimen/common_text_size"
+                        android:gravity="center_vertical"
+                        android:layout_weight="0.9"
+                        android:id="@+id/no_of_students"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

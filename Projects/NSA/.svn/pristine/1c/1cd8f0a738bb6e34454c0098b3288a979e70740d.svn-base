@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hallof_fame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nexrise.publication.in.nexrise.HallOfFame.HallOfFameActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/transparent"
+        android:background="@color/overlayForegroundColor"
+        android:paddingLeft="@dimen/padding5"
+        android:paddingRight="@dimen/padding5"
+        android:paddingBottom="@dimen/padding3"
+        android:id="@+id/hallOfFame_list_view"/>
+
+    <include layout="@layout/progress_bar"/>
+
+</FrameLayout>

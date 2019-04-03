@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="allSuites">
+
+	<parameter name="pdfngreport-properties" value="pdfngreport.properties" />
+	<listeners>
+		<listener class-name="com.nsa.testing.pageObjects.PDFReportListener" />
+	</listeners>
+	<suite-files>
+		<suite-file path="src/main/resources/xml/academicyear.xml" />
+		<suite-file path="src/main/resources/xml/classes.xml" />
+		<suite-file path="src/main/resources/xml/sectionlist.xml" />
+		<suite-file path="src/main/resources/xml/sectionalloc.xml" />
+		<suite-file path="src/main/resources/xml/subjectlist.xml" />
+		 <suite-file path="src/main/resources/xml/subjectalloc.xml" />
+		<suite-file path="src/main/resources/xml/holidaytypes.xml" />
+		<suite-file path="src/main/resources/xml/holidays.xml" /> 
+		
+		<suite-file path="src/main/resources/xml/writtenexam.xml" /> 
+		<suite-file path="src/main/resources/xml/exmsch.xml" />
+		<suite-file path="src/main/resources/xml/progresscard.xml" />  
+		
+		 <suite-file path="src/main/resources/xml/feeType.xml" />
+		<suite-file path="src/main/resources/xml/feeScholar.xml" />
+		<suite-file path="src/main/resources/xml/feeStructure.xml" />
+		<suite-file path="src/main/resources/xml/assignFee.xml" /> 
+		
+		<suite-file path="src/main/resources/xml/timtbleconfig.xml" />
+		<suite-file path="src/main/resources/xml/generatetmetble.xml" />
+		
+		<suite-file path="src/main/resources/xml/attendanceHis.xml" />
+		<suite-file path="src/main/resources/xml/attendance.xml" />
+			
+		<suite-file path="src/main/resources/xml/homeworktypes.xml" />
+		<suite-file path="src/main/resources/xml/homework.xml" />
+		
+		<suite-file path="src/main/resources/xml/stuPrmtn.xml" />
+		<suite-file path="src/main/resources/xml/shuffle.xml" /> 
+		
+		<suite-file path="src/main/resources/xml/categories.xml" />
+		<suite-file path="src/main/resources/xml/schoolvenues.xml" />
+		<suite-file path="src/main/resources/xml/createActivity.xml" /> 
+		
+		
+		 <suite-file path="src/main/resources/xml/department.xml" />
+		<suite-file path="src/main/resources/xml/designation.xml" />
+		<suite-file path="src/main/resources/xml/employees.xml" /> 
+		<suite-file path="src/main/resources/xml/student.xml" />
+		<suite-file path="src/main/resources/xml/parentInformation.xml" />
+		
+		<suite-file path="src/main/resources/xml/leaveTypes.xml" />
+		<suite-file path="src/main/resources/xml/leaveAssignment.xml" />
+		<suite-file path="src/main/resources/xml/myLeaves.xml" />
+		
+		<suite-file path="src/main/resources/xml/notification.xml" />
+		<suite-file path="src/main/resources/xml/onboard.xml" />
+		<suite-file path="src/main/resources/xml/halloffame.xml" />
+		<suite-file path="src/main/resources/xml/gallery.xml" />
+		<suite-file path="src/main/resources/xml/dashboardPhotos.xml" /> 
+		 <suite-file path="src/main/resources/xml/voicemsgrec.xml" />
+		<suite-file path="src/main/resources/xml/voicemsgsch.xml" /> 
+
+	</suite-files>
+</suite>

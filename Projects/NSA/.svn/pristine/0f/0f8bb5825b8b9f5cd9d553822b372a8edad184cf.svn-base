@@ -1,0 +1,94 @@
+<% var options = { weekday: "short", year: "numeric", month: "short", day: "numeric" }, timeOptions = { hour: "2-digit", minute: "2-digit" }; %>
+<% if (App.currentUser.profile.profileName == 'Student') { %>
+<% collection.forEach(function(examSchedule, index){
+var id = examSchedule.log.length > 0 ? examSchedule.log[0]._id : '';
+%>
+<tr data-id="<%=examSchedule._id%>" data-log="<%=id%>">
+    <td class="notForm centerCell">
+        <label class="_customCHeckbox">
+            <input type="checkbox" value="<%=examSchedule._id%>" class="checkbox listCB"/>
+            <span></span>
+        </label>
+    </td>
+    <td class="editable" data-content="debitAccount"><%= examSchedule.name%></td>
+    <td class="editable" data-content="name" data-type="input"><%= new Date(examSchedule.dateBeginAhead).toLocaleDateString("en-us", options) %></td>
+    <td class="editable" data-content="name" data-type="input"><%= new Date(examSchedule.dateEnd ? examSchedule.dateEnd : examSchedule.dateBeginAhead).toLocaleDateString("en-us", options) %></td>
+    <td class="editable" data-content="name" data-type="input"><%= new Date(examSchedule.config ? examSchedule.config.timeBegin : '').toLocaleTimeString("en-us", timeOptions) %></td>
+    <td class="editable" data-content="name" data-type="input"><%= new Date(examSchedule.config ? examSchedule.config.timeEnd : '').toLocaleTimeString("en-us", timeOptions) %></td>
+    <td class="editable" data-content="debitAccount"><%= examSchedule.config ? examSchedule.config.duration : ""%></td>
+    <td class="editable" data-content="creditAccount"><%= examSchedule.score%></td>
+    <td>
+        <% var examDate = new Date(examSchedule.dateBeginAhead).toLocaleDateString(); var newDate = new Date().toLocaleDateString()%>
+        <% newDate = Date.parse(newDate.split(' ').slice(0, 4).join(' '))%>
+        <% examDate = Date.parse(examDate.split(' ').slice(0, 4).join(' '))%>
+        <% if (examSchedule.isSubmit) { %>
+            <% if(examSchedule.config.canReview) { %>
+                <button type="button" class="btn blue slim viewStudExam">View</button>
+            <% } else { %>
+                <span data-color="bgGreenLight" class="text-right _tagSmall">Completed</span>
+            <% } %>
+        <% } else { %>
+                <%
+        var startTime = Date.parse(examSchedule.config.timeBegin), endTime = Date.parse(examSchedule.config.timeEnd), currentDate = Date.parse(new Date())
+        function getResult(time){
+            var newDate = new Date(time);
+            var hours = newDate.getHours()
+            hours = hours < 10 ? "0" + hours : hours
+            var minutes = newDate.getMinutes() < 10 ? "0" + newDate.getMinutes() : newDate.getMinutes()
+            var seconds = newDate.getSeconds() < 10 ? "0" + newDate.getSeconds() : newDate.getSeconds()
+            return +((hours).toString() + minutes.toString() + seconds.toString());
+        }
+        currentDate = getResult(new Date());
+        startTime   = getResult(examSchedule.config.timeBegin);
+        endTime   = getResult(examSchedule.config.timeEnd);
+        %>
+                <% if(examDate == newDate &&  currentDate > startTime && currentDate < endTime) { %>
+                    <button type="button" class="btn blue slim writeExam">Exam</button>
+                <% } else if(examDate < newDate || currentDate > endTime) { %>
+                        <% if(examSchedule.config.canReview) { %>
+                <button type="button" class="btn blue slim viewStudExam">View</button>
+                        <% } else { %>
+                            <span data-color="bgGreenLight" class="text-right _tagSmall">Completed</span>
+                        <% } %>
+                <% } else { %>
+                    <button type="button" class="btn blue slim">Upcoming Exam</button>
+                <% } %>
+        <% } %>
+    </td>
+</tr>
+<% }) %>
+<% } else { %>
+<%
+collection.forEach(function(examSchedule, index){
+var id = examSchedule.log.length > 0 ? examSchedule.log[0]._id : '';
+%>
+<tr data-id="<%=examSchedule._id%>"  data-log="<%=id%>">
+    <td class="notForm centerCell">
+        <label class="_customCHeckbox">
+            <input type="checkbox" value="<%=examSchedule._id%>" class="checkbox listCB"/>
+            <span></span>
+        </label>
+    </td>
+    <td class="editable" data-content="name" data-type="input"><%= examSchedule.name%></td>
+    <!--<td class="editable" data-content="name" data-type="input"><%=examSchedule.course ? examSchedule.course.courseName : ''%></td>-->
+    <td class="editable" data-content="name" data-type="input"><%= new Date(examSchedule.dateBeginAhead).toLocaleDateString("en-us", options) %></td>
+    <td class="editable" data-content="name" data-type="input"><%= new Date(examSchedule.dateEnd ? examSchedule.dateEnd : examSchedule.dateBeginAhead).toLocaleDateString("en-us", options) %></td>
+    <td class="editable" data-content="name" data-type="input"><%= new Date(examSchedule.config ? examSchedule.config.timeBegin : '').toLocaleTimeString("en-us", timeOptions) %></td>
+    <td class="editable" data-content="name" data-type="input"><%= new Date(examSchedule.config ? examSchedule.config.timeEnd : '').toLocaleTimeString("en-us", timeOptions) %></td>
+   <!-- <td class="editable" data-content="debitAccount"><%= examSchedule.batchNames%></td>-->
+
+    <% if(data.update || data.delete) { %>
+    <td>
+        <% if (Date.parse(examSchedule.dateEnd ? examSchedule.dateEnd : examSchedule.dateBeginAhead) > new Date()) { %>
+        <a href="javascript:;" class="icon-chart goToStudentResult _actionCircleBtn show" aria-hidden="true"></a>
+        <a href="javascript:;" class="icon-note <%= data.update ? 'goToEdit show' : 'hide' %> _actionCircleBtn" ></a>
+        <a href="javascript:;" class="icon-trash <%= data.delete ? 'goToRemove show' : 'hide' %> _actionCircleBtn"></a>
+        <% } else { %>
+        <a href="javascript:;" class="icon-chart goToStudentResult _actionCircleBtn show" aria-hidden="true"></a>
+        <% }%>
+    </td>
+    <% } %>
+</tr>
+<% }) %>
+<% } %>
+

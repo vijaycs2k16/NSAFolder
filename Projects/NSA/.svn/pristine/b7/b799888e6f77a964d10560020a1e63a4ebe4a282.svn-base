@@ -1,0 +1,49 @@
+/**
+ * Created by kiranmai on 16/02/18.
+ */
+
+/**
+ * Table structure sheet {
+ * name test paper name
+ * num the total amount of the current statistics is the total number of topics
+ * remark remark
+ detail detail of test questions
+ * category from which chapter
+ * type question type
+ * num number of questions
+ *}
+ * @type {Schema}
+ */
+
+
+module.exports = (function () {
+    var mongoose = require('mongoose');
+    var ObjectId = mongoose.Schema.Types.ObjectId;
+
+    var sheetSchema = mongoose.Schema({
+        course       : [{type: ObjectId, ref: 'Course'}],
+        classDetail  : {type: ObjectId, ref: 'ClassDetails'},
+        subject      : [{type: ObjectId, ref: 'Subject'}],
+        topic        : [{type: ObjectId, ref: 'Topic'}],
+        subTopic     : [{type: ObjectId, ref: 'SubTopics'}],
+        name         : {type: String, required: true},
+        code         : {type: String, required: true, index:{unique:true}},
+        lastModified : {type: Date},
+        num          : {type: Number},
+        remark       : {type: String},
+        questions    : [{type: ObjectId, ref: 'Question', required: true}],
+        questionMode : {type: String},  // whether it is random or manual or weightage base
+        school_id    : {type: String, default: null},
+        tenant_id    : {type: String, default: null},
+        subjectName  : {type: String},
+        className    : {type: String}
+    }, {collection: 'Sheet'});
+
+    mongoose.model('Sheet', sheetSchema);
+
+    if (!mongoose.Schemas) {
+        mongoose.Schemas = {};
+    }
+
+    mongoose.Schemas.Sheet = sheetSchema;
+})();

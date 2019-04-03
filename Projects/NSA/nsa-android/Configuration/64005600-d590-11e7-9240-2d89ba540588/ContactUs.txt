@@ -1,0 +1,3 @@
+<b>Mary Giri Vidya Mandir</b>,</br>Chemmanthoor,</br>Punalur,</br>Kerala - 691305.</br>
+
+lat long : (9.015684, 76.91517)

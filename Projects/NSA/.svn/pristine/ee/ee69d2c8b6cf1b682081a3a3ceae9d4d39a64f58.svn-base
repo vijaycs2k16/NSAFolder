@@ -1,0 +1,63 @@
+<div class="form-holder _newForm">
+    <form method="post" action="" id="invoiceForm">
+        <h4 class="_dialogMainTitle">Employee Notification</h4>
+        <div class="_formWrap _enlargedItemMargin newItem">
+            <div class="_formBlock _equal">
+                <div class="_animateInputBox _withInfo">
+                    <input type="text"
+                           class="_animate "
+                           id="name"
+                           required
+                           value=""/>
+                    <label class="_animate">Title</label>
+                </div>
+                <div class="_animateInputBox _withInfo">
+                    <div class="_templatePaymentInfo">
+                        <div class="attachments"><div><div class="noteWrapper attachWrapper tree-view-box">
+
+                            <div class="formTitle">
+                                <label class="_animate"> </label>
+                            </div>
+                            <div id="treeview-emp" class="tree-view-structure"></div>
+                        </div>
+
+                        </div></div>
+
+                    </div>
+                </div>
+                <div class="_formWrap">
+                    <div class="_formBlock counterWrap">
+                        <div class="_animateTextareaBox counterEl">
+                        <textarea id="internalNotes"
+                                  class="_animate internal_Notes message-box-height"
+                                  required
+                                  maxlength="160" ></textarea>
+                            <label for="internalNotes" class="_animate ">Message</label>
+                            <div class="counter-wrap">
+                                <span class="counter-label">Characters left:</span>
+                                <span class="counter-value" id="counterValue">160</span>
+                            </div>
+                        </div>
+                        <div class="attach-container"></div>
+                    </div>
+                </div>
+                <div class="_formRow _tipsWrap _forCheckBox _checkboxList">
+                    <label>Media Type:</label>
+
+                    <label class="_animatedCheckbox">
+                        <input id="sms" class="sms" name="media" data-type="true" type="checkbox" checked="">
+                        <span></span>
+                    </label>
+                    <label for="sms">SMS</label>
+
+                   <!-- <label class="_animatedCheckbox _withInfo">
+                        <input id="push" class="push" name="push" data-type="false" type="checkbox" checked="">
+                        <span></span>
+                    </label>
+                    <label for="push">Push</label>-->
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>

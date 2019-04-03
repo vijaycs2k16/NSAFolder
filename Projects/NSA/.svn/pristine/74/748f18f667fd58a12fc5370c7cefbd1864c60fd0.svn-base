@@ -1,0 +1,35 @@
+
+<tr class="productItem deleteRow left-alignment _productRow" id="<%=model._id%>">
+    <td style="width: 115px; height: 23px;">
+        <div class="container">
+            <div class=" _forCheckBox" style="top: 7px;position: relative;">
+                <label class="inputBox _newSelectListWrap">
+                    <label class="_animatedCheckbox">
+                        <input id="active" data-id="salesPurchases_isCustomer"
+                               class="checkbox shippingRadio checkVakue active"
+                               type="checkbox"/>
+                        <span style="height: 17px;"></span>
+                    </label>
+                </label>
+            </div>
+        </div>
+    </td>
+    <td style="width: 547px; height: 23px;" >
+        <div class="  m-12" >
+            <div class="_animateSelectBox _withInfo" style="margin-bottom: 0px;">
+                <input type="text"
+                       name="discountValue"
+                       class="_animate discountValue"
+                       id="discountValue"
+                       required
+                       autofocus
+                       value=""
+                       maxlength="32"/>
+            </div>
+        </div>
+    </td>
+
+    <td class=""  colspan="4">
+        <span title="Delete" class="icon-close5 removeJob"></span>
+    </td>
+</tr>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "484557965592",
+    "firebase_url": "https://rabindra-64c43.firebaseio.com",
+    "project_id": "rabindra-64c43",
+    "storage_bucket": "rabindra-64c43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484557965592:android:75c3dcfe490b6427",
+        "android_client_info": {
+          "package_name": "rabindra.management.in.belgharia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "484557965592-2d603mksu9h192tmmmc3t5q55jhtm649.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU9vmbnmJtO6HhEvTz2MefAF5ZsDj5Sco"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

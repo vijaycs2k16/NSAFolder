@@ -1,0 +1,38 @@
+<div class="_acountingTableWrap">
+    <div class="_acountingTitleBlock _forOverview">
+        <a href="javascript:;" class="btn blue slim icon-plus btnPositioned" title="Create" id="top-bar-createBtn">New</a>
+    </div>
+    <div class="_acountingTableBlock">
+        <table class="list tableProjects tableFixed _paymentTable">
+            <colgroup>
+                <col width="40%"/>
+                <col width="10%"/>
+                <col width="20%"/>
+            </colgroup>
+            <thead>
+            <tr class="forToggle">
+                <th class="text-left">Name</th>
+                <th class="text-left">Number of days</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody class="forToggle" id="paymentTermsTable">
+            <% collection.forEach(function(elem,index){ %>
+
+            <tr data-id="<%= elem._id%>">
+                <td class="text-left"><span><%=elem.name %></span></td>
+                <td class="text-left"><span><%=elem.count %></span></td>
+                <td class="text-left">
+                    <a href="javascript:;" class="icon-note goToEdit _actionCircleBtn" aria-hidden="true"></a>
+                    <a href="javascript:;" class="icon-trash goToRemove _actionCircleBtn" aria-hidden="true"></a>
+                </td>
+            </tr>
+
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+

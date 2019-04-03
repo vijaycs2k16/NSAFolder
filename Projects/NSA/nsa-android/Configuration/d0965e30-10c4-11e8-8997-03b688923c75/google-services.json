@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "148753873008",
+    "firebase_url": "https://brilliant-muthupet.firebaseio.com",
+    "project_id": "brilliant-muthupet",
+    "storage_bucket": "brilliant-muthupet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148753873008:android:15b4c8bc8fe3ead0",
+        "android_client_info": {
+          "package_name": "brilliant.management.in.muthupet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148753873008-5k6v8obeamj6ol4po93n4m11d57s5irt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4HFKImK70RSrSFn-ceWipGqVZeSK3kEc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

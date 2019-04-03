@@ -1,0 +1,77 @@
+
+<tr class="productItem deleteRow left-alignment _productRow" id="<%=model._id%>">
+    <td data-name="productName" class="text-left">
+        <div class="_animateSelectBox">
+            <div class="_newSelectListWrap">
+                <a id="batch"
+                   class="current-selected batch"
+                   value="<%=model.course ? model.course._id: null%>"
+                   data-id="<%=model.batch ? model.batch._id: null%>"
+                   href="javascript:;"><%=model.batch ? model.batch.batchName + ' - ' + model.course.courseName : 'Select'%></a>
+                </a>
+            </div>
+            <span class="tips " data-id="batch"></span>
+        </div>
+    </td>
+    <td data-name="productName" class="text-left">
+        <div class="_animateSelectBox">
+            <div class="_newSelectListWrap">
+                <a id="subject"
+                   name="subject"
+                   class="current-selected"
+                   data-id="<%=model.subject ? model.subject._id: null%>"
+                   href="javascript:;"><%=model.subject ? model.subject.subjectName : 'Subject Name'%></a>
+            </div>
+            <span class="tips " data-id="subject"></span>
+        </div>
+    </td>
+    <td data-name="productName" class="text-left">
+        <div class="_animateSelectBox">
+            <div class="_newSelectListWrap">
+                <a id="topics"
+                   name="topics"
+                   class="current-selected"
+                   data-id="<%=model.topicData ? model.topicData._id : null %>"
+                   href="javascript:;"><%=model.topicData? model.topicData.name : 'Topic Name'%></a>
+            </div>
+            <span class="tips" data-id="topics"></span>
+        </div>
+    </td>
+    <td data-name="productName" class="text-left">
+        <div class="_animateSelectBox">
+            <div class="_newSelectListWrap">
+                <a id="faculty"
+                   name="faculty"
+                   class="current-selected"
+                   data-id="<%=model.faculty ? model.faculty._id: null%>"
+                   href="javascript:;"><%=model.faculty ? model.faculty.name.first + ' ' +  model.faculty.name.first : 'Faculty Name'%></a>
+            </div>
+            <span class="tips " data-id="subject"></span>
+        </div>
+    </td>
+    <td data-name="productName" class="">
+        <div class="_animateinputbox _withtime _withinfo">
+            <input maxlength="2"
+                   name="timepickerOne1"
+                   class="timepickerOne1"
+                   id="timepickerOne1"
+                   value="<%=model.classStartTime ? moment(model.classStartTime).format('hh:mm A'): null%>"
+            >
+            <span class="tips " data-id="classStartTime"></span>
+        </div>
+    </td>
+    <td data-name="productName" class="">
+        <div class="_animateinputbox _withtime _withinfo">
+            <input maxlength="2"
+                   name="timepickerTwo2"
+                   class="timepickerTwo2"
+                   id="timepickerTwo2"
+                   value="<%=model.classEndTime ? moment(model.classEndTime).format('hh:mm A'): null%>">
+            <span class="tips " data-id="classEndTime"></span>
+        </div>
+    </td>
+
+    <td class="deleteCell" style="text-align: start">
+        <span title="Delete" class="icon-close5 removeJob"></span>
+    </td>
+</tr>

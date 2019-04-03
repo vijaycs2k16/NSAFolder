@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/attendees_layout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Attachment"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height50"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/common_text_size"
+            android:paddingLeft="@dimen/padding10"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/attendees_key" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height50"
+            android:textSize="@dimen/common_text_size"
+            android:paddingLeft="@dimen/padding15"
+            android:text=""
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/attach_value"
+            android:layout_weight="0.9" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="@dimen/padding5"
+            app:srcCompat="@drawable/ic_arrow_right"
+            android:id="@+id/icons9" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height1"
+        android:background="@color/overlayForegroundColor"/>
+
+</LinearLayout>

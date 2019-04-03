@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "183259244832",
+    "firebase_url": "https://srv-coimbatore.firebaseio.com",
+    "project_id": "srv-coimbatore",
+    "storage_bucket": "srv-coimbatore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183259244832:android:25af41ede65abe1c",
+        "android_client_info": {
+          "package_name": "nexrise.publication.in.srv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183259244832-pj83ibsogdjnis651t14ip5cuod4bfsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-QTXVCa-m_Saq3dTsX7d7cH8MWMVrpcg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

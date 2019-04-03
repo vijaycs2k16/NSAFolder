@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "358503597805",
+    "firebase_url": "https://auxilium-school-1b14d.firebaseio.com",
+    "project_id": "auxilium-school-1b14d",
+    "storage_bucket": "auxilium-school-1b14d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358503597805:android:0b306c05a30889d5",
+        "android_client_info": {
+          "package_name": "auxilium.publication.in.palluruthy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358503597805-e4t59micvq51drovurt939lhnfegq3bq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6HYupOzB7fNgKoX7NzJjuXGWMpNpbPGU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

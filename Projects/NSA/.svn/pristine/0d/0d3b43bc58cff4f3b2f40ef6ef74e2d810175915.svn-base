@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_actionbar_relative_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height48"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    android:gravity="center"
+    android:enabled="false" >
+
+
+    <ImageButton
+        android:layout_width="@dimen/width20"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/tick"
+        android:scaleType="centerInside"
+        android:background="@color/colorPrimary"
+
+        android:id="@+id/tick_btn" />
+
+    <TextView
+        android:text="Add Home Work"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height48"
+        android:gravity="center"
+        android:layout_weight="3"
+        android:id="@+id/textView6"
+        android:textSize="@dimen/text18"
+        android:layout_marginLeft="@dimen/margin15"
+        android:layout_marginRight="@dimen/margin15"
+        android:textColor="@color/colorWhite"
+     />
+
+    <ImageButton
+        android:layout_width="@dimen/width20"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cancel"
+        android:id="@+id/cancel_btn"
+        android:background="@color/colorPrimary"
+        android:scaleType="centerInside" />
+
+</LinearLayout>

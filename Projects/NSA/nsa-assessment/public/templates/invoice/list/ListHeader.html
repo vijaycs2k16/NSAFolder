@@ -1,0 +1,60 @@
+﻿<div id="searchContainer"></div>
+<div class="_tableWrap _tableSalesInvoicesWrap">
+    <table class="list stripedList">
+        <colgroup>
+            <col width="42px">
+            <col width="14%">
+            <col width="14%">
+            <col width="14%">
+            <col width="14%">
+            <col width="14%">
+            <col width="7%">
+            <col width="7%">
+            <col width="7%">
+            <col width="7%">
+            <col width="9%">
+        </colgroup>
+        <thead>
+        <tr>
+            <th class="centerCell">
+                <label class="_customCHeckbox">
+                    <input type="checkbox" id="checkAll"/>
+                    <span></span>
+                </label>
+            </th>
+            <th class="oe_sortable text-left" data-sort="supplier.name" align="center"><b>Customer</b><span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable" data-sort="name"><b>Invoice Number</b><span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable" data-sort="paymentDate"><b>Payment Date</b><span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable" data-sort="salesPerson.name"><b><%= currentDb ? 'Assigned' : 'SalesPerson'%></b><span
+                    class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable" data-sort="dueDate"><b>Due</b><span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable" data-sort="paymentInfo.balance"><b>Balance</b><span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable" data-sort="paid"><b>Paid</b><span
+                    class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable" data-sort="paymentInfo.total"><b>Total</b><span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable" data-sort="workflow.name approved paid"><b>Status</b><span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable sortDn" data-sort="invoiceDate"><b>Invoice Date</b><span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+        </tr>
+        </thead>
+        <tbody id="listTable" class="enableTableOdd"></tbody>
+        <tfoot id="listTotal">
+        <tr>
+            <td colspan="6">Total</td>
+            <td class="money"> <span id="balance"></span></td>
+            <td class="money"><span id="paid"></span></td>
+            <td class="money"><span id="total"></span></td>
+            <td colspan="2"></td>
+        </tr>
+        </tfoot>
+    </table>
+</div>

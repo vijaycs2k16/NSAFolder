@@ -1,0 +1,28 @@
+<tr class="productItem deleteRow _productRow" id="<%=model._id%>">
+    <td data-name="productName" class="text-left">
+        <div class="_animateSelectBox">
+            <div class="_newSelectListWrap">
+                <a id="classId"
+                   class="current-selected classDd"
+                   data-id="<%=model.classDetail ? model.classDetail._id: null%>"
+                   href="javascript:;"><%=model.classDetail ? model.classDetail.className : 'Select Class'%></a>
+            </div>
+        </div>
+    </td>
+    <td data-name="productName" class="text-left">
+        <div class="_formBlock">
+            <div class="_animateSelectBox _withInfo ">
+                <div id="topicBlocks" class="_variantsBlock _variantsTopics"  style="width:340px">
+                    <div class="_checkCategoriesWrap">
+                        <ul id="checkedTopics" class="_checkCategories"></ul>
+                        <span id="showBtn1" class="_arrow"></span>
+                    </div>
+                    <ul id="topicCategories" class="_categoriesList"></ul>
+                </div>
+            </div>
+        </div>
+    </td>
+    <td class="deleteCell" style="text-align: center">
+        <span title="Delete" class="icon-close5 removeJob"></span>
+    </td>
+</tr>

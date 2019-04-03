@@ -1,0 +1,9 @@
+<form method="post" style="top: 20px" action="" class="_assignForm" id="assignForm">
+    <div class='_animateSelectBox _withInfo'>
+        <span class='_selectTitle'>Assigned to</span>
+        <div class='_newSelectListWrap'>
+            <a id='selAssignee' class='current-selected'href='javascript:;'>Select Assignee </a>
+        </div>
+        <span class='tips icon-info' data-id='assignee'></span>
+    </div>
+</form>

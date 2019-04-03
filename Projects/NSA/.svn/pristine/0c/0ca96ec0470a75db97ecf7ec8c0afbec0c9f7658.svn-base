@@ -1,0 +1,49 @@
+<div class="_listInfo">
+    <form method="post" action="" id="stockCorrection">
+        <div class="_listHeader">
+            <div class="_titleWrap">
+                <h4 class="_listTitle">Bundle Move</h4>
+                <span class="_dateOfCreation">
+                    <span class="_title">Created on</span>
+                    <%=model.transactionDate ? moment(model.transactionDate).format('LLL') : '-'%>
+                </span>
+            </div>
+
+            <div class="_listRow">
+                <div class="_listCell">
+                    <div class="_title">Adjusted By</div>
+                    <div class="_value"><%=model.product ? App.currentUser.profile.profileName : ''%></div>
+                </div>
+
+                <div class="_listCell">
+                    <div class="_descriptionTitle">Reason</div>
+                    <div class="_listDescription"><%=model.reason%></div>
+                </div>
+            </div>
+        </div>
+        <div class="_listBody">
+            <table class="_tableLight">
+                <colgroup>
+                    <col width="50%">
+                    <col width="50%">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Adjusted</th>
+                </tr>
+                </thead>
+                <tbody id="tbodyProducts">
+
+                <% model.bundles.forEach(function(elem){%>
+                <tr>
+                    <td><%=elem ? elem._id.name : ''%></td>
+                    <td><%=elem.quantity%></td>
+                </tr>
+                <% })%>
+                </tbody>
+            </table>
+            <div id="productItemsHolder"></div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,19 @@
+﻿<div class="_acountingTableBlock">
+    <table id="exampleTC" class="display">
+        <col width="50px">
+        <col width="50px">
+        <col width="50px">
+        <col width="50px">
+        <col width="50px">
+        <thead>
+        <tr>
+            <th class="text-left">Schedule Name</th>
+            <th class="text-left">Class Name</th>
+            <th class="text-left">No.of Questions</th>
+            <th class="text-left">Schedule</th>
+            <th class="text-left">Action</th>
+        </tr>
+        </thead>
+        <tbody id="listTable" class="enableTableOdd"></tbody>
+    </table>
+</div>

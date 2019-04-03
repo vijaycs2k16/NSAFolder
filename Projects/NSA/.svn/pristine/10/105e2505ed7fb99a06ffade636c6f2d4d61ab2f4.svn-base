@@ -1,0 +1,21 @@
+// Generated code from Butter Knife. Do not modify!
+package nexrise.publication.in.nexrise.Gallery;
+
+import android.view.View;
+import butterknife.ButterKnife.Finder;
+import butterknife.ButterKnife.Injector;
+
+public class FullImageActivity$$ViewInjector<T extends nexrise.publication.in.nexrise.Gallery.FullImageActivity> implements Injector<T> {
+  @Override public void inject(final Finder finder, final T target, Object source) {
+    View view;
+    view = finder.findRequiredView(source, 2131689976, "field 'pager'");
+    target.pager = finder.castView(view, 2131689976, "field 'pager'");
+    view = finder.findRequiredView(source, 2131689977, "field 'thumbnails'");
+    target.thumbnails = finder.castView(view, 2131689977, "field 'thumbnails'");
+  }
+
+  @Override public void reset(T target) {
+    target.pager = null;
+    target.thumbnails = null;
+  }
+}

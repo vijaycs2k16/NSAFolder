@@ -1,0 +1,86 @@
+module.exports = function (config) {
+    config.set({
+
+        basePath: '',
+
+        frameworks: ['mocha', 'requirejs', 'sinon'],
+
+        files: [
+            'test/uiSpecs/testMain.js',
+            'public/css/*.css',
+
+            {pattern: 'test/uiSpecs/fixtures/**/*' /* , included: false*/},
+
+            {pattern: 'public/js/libs/*.js', included: false, watching: false},
+            {pattern: 'public/js/libs/**/!(*test|*Spec).js', included: false, watching: false},
+
+            {pattern: 'test/uiSpecs/jqueryPrivate.js', included: false, watching: false},
+            /* {pattern: 'public/js/populate.js', included: false, watching: false},
+             {pattern: 'public/js/dataService.js', included: false, watching: false},
+             {pattern: 'public/js/router.js', included: false, watching: false},*/
+
+            {pattern: 'node_modules/chai/chai.js', included: false, watching: false},
+            {pattern: 'node_modules/chai-jquery/chai-jquery.js', included: false, watching: false},
+            {pattern: 'node_modules/sinon-chai/lib/sinon-chai.js', included: false, watching: false},
+
+            {pattern: 'constants/test/*.js', included: false, watching: false},
+
+            /* {pattern: 'constants/test/dashboardVacation.js', included: false, watching: false},
+             {pattern: 'constants/test/filter.js', included: false, watching: false},
+             {pattern: 'constants/test/projects.js', included: false, watching: false}, */
+
+            {pattern: 'public/js/Validation.js', included: false, watching: false},
+            {pattern: 'public/js/collections/**/*.js', included: false, watching: false},
+            {pattern: 'public/js/models/*.js', included: false, watching: false},
+            {pattern: 'public/js/helpers/*.js', included: false, watching: false},
+            {pattern: 'public/js/views/**/*.js', included: false, watching: false},
+            {pattern: 'public/js/constants/*.js', included: false, watching: false},
+            {pattern: 'public/js/services/**/*.js', included: false, watching: false},
+            {pattern: 'public/js/mixins/**/*.js', included: false, watching: false},
+            {pattern: 'public/templates/**/*.html', included: false, watching: false},
+            {pattern: 'public/js/*.js', included: false, watching: false},
+            {pattern: 'public/js/constants/*.js', included: false, watching: false},
+
+            {pattern: 'test/uiSpecs/models/integrationModel.test.js', included: false /* , watching: true*/},
+            {pattern: 'test/uiSpecs/collections/integrationCollection.test.js', included: false /* , watching: true*/},
+            //{pattern: 'test/uiSpecs/views/login.test.js', included: false /* , watching: true*/},
+            {pattern: 'test/uiSpecs/views/integrations.test.js', included: false /* , watching: true*/}
+
+        ],
+
+        exclude: [],
+
+        preprocessors: {
+            'public/js/models/**/*.js'     : ['coverage'],
+            'public/js/views/**/*.js'      : ['coverage'],
+            'public/js/collections/**/*.js': ['coverage']
+        },
+
+        coverageReporter: {
+            type: 'html',
+            dir : 'coverage/'
+        },
+
+        reporters: ['progress', 'coverage'],
+
+        port: 9876,
+
+        colors: true,
+
+        logLevel: config.LOG_INFO,
+
+        /* autoWatch: true, */
+
+        browsers: [/*'Firefox',*/ 'Chrome'/* , 'Safari',  'IE', 'PhantomJS'*/],
+
+        singleRun: true,
+
+        client: {
+            mocha: {
+                ui: 'bdd'
+            }
+        },
+
+        concurrency: Infinity
+    });
+};

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/padding10"
+    android:paddingRight="@dimen/padding10"
+    android:background="@color/layoutBackground"
+    android:weightSum="4">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height50"
+        android:gravity="center_vertical"
+        android:id="@+id/status_left_textview"
+        android:textColor="@color/colorBlack"
+        android:paddingLeft="@dimen/padding30"
+        android:textSize="@dimen/common_text_size"
+        android:layout_marginBottom="@dimen/margin1"
+        android:layout_weight="3"
+        android:background="@color/overlayForegroundColor" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height50"
+        android:gravity="center"
+        android:background="@color/overlayForegroundColor"
+        android:id="@+id/list_item_linear_layout"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="@dimen/width20"
+            android:layout_height="@dimen/height20"
+            android:id="@+id/badge_layout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:id="@+id/badge_text"
+                android:textSize="@dimen/text8"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

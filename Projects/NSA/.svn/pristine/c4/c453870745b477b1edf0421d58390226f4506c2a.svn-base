@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+
+    tools:context="nexrise.publication.in.nexrise.HomeworkFeature.IndividualStudentCommentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/student_comment_listview"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorWhite"
+        android:layout_alignParentStart="true">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height50"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:hint="Enter comments"
+            android:paddingLeft="@dimen/padding10"
+            android:id="@+id/enter_comments"
+            android:textColor="@color/colorBlack"
+            android:layout_toLeftOf="@+id/send_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/send_btn" />
+
+        <Button
+            android:text="Send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/send_btn"
+            android:layout_gravity="right"
+            style="@style/FlatCornerButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

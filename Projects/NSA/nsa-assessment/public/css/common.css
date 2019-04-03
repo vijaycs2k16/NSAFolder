@@ -1,0 +1,22 @@
+p { }
+section {margin: 0 auto; padding: 2em; max-width: 870px; background: #fff; box-shadow:  0 0 1px 1px #C6E6F2}
+footer section {background: transparent; box-shadow: none;}
+article {padding: 0 20px;background: #E0F4FE;}
+.answer {background: #fff;}
+.paragraph { margin: 10px 0; }
+footer { font-size: 15px; overflow: hidden; background: #565555; color: #fff; padding: 10px; }
+footer section { display: flex; justify-content: space-between; }
+footer .paragraph { }
+footer a { color: #fff; }
+pre { white-space: pre-wrap; }
+.save { margin-top: 10px; }
+.instructions table [colspan] { font-weight: bold; padding-top:5px;}
+.instructions th,
+.instructions td {color: #666;padding: 1px 15px;}
+.instructions th { padding-left: 0;}
+.instructions table th {font-size: 13px;font-weight: normal;text-align: left;}
+.instructions table td {font-family: monospace;text-align: right;font-size: 12px;}
+.instructions {display:flex; margin-top: 10px;}
+.hide {display: none;}
+.rich-text-editor-toolbar-characters.rich-text-editor-toolbar-button-list .rich-text-editor-button { font-family: "Times New Roman", monospace; color: #555; }
+.warning { font-weight: bold; color: #a00;}

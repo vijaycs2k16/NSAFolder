@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin10">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@color/colorLightGray"
+        android:id="@+id/imageView19" />
+
+    <ImageView
+        android:layout_width="@dimen/width40"
+        android:layout_height="@dimen/height40"
+        app:srcCompat="@drawable/ic_close_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageView19"
+        android:layout_alignEnd="@+id/imageView19"
+        android:tint="@color/colorWhite"
+        android:background="@color/black_transparent"
+        android:id="@+id/imageView24" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height30"
+        android:lines="1"
+        android:gravity="center"
+        android:background="@color/black_transparent"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/description_text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="TextView" />
+
+    <ProgressBar
+        android:id="@+id/upload_download"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/width50"
+        android:layout_height="@dimen/height50"
+        android:max="100"
+        android:progress="10"
+        android:visibility="invisible"
+        android:progressDrawable="@drawable/upload_download_progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height30"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/margin5"
+        android:id="@+id/retry_layout"
+        android:visibility="gone"
+        android:background="@color/black_transparent">
+        <ImageView
+            android:layout_width="@dimen/width20"
+            android:layout_height="@dimen/height20"
+            android:id="@+id/upload_icon"
+            app:srcCompat="@drawable/ic_upload_button"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorWhite"
+            android:layout_toRightOf="@+id/upload_icon"
+            android:paddingLeft="@dimen/padding5"
+            android:textSize="@dimen/description_text_size"
+            android:text="Retry"/>
+    </RelativeLayout>
+</RelativeLayout>

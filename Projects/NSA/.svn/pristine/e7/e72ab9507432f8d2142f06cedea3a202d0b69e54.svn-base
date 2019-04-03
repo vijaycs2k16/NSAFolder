@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_due_date"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="@color/backgroundColor"
+    tools:context="nexrise.publication.in.nexrise.ReusedActivities.DueDateActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/margin10"
+        android:id="@+id/class_layout"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:padding="@dimen/padding15"
+            android:id="@+id/setclass"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height50"
+            android:text="Class"
+            android:layout_weight="1"
+            android:textSize="@dimen/common_text_size"
+            android:textColor="@color/colorBlack"/>
+
+        <Spinner
+
+            android:id="@+id/classspin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_weight="1"
+            android:padding="@dimen/padding5"
+            android:background="@drawable/spinner"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/section_spin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_weight="1"
+            android:padding="@dimen/padding5"
+            android:background="@drawable/spinner"
+            android:gravity="center"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin5"
+        android:layout_marginRight="@dimen/margin5"
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_weight="4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/calendar"
+            android:background="@color/layoutBackground"/>
+
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<div class="_acountingTitleBlock _forOverview">
+    <a href="javascript:;" class="btn blue slim icon-plus btnPositioned" title="Create"
+       id="top-bar-createBtn">New
+    </a>
+</div>
+<div class="_acountingTableBlock">
+    <table id="example3" class="display" style="width:100%">
+
+        <thead>
+        <tr class="forToggle">
+            <th class="text-left">Name</th>
+            <th class="text-left">Start Date</th>
+            <th class="text-left">End Date</th>
+            <th class="text-left">Start Time</th>
+            <th class="text-left">End Time</th>
+            <th class="text-left">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <%
+        collection.forEach(function(elem,index){
+        %>
+        <tr data-id="<%= elem._id %>" >
+        <td><%=elem.name ? elem.name : ''%></td>
+           <td> <%=elem.dateBeginAhead ? moment(elem.dateBeginAhead).format('D MMM, YYYY') : ''%></td>
+            <td> <%=elem.dateBeginAhead ? moment(elem.dateEnd ? elem.dateEnd : elem.dateBeginAhead).format('D MMM, YYYY') : ''%></td>
+            <td><%=elem.config.timeBegin ? moment(elem.config.timeBegin).format('h:mm A ') : ''%></td>
+           <td><%=elem.config.timeEnd ? moment(elem.config.timeEnd).format('h:mm A ') : ''%></td>
+            <td>
+                <% if (Date.parse(elem.dateEnd ? elem.dateEnd : elem.dateBeginAhead) > new Date()) { %>
+                <a href="javascript:;" class="icon-note goToEdit _actionCircleBtn show visibleVisble" aria-hidden="true" ></a>
+                <a href="javascript:;" class="icon-trash goToRemove _actionCircleBtn show visibleVisble" aria-hidden="true" ></a>
+                <% } else { %>
+                <a href="javascript:;" class="icon-chart goToStudentResult _actionCircleBtn show" aria-hidden="true"></a>
+                <% }%>
+            </td>
+        </tr>
+        <% }) %>
+        </tbody>
+        <tfoot>
+       <!-- <tr>
+            <th>Center</th>
+            <th>Class Date</th>
+            <th>month</th>
+            <th></th>
+        </tr>-->
+        </tfoot>
+    </table>
+</div>

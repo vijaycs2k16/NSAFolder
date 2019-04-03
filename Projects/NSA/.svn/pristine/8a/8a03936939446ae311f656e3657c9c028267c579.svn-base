@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <TextView
+        android:background="@drawable/border_table"
+        android:id="@+id/eventno"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="@dimen/height50"
+        android:gravity="center"
+        android:textSize="@dimen/common_text_size"
+        android:text="sno"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height50"
+        android:orientation="vertical"
+        android:layout_weight="1.5"
+        android:background="@drawable/border_style"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/eventTypeName"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/common_text_size"
+            android:layout_height="@dimen/height50"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="bfhdafvb"/>
+        <TextView
+            android:id="@+id/eventPlace"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/common_text_size"
+            android:layout_height="@dimen/height50"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="bfhdafvb"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height50"
+        android:orientation="vertical"
+        android:layout_weight="1.0"
+        android:background="@drawable/border_style"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/eventMonth"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/common_text_size"
+            android:layout_height="@dimen/height50"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="bfhdafvb"/>
+        <TextView
+            android:id="@+id/eventDate"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/common_text_size"
+            android:layout_height="@dimen/height50"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="bfhdafvb"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="subjectlist">
+<parameter name="aspect_Name" value="Central Board"></parameter>
+<parameter name="aspect_Code" value="CBSE"></parameter>
+<parameter name="dept_Name" value="Science"></parameter>
+<parameter name="subject_Name" value="Environmental Science"></parameter>
+<parameter name="subject_Code" value="SA -1009"></parameter>
+<parameter name="aspect" value="Central Board"></parameter>
+<parameter name="status_Value" value="Active"></parameter>
+	<test name="SubjectList">
+		<classes>
+			<class name="com.nsa.testing.tests.SubjectList" />
+		</classes>
+	</test>
+</suite> 
+

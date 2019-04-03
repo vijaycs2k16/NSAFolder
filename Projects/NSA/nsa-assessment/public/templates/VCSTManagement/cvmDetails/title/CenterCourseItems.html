@@ -1,0 +1,40 @@
+<table class="_productTable">
+    <thead>
+    </thead>
+    <tbody id="productList">
+    <% if(!_.isEmpty(model)) { %>
+    <tr class="productItem deleteRow _productRow" id="<%=model._id%>">
+        <td data-name="productName" class="text-left">
+            <div class="_animateSelectBox">
+                <div class="_newSelectListWrap">
+                    <a id="classId"
+                       class="current-selected courseDd"
+                       data-id="<%=model.classDetail ? model.classDetail._id: null%>"
+                       href="javascript:;"><%=model.classDetail ? model.classDetail.className : 'Select Class'%></a>
+                    </a>
+                </div>
+                <span class="tips " data-id="batch"></span>
+            </div>
+        </td>
+        <td> <div id="topicBlocks" class="_variantsBlock _variantsTopics">
+            <div class="_checkCategoriesWrap">
+                <ul id="checkedTopics" class="_checkCategories">
+                    <li><span class="checkedTopics" data-value="<%= model.subject.subjectName%>" data-id="<%=model.subject._id%>"><%= model.subject.subjectName%></span><span class="deleteTag1 icon-close3"></span></li>
+
+                </ul>
+                <span id="showBtn1" class="_arrow"></span>
+            </div>
+            <ul id="topicCategories" class="_categoriesList"></ul>
+        </div></td>
+        <td class="deleteCell" style="text-align: center">
+            <span title="Delete" class="icon-close5 removeJob"></span>
+        </td>
+    </tr>
+    <% } %>
+    </tbody>
+    <tr class="" id="newItem">
+        <td class="addProductItem">
+            <a href="javascript:;" class="btn blue slim" style="width: 170px">Add Class And Subjects</a>
+        </td>
+    </tr>
+</table>

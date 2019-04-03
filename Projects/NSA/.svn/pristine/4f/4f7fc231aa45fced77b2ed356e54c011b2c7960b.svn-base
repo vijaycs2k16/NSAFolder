@@ -1,0 +1,116 @@
+<div id="searchContainer"></div>
+<div class="_acountingTableWrap">
+    <div class="_acountingTableBlock" style="margin: 6px;" >
+        <table id="report" class="display">
+            <thead>
+            <tr>
+                <th >S.NO</th>
+                <th >Name</th>
+                <th >Reg Date</th>
+                <th >Date Of Joining </th>
+                <th >Reg No</th>
+                <th >Center</th>
+                <th >Course</th>
+                <th >Batch</th>
+                <th >Amount</th>
+                <th >Paid</th>
+                <th >Outstanding</th>
+                <th >Booking</th>
+                <th >Shipped</th>
+                <th>Return</th>
+                <th >Stages</th>
+                <%if (App.currentUser.profile.profileName == 'admin') { %>
+                <th >Approve</th>
+                <% } %>
+                <th >Action</th>
+            </tr>
+            </thead>
+            <tbody class="forToggle">
+            <% collection.forEach(function(student, index){
+            var outstandingAmount = 0;
+            if(student.student) {
+            outstandingAmount = Math.max(0, (+(student.courseAmount + +(student.gstAmount).toFixed(2)) - (student.paidAmount + student.bookingAmount + student.discountAmount)).toFixed(2));
+            }
+            %>
+            <tr data-id="<%=student._id%>" data-stud="<%=student.student ? student.student._id : ''%>" data-value="<%=student.student ? student.student.registrationNo : ''%>" data-ispaid="<%=(student.student ? student.paidAmount ?student.paidAmount: 0 : 0) %>" data-status="<%= student.student ? student.student.studentStatus : false %>">
+                <td class="text-left"><%=index + 1%></td>
+                <td id="name" class="text-left"><%=student.student ? student.student.studentName : ''%></td>
+                <td class="notForm"><%=student.student ? student.student.createDate : ''%></td>
+                <td class="notForm"><%=student.student ? student.studentDetails.dateOfJoining : ''%></td>
+                <td class="notForm"><%=student.student ? student.student.registrationNo : ''%></td>
+                <td class="notForm"><%=student.student ? student.center ? student.center.centerName : '' : ''%></td>
+                <td class="notForm"><%=student.student ? student.course ? student.course.courseName : '' : ''%></td>
+                <td class="notForm"><%=student.student ? student.batch? student.batch.batchName : '' : ''%></td>
+                <td class="notForm money"><%=(student.student ? student.courseAmount ?student.courseAmount + student.gstAmount-student.discountAmount : 0 : 0).toFixed(2)%></td>
+                <td class="notForm money"><%=(student.student ? student.paidAmount ?student.paidAmount: 0 : 0).toFixed(2)%></td>
+                <% var amount = ((student.student && student.student.stage) &&  student.student.stage.value === 'Discontinue') ? outstandingAmount = 0 : outstandingAmount; %>
+                <td class="notForm money redText"><%=amount %></td>
+                <td class="notForm money"><%=student.student ? student.bookingAmount : 0%></td>
+                <% var bookFeeObj = (student && !Lodash.isUndefined(student.feeTypeDetails)) ? student.feeTypeDetails.filter(function(val) { return val._id == "5a8035406029abc2ae19d698" }) : [], isBookPaid = (!Lodash.isEmpty(bookFeeObj) && (+bookFeeObj[0].fullAmountWithGST - (+bookFeeObj[0].paidAmount + +bookFeeObj[0].adjustableAmt) <= 0) ) ? true : false; %>
+                <% var order = student.order; var allocateStatus = (order && order.status) ? order.status.allocateStatus : 'NOT' %>
+                <% var fulfillStatus = (order && order.status) ? order.status.fulfillStatus : 'NOT' %>
+                <% var isReturned = !_.isEmpty(student.goodsNote) ? student.goodsNote.filter(function(obj) { return obj._type == 'stockReturns' }) : [] %>
+                <% var shippingStatus = (order && order.status) ? order.status.shippingStatus : 'NOT'
+                isOrderAction = true %></td>
+                <td class="_statusOrders padding-align">
+                    <div id="stages2"></div>
+                    <% if(isBookPaid) { %>
+                    <a><span title="Shipped"  class="icon-cargo <%=shippingStatus === 'NOA' ? 'yellow shipped text-underline' : shippingStatus === 'ALL' ? 'green' : 'red shipped text-underline'%> _shipped"></span>
+
+                    <% } else { %>
+                        <span title="Shipped" class="_shipped  padding-30"> - </span>
+                    <% } %>
+                </td>
+                <% if(shippingStatus === 'ALL' && _.isEmpty(isReturned)) { %>
+                <td> <a> <span class="icon-refresh mirror return-product" title="Return" style="color: #00db30; font-size: 15px; cursor: pointer;"> </span> </a> </td>
+                <% } else if(shippingStatus === 'ALL' && !_.isEmpty(isReturned)) { %>
+                <td> <span class="icon-refresh mirror" title="Return" style="color: red; font-size: 15px;"></span> </td>
+                <% } else { %>
+                <td><span title="Return"> - </span></td>
+                <% } %>
+                <td>
+                    <select id="stages" style="width: 100px;">
+                        <%  var defaultS = false;
+                        stages.forEach(function(item){
+                        %>
+                        <% if(((student.student && student.student.stage) &&  student.student.stage.value == item.status)) {
+                        defaultS = true;
+                        %>
+                        <option value="<%= item.status%>" id="<%= item.id %>" data-value="<%= item.id %>" selected><%= item.status %></option>
+                        <% } else if(!defaultS && item.id == 103 && (student.student && !student.student.studentStatus)) { %>
+                        <option value="<%= item.status%>" id="<%= item.id %>" data-value="<%= item.id %>" selected><%= item.status %></option>
+                        <% } else {%>
+                        <option value="<%= item.status%>" id="<%= item.id %>" data-value="<%= item.id %>"><%= item.status %></option>
+                        <% } %>
+                        <% }); %>
+                    </select>
+
+                </td>
+                <%if (App.currentUser.profile.profileName == 'admin') { %>
+                    <td>
+                        <% if(student.approveStatus) { %>
+                             <span data-color="bgGreenLight" data-value="false" class="approve  _tagSmall" style=" width:100px; font-size:13px">Approved</span>
+                        <% } else { %>
+                              <span  data-color="bgRed"  data-value="true" class="approve  _tagSmall" style=" width:100px; font-size:13px">Yet To Approve</span>
+                        <% } %>
+                    </td>
+                <% } %>
+                <% var isDisabled = ((student.student && student.student.stage) &&  student.student.stage.value === 'Discontinue') ? 'select-disabled disabledColor' : '';
+                   var approveStatus = student.approveStatus ? 'select-disabled disabledColor' : '';
+                   var disdownload = student.approveStatus ? '' : 'select-disabled disabledColor';
+                %>
+                <td width="100%">
+                        <a href="javascript:;" class="icon-note goToEdit _actionCircleBtn show <%= isDisabled %>" aria-hidden="true"></a>
+                        <a href="javascript:;" class="icon-trash goToRemove _actionCircleBtn show <%= isDisabled %>  <%= approveStatus%>" aria-hidden="true"></a>
+                        <a href="/#erp/print/<%= student._id %>" class="icon-download  _actionCircleBtn show <%= isDisabled %> <%= disdownload%>" aria-hidden="true" ></a>
+                </td>
+
+            </tr>
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+

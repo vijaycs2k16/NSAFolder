@@ -1,0 +1,42 @@
+
+    <div class="_acountingTableWrap">
+        <div class="_acountingTitleBlock _forOverview">
+            <% if(data.create) { %>
+            <a href="javascript:;" class="btn blue slim icon-plus btnPositioned" title="Create"
+               id="top-bar-createBtn">New</a>
+            <% } %>
+        </div>
+        <div class="_acountingTableBlock">
+            <table id="example1" class="display" style="width:100%">
+
+                <thead>
+                <tr class="forToggle">
+                    <th class="text-left">Name</th>
+                    <th class="text-left">Class Name</th>
+                    <th class="text-left">No of Questions</th>
+                    <% if(data.update || data.delete) { %>
+                    <th class="text-left">Action</th>
+                    <% } %>
+                </tr>
+                </thead>
+                <tbody class="forToggle" id="currencyTable">
+                <%
+                collection.forEach(function(elem,index){
+                %>
+                <tr data-id="<%=elem._id%>" data-topic="<%=elem.course ? JSON.stringify(elem.course) : ''%>">
+                    <td><%=elem.name%></td>
+                    <td><%=elem.classDetail.className%></td>
+                    <td><%=elem.num%></td>
+                    <% if(data.update || data.delete) { %>
+                    <td>
+                        <a href="javascript:;" class="iconmoon-eye goToEdit _actionCircleBtn show" aria-hidden="true"></a>
+                        <a href="javascript:;" class="icon-trash goToRemove _actionCircleBtn show" aria-hidden="true"></a>
+                        <a href="/#erp/exam/print/<%=elem._id%>" class="icon-download  _actionCircleBtn show" aria-hidden="true" ></a>
+                    </td>
+                    <% } %>
+                </tr>
+                <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>

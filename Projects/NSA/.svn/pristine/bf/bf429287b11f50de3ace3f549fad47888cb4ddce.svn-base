@@ -1,0 +1,192 @@
+<%
+var studentCoun = false;
+if(App.currentUser.profile._id == 1524552351000) {
+studentCoun = true;
+}%>
+<div class="formTitleWrap">
+    <h3 class="formTitle">About </h3>
+    <span class="btn blue slim" id="convertToOpportunity">Convert to Opportunity</span>
+</div>
+<div class="person-info">
+    <div class="_animateInputBox">
+        <input class="_animate editable"
+               id="name"
+               value="<%=model.name%>"
+               required/>
+        <label class="_animate">Name</label>
+    </div>
+    <div class="_animateInputBox">
+        <span class="_staticLabel">Close Date</span>
+        <div class="inputBox">
+            <input class="_animate extrainfo"
+                   type="text"
+                   name="Close Date"
+                   id="expectedClosing"
+                   value="<%=model.expectedClosing || ''%>"
+                   placeholder="Close Date"
+                   readonly="">
+        </div>
+    </div>
+    <div class="_animateSelectBox <%=studentCoun ? 'hide': ''%>">
+        <span class="_selectTitle">Assigned To</span>
+        <div class="inputBox _newSelectListWrap">
+            <a class="current-selected assignName"
+               href="javascript:;"
+               id="salesPersonDd"
+               data-id="salesPerson"><%= model.salesPerson && model.salesPerson.name ?
+                model.salesPerson.name.first + ' ' + model.salesPerson.name.last : 'Select'%>
+            </a>
+        </div>
+    </div>
+    <div class="_animateSelectBox <%=studentCoun ? 'hide': ''%>">
+        <span class="_selectTitle">Assigned By</span>
+        <div class="inputBox _newSelectListWrap">
+            <a class="current-selected assignName"
+               href="javascript:;"
+               id="assignedByDd"
+               data-id="assignedBy"><%= model.assignedBy && model.assignedBy.name ?
+                model.assignedBy.name.first + ' ' + model.assignedBy.name.last : 'Select'%>
+            </a>
+        </div>
+    </div>
+    <div class="_animateSelectBox">
+        <span class="_selectTitle">Priority</span>
+        <div class="inputBox _newSelectListWrap">
+            <a class="current-selected assignName"
+               href="javascript:;"
+               id="priorityDd"
+               data-id="priority">
+                <%= model.priority%>
+            </a>
+        </div>
+    </div>
+    <div class="_animateSelectBox">
+        <span class="_selectTitle">Source</span>
+        <div class="inputBox _newSelectListWrap">
+            <a class="current-selected assignName"
+               href="javascript:;"
+               id="sourceDd"
+               data-id="source">
+                <%=model.source || 'Select'%>
+            </a>
+        </div>
+    </div>
+    <div class="_animateInputBox">
+        <span class="_staticLabel">Followup Date</span>
+        <div class="inputBox">
+            <input class="_animate extrainfo"
+                   type="text"
+                   name="Close Date"
+                   id="followDate"
+                   value="<%=model.followDate || ''%>"
+                   placeholder="Close Date"
+                   readonly="">
+        </div>
+    </div>
+
+    <% if(studentCoun) {%>
+    <span class="btn blue slim " id="moveToAdmin" style="color: #ffffff; padding: 2px !important;">Move To Admin</span>
+    <% } %>
+
+    <div class="separateBlock">Contacts</div>
+
+
+    <div class="_animateSelectBox">
+        <span class="_selectTitle">Student</span>
+        <div class="inputBox _newSelectListWrap">
+            <a class="current-selected assignName"
+               href="javascript:;"
+               id="studentDd"
+               data-id="student">
+                <%=model.student ? model.student.studentName : 'Select'%>
+            </a>
+        </div>
+    </div>
+    <div class="_animateInputBox">
+        <input class="_animate editable"
+               id="contactName_first"
+               value="<%=model.contactName.first%>"
+               required/>
+        <label class="_animate">First Name</label>
+    </div>
+    <div class="_animateInputBox">
+        <input class="_animate editable"
+               id="contactName_last"
+               value="<%=model.contactName.last%>"
+               required/>
+        <label class="_animate">Last Name</label>
+    </div>
+    <div class="_animateInputBox">
+        <input class="_animate editable"
+               id="schoolName"
+               value="<%=model.schoolName%>"
+               required/>
+        <label class="_animate">School Name</label>
+    </div>
+    <!--<div class="_animateInputBox">
+        <input type="text"
+               class="_animate name"
+               id="user_name"
+               required
+               value="<%=model.userName%>"
+               maxlength="32"/>
+        <label class="_animate">User Name</label>
+    </div>-->
+    <div class="_animateInputBox">
+        <input type="text"
+               class="_animate editable name"
+               id="email"
+               required
+               value="<%=model.email%>"
+               maxlength="32"/>
+        <label class="_animate">User Mail</label>
+    </div>
+    <div class="_animateInputBox">
+        <input type="text"
+               class="_animate editable"
+               id="phones_phone"
+               required
+               value="<%=model.phones.phone%>"
+               maxlength="32"/>
+        <label class="_animate">User Phone</label>
+    </div>
+    <div class="_animateSelectBox">
+        <span class="_selectTitle">Center</span>
+        <div class="inputBox editable _newSelectListWrap">
+            <a class="current-selected assignName"
+               href="javascript:;"
+               id="center_Dd"
+               data-id="center">
+                <%=model.center ? model.center.centerName : 'Select'%>
+            </a>
+        </div>
+    </div>
+    <div class="_animateSelectBox">
+        <span class="_selectTitle">Course</span>
+        <div class="inputBox editable _newSelectListWrap">
+            <a class="current-selected assignName"
+               href="javascript:;"
+               id="course_Dd"
+               data-id="course">
+                <%=model.course ? model.course.courseName : 'Select'%>
+            </a>
+        </div>
+    </div>
+    <!-- <div class="propertyFormList">
+         <label>Facebook</label>
+         <div  class="inputBox">
+             <input class="editable"  id="social_FB" value="<%=model.social.FB%>"/>
+         </div>
+     </div>-->
+
+
+   <!--<div class="tags-container propertyFormList"></div>-->
+
+</div>
+
+<div class="propertyEditBtn" id="formBtnBlock">
+
+    <a href="javascript:;" id="saveBtn" class="btn blue btnSave">Save</a>
+
+    <a href="javascript:;" id="cancelBtn" class="btn">Cancel</a>
+</div>

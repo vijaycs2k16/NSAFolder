@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="15d48a88-7d1d-421d-99f3-05c10c015a8b" name="Default" comment="" />
+    <ignored path="nsa-admin.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="nsa-admin" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="payment.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/api/payment/payment.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="payment.service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/services/payment/payment.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="136" column="36" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notification.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/api/sms/notifications/notification.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="88" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notification.service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/services/sms/notifications/notification.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="408" column="82" selection-start-line="408" selection-start-column="82" selection-end-line="408" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/config/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.51166964">
+              <caret line="68" column="56" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createJson.service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/user/createJson.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.0701754">
+              <caret line="777" column="0" selection-start-line="777" selection-start-column="0" selection-end-line="777" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-elasticsearch/lib/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="elasticsearch.service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/services/search/elasticsearch/elasticsearch.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="343" column="36" selection-start-line="343" selection-start-column="36" selection-end-line="343" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="builderutil.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-bodybuilder/lib/builderutil.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="398" column="0" selection-start-line="398" selection-start-column="0" selection-end-line="398" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mediabase.service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/common/mediabase.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/common/attendancebase.service.js" />
+        <option value="$PROJECT_DIR$/client/src/components/home/school-management/attendance/attendance-information/record-attendance/record-attendance.component.ts" />
+        <option value="$PROJECT_DIR$/server/src/api/attendances/attendances.js" />
+        <option value="$PROJECT_DIR$/server/src/mongo/models/school_attendance.js" />
+        <option value="$PROJECT_DIR$/server/src/mongo/handlers/attendance.js" />
+        <option value="$PROJECT_DIR$/server/src/mNsa/routes/assignment/assignments.js" />
+        <option value="$PROJECT_DIR$/server/src/mNsa/db/index.js" />
+        <option value="$PROJECT_DIR$/server/src/mNsa/converters/attendanceConverter.js" />
+        <option value="$PROJECT_DIR$/server/src/api/mongo-index.js" />
+        <option value="$PROJECT_DIR$/server/src/common/mongo-config.js" />
+        <option value="$PROJECT_DIR$/server/src/mNsa/routes/index.js" />
+        <option value="$PROJECT_DIR$/server/src/common/filters/InitFilter.js" />
+        <option value="$PROJECT_DIR$/server/src/mongo/handlers/assessment.js" />
+        <option value="$PROJECT_DIR$/server/src/mNsa/db/school_assignment_details.js" />
+        <option value="$PROJECT_DIR$/server/src/mNsa/db/school_attendance.js" />
+        <option value="$PROJECT_DIR$/server/src/mNsa/db/school_attendance_details.js" />
+        <option value="$PROJECT_DIR$/client/src/components/home/fee-management/pay/receipt/receipt.html" />
+        <option value="$PROJECT_DIR$/client/src/components/home/fee-management/pay/transaction-details/transaction-details.html" />
+        <option value="$PROJECT_DIR$/server/src/mNsa/core/attendance.js" />
+        <option value="$PROJECT_DIR$/server/src/mNsa/converters/attendance.js" />
+        <option value="$PROJECT_DIR$/client/src/components/home/fee-management/fee-reports/fee-reports.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/components/home/fee-management/fee-reports/fee-reports.html" />
+        <option value="$PROJECT_DIR$/server/src/mNsa/routes/attendance/attendance.js" />
+        <option value="$PROJECT_DIR$/server/src/services/grades/grades.service.js" />
+        <option value="$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/converters/attendance.converter.js" />
+        <option value="$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/converters/grade.converter.js" />
+        <option value="$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/attendance/attendance.service.js" />
+        <option value="$PROJECT_DIR$/client/src/components/home/school-management/exam-report/exam-configuration/progress-card-generation/mark-upload/mark-upload-config/mark-upload-config.component.ts" />
+        <option value="$PROJECT_DIR$/client/public/minify/datatable_example.js" />
+        <option value="$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/marks/marks.service.js" />
+        <option value="$PROJECT_DIR$/server/src/services/marks/marks.service.js" />
+        <option value="$PROJECT_DIR$/server/app.js" />
+        <option value="$PROJECT_DIR$/client/src/components/home/user-management/student-management/add-students/add-student.component.ts" />
+        <option value="$PROJECT_DIR$/server/src/common/configure.js" />
+        <option value="$PROJECT_DIR$/server/src/services/user-mgmt/user.service.js" />
+        <option value="$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/academics/academics.service.js" />
+        <option value="$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/user-mgmt/user.service.js" />
+        <option value="$PROJECT_DIR$/server/src/mNsa/services/attendance/attendance.service.js" />
+        <option value="$PROJECT_DIR$/server/src/services/school/members.service.js" />
+        <option value="$PROJECT_DIR$/client/index.html" />
+        <option value="$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/syllabus/syllabus.service.js" />
+        <option value="$PROJECT_DIR$/server/src/services/syllabus/syllabus.service.js" />
+        <option value="$PROJECT_DIR$/server/config/config.json" />
+        <option value="$PROJECT_DIR$/server/src/services/fee/fee.service.js" />
+        <option value="$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/common/feebase.service.js" />
+        <option value="$PROJECT_DIR$/server/package.json" />
+        <option value="$PROJECT_DIR$/client/src/common/constants/service.urls.ts" />
+        <option value="$PROJECT_DIR$/client/package.json" />
+        <option value="$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/common/mediabase.service.js" />
+        <option value="$PROJECT_DIR$/server/src/services/sms/notifications/notification.service.js" />
+        <option value="$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/user/createJson.service.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="false" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notifications" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="@nsa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="@nsa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-cassandra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="@nsa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-cassandra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="@nsa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-cassandra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="@nsa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-cassandra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsa-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nsa-android" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="SearchEverywhereHistoryKey" value="confi&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/config/config.json&#10;index&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/index.js&#10;fee.js&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/fee/fee.js&#10;package.json&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/package.json&#10;notif&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/services/sms/notifications/notification.service.js&#10;config&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/config/config.json&#10;index.js&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/index.js&#10;config.json&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/config/config.json&#10;index.h&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/client/index.html&#10;syll&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/client/src/components/home/academics/syllabus/syllabus.html&#10;syllabus.html&#9;null&#9;null&#10;index.html&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/client/index.html&#10;in&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/index.js&#10;app&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/client/src/components/app/app.component.ts&#10;pa&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/client/package.json&#10;EmployeeClassification&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/node_modules/@nsa/nsa-cassandra/src/models/EmployeeClassificationModel.js&#10;UserM&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/node_modules/@nsa/nsa-cassandra/src/models/UserModel.js&#10;em&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/user-mgmt/employee.js&#10;app.js&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/app.js&#10;employee&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/user-mgmt/employee.js&#10;student.j&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/user-mgmt/student.js&#10;au&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/authentication/authentication.js&#10;package&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/client/package.json&#10;SchoolSectionsM&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/node_modules/@nsa/nsa-cassandra/src/models/SchoolSectionsModel.js&#10;notification.js&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/mediaLog/notification.js&#10;student.htm&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/client/src/components/home/user-management/student-management/students.html&#10;api/index.js&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/index.js&#10;ma&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/marks/marks.js&#10;enableMarkUploadDataTable&#9;null&#9;null&#10;inde&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/client/index.html&#10;mark-upl&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/client/src/components/home/school-management/exam-report/exam-configuration/progress-card-generation/mark-upload/mark-upload-config/mark-upload-config.component.ts&#10;marks&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/marks/marks.js&#10;print&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/client/src/components/home/school-management/exam-report/exam-configuration/progress-card-generation/mark-upload/print-progress-card/print-progress-card.component.ts&#10;pack&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/package.json&#10;m&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/node_modules/@nsa/nsa-cassandra/src/services/marks/marks.service.js&#10;mar&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/marks/marks.js&#10;index.htm&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/client/index.html&#10;progresscard&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/client/src/components/home/school-management/exam-report/exam-configuration/progress-card-generation/progresscard-generation.component.ts&#10;marks.js&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/marks/marks.js&#10;ind&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/index.js&#10;fee&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/client/src/components/home/fee-management/fee-reports/fee-reports.component.ts&#10;api/index&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/index.js&#10;a&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/app.js&#10;fee-report&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/client/src/components/home/fee-management/fee-reports/fee-reports.html&#10;datatabl&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/client/public/minify/datatable.js&#10;transaction.js&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/src/api/transaction/transaction.js&#10;transaction.htm&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/client/src/components/home/fee-management/pay/transaction-details/transaction-details.html&#10;FeeTransactionDetails&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/node_modules/@nsa/nsa-cassandra/src/models/FeeTransactionDetailsModel.js&#10;fee-details&#9;null&#9;null&#10;con&#9;FILE&#9;file://D:/work/Projects/NSA/nsa-admin/server/config/config.json" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="editorconfig.notification" value="spaces" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\NSA\nsa-admin\server\node_modules\@nsa\nsa-cassandra\src\models" />
+      <recent name="D:\NSA\nsa-admin\server\node_modules\@nsa\nsa-cassandra\src\converters" />
+      <recent name="D:\NSA\nsa-admin\server\node_modules\@nsa\nsa-cassandra\src\services\" />
+      <recent name="D:\NSA\nsa-admin\server\src\api\groups" />
+      <recent name="D:\NSA\nsa-admin\client\src\components\home\user-management" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.index.js">
+    <configuration default="false" name="constants.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="constants.js" working-dir="$PROJECT_DIR$/server/node_modules/@nsa/nsa-commons/lib/commons">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/server/src/api">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.constants.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.index.js" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.index.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.constants.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Prince\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="15d48a88-7d1d-421d-99f3-05c10c015a8b" name="Default" comment="" />
+      <created>1532674369496</created>
+      <option name="number" value="Default" />
+      <updated>1532674369496</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2313988" sideWeight="0.4942717" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22693452" sideWeight="0.5057283" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2313988" sideWeight="0.4942717" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22693452" sideWeight="0.5057283" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/services/sms/notifications/notification.service.js</url>
+          <line>714</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/services/sms/notifications/notification.service.js</url>
+          <line>137</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/services/fee/fee.service.js</url>
+          <line>750</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/services/sms/notifications/notification.service.js</url>
+          <line>205</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/authentication/authentication.service.js</url>
+          <line>304</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/authentication/authentication.service.js</url>
+          <line>312</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/services/authentication/authentication.service.js</url>
+          <line>87</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/services/sms/notifications/notification.service.js</url>
+          <line>190</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/api/authentication/authentication.js</url>
+          <line>7</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/services/school/members.service.js</url>
+          <line>165</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/common/feebase.service.js</url>
+          <line>950</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/common/feebase.service.js</url>
+          <line>1010</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/services/subject/subject.service.js</url>
+          <line>52</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/services/fee/fee.service.js</url>
+          <line>710</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/services/fee/fee.service.js</url>
+          <line>733</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/home/school-management/exam-report/exam-configuration/exam-settings/exam-schedule/add-examination/add-exam-schedule.component.ts</url>
+          <line>1232</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/home/school-management/exam-report/exam-configuration/exam-settings/exam-schedule/add-examination/add-exam-schedule.component.ts</url>
+          <line>1029</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/common/feebase.service.js</url>
+          <line>484</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/common/feebase.service.js</url>
+          <line>338</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/services/search/elasticsearch/elasticsearch.service.js</url>
+          <line>306</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/services/feedback/feedback.service.js</url>
+          <line>14</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/groups/groups.service.js</url>
+          <line>16</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/services/user-mgmt/user.service.js</url>
+          <line>1110</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/home/transport-management/tracking/live.component.ts</url>
+          <line>156</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/home/transport-management/tracking/live.component.ts</url>
+          <line>191</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/home/transport-management/tracking/live.component.ts</url>
+          <line>127</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/home/user-management/student-management/add-students/add-student.component.ts</url>
+          <line>250</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-bodybuilder/lib/builderutil.js</url>
+          <line>878</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-bodybuilder/lib/builderutil.js</url>
+          <line>342</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/home/user-management/student-management/students.component.ts</url>
+          <line>41</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="113" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/school/school.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/user-mgmt/user.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="361" column="0" selection-start-line="361" selection-start-column="0" selection-end-line="361" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/user-mgmt/userContact.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/school/members.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="566" column="0" selection-start-line="566" selection-start-column="0" selection-end-line="566" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-elasticsearch/lib/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/home/school-management/exam-report/marks-upload/marks-upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.961538">
+          <caret line="279" column="32" selection-start-line="279" selection-start-column="32" selection-end-line="279" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/home/school-management/exam-report/marks-upload/marks-upload.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/home/school-management/exam-report/exam-configuration/exam-settings/exam-settings.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/home/school-management/exam-report/exam-configuration/exam-settings/exam-schedule/add-examination/add-exam-schedule.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="158.66667">
+          <caret line="102" column="29" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/node_modules/@angular/router/src/router.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="385" column="4" selection-start-line="385" selection-start-column="4" selection-end-line="385" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/home/fee-management/assign-fee/fee-details/fee-details.component.ts.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="139" column="9" selection-start-line="139" selection-start-column="4" selection-end-line="139" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/home/fee-management/assign-fee/fee-details/fee-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="185" column="46" selection-start-line="185" selection-start-column="46" selection-end-line="185" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/home/fee-management/assign-fee/fee-details/fee-details.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1007195">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/home/fee-management/assign-fee/assign-fee.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3357271">
+          <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/minify/datatable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.9824562">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="55" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/assets/js/pages/datatable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.656947">
+          <caret line="537" column="13" selection-start-line="537" selection-start-column="13" selection-end-line="537" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/home/academics/syllabus/syllabus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/api/syllabus/syllabus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/services/syllabus/syllabus.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="200" column="40" selection-start-line="200" selection-start-column="40" selection-end-line="200" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/syllabus/syllabus.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/api/search/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/api/notifications/notification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02915952">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/media/mediaUsageLimit.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/api/school/members.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/services/school/members.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="363" column="27" selection-start-line="363" selection-start-column="27" selection-end-line="363" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/user/user.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="348" column="0" selection-start-line="348" selection-start-column="0" selection-end-line="348" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/common/schoolbase.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/common/feebase.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="697" column="49" selection-start-line="697" selection-start-column="49" selection-end-line="697" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/common/constants/service.urls.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/sms/templates/templates.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/common/notificationbase.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="370" column="0" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/fee/fee.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="516" column="0" selection-start-line="516" selection-start-column="0" selection-end-line="516" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/services/fee/fee.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="868" column="30" selection-start-line="868" selection-start-column="30" selection-end-line="868" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/api/fee/fee.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/api/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.368421">
+          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/api/payment/payment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/services/payment/payment.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="136" column="36" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-bodybuilder/lib/builderutil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="398" column="0" selection-start-line="398" selection-start-column="0" selection-end-line="398" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/services/search/elasticsearch/elasticsearch.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="343" column="36" selection-start-line="343" selection-start-column="36" selection-end-line="343" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-elasticsearch/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/api/sms/notifications/notification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="88" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/common/mediabase.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nsa/nsa-cassandra/src/services/user/createJson.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0701754">
+          <caret line="777" column="0" selection-start-line="777" selection-start-column="0" selection-end-line="777" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/services/sms/notifications/notification.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="408" column="82" selection-start-line="408" selection-start-column="82" selection-end-line="408" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51166964">
+          <caret line="68" column="56" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

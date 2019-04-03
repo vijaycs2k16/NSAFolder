@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:background="@drawable/border_table"
+        android:textSize="@dimen/common_text_size"
+        android:id="@+id/examNo"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_weight="0.5"
+        android:layout_height="50dip"
+        android:text="sno"/>
+
+    <TextView
+        android:background="@drawable/border_style"
+        android:textSize="@dimen/common_text_size"
+        android:id="@+id/examName"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1.0"
+        android:layout_height="50dip"
+        android:text="exam Name"/>
+    <LinearLayout
+        android:background="@drawable/border_style"
+        android:orientation="horizontal"
+        android:layout_weight="1.0"
+        android:layout_width="0dp"
+        android:weightSum="3"
+        android:layout_height="50dip">
+        <TextView
+            android:textSize="@dimen/common_text_size"
+            android:id="@+id/monthName"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="exam"/>
+        <TextView
+            android:textSize="@dimen/common_text_size"
+            android:id="@+id/dates"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="schedule"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:id="@+id/arrow_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            app:srcCompat="@drawable/ic_arrow_right"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

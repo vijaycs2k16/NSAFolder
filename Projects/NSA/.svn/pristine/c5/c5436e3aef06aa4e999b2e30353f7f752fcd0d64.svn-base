@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "784697840460",
+    "firebase_url": "https://christujyothy-24910.firebaseio.com",
+    "project_id": "christujyothy-24910",
+    "storage_bucket": "christujyothy-24910.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784697840460:android:3b2e978afbf5453c",
+        "android_client_info": {
+          "package_name": "christujyothy.management.in.rajakkad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784697840460-aijr1k7nn246ks48v902uhu80ngd10n1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBstzA7Id1roSMYj2JCAgCoZeV2N2aNHDM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+INSERT INTO nsa.feature
+(id, description, name, status)
+VALUES(5b64e028-019d-49ac-affc-f3e1ec4449ac, '', 'Fee-defaulters', true);
+
+
+// WbAdmin 
+
+INSERT INTO nsa.school_feature (tenant_id,school_id,id,order_by,activated_date,additional_links,asset_url,content,description,doc_desc,email,expire_date,feature_id,feature_name,icon,images,keywords,link,parent_feature_id,push,school_name,sms,status,tags,title,user_types,is_channels,is_override,help_text, notify_hostelers, academic_year) VALUES (
+8eb846a0-4549-11e7-9543-276f818a8422,4e3d3bf5-e262-4e7a-9a02-ef542107f6e7,b655ac0d-5d46-4d88-89f1-2f92dcf1795b,3,'2017-05-03 16:23:50',NULL,'88d34e03-d9d0-431a-ae06-7a92ce2b4d3c/b655ac0d-5d46-4d88-89f1-2f92dcf1795b /',NULL,NULL,NULL,false,'2020-05-03 16:23:50',5b64e028-019d-49ac-affc-f3e1ec4449ac,'Fee-defaults','icon-font-size2',NULL,NULL,'./fee-defaults',88d34e03-d9d0-431a-ae06-7a92ce2b4d3c,true,'NEXSCHOOLAPP',true,true,NULL,'Fee Structure',['Employee', 'SchoolAdmin'],false,false,
+'Fee Structure helps you define for which terms the fee is applicable for and what are the fee types that are a part of the fees to be assigned. Fee structure can be added by clicking on Create Fee Structure and providing the applicable terms and the fee types. The fee structures that are created can be viewed in the table below.
+',false,'2017-2018');
+
+
+
+
+INSERT INTO nsa.feature
+(id, description, name, status)
+VALUES(90c1673a-e65d-450b-a9c3-4b858b4fa225, '', 'Fee-reports', true);
+
+
+INSERT INTO nsa.school_feature (tenant_id,school_id,id,order_by,activated_date,additional_links,asset_url,content,description,doc_desc,email,expire_date,feature_id,feature_name,icon,images,keywords,link,parent_feature_id,push,school_name,sms,status,tags,title,user_types,is_channels,is_override,help_text, notify_hostelers, academic_year) VALUES (
+8eb846a0-4549-11e7-9543-276f818a8422, 4e3d3bf5-e262-4e7a-9a02-ef542107f6e7,528a699d-fda4-4539-9677-926b2d09f631,4,'2017-05-03 16:23:50',NULL,'88d34e03-d9d0-431a-ae06-7a92ce2b4d3c/528a699d-fda4-4539-9677-926b2d09f631/',NULL,NULL,NULL,false,'2020-05-03 16:23:50',90c1673a-e65d-450b-a9c3-4b858b4fa225,' Fee-reports','icon-font-size2',NULL,NULL,'./fee-reports',88d34e03-d9d0-431a-ae06-7a92ce2b4d3c,true,'NEXSCHOOLAPP',true,true,NULL,'Fee Reports',['Employee', 'SchoolAdmin'],false,false,
+'Fee Structure helps you define for which terms the fee is applicable for and what are the fee types that are a part of the fees to be assigned. Fee structure can be added by clicking on Create Fee Structure and providing the applicable terms and the fee types. The fee structures that are created can be viewed in the table below.
+',false,'2017-2018');
+
+
+

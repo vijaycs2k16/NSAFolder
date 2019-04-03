@@ -1,0 +1,21 @@
+<% tasksCollection.forEach(function(task, index){ %>
+<tr data-index="<%=index%>" data-id="<%= task._id%>"
+    class="stage-<%=(task.workflow) ? task.workflow.status.toLowerCase() : ''%>">
+    <td class="centerCell" style="text-align: left">
+        <label class="_customCHeckbox">
+            <input type="checkbox" value="<%=task._id%>" class="checkbox"/>
+            <span></span>
+        </label>
+    </td>
+    <td style="text-align: left"><%=task.dueDate%></td>
+    <td style="text-align: left"><%=task.description%></td>
+    <td style="text-align: left" id='stages_<%=task._id%>'>
+        <div class="_newSelectListWrap">
+            <a href="javascript:;" class="stageSelect"><%=(task.workflow) ? task.workflow.name : 'Undefined'%></a>
+        </div>
+    </td>
+    <td style="text-align: left"><%=(task.category) ? task.category.name : ''%></td>
+    <td style="text-align: left"><%=(task.assignedTo) ? task.assignedTo.name.first + ' ' + task.assignedTo.name.last : ''%></td>
+    <td style="text-align: left"><a href="<%=(task.contact) ? '/#erp/Persons/form/' + task.contact._id : (task.company) ?'/#erp/Companies/form/' + task.company._id : ''%>"><%=(task.contact && task.contact.name) ? task.contact.name.first + ' ' + task.contact.name.last : (task.company && task.company.name) ? task.company.name.first : ''%></a></td>
+</tr>
+<% }) %>

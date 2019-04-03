@@ -1,0 +1,55 @@
+﻿<!--<div>
+    <div class="filterButton">
+        <span class="text">Stage</span>
+        <div class="arrow">
+            7
+        </div>
+    </div>
+    <ul class="filter-check-list">
+      <li><input type="checkbox"  value="null" checked="checked"><span>Undefinded</span></li>
+	</ul>-->
+<div id="searchContainer"></div>
+<div class="_tableWrap _tableTackWrap">
+    <table class="list stripedList" id="tasks">
+        <colgroup>
+            <col width="5%">
+            <col width="10%">
+            <col width="15%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="2%">
+        </colgroup>
+        <thead>
+        <tr>
+            <th class="centerCell">
+                <label class="_customCHeckbox">
+                    <input type="checkbox" id="checkAll"/>
+                    <span></span>
+                </label>
+            </th>
+            <th class="oe_sortable sortDn" data-sort="dueDate" style="text-align: left">Due Date
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="oe_sortable" data-sort="description" style="text-align: left ">Title
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="oe_sortable" data-sort="workflow.name"style="text-align: left">Status
+                <span class="arrow down"></span>
+                <span class="arrow up"></span></th>
+            <th class="oe_sortable" data-sort="category.name"style="text-align: left">Category
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="oe_sortable" data-sort="assignedTo.name.first"style="text-align: left">Assigned to
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+
+        </tr>
+        </thead>
+        <tbody id="listTable"></tbody>
+    </table>
+</div>

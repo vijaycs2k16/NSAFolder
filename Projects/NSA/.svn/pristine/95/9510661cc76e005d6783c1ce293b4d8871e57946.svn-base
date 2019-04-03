@@ -1,0 +1,59 @@
+--Group Management
+insert into nsa.feature(id,description,name,status) values (478d4850-b514-4c0e-b07c-f95783e791d1, '', 'Group Management', true)
+--Menu - Groups
+insert into nsa.feature(id,description,name,status) values (da87cded-fe90-441f-be31-440336cac984, '', 'User Groups', true)
+
+
+--Group Management
+INSERT INTO nsa.school_feature
+(tenant_id, school_id, academic_year, id, activated_date, additional_links, asset_url, content, description, 
+doc_desc, email, expire_date, feature_id, feature_name, help_text, icon, images, is_channels, is_mobile, 
+is_override, keywords, link, mobile_priority, notify_hostelers, order_by, parent_feature_id, push, 
+school_name, screen, sms, status, tags, title, user_types)
+VALUES(8eb846a0-4549-11e7-9543-276f818a8422, 4e3d3bf5-e262-4e7a-9a02-ef542107f6e7, '2017-2018', 4f119d5c-4113-41df-a32d-20ea7716d54c, 
+'2018-07-30 10:46:09', NULL, '', NULL, NULL, NULL, true, '2019-07-30 00:00:00', 478d4850-b514-4c0e-b07c-f95783e791d1, 'Group Management',
+NULL, 'icon-puzzle3', NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, 4, 5e8d3f3c-1d7e-4cba-be8b-413b4f223479, true, 'NEXSCHOOLAPP', 
+NULL, true, true, NULL, 'Group Management', ['SchoolAdmin']);
+
+
+
+INSERT INTO nsa.school_feature
+(tenant_id, school_id, academic_year, id, activated_date, additional_links, asset_url, content, description, 
+doc_desc, email, expire_date, feature_id, feature_name, help_text, icon, images, is_channels, is_mobile, 
+is_override, keywords, link, mobile_priority, notify_hostelers, order_by, parent_feature_id, push, 
+school_name, screen, sms, status, tags, title, user_types)
+VALUES(8eb846a0-4549-11e7-9543-276f818a8422, 4e3d3bf5-e262-4e7a-9a02-ef542107f6e7, '2017-2018', 019058be-d7cd-441a-a6b3-e41edda32f7d,
+'2018-07-30 10:46:09', NULL, '4f119d5c-4113-41df-a32d-20ea7716d54c/019058be-d7cd-441a-a6b3-e41edda32f7d/', NULL, NULL, NULL, true, 
+'2019-07-30 00:00:00', da87cded-fe90-441f-be31-440336cac984, 'User Groups', ' Grouping of users, including employees and students, can be done using the User Groups feature. Group notifications can be sent to the selected groups after user groups are created. A user group can be created by clicking on the "Create User Group" button. Enter the group name and then search and choose the users to be added to the group, including employees and students. In case an user needs to be removed, click on the cross mark against each user. Once all the users are added, click on "Create Group'. All the user groups that have been created are listed on the table below.
+', 'icon-users4', NULL, NULL, NULL, NULL, NULL, 
+'./user-group', NULL, NULL, 0, 4f119d5c-4113-41df-a32d-20ea7716d54c, true, 'NEXSCHOOLAPP', NULL, true, true, NULL, 'User Groups', ['SchoolAdmin']);
+
+
+
+//Create Table.
+
+create table nsa.user_group(
+id uuid,
+tenant_id timeuuid,
+school_id uuid,
+academic_year text,
+group_name text,
+group_user map<text,text>,
+members int,
+created_by varchar,
+created_date timestamp,
+created_firstname varchar,
+updated_by varchar,
+updated_date timestamp,
+updated_username varchar,
+PRIMARY KEY ((id), tenant_id, school_id, academic_year)
+)
+
+
+
+
+
+// school_notifications
+//alter table nsa.school_notifications add(type text, group map<uuid,text>);
+
+

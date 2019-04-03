@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "620101480959",
+    "firebase_url": "https://wingskings-24a3a.firebaseio.com",
+    "project_id": "wingskings-24a3a",
+    "storage_bucket": "wingskings-24a3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620101480959:android:e6ef024e8d04dc33",
+        "android_client_info": {
+          "package_name": "wings.management.in.bhainsa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620101480959-m3sc4bleiobj50bs070kf2jn2hved7at.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATDP6ixt9hzuo4YWRhvogKj0EqeuOhpKk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

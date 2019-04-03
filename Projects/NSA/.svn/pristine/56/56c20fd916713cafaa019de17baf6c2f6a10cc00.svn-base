@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_transport"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="nexrise.publication.in.nexrise.TransportManager.ParentTransportActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/overlayForegroundColor"
+        android:id="@+id/vehicle_info"
+        android:weightSum="2">
+        <TextView
+            android:text="Vehicle information"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height50"
+            android:textColor="@color/colorBlack"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding12"
+            android:textAllCaps="true"
+            android:id="@+id/study_value"
+            android:paddingTop="@dimen/padding5"
+            android:textStyle="bold"
+            android:layout_weight="1.5"
+            android:background="@color/overlayForegroundColor"
+            android:paddingBottom="@dimen/padding5"
+            android:textSize="@dimen/common_text_size" />
+        <ImageView
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_help"
+            android:id="@+id/help"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height20" />
+
+    </LinearLayout>
+    <include layout="@layout/progress_bar"
+        android:visibility="gone"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_transport1"
+        android:background="@color/overlayForegroundColor"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height40"
+            android:id="@id/student_name"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding10"
+            android:textSize="@dimen/common_text_size"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="@dimen/margin10"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/height40"
+            android:layout_marginLeft="@dimen/margin3"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/width3"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@color/svgLayoutIconColor"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height40"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding5"
+                android:textSize="@dimen/common_text_size"
+                android:id="@+id/locate_bus"
+                android:textColor="@color/colorBlack"
+                android:text="Track Bus"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:id="@+id/location"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_location_pin1"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/overlayForegroundColor"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_text_size"
+                android:id="@+id/pickup_location"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="@dimen/margin10"
+                android:text="Route Details"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin3"
+            android:orientation="horizontal"
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:layout_width="@dimen/width3"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@color/svgLayoutIconColor"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height50"
+                android:layout_weight="1.0"
+                android:textSize="@dimen/common_text_size"
+                android:padding="@dimen/padding10"
+                android:id="@+id/route_details"
+                android:text=""
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/overlayForegroundColor">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="@dimen/margin10"
+                android:text="Bus Information"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/margin3"
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:layout_width="@dimen/width3"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@color/svgLayoutIconColor"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textSize="@dimen/common_text_size"
+                        android:text="Vehicle No"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/common_text_size"
+                        android:id="@+id/vehicle_number"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textSize="@dimen/common_text_size"
+                        android:text="Route Name"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/common_text_size"
+                        android:id="@+id/route_name"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/overlayForegroundColor">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="@dimen/margin10"
+                android:text="Driver Details"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/margin3"
+            android:background="@color/colorWhite">
+
+            <include layout="@layout/progress_bar"
+                android:id="@+id/progress_bar"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="@dimen/width3"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@color/svgLayoutIconColor"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textSize="@dimen/common_text_size"
+                        android:text="Name"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/common_text_size"
+                        android:id="@+id/driver_name"
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textSize="@dimen/common_text_size"
+                        android:text="Contact"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/common_text_size"
+                        android:id="@+id/ph_no"
+                        android:text=""
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height10"
+            android:background="@color/overlayForegroundColor"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

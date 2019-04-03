@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nexrise.publication.in.nexrise.CreateNotification"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Notification"
+        android:gravity="center"
+        android:textSize="@dimen/common_text_size"
+        android:textColor="@color/colorBlack"/>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textSize="@dimen/common_text_size"
+            android:textColor="@color/colorBlack"
+            android:padding="@dimen/padding15"
+            android:layout_weight="1"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height30"
+            android:layout_weight="1">
+
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="@dimen/common_text_size"
+            android:textColor="@color/colorBlack"
+            android:padding="@dimen/padding15"
+            android:layout_weight="1"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </Spinner>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Channel"
+        android:textSize="@dimen/common_text_size"
+        android:textColor="@color/colorBlack"
+        android:padding="@dimen/padding15"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMS"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Push notification"
+            android:layout_weight="1"/>
+
+
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Priority"
+        android:textSize="@dimen/common_text_size"
+        android:textColor="@color/colorBlack"
+        android:padding="@dimen/padding15"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="High"
+        android:textSize="@dimen/common_text_size"
+        android:textColor="@color/colorBlack"
+        android:layout_weight="1"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium"
+        android:textSize="@dimen/common_text_size"
+        android:textColor="@color/colorBlack"
+        android:layout_weight="1"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Low"
+        android:textSize="@dimen/common_text_size"
+        android:textColor="@color/colorBlack"
+        android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Class"
+            android:textSize="@dimen/common_text_size"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:textSize="@dimen/common_text_size"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Group"
+            android:textSize="@dimen/common_text_size"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1"/>
+    </LinearLayout>
+<Button
+    android:layout_gravity="center"
+    android:layout_width="@dimen/width220"
+    android:layout_height="@dimen/height50"
+    android:text="Save as Draft"
+    android:textSize="@dimen/common_text_size"
+    android:textColor="@color/colorBlack"/>
+
+
+
+
+</LinearLayout>

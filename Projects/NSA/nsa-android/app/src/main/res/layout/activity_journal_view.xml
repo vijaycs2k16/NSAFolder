@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="nexrise.publication.in.nexrise.Gallery.PhotoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/overlayForegroundColor"
+        android:weightSum="2">
+        <TextView
+            android:text="Bulletins"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height50"
+            android:textColor="@color/colorBlack"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding12"
+            android:textAllCaps="true"
+            android:id="@+id/study_value"
+            android:paddingTop="@dimen/padding5"
+            android:textStyle="bold"
+            android:layout_weight="1.5"
+            android:background="@color/overlayForegroundColor"
+            android:paddingBottom="@dimen/padding5"
+            android:textSize="@dimen/common_text_size" />
+        <ImageView
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_help"
+            android:id="@+id/help"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height20" />
+
+    </LinearLayout>
+
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchMode="columnWidth"
+            android:numColumns="auto_fit"
+            android:id="@+id/photo_gridview"
+            android:layout_margin="@dimen/margin5"
+            android:horizontalSpacing="@dimen/margin5"
+            android:verticalSpacing="@dimen/margin10"/>
+
+
+
+
+</LinearLayout>

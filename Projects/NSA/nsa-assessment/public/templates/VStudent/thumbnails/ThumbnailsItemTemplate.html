@@ -1,0 +1,37 @@
+<% if (!collection.length) { %>
+<h2>No Students found</h2>
+<% } %>
+<% collection.forEach(function(student){ %>
+<div class="thumbnailwithavatar student thumbnailElement" id="<%=student._id%>">
+    <div class="inner">
+        <div class="avatar" style="line-height: 140px;">
+            <img src=""/>
+        </div>
+    </div>
+    <div class="info">
+        <div><h4>
+
+            <span class="fullName"><%=student.studentName%> <%=student.lastName%></span>
+
+        </div>
+
+        <p><label>Age: </label><span class="age"><%=student.age%></span>
+            <% var dateOfBirth = student.studentDetails ? student.studentDetails.dateOfBirth : ''  %>
+            <span class="empDateBirth">(<%= dateOfBirth %>)</span>
+        </p>
+
+        <p class="telephone"><label>Tel: </label><a href="skype:<%=student.studentPhone%>?call"><%=student.studentPhone%></a>
+        </p>
+        <% if(App.currentUser.login == 'superAdmin' || App.currentUser.login == 'administrator' ) { %>
+        <%var isRegister = student.isRegistration%>
+        <% if (isRegister == true) {
+        var batch = student.batch && student.batch.length > 0 ?  student.batch[0]._id: '' ;
+        %>
+        <p class="telephone"><label></label><a target="_blank"  class="newClass" onclick="window.open(this.href)" href="#erp/studentDashboardCharts/<%=student._id%>/<%=student.course._id%>/<%=student.center._id%>/<%=batch%>" style="color: #3e88b9">Registered</a></p>
+        <%} else {%>
+        <p class="telephone"><label> </label><a href=""></a>Not yet Registered</p>
+        <% } %>
+        <% } %>
+    </div>
+</div>
+<% }) %>

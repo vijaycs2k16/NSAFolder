@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:minHeight="@dimen/minHeight40"
+            >
+            <TextView
+                android:background="@drawable/border_table"
+                android:textSize="@dimen/text10"
+                android:paddingLeft="@dimen/padding10"
+                android:paddingRight="@dimen/padding10"
+                android:paddingTop="@dimen/padding3"
+                android:paddingBottom="@dimen/padding3"
+                android:id="@+id/tableTimings"
+                android:layout_width="@dimen/width120"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="09:45 AM - 10:30 PM" />
+            <TextView
+                android:padding="@dimen/padding3"
+                android:textSize="@dimen/text10"
+                android:background="@drawable/border_style"
+                android:id="@+id/monday"
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="-" />
+            <TextView
+                android:background="@drawable/border_style"
+                android:textSize="@dimen/text10"
+                android:padding="@dimen/padding3"
+                android:id="@+id/tuesday"
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="-" />
+            <TextView
+                android:background="@drawable/border_style"
+                android:textSize="@dimen/text10"
+                android:padding="@dimen/padding3"
+                android:id="@+id/wednesday"
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="-" />
+            <TextView
+                android:background="@drawable/border_style"
+                android:textSize="@dimen/text10"
+                android:padding="@dimen/padding3"
+                android:id="@+id/thursday"
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="-" />
+            <TextView
+                android:background="@drawable/border_style"
+                android:textSize="@dimen/text10"
+                android:padding="@dimen/padding3"
+                android:id="@+id/friday"
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="-" />
+            <TextView
+                android:background="@drawable/border_style"
+                android:textSize="@dimen/text10"
+                android:padding="@dimen/padding3"
+                android:id="@+id/saturday"
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="-" />
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

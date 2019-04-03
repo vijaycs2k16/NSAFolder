@@ -1,0 +1,97 @@
+<div id="addReportCard" class="overlay-popup footer-popup" style="display: none;">
+    <!-- RIGHT PANEL STARTS -->
+    <div class="cd-panel">
+        <div class="cd-panel-header">
+            <!-- <div class="hidden-xs simple-field-hf"></div> -->
+            <div class="simple-field-hf">
+            </div>
+            <a (click)="closeOverlay($event)" class="cd-panel-close">Close</a>
+        </div>
+        <div class="cd-panel-container">
+            <input type="hidden" id="existingFiles" (click)="getExistingFiles($event)">
+            <div class="cd-panel-content" id="side-panel-container">
+                <form class="form-horizontal form-validate" >
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Class&nbsp;<span class="text-danger">*</span></label>
+                            <div class="col-lg-8">
+                                <select #classSelect id="select-class" value="Select Section"  class="select-change" (click)="getSectionByClass()" data-width="100%"></select>
+                            </div>
+                        </div>
+
+                        <div class="form-group" [hidden]="!classId">
+                            <label class="col-lg-4 control-label">Sections <span class="text-danger">*</span></label>
+                            <div class="col-lg-8">
+                                <div class="multi-select-full">
+                                    <select #sectionSelect id="select-section" class="select-change" data-width="100%">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Generate Report&nbsp;<span class="text-danger">*</span></label>
+                            <div class="col-lg-8">
+                                <select #SelectReportType id="report-Type" class="select-change" (click)="getExamdetail($event)" data-width="100%" >
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="term">
+                            <label class="col-lg-4 control-label" id="term-label">Term&nbsp;<span class="text-danger">*</span></label>
+                            <div class="col-lg-8">
+                                <select #SelectTerm id="term-name" class="select-change"></select>
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="exam">
+                            <label class="col-lg-4 control-label" id="exm-label">Exam&nbsp;<span class="text-danger">*</span></label>
+                            <div class="col-lg-8">
+                                <select #SelectExam id="exam-name" class="select-change"></select>
+                            </div>
+                        </div>
+
+                            <!--<label class="control-label col-md-3" >Publish as&nbsp;&nbsp;&nbsp;&nbsp;-->
+                            <!--</label>-->
+                            <!--<div class="col-md-8" >-->
+                                <!--<div class="form-group">-->
+                                    <!--<div class="control-label col-sm-8" style="left: 33px;">-->
+                                        <!--<div class="row">-->
+                                            <!--<div class="col-md-3 grade">-->
+                                                <!--<div class="form-group">-->
+                                                    <!--<label class="checkbox-inline" style="font-size:12px;">-->
+                                                        <!--<input #marks type="checkbox">Marks-->
+                                                    <!--</label>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="col-md-3 grade">-->
+                                                <!--<div class="form-group">-->
+                                                    <!--<label class="checkbox-inline" style="font-size:12px;">-->
+                                                        <!--<input #grades type="checkbox">Grade-->
+                                                    <!--</label>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+
+
+                    </div>
+                    <div class="overlay-footer">
+                        <div class="right-align overlay-footer-content-rt">
+                            <button type="button" class="btn btn-default" (click)="closeOverlay($event)">Close</button>
+                            <button  type="button" id="generateTeacher" (click)="generateTeacher($event)"  class="btn btn-primary btn-ladda btn-ladda-spinner" data-style="expand-right" data-spinner-size="20"><span class="ladda-label">Generate For Teachers</span></button>
+                            <button  type="button" id="publishParent" (click)="publishParent($event)" class="btn btn-primary btn-ladda btn-ladda-spinner" data-style="expand-right" data-spinner-size="20"><span class="ladda-label">Publish For Parents</span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- cd-panel-container -->
+        </div>
+    </div>
+    <!-- right panel script -->
+</div>

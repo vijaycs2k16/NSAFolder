@@ -1,0 +1,11 @@
+int attr iconCode 0x7f010001
+int attr iconColor 0x7f010002
+int attr iconFont 0x7f010004
+int attr iconSize 0x7f010003
+int attr iconText 0x7f010000
+int[] styleable PrintView { 0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004 }
+int styleable PrintView_iconCode 1
+int styleable PrintView_iconColor 2
+int styleable PrintView_iconFont 4
+int styleable PrintView_iconSize 3
+int styleable PrintView_iconText 0

@@ -1,0 +1,43 @@
+{
+  "development":{
+    "zone": "Asia/Calcutta",
+    "server" : {
+       "host" : "localhost",
+       "port" : 7878
+    },
+    "register": {
+      "sms": false
+    },
+
+    "elasticSearch":{
+      "master" : {
+        "host": "localhost",
+        "port": 9200,
+        "log": "trace"
+      },
+      "slave" : {
+        "host": "localhost",
+        "port": 9200,
+        "log": "trace"
+      },
+      "indexDefaultName" : "nsa",
+      "defaultTypeName" : "users",
+      "index" : {
+        "userIndex": "users",
+        "studentType": "student",
+        "empType": "employee",
+        "schoolIndex": "school_details",
+        "schoolType": "school_master"
+      }
+    },
+    "sms": {
+      "valueLeaf": {
+        "url": "http://alerts.valueleaf.com/api/v3/?method=sms.json&api_key=A0ad91a9c237d01dfaa7a86b9dc8a9b1f&format=json&json=",
+        "groupStatusUrl": "http://alerts.valueleaf.com/api/v3/?method=sms.groupstatus&api_key=A0ad91a9c237d01dfaa7a86b9dc8a9b1f&format=json&groupid=",
+        "statusUrl": "http://alerts.valueleaf.com/api/v3/?method=sms.status&api_key=A0ad91a9c237d01dfaa7a86b9dc8a9b1f&format=json&id="
+      }
+    },
+    "hostName": "localhost"
+  }
+
+}

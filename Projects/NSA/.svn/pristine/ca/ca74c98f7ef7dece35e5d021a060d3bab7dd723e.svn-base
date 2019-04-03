@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "521415795613",
+    "firebase_url": "https://marygirividyamandir-4cf97.firebaseio.com",
+    "project_id": "marygirividyamandir-4cf97",
+    "storage_bucket": "marygirividyamandir-4cf97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521415795613:android:4871c28edec7675c",
+        "android_client_info": {
+          "package_name": "mary.management.in.punalur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521415795613-8vhe22ghm140mnnia7ndodlp06co9a38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9D0IYzmb8HIPDmDV9NT87smt4sQ5-K2g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

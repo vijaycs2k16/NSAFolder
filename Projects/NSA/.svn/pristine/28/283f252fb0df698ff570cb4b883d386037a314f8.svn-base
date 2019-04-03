@@ -1,0 +1,18 @@
+<div class="form-holder _newForm" style="display: inline-block">
+    <div class="exam-container">
+        <input type="hidden" id="ansData">
+        <div id="time-out" class="<%= model.isSubmit ? 'hide' : '' %>">
+            <span id="future_date" class="style margin-250 colorDefinition size_md size_lg"></span>
+        </div>
+        <% if(!model.isSubmit) { %>
+            <div id="quiz1"></div>
+        <% } else { %>
+            <span>Exam not yet started (or) Completed</span>
+        <% } %>
+    </div>
+    <div class="formContentWrap">
+        <div class="formContentTitle">
+            <span class="closeBtn backBtn"></span>
+        </div>
+    </div>
+</div>

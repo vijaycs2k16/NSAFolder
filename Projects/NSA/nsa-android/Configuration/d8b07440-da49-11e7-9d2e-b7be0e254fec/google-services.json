@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "160008442247",
+    "firebase_url": "https://universalacademyseniorse-aaf3c.firebaseio.com",
+    "project_id": "universalacademyseniorse-aaf3c",
+    "storage_bucket": "universalacademyseniorse-aaf3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160008442247:android:d63cc1d59547e945",
+        "android_client_info": {
+          "package_name": "universal.management.in.karaikal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160008442247-lols7cf36l2n2ut2mkt2d18sigoncbtu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2kCFbqbLjBxZbYPkVFXgPIrP1PlSkS_Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

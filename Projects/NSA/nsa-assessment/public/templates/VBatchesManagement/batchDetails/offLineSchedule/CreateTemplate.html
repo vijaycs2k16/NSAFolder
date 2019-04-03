@@ -1,0 +1,112 @@
+<div class="form-holder _newForm">
+    <form method="post" action="" id="invoiceForm">
+        <h4 class="_dialogMainTitle">OffLine Exam Schedule</h4>
+        <div class="_formWrap _enlargedItemMargin">
+            <div class="_formBlock _equal">
+                <div class="_animateInputBox">
+                    <input type="text"
+                           class="_animate "
+                           id="name"
+                           required
+                           value=""/>
+                    <label class="_animate">Name</label>
+                </div>
+                <div class="_animateInputBox">
+                    <span class="_staticLabel">Start Date</span>
+                    <input type="text"
+                           name="examDate"
+                           class="_animate"
+                           id="examDate"
+                           readonly
+                    />
+                </div>
+                <br/>
+                <div class="_animateInputBox">
+                    <span class="_staticLabel">End Date</span>
+                    <input type="text"
+                           name="examEndDate"
+                           class="_animate"
+                           id="examEndDate"
+                           readonly
+                    />
+                </div>
+                <br/>
+                <div class="container hide">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-6">
+                            <div class="_tipsWrap">
+                                <label for="offline" class="">offline</label>
+                                <input type="radio"
+                                       name="examMode"
+                                       id="offline"
+                                       value="offline"
+                                       checked=""
+                                       class="_circleRadioRadiance">
+                                <label for="offline"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_animateSelectBox examConfigDiv">
+                    <span class="_selectTitle">Exam Configuration</span>
+                    <div class="_newSelectListWrap">
+                        <a id="examConfig"
+                           name="examConfig"
+                           class="current-selected"
+                           href="javascript:;">Select</a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="canReadAndWrite _animateSelectBox row">
+                        <div class="col m-12">
+                            <span class="_selectTitle">Center:</span><br/>
+                            <div id="variantsCenterBlock" class="_variantsBlock _varientCenter multi-select">
+                                <div class="_checkCategoriesWrap">
+                                    <ul id="checkedProductCenter" class="_checkCategories"></ul>
+                                    <span id="showCenterBtn" class="_arrow"></span>
+                                </div>
+                                <ul id="productCenterCategories" class="_categoriesList"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="_animateSelectBox ">
+                    <span class="_selectTitle">Course</span>
+                    <div class="_newSelectListWrap">
+                        <a id="course"
+                           name="course"
+                           class="current-selected"
+                           href="javascript:;">Select</a>
+                    </div>
+                </div>-->
+                <div class="container">
+                    <div class="canReadAndWrite _animateSelectBox  row">
+                        <div class="col m-12">
+                            <span class="_selectTitle">Batch:</span><br/>
+                            <div id="variantsCategoriesBlock" class="_variantsBlock _varientBatch multi-select" style="z-index: 1">
+                                <div class="_checkCategoriesWrap">
+                                    <ul id="checkedProductCategories" class="_checkCategories"></ul>
+                                    <span id="showBtn" class="_arrow"></span>
+                                </div>
+                                <ul id="productCategories" class="_categoriesList"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_animateTextareaBox counterWrap">
+                            <textarea maxlength="1000"
+                                      class="_animate"
+                                      id="description"
+                                      required></textarea>
+                    <label for="description" class="_animate">Description</label>
+                    <div class="counter-wrap">
+                        <span class="counter-label">Characters left:</span>
+                        <span class="counter-value" id="counterValue">1000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

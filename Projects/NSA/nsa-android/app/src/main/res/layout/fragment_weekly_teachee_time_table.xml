@@ -1,0 +1,124 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="@dimen/padding10"
+    tools:context="nexrise.publication.in.nexrise.TimetableFeature.WeeklyTimeTableFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/teacher_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10"
+        android:gravity="center"
+        android:text="@string/academic_year_"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/title_text_size" />
+
+    <include layout="@layout/progress_bar"
+        android:visibility="gone"
+        android:id="@+id/progress_bar"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table_layout"
+        android:layout_marginTop="@dimen/margin10"
+        android:background="@drawable/border_table_style">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:minHeight="@dimen/minHeight30">
+
+            <TextView
+                android:layout_width="@dimen/width120"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_overlay"
+                android:gravity="center"
+                android:text="@string/time_caps"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_overlay"
+                android:gravity="center"
+                android:text="@string/mon"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_overlay"
+                android:gravity="center"
+                android:text="@string/tue"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_overlay"
+                android:gravity="center"
+                android:text="@string/wed"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_overlay"
+                android:gravity="center"
+                android:text="@string/thu"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_overlay"
+                android:gravity="center"
+                android:text="@string/fri"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_overlay"
+                android:gravity="center"
+                android:text="@string/sat"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <ListView
+            android:id="@+id/tableListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border" />
+
+
+    </TableLayout>
+
+</LinearLayout>

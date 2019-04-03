@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "263646062359",
+    "firebase_url": "https://amalambika-1c333.firebaseio.com",
+    "project_id": "amalambika-1c333",
+    "storage_bucket": "amalambika-1c333.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263646062359:android:77bace0e5dcb6d3d",
+        "android_client_info": {
+          "package_name": "amalambika.management.in.thekkady"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263646062359-b3siuil96uo5ss168dael4tta08erggh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUXIoPgNE09vmSTh87ZOSPrY1oE_nKB0g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,150 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor"
+    android:id="@+id/frame_homework"
+    tools:context="nexrise.publication.in.nexrise.HomeworkFeature.HomeworkActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/overlayColor">
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/overlayForegroundColor"
+            android:id="@+id/homework_details"
+            android:weightSum="2">
+            <TextView
+                android:text="homework"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding12"
+                android:textAllCaps="true"
+                android:id="@+id/study_value"
+                android:paddingTop="@dimen/padding5"
+                android:textStyle="bold"
+                android:layout_weight="1.5"
+                android:background="@color/overlayForegroundColor"
+                android:paddingBottom="@dimen/padding5"
+                android:textSize="@dimen/common_text_size" />
+            <ImageView
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_help"
+                android:layout_width="0dp"
+                android:id="@+id/help"
+                android:layout_height="@dimen/height20" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:background="@color/colorWhite"
+            android:id="@+id/class_layout"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <TextView
+                android:padding="@dimen/padding15"
+                android:id="@+id/setclass"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:text="Filter"
+                android:layout_weight="1"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"/>
+
+            <Spinner
+
+                android:id="@+id/classspin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_weight="1"
+                android:padding="@dimen/padding5"
+                android:background="@drawable/spinner"
+                android:gravity="center"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/section_spin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_weight="1"
+                android:padding="@dimen/padding5"
+                android:background="@drawable/spinner"
+                android:gravity="center"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:id="@+id/container">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/appColor"
+                    android:visibility="gone"
+                    android:id="@+id/loading" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nothing to show"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorThinGrey"
+                    android:textSize="@dimen/description_text_size"
+                    android:visibility="gone"
+                    android:id="@+id/no_content"
+                    android:layout_gravity="center" />
+            </RelativeLayout>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/transparent"
+                android:background="@color/overlayForegroundColor"
+                android:paddingLeft="@dimen/padding5"
+                android:paddingRight="@dimen/padding5"
+                android:paddingBottom="@dimen/padding3"
+                android:id="@+id/fragment_class_listview"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@color/appColor"
+        app:backgroundTint="@color/appColor"
+        android:tint="@color/colorWhite"
+        app:elevation="@dimen/elevation4"
+        app:borderWidth="0dp"
+        app:srcCompat="@drawable/ic_input_add1"
+        app:fabSize="normal"/>
+</FrameLayout>

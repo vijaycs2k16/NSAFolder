@@ -1,0 +1,22 @@
+<div class="form-holder _newForm">
+    <form method="post" action="" class="_stockCorrectionForm" id="stockCorrection">
+        <h4 class="_dialogMainTitle">Edit SchoolOnboard</h4>
+        <div class="_formWrap">
+            <div class="_formBlock _equal">
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">School</span>
+                    <div class="_newSelectListWrap">
+                        <a id="schoolId"
+                           class="current-selected select-disabled"
+                           data-id="<%=model.school_id ? model.school_id: null%>"
+                           href="javascript:;"><%=model.school_name ? model.school_name  : 'Select School'%></a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="_formBlock">
+                <div id="productItemsHolder"></div>
+            </div>
+        </div>
+    </form>
+</div>

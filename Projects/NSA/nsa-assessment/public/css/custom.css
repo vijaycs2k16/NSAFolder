@@ -1,0 +1,21 @@
+table {
+    color: #000;
+    width: 100%;
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #000;
+    font-weight: bold;
+}
+
+.table-bordered thead td, .table-bordered thead th {
+    border-bottom-width: 1px;
+}
+
+.table-bordered {
+    border: 1px solid #000;
+}
+
+.table thead th {
+    border-bottom: 1px solid #000;
+}

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "674297906211",
+    "firebase_url": "https://mahss-kodinhi.firebaseio.com",
+    "project_id": "mahss-kodinhi",
+    "storage_bucket": "mahss-kodinhi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674297906211:android:a24075253e8b8912",
+        "android_client_info": {
+          "package_name": "mahss.management.in.kodinhi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674297906211-1i3ptpapmvpqpaqgc6jdek4t9vf4ros4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXAI2XP7bKcEGQ8tX6Wmh9eOq7Zrn25lk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

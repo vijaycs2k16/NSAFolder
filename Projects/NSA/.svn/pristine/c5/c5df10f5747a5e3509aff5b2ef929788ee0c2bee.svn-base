@@ -1,0 +1,242 @@
+<div class="form-holder _newForm">
+    <form method="post" action="" id="invoiceForm">
+        <h4 class="_dialogMainTitle">View Test Configuration</h4>
+        <div class="_formWrap _enlargedItemMargin newItem">
+            <div class="_formBlock _equal select-disabled">
+                <!--<div class="container" style="margin-left:-15px;">
+                    <div class="canReadAndWrite row">
+                        <div class="_animateSelectBox col m-12">
+                            <span class="_selectTitle margin-left-15">Title</span>
+                            <div class="_newSelectListWrap">
+                                <a id="schlTitle"
+                                   name="schlTitle"
+                                   class="current-selected"
+                                   href="javascript:;"><%= model.title ? model.title.titleName: "None"%></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="container" style="margin-left:-15px;">
+                    <div class="canReadAndWrite row">
+                        <div class="_animateSelectBox col m-12">
+                            <span class="_selectTitle margin-left-15">Class</span>
+                            <div class="_newSelectListWrap">
+                                <a id="classpc"
+                                   name="classpc"
+                                   class="current-selected"
+                                   href="javascript:;"><%= model.classDetail ? model.classDetail.className: "None"%></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="_animateSelectBox _withInfo ">
+                    <span class="_selectTitle">Subjects</span>
+                    <div class="_newSelectListWrap">
+                        <a id="subject"
+                           name="subject"
+                           class="input-select"
+                           href="javascript:;"><%= subjects ? subjects: "None"%></a>
+                    </div>
+                </div>
+                <br/>-->
+                <div class="_animateSelectBox _withInfo ">
+                    <span class="_selectTitle ">Topics</span>
+                    <div class="_newSelectListWrap">
+                        <a id="topics"
+                           name="topics"
+                           class="input-select"
+                           href="javascript:;"><%= topics ? topics: "None"%></a>
+                    </div>
+                </div><br/>
+               <!-- <div class="container" style="margin-left:-15px;">
+                    <div class="canReadAndWrite row">
+                        <div class="_animateSelectBox col m-12">
+                            <span class="_selectTitle margin-left-15">Subtopic</span>
+                            <div class="_newSelectListWrap">
+                                <a id="subTopics"
+                                   name="subTopics"
+                                   class="input-select"
+                                   href="javascript:;"><%= subTopics ? subTopics: "None"%></a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br/>-->
+                <div class="canReadAndWrite row">
+                    <div class="_animateInputBox _withInfo col m-4" >
+                        <span class="_selectTitle style-input">Duration (mins)</span>
+                        <input type="number"
+                               name="examDuration"
+                               class="_animate"
+                               id="examDuration"
+                               value="<%=model.duration ? model.duration: '-'%>"/>
+                    </div>
+                    <div class="_animateInputBox _withInfo col m-4" >
+                        <span class="_selectTitle style-input">Each Question Marks</span>
+                        <input type="number"
+                               name="questionMarks"
+                               class="_animate"
+                               id="questionMarks"
+                               value="<%=model.questionMark ? model.questionMark: '-'%>"/>
+                    </div>
+                    <div class="_animateInputBox _withInfo col m-4">
+                        <span class="_selectTitle style-input">Negative Marks</span>
+                        <input type="number"
+                               name="nagetiveMarks"
+                               class="_animate"
+                               id="nagetiveMarks"
+                               value="<%=model.negativeMark ? model.negativeMark: '0'%>"/>
+                    </div>
+                </div>
+                <div class="canReadAndWrite row">
+                    <div class="_animateInputBox _withtime _withinfo col m-6">
+                        <span class="_selectTitle style-input">Start Time</span>
+                        <div class="inputdateactionblock" style="
+                           position: relative;
+                           display: block;
+                           padding: 0 20px 0 0;
+                           border: none;
+                           min-height: 26px;
+                           cursor: pointer;
+                           border-bottom: 1px solid #c8c8d3;
+                           font-size: 13px;
+                           margin-top: 5px!important;
+                           color: #999 !important;
+                           ">
+                            <input maxlength="2"
+                                   name="startTime"
+                                   id="startTime"
+                                   readonly/>
+                        </div>
+                    </div>
+                    <div class="_animateInputBox _withtime _withinfo col m-6">
+                        <span class="_selectTitle style-input">End Time</span>
+                        <div class="inputdateactionblock" style="
+                           position: relative;
+                           display: block;
+                           padding: 0 20px 0 0;
+                           border: none;
+                           min-height: 26px;
+                           cursor: pointer;
+                           margin-top: 5px!important;
+                           border-bottom: 1px solid #c8c8d3;
+                           font-size: 13px;
+                           color: #999 !important;
+                           ">
+                            <input maxlength="2"
+                                   name="endTime"
+                                   id="endTime"
+                                   readonly/>
+                        </div>
+                        <span class="tips " data-id="examEndTime"></span>
+                    </div>
+                </div>
+                <div class="canReadAndWrite row">
+                    <div class="_animateInputBox _withinfo col m-6">
+                        <span class="_selectTitle style-input">Schedule</span>
+                        <input type="text"
+                               name="scheduleDate"
+                               class="_animate"
+                               id="scheduleDate"
+                               value="<%=model.name ? model.name: ''%>"/>
+                    </div>
+                    <div class="_animateInputBox _withinfo col m-6">
+                        <span class="_selectTitle style-input">No Of Questions</span>
+                        <input type="number"
+                               class="_animate "
+                               id="questions"
+                               name="questions"
+                               value="<%=model.num ? model.num: ''%>"/>
+                    </div>
+                </div>
+                <div class="canReadAndWrite row">
+                    <div class="_circleRadioRadianceWrap col m-6">
+                        <label class="_customCHeckbox">
+                            <input type="checkbox" name="autoCorrect" checked="" class="checkbox" id="autoCorrect"/>
+                            <span class="clr-black margin-left-14">&nbsp;Auto Correct</span>
+                        </label>
+                    </div>
+                    <div class="_circleRadioRadianceWrap col m-6">
+                        <label class="_customCHeckbox">
+                            <input type="checkbox" name="canReview" checked="" class="checkbox" id="canReview"/>
+                            <span class="clr-black margin-left-24">&nbsp;Can Review</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-6">
+                            <div class="_tipsWrap">
+                                <label for="manual" class="">Manual Questions</label>
+                                <input type="radio"
+                                       name="questionType"
+                                       id="manual"
+                                       class="_circleRadioRadiance"
+                                       value="ManualQuestions" <%= model.questionMode === 'ManualQuestions' ? checked ='checked' : '' %>
+                                >
+                                <label for="manual"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_circleRadioRadianceWrap margin-left-10 col m-6">
+                            <%console.log("model.questionMode", model.questionMode)%>
+                            <div class="_tipsWrap">
+                                <label for="random" class="">Random</label>
+                                <input type="radio"
+                                       name="questionType"
+                                       id="random"
+                                       value="Random" <%= model.questionMode === 'Random' ? checked ='checked' : '' %>
+                                       class="_circleRadioRadiance">
+                                <label for="random"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-6">
+                            <div class="_tipsWrap">
+                                <label for="quesMethodOne" class="">can Select(WithOut Replace)</label>
+                                <input type="radio"
+                                       name="methodType"
+                                       id="quesMethodOne"
+                                       class="_circleRadioRadiance"
+                                       value="quesMethodOne"<%= model.selectMode === 'true' ? checked ='checked' : '' %>
+                                >
+                                <label for="quesMethodOne"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_circleRadioRadianceWrap margin-left-10 col m-6">
+                            <div class="_tipsWrap">
+                                <label for="quesMethodTwo" class="">Can Select(Replace)</label>
+                                <input type="radio"
+                                       name="methodType"
+                                       id="quesMethodTwo"
+                                       class="_circleRadioRadiance"
+                                       value="quesMethodTwo"<%= model.selectMode === 'false' ? checked ='checked' : '' %>
+                                >
+                                <label for="quesMethodTwo"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div><br/>
+            </div>
+            <br/>
+            <div class="container">
+                <div class="canReadAndWrite generatedQuestions row">
+                    <div class="col m-12">
+                        <div class="_bundleListTitle">Questions</div>
+                        <span class="text-danger indicators-config" style="margin-left: 558px;">* - Contains Repeated Questions</span>
+                        <ul id='generatedQues' class="_productsForBundle"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

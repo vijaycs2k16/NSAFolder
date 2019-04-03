@@ -1,0 +1,46 @@
+<div class="form-holder _newForm" style="display: inline-block">
+    <form method="post" action="" id="createRegisterForm">
+        <div class="_formWrap">
+
+            <div class="container">
+                <label class="_sectionTitle font-14">Your Score : <%=model.score%></label>
+                <label class="_sectionTitle font-14 text-right"> Negative Marks <%= model.examId.config.negativeMark %> marks</label>
+                <label class="_sectionTitle font-14 text-right"> Each Question carries <%= model.examId.config.questionMark %> marks&nbsp;&nbsp;&nbsp; </label>
+                <div id="quiz1" class="quiz">
+                    <ul class="quizQuestions">
+                        <% _.forEach(questions, function(question, index)  { %>
+                            <li class="showQuestion">
+                                <h2 class="questionTitle text-captialize"><%= index + 1 %>.) <b><%= question.form[0].desc %></b></h2>
+                                <% if(question.form[0].images[0] != ''){ %>
+                                <p><img src="<%= question.form[0].images[0] %>"></p>
+                                <% } %>
+                                <% if(question.form[0].explanation != ''){ %>
+                                    <h2 class="questionTitle"><b>Explanation : <%= question.form[0].explanation %></b></h2>
+                                <% } %>
+                                <ul class="questionAnswers">
+                                    <% _.forEach(question.form[0].ans, function(answer, index)  {
+
+                                    %>
+                                        <li style="<%= (!answer.isValid && answer.userAns )? 'background-color: #d42828ba': answer.isValid ? 'background-color: #008000bf': ''%>" >
+                                            <label for="" style=" /* background-color: green; */">
+                                                <input disabled type="radio" name="" id=""  value="<%= answer.desc%>" <%= answer.userAns ? checked='checked' : ''%> > <%= answer.desc%>
+                                            </label>
+                                        </li>
+
+                                    <% }) %>
+                                </ul>
+                            </li>
+                        <% }) %>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <br/>
+    </form>
+    <div class="formContentWrap">
+        <div class="formContentTitle">
+            <span class="closeBtn backBtn"></span>
+        </div>
+    </div>
+</div>

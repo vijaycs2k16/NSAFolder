@@ -1,0 +1,125 @@
+<div class="grid-conatiner _attendateWrap">
+   <!-- <div class="dialog-tabs-item">
+        <div class="_formWrap">
+            <div class="_formBlock _equal">
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Center</span>
+                    <div class="_newSelectListWrap">
+                        <a id="centerDd"
+                           name="center"
+                           class="current-selected"
+                           data-id="centerDd"
+                           href="javascript:;">Select Center</a>
+                    </div>
+                    <span class="tips icon-info" data-id="center"></span>
+                </div>
+            </div>
+            <div class="_formBlock _equal">
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Course</span>
+                    <div class="_newSelectListWrap">
+                        <a id="course"
+                           name="course"
+                           class="current-selected"
+                           data-id=""
+                           href="javascript:;">Select Course</a>
+                    </div>
+                    <span class="tips icon-info" data-id="course"></span>
+                </div>
+            </div>
+            <div class="_formBlock _equal">
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Batch</span>
+                    <div class="_newSelectListWrap">
+                        <a id="batch"
+                           name="batch"
+                           class="current-selected"
+                           data-id=""
+                           href="javascript:;">Select Batch</a>
+                    </div>
+                    <span class="tips icon-info" data-id="batch"></span>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <% var isStudent = App.currentUser.student ? 'hide' : ''%>
+    <div class="attendanceTop">
+        <div class="pull-right <%= isStudent%>">
+            <span id="center">
+                Select Center:
+            </span>
+            <div class="editable center current-selected" data-content="center" data-id=""><span></span>
+            </div>
+
+        </div>
+        <!--<div class="_newSelectListWrap">
+            <a id="course"
+               name="course"
+               class="current-selected"
+               data-id=""
+               href="javascript:;">Select Course</a>
+        </div>-->
+        <div class="pull-right <%= isStudent%>">
+            <span id="course">
+                Select Course:
+            </span>
+            <div class="editable course current-selected" data-content="course" data-id=""><span></span>
+            </div>
+
+        </div>
+        <div class="pull-right <%= isStudent%>">
+            <span id="batch">
+                Select Batch:
+            </span>
+            <div class="editable batch current-selected" data-content="batch" data-id=""><span></span>
+            </div>
+
+        </div>
+        <div class="pull-right <%= isStudent%>">
+            <span>
+                Select an Student:
+            </span>
+            <div class="editable student current-selected" data-content="employee" data-id=""><span></span>
+            </div>
+
+        </div>
+        <div class="pull-right">
+            <span>Select a Year:</span>
+            <select id="currentTime">
+                <% years.forEach(function(year){ %>
+                <option id="<%= year %>">
+                    <%= year %>
+                </option>
+                <% }) %>
+            </select>
+        </div>
+    </div>
+    <div class="_tableScrollWrap">
+        <table class="grid attendance" cellspacing="0" cellpadding="0">
+            <thead>
+            <tr>
+                <th>
+                    <span></span>
+                </th>
+
+                <% for (var i = 1; i <= 6; i++) { %>
+                <% weekDays.forEach(function(day){ %>
+                <th>
+                    <%= day %>
+                </th>
+                <% }) %>
+                <% } %>
+
+            </tr>
+            </thead>
+            <tbody id="attendanceMonth">
+            </tbody>
+        </table>
+    </div>
+    <div class="statisticsAtten">
+        <table>
+            <tbody id="statictics"></tbody>
+        </table>
+    </div>
+    <div id='timeRecivingDataFromServer'></div>
+</div>

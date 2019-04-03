@@ -1,0 +1,46 @@
+<div class="_acountingTableWrap">
+    <% if(data.create) { %>
+    <div class="_acountingTitleBlock _forOverview">
+        <a href="javascript:;" class="btn blue slim icon-plus btnPositioned" title="Create"
+           id="top-bar-createBtn">New</a>
+    </div>
+    <% } %>
+    <div class="_acountingTableBlock">
+        <table id="example1" class="display" style="width:100%">
+
+            <thead>
+            <tr class="forToggle">
+                <th class="text-left">Title</th>
+                <th class="text-left">Updated By</th>
+                <th class="text-left">Status</th>
+                <% if(data.update || data.delete) { %>
+                <th class="text-left">Action</th>
+                <% } %>
+            </tr>
+            </thead>
+            <tbody class="forToggle" id="currencyTable">
+            <%
+            collection.forEach(function(elem,index){
+            %>
+            <tr data-id="<%=elem._id%>">
+                <td><%=elem.smsTemplateTitle %></td>
+                <td><%=elem.updatedBy %></td>
+                <td><span data-color="<%= (elem.status == 'true' || elem.status == true) ? 'bgGreenLight' : 'bgRed' %>" class="text-center _tagSmall"><%= (elem.status == 'true' || elem.status == true) ? 'Sent' : 'Draft' %></span></td>
+                <% if(data.update || data.delete) { %>
+                <td>
+                    <% if(elem.status == "true" || elem.status == true) {%>
+                        <a href="javascript:;" class="iconmoon-eye <%= data.update ? 'goToEdit show': 'hide'%> _actionCircleBtn" aria-disabled="true"></a>
+                        <a href="javascript:;" class="icon-trash <%= data.delete ? 'goToRemove show': 'hide'%>  _actionCircleBtn" aria-disabled="true"></a>
+                    <% } else { %>
+                        <a href="javascript:;" class="icon-note <%= data.update ? 'goToEdit show': 'hide'%> _actionCircleBtn" aria-hidden="true"></a>
+                        <a href="javascript:;" class="icon-trash <%= data.delete ? 'goToRemove show': 'hide'%>  _actionCircleBtn" aria-hidden="true"></a>
+                    <% } %>
+                </td>
+                <% } %>
+            </tr>
+
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>

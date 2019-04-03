@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "591355607850",
+    "firebase_url": "https://al-ameen-public-school.firebaseio.com",
+    "project_id": "al-ameen-public-school",
+    "storage_bucket": "al-ameen-public-school.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591355607850:android:51d5eb59e2208fab",
+        "android_client_info": {
+          "package_name": "alameen.management.in.kollam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591355607850-bkgabrve1suru3i9d99p7igckojhog2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKwUQ15O_tEftY7f1tZmQHSy0mc3lNndE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

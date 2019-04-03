@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h6 class="panel-title"><span class="text-semibold text-uppercase"><i class="fa fa-crosshairs fa-lg position-left"></i>Syllabus</span><i class="icon-arrow-right15 text-pink-600"></i> <small>List of Syllabus</small></h6>
+        <div class="heading-elements">
+            <input  type="button" value="Add Syllabus" data-size="50%" data-title="Add Syllabus" data-toggle="from-right" data-id="#addSyllabus" class="btn btn-sm btn-primary" (click)="addSyllabus($event)"/>
+            <input hidden id="warningSyllabus" (click)="request_delete_warning()" type="button" style="display: none;">
+            <input hidden id="deleteButton" (click)="request_delete($event)" type="button" style="display: none;">
+            <input hidden id="syllabusEditButton" (click)="editSyllabus($event)" data-title="Edit Syllabus Details" data-size="50%" data-id="#addSyllabus" type="button" style="display: none;">
+
+        </div>
+    </div>
+
+    <div class="panel-body">
+        <table class="table datatable-syllabus">
+            <thead>
+            <tr>
+                <th data-priority="1">Syllabus Name</th>
+                <th>Description</th>
+                <th>Class Name</th>
+                <th data-priority="2">Action</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+<add-syllabus></add-syllabus>
+<attachment></attachment>

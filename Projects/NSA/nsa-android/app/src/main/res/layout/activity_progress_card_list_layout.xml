@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:minHeight="@dimen/height40"
+            >
+            <TextView
+                android:background="@drawable/border_table"
+                android:textSize="10sp"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingRight="@dimen/padding15"
+                android:paddingTop="@dimen/padding3"
+                android:paddingBottom="@dimen/padding3"
+                android:id="@+id/exam"
+                android:layout_width="@dimen/height100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="09:45 - 10:30" />
+            <TextView
+                android:padding="@dimen/padding3"
+                android:textSize="10sp"
+                android:background="@drawable/border_style"
+                android:id="@+id/english"
+                android:layout_width="@dimen/height100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Android Lollipop" />
+            <TextView
+                android:background="@drawable/border_style"
+                android:textSize="10sp"
+                android:padding="@dimen/padding3"
+                android:id="@+id/maths"
+                android:layout_width="@dimen/height100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="21" />
+            <TextView
+                android:background="@drawable/border_style"
+                android:textSize="10sp"
+                android:padding="@dimen/padding3"
+                android:id="@+id/tamil"
+                android:layout_width="@dimen/height100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="21" />
+            <TextView
+                android:background="@drawable/border_style"
+                android:textSize="10sp"
+                android:padding="@dimen/padding3"
+                android:id="@+id/science"
+                android:layout_width="@dimen/height100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="21" />
+            <TextView
+                android:background="@drawable/border_style"
+                android:textSize="10sp"
+                android:padding="@dimen/padding3"
+                android:id="@+id/social"
+                android:layout_width="@dimen/height100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="21" />
+            <TextView
+                android:background="@drawable/border_style"
+                android:textSize="10sp"
+                android:padding="@dimen/padding3"
+                android:id="@+id/sports"
+                android:layout_width="@dimen/height100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="21" />
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

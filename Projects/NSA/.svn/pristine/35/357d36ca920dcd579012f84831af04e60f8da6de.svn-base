@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="studentpromotion">
+	
+	<parameter name="pmtnclss" value="Class 5"></parameter>
+	<parameter name="prmsecsel" value=" Section A"></parameter>
+	<test name="StudentPromotion">
+		<classes>
+		   <!--  <class name="com.nsa.testing.tests.ExamSchedule"/> -->
+			<class name="com.nsa.testing.tests.StudentPromotion"/>
+		</classes>
+	</test>
+</suite> 

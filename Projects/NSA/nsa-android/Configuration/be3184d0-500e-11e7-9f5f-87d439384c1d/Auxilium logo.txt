@@ -1,0 +1,1 @@
+app launcher(App icon) - asset type text, trim No, padding 5%, foreground FFFFFF, background 2794bf, scaling shrink to fit, shape square, effect none 

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_journals"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/overlayForegroundColor"
+    tools:context="nexrise.publication.in.nexrise.Journals.Journals">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:text="Monthly Journal"
+        android:textSize="@dimen/common_text_size"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/padding15"
+        android:background="@color/overlayForegroundColor"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding5"
+        android:paddingRight="@dimen/padding5"
+        android:paddingTop="@dimen/padding5"
+        android:paddingBottom="@dimen/padding3"
+        android:id="@+id/monthly"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:text="Weekly Journal"
+            android:textSize="@dimen/common_text_size"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/padding15"
+            android:background="@color/overlayForegroundColor"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding5"
+            android:paddingRight="@dimen/padding5"
+            android:paddingTop="@dimen/padding5"
+            android:paddingBottom="@dimen/padding3"
+            android:id="@+id/weekly"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,245 @@
+/**
+ * Created by Sai Deepak on 05-Mar-17.
+ */
+import {Component, ElementRef, OnInit, ViewChild} from "@angular/core";
+import {FormBuilder} from "@angular/forms";
+import {BaseService} from "../../../../services/index";
+import {Constants, ServiceUrls} from "../../../../common/index";
+import {CommonService} from "../../../../services/common/common.service";
+import {DateService} from "../../../../services/common/date.service";
+
+@Component({
+    templateUrl: 'fee-reports.html'
+})
+export class FeeReportsComponent implements OnInit {
+
+
+    @ViewChild('singleClass') singleClass: ElementRef;
+    @ViewChild('singleSection') singleSection: ElementRef;
+    @ViewChild('singleFee') singleFee: ElementRef;
+    @ViewChild('SelectMode') SelectMode: ElementRef;
+    @ViewChild('date') date: ElementRef;
+
+    classId: any;
+    filterForm: any;
+    sections: any;
+    classes: any;
+    feestruid : any;
+    enable: boolean = false;
+    isDuration: boolean = false
+    startDate: any;
+    endDate: any;
+    dates: any;
+    mode : any;
+    feename: any;
+    sectionId: any;
+    constructor(private baseService: BaseService,
+                private fb: FormBuilder,
+                private serviceUrls: ServiceUrls,
+                private commonService: CommonService,
+                private dateService: DateService,
+                private constants: Constants) { }
+
+
+    ngOnInit() {
+        this.baseService.setTitle('NSA - Fee Reports');
+        this.baseService.enableAppJs();
+        this.baseService.selectStyle()
+        this.baseService.enablePickerDate();
+        var data = {};
+        data['sectionId'] = '';
+        data['classId'] = '';
+        data['startDate'] = this.startDate;
+        data['endDate'] = this.endDate;
+        var mode = [{value: 'all' , name: 'All'},{value: 'cash' , name: 'Cash'},{value: 'online' , name: 'Online'},{value: 'cheque' , name: 'Cheque'}]
+        this.baseService.enableSelect('#bootstrap-mode', mode, [ 'name', 'value' ], 'all');
+        this.getAllClasses();
+        this.baseService.addHideClass('#fee');
+        this.today(null);
+    }
+
+    modeChange(){
+        this.mode = this.baseService.extractOptions(this.SelectMode.nativeElement.selectedOptions)[0].name;
+        this.load();
+    }
+
+
+    reload() {
+        this.baseService.enableDivLoading('.datatable-fee-reports', this.constants.updating);
+        var thisObj = this;
+        setTimeout(function () {
+            thisObj.baseService.dataTableReload('datatable-fee-reports');
+            thisObj.baseService.disableDivLoading('.datatable-fee-reports');
+        }, 1000)
+    }
+
+
+    getAllClasses() {
+        this.commonService.get(this.serviceUrls.getActiveClasses).then(
+            classes => this.callBackClasses(classes)
+        )
+    }
+
+    callBackClasses(data: any) {
+        this.classes = data;
+        this.baseService.enableSelectWithEmpty('#bootstrap-class', data, this.constants.classObj, null);
+    }
+
+    getSectionByClass() {
+        this.classId = this.baseService.extractOptions(this.singleClass.nativeElement.selectedOptions)[0].id;
+        if(this.classId == undefined || this.classId == "") {
+            this.baseService.addHideClass('#sections');
+        }  else {
+            this.classId = this.baseService.extractOptions(this.singleClass.nativeElement.selectedOptions)[0].id;
+            this.baseService.removeHideClass('#sections');
+
+            this.commonService.get(this.serviceUrls.getSectionsByClass + this.classId).then(
+                sections => this.callBackSections(sections)
+            )
+        }
+    }
+
+    callBackSections(data: any) {
+        this.sections = data;
+        this.baseService.enableSelectWithEmpty('#bootstrap-section', data, this.constants.sectionObj, null)
+        this.getFeeNames();
+
+    }
+
+
+
+    getFeeNamesDetails(){
+        this.feestruid =this.baseService.extractOptions(this.singleFee.nativeElement.selectedOptions)[0].id;
+    }
+
+
+    getFeeNames() {
+        this.baseService.removeHideClass('#fee');
+        this.classId = this.baseService.extractOptions(this.singleClass.nativeElement.selectedOptions)[0].id;
+        this.sectionId = this.baseService.extractOptions(this.singleSection.nativeElement.selectedOptions)[0].id;
+        this.commonService.get(this.serviceUrls.getFeeName + '?classId=' + this.classId + '&sectionId=' + this.sectionId ).then(
+            Names => this.callBackFeeNames(Names)
+        )
+    }
+
+    callBackFeeNames(data: any) {
+        if(data) {
+            this.baseService.enableSelectWithEmpty('#bootstrap-fee', data, this.constants.feeNameObj, null);
+        } else {
+            this.baseService.showNotification("Please create the fee Name.", "", 'bg-danger');
+        }
+    }
+
+    validations(data: any) {
+        var success = true;
+        if(data.mode == 'None Selected' ) {
+            success= false
+            this.baseService.showNotification("Please select the Mode Name.", "", 'bg-danger');
+        } else if(!data.classId) {
+            success= false;
+            this.baseService.showNotification("Please select the Class Name.", "", 'bg-danger');
+        } else if(!data.feestructureid) {
+            success= false;
+            this.baseService.showNotification("Please select the fee Name", "", 'bg-danger');
+        }
+        return success;
+    }
+
+    load(){
+        var data = {};
+        var mode : any;
+        this.mode = this.baseService.extractOptions(this.SelectMode.nativeElement.selectedOptions)[0].name;
+        data['startDate'] = this.startDate;
+        data['endDate'] = this.endDate;
+        data['mode'] = this.mode;
+        this.baseService.dataTableDestroy('datatable-fee-reports');
+        this.baseService.enableDataTableAjax(this.serviceUrls.getFeeReport , data);
+    }
+
+
+    save(){
+        var data = {};
+        var feestructureid : any;
+        var sectionId : any;
+        var mode : any;
+        feestructureid = this.baseService.extractOptions(this.singleFee.nativeElement.selectedOptions)[0].id;
+        sectionId = this.baseService.extractOptions(this.singleSection.nativeElement.selectedOptions)[0];
+        mode = this.baseService.extractOptions(this.SelectMode.nativeElement.selectedOptions)[0].name;
+        data['feestructureid'] = feestructureid;
+        data['sectionId'] = sectionId == undefined ? "" : sectionId.id;
+        data['classId'] = this.baseService.extractOptions(this.singleClass.nativeElement.selectedOptions)[0].id;
+        data['startDate'] = this.startDate;
+        data['endDate'] = this.endDate;
+        data['mode'] = mode
+        if(this.validations(data)) {
+            this.baseService.dataTableDestroy('datatable-fee-reports');
+            this.baseService.enableDataTableAjax(this.serviceUrls.getFeeReports + feestructureid , data);
+            this.reload();
+        }
+    }
+
+    resetForm() {
+        this.baseService.enableSelectWithEmpty('#bootstrap-section', this.sections, this.constants.sectionObj, null);
+        this.baseService.enableSelectWithEmpty('#bootstrap-class', this.classes, this.constants.classObj, null);
+        //this.baseService.enableSelectWithEmpty('#bootstrap-fee', this.feename, this.constants.feeStructureObj, null);
+        var mode = [{value: 'all', name: 'All'}, {value: 'cash' , name: 'Cash'},{value: 'online' , name: 'Online'},{value: 'cheque' , name: 'Cheque'}]
+         this.baseService.enableSelect('#bootstrap-mode', mode, [ 'name', 'value' ], null);
+        this.getFeeNames()
+        this.today(null);
+        var data = {};
+        data['sectionId'] = '';
+        data['classId'] = '';
+        data['feestructureid'] = '';
+        data['startDate'] = this.startDate;
+        data['endDate'] = this.endDate;
+        //this.baseService.dataTableDestroy('datatable-fee-reports');
+        //var constId = '00000000-0000-0000-0000-000000000000';
+        //this.baseService.enableDataTableAjax(this.serviceUrls.getFeeReports + constId, data);
+
+    }
+
+    today(event: any) {
+        this.isDuration = false
+        var date = this.dateService.getToday();
+        this.setDate(date)
+        this.load();
+    }
+
+    week(event: any) {
+        this.isDuration = false
+        var date = this.dateService.getCurrentWeek();
+        this.setDate(date)
+        this.load();
+    }
+
+    month(event: any) {
+        this.isDuration = false
+        var date = this.dateService.getCurrentMonth();
+        this.setDate(date)
+        this.load();
+    }
+
+    setDate(date: any) {
+        this.startDate = date[0]
+        this.endDate = date[1]
+    }
+
+    duration(event: any) {
+        this.isDuration = true
+    }
+
+    getDataByDuration(event: any) {
+        this.dates = this.date.nativeElement.innerText;
+        var split = this.dates.split('-');
+        this.startDate = this.dateService.getStartTime(split[0].trim())
+        this.endDate = this.dateService.getEndTime(split[1].trim())
+    }
+
+    resetDatatable() {
+        this.baseService.dataTableDestroy('datatable-fee-reports');
+        var constId = '00000000-0000-0000-0000-000000000000';
+        this.baseService.enableDataTableAjax(this.serviceUrls.getFeeReports + constId,{});
+
+    }
+
+}

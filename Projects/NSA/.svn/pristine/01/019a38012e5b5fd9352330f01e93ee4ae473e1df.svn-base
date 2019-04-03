@@ -1,0 +1,29 @@
+/**
+ * Created by maggi on 19/05/17.
+ */
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { BaseService } from '../../../../../../services/index';
+import {AddReportCardComponent} from "./add-report-card/add-report-card.component";
+
+@Component({
+    templateUrl: 'report-card.html'
+})
+
+export class ReportCardComponent implements OnInit {
+
+    @ViewChild(AddReportCardComponent) addReportCardComponent: AddReportCardComponent;
+
+    constructor(private baseService: BaseService) { }
+    ngOnInit() {
+        this.baseService.setTitle('NSA-report-card');
+    }
+
+    addReportCard(event: any) {
+        console.log('add Report.......')
+        this.addReportCardComponent.addReportCard(event)
+    }
+
+
+
+
+}

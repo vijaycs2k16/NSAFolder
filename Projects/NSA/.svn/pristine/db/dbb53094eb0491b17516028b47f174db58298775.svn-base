@@ -1,0 +1,18 @@
+<div id="listTable">
+    <% orders.forEach(function(order, index){ %>
+    <div data-id="<%=order._id%>"
+         class="compactView _compactView ">
+        <div class="checkboxRow ">
+            <label class="_customCHeckbox">
+                <input type="checkbox" class="checkbox" data-id="<%=order._id ? order._id: null%>" value="<%=order._id ? order._id: null%>"/>
+                <span></span>
+            </label>
+        </div>
+        <div class="compactRowWrap">
+            <div class="compactRow">
+                <div class="firstName _growed _mainTitle"><%=order.code ? order.code: null%></div>
+            </div>
+        </div>
+    </div>
+    <% }) %>
+</div>

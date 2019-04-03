@@ -1,0 +1,17 @@
+<vector android:height="22dp" android:viewportHeight="512.0"
+    android:viewportWidth="512.0" android:width="22dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/SvgMenuIconColor" android:pathData="M403.3,35V7.8h-31.3v27.2H140V7.8h-31.3v27.2H0v98.2v31.3v339.6h512V164.6v-31.3v-98.2H403.3zM480.7,472.8H31.3V164.6h449.3V472.8zM480.7,133.2H31.3V66.4h77.3v27.2h31.3V66.4h232v27.2h31.3V66.4h77.3V133.2z"/>
+    <path android:fillColor="@color/SvgMenuIconColor" android:pathData="M73.4,271.2h62.7v31.3h-62.7z"/>
+    <path android:fillColor="@color/SvgMenuIconColor" android:pathData="M73.4,334.9h62.7v31.3h-62.7z"/>
+    <path android:fillColor="@color/SvgMenuIconColor" android:pathData="M73.4,398.6h62.7v31.3h-62.7z"/>
+    <path android:fillColor="@color/SvgMenuIconColor" android:pathData="M174.2,271.2h62.7v31.3h-62.7z"/>
+    <path android:fillColor="@color/SvgMenuIconColor" android:pathData="M174.2,334.9h62.7v31.3h-62.7z"/>
+    <path android:fillColor="@color/SvgMenuIconColor" android:pathData="M174.2,398.6h62.7v31.3h-62.7z"/>
+    <path android:fillColor="@color/SvgMenuIconColor" android:pathData="M275.1,207.4h62.7v31.3h-62.7z"/>
+    <path android:fillColor="@color/SvgMenuIconColor" android:pathData="M275.1,271.2h62.7v31.3h-62.7z"/>
+    <path android:fillColor="@color/SvgMenuIconColor" android:pathData="M275.1,334.9h62.7v31.3h-62.7z"/>
+    <path android:fillColor="@color/SvgMenuIconColor" android:pathData="M275.1,398.6h62.7v31.3h-62.7z"/>
+    <path android:fillColor="@color/SvgMenuIconColor" android:pathData="M375.9,207.4h62.7v31.3h-62.7z"/>
+    <path android:fillColor="@color/SvgMenuIconColor" android:pathData="M375.9,271.2h62.7v31.3h-62.7z"/>
+    <path android:fillColor="@color/SvgMenuIconColor" android:pathData="M375.9,334.9h62.7v31.3h-62.7z"/>
+</vector>

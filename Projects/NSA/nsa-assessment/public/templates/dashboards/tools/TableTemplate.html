@@ -1,0 +1,227 @@
+<%if (oneRow){%>
+<div class="notResize">
+    <div class="revenueCountWrap">
+        <div class="_revenueItem">
+            <span>Count</span>
+            <p class="totalCount fontSemiBold"></p>
+        </div>
+        <div class="_revenueItem">
+            <span>Total</span>
+            <p class="totalRevenue fontSemiBold money"></p>
+        </div>
+    </div>
+    <div class="_overviewOrderWrap">
+
+        <%data.forEach(function (el){%>
+        <div class="_overviewItem _tableTitle">
+            <span class="workflowName"><%=el.name%></span>
+            <span class="count fontSemiBold"><%=el.count%></span>
+        </div>
+        <%})%>
+    </div>
+</div>
+<%} else if(userDetails) {%>
+<div class="notResize">
+    <div class="revenueCountWrap">
+        <div class="_revenueItem">
+            <span>Course Name</span>
+            <p class="totalRevenue fontSemiBold"><%=data.course.courseName%></p>
+        </div>
+        <div class="_revenueItem">
+            <span>Center</span>
+            <p class="totalCount fontSemiBold"><%=data.center.centerName%></p>
+        </div>
+    </div>
+    <table class="stripedList _overviewTable">
+        <thead>
+        <tr>
+            <th>Student Name</th>
+            <th>Batch</th>
+            <th>Reg No</th>
+        </tr>
+        </thead>
+        <tbody class="enableTableOdd">
+        <tr>
+            <td><%=data.studentName%></td>
+            <td><%=data.batch.batchName%></td>
+            <td><%=data.registrationNo%></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<%} else if(empDetails) {%>
+<div class="notResize">
+    <div class="revenueCountWrap">
+        <div class="_revenueItem">
+            <span>Center</span>
+            <p class="totalCount fontSemiBold"><%=data.center.centerName%></p>
+        </div>
+    </div>
+</div>
+<%} else if(course) {%>
+<div class="_overviewOrderWrap">
+    <table class="stripedList _overviewTable">
+        <thead>
+        <tr>
+            <%columns.forEach(function (el){%>
+            <th><%=el.text%></th>
+            <%})%>
+        </tr>
+        </thead>
+        <tbody class="enableTableOdd">
+        <%data.forEach(function (el){%>
+        <tr>
+            <td><%=el._id%></td>
+            <td><%=el.courseCount%></td>
+            <td><%=el.batchCount%>
+            </td>
+        </tr>
+        <%})%>
+        </tbody>
+    </table>
+</div>
+<%} else if(notification) {%>
+<div class="_overviewOrderWrap">
+    <table class="stripedList _overviewTable">
+        <thead>
+        <tr>
+            <%columns.forEach(function (el){%>
+            <th><%=el.text%></th>
+            <%})%>
+        </tr>
+        </thead>
+        <tbody class="enableTableOdd">
+        <%data.forEach(function (el){%>
+        <tr>
+            <td><%=el.smsTemplateTitle%></td>
+            <td><%=el.smsTemplateMsg%></td>
+            <td><%=el.updatedBy%>
+            </td>
+        </tr>
+        <%})%>
+        </tbody>
+    </table>
+</div>
+<%} else if(topics) {%>
+<div class="_overviewOrderWrap">
+    <table class="stripedList _overviewTable">
+        <thead>
+        <tr>
+            <%columns.forEach(function (el){%>
+            <th><%=el.text%></th>
+            <%})%>
+        </tr>
+        </thead>
+        <tbody class="enableTableOdd">
+        <%data.forEach(function (el){%>
+        <tr>
+            <td><%=el.classDate%></td>
+            <td><%=el.topicData.name%>
+            <td><%=el.classStartTime ? moment(el.classStartTime).format('hh:mm A'): null%></td>
+            <td><%=el.classEndTime ? moment(el.classEndTime).format('hh:mm A'): null%>
+            <td><%=el.faculty.name.first%>
+            </td>
+        </tr>
+        <%})%>
+        </tbody>
+    </table>
+</div>
+<%} else if(assessment) {%>
+<div class="_overviewOrderWrap">
+    <table class="stripedList _overviewTable" style="    width: 650px !important;">
+        <thead>
+        <tr>
+            <%columns.forEach(function (el){%>
+            <th><%=el.text%></th>
+            <%})%>
+        </tr>
+        </thead>
+        <tbody class="enableTableOdd">
+        <%data.forEach(function (el){%>
+        <tr>
+            <td><%=el.name%></td>
+            <td><%=moment().format('MMM DD')%></td>
+            <td><%=el.config.timeBegin ? moment(el.config.timeBegin).format('hh:mm A'): null%></td>
+            <td><%=el.config.timeEnd ? moment(el.config.timeEnd).format('hh:mm A'): null%></td>
+            <td><%=el.examMode ? 'Online' : 'Offline'%></td>
+            <td>
+                <% if(el.isSubmit) {%>
+                    <span data-color="bgGreenLight" class="text-right _tagSmall">Completed</span>
+                <% } else { %>
+                    <span data-color="bgRed" class="text-right _tagSmall" style="width: 100px;">Not Attended</span>
+                <% } %>
+            </td>
+
+        </tr>
+        <%})%>
+        </tbody>
+    </table>
+</div>
+<%} else if(topStudents) {%>
+<div class="_overviewOrderWrap">
+    <div class="canReadAndWrite weightQuestions row">
+        <div class="inner-holder">
+            <div class="workflow-list-wrapper left">
+                <ul class="workflow-list"></ul>
+            </div>
+            <div id="workflowAccord" class="left">
+                <div id="workflowNames"></div>
+                <div id="details" class="workflow-details">
+                    <div id="workflowSubAccord" style="margin-left:-50px;" class="left">
+                        <div id="sub-details" class="workflow-details">
+                            <div class="listWorkflow">
+                                <div id="workflows"></div>
+                                <div id="addedStatus"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%} else if(topicData) {%>
+<div class="_overviewOrderWrap">
+    <table class="stripedList _overviewTable">
+        <thead>
+        <tr>
+            <%columns.forEach(function (el){%>
+            <th><%=el.text%></th>
+            <%})%>
+        </tr>
+        </thead>
+        <tbody class="enableTableOdd">
+        <%data.forEach(function (el){%>
+        <tr>
+            <td><%=el._id%></td>
+            <td><%=el.count%></td>
+        </tr>
+        <%})%>
+        </tbody>
+    </table>
+</div>
+<%} else {%>
+<div class="_overviewOrderWrap">
+    <table class="stripedList _overviewTable">
+        <thead>
+        <tr>
+            <%columns.forEach(function (el){%>
+            <th><%=el.text%></th>
+            <%})%>
+        </tr>
+        </thead>
+        <tbody class="enableTableOdd">
+        <%data.forEach(function (el){%>
+        <tr>
+            <td><%=moment(new Date(el.invoiceDate || el.orderDate)).format('DD, MMM YYYY')%></td>
+            <td><%=el.supplier.name%></td>
+            <td><%=(el.currency && el.currency._id ? el.currency._id.symbol : '₹') +
+                currencySplitter((el.paymentInfo.total / 100).toFixed(2))%>
+            </td>
+        </tr>
+        <%})%>
+        </tbody>
+    </table>
+</div>
+<%}%>

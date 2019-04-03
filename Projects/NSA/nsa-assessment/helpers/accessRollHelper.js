@@ -1,0 +1,67 @@
+module.exports = function (models) {
+    'use strict';
+    var mongoose = require('mongoose');
+    var rewriteAccess = require('./rewriteAccess');
+    var _ = require('../node_modules/underscore');
+    var async = require('async');
+    var DepartmentSchema = mongoose.Schemas.Department;
+    var objectId = mongoose.Types.ObjectId;
+    var departmentSearcher;
+    var contentIdsSearcher;
+    var waterfallTasks;
+    var resultArray;
+
+    return function (req, Model, waterfallCb) {
+        departmentSearcher = function (waterfallCallback) {
+            models.get(req.session.lastDb, 'Department', DepartmentSchema).aggregate(
+                {
+                    $match: {
+                        users: objectId(req.session.uId)
+                    }
+                }, {
+                    $project: {
+                        _id: 1
+                    }
+                },
+                waterfallCallback);
+        };
+
+        contentIdsSearcher = function (deps, waterfallCallback) {
+            var everyOne = rewriteAccess.everyOne();
+            var owner = rewriteAccess.owner(req.session.uId);
+            var group = rewriteAccess.group(req.session.uId, deps);
+            var whoCanRw = [everyOne, owner, group];
+            var matchQuery = {
+                $or: whoCanRw
+            };
+
+            if(req.session.profileId == '1387275598000' || req.session.profileId == '1527682829000') {
+                matchQuery = {};
+            }
+
+            Model.aggregate(
+                {
+                    $match: matchQuery
+                },
+                {
+                    $project: {
+                        _id: 1
+                    }
+                },
+                waterfallCallback
+            );
+        };
+
+        waterfallTasks = [departmentSearcher, contentIdsSearcher];
+
+        async.waterfall(waterfallTasks, function (err, result) {
+            if (err) {
+                return waterfallCb(err);
+            }
+
+            resultArray = _.pluck(result ? result : [], '_id');
+
+            waterfallCb(null, resultArray);
+        });
+    };
+};

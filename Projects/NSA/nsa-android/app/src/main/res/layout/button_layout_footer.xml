@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonvisibility"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height50"
+            android:text="Deny"
+            android:layout_margin="@dimen/margin10"
+            android:textSize="@dimen/headings"
+            android:id="@+id/deny"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/round_red"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height50"
+            android:text="Approve"
+            android:textSize="@dimen/headings"
+            android:id="@+id/approve"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin10"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/round_green"
+            android:layout_weight="1"/>
+</LinearLayout>
+</LinearLayout>

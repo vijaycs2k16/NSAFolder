@@ -1,0 +1,16 @@
+<% collection.forEach(function(item, index){ %>
+<tr data-id="<%=item._id%>">
+    <td class="notForm">
+        <label class="_customCHeckbox">
+            <input type="checkbox" value="<%=item._id%>" class="checkbox"/>
+            <span></span>
+        </label>
+    </td>
+
+    <td data-content="name" class="editable text-left"><%=item.transactionDate ? moment(item.transactionDate).format('LLL') : '-'%></td>
+    <td class="editable text-left"><%=item.reason%></td>
+    <td class="editable text-left"><%=item.product ? item.product.name : ''%></td>
+    <td class="editable text-left"><%=item.bundles ? item.bundles[0].quantity : ''%></td>
+</tr>
+<% }) %>
+

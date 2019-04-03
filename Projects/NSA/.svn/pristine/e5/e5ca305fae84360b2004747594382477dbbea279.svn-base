@@ -1,0 +1,107 @@
+<div class="form-holder _newForm">
+    <form method="post" action="" id="invoiceForm">
+        <h4 class="_dialogMainTitle">New Exam Configuration</h4>
+
+        <div class="_formWrap _enlargedItemMargin newItem">
+            <div class="_formBlock _equal">
+                <div class="_animateInputBox">
+                    <input type="text"
+                           class="_animate "
+                           id="name"
+                           required
+                           value=""/>
+                    <label class="_animate">Name</label>
+                </div>
+                <div class="_animateInputBox _withInfo">
+                    <input type="number"
+                           name="examDuration"
+                           class="_animate"
+                           id="examDuration"
+                    />
+                    <span class="_staticLabel">Duration (mins)</span>
+                    <span class="tips icon-info" data-id="examDuration"></span>
+                </div>
+                <div class="container">
+                    <div class="canReadAndWrite row">
+                        <div class="_animateinputbox _withtime _withinfo col m-6" style="margin-left:-13px;">
+                            <span class="_selectTitle" style="color: #7eadcc;margin-left:3px;">Start Time</span>
+
+                            <div class="inputdateactionblock" style="
+                           position: relative;
+                           display: block;
+                           padding: 0 20px 0 0;
+                           border: none;
+                           min-height: 26px;
+                           cursor: pointer;
+                           border-bottom: 1px solid #c8c8d3;
+                           font-size: 13px;
+                           margin-top: 5px!important;
+                           color: #999 !important;
+                           ">
+                                <input maxlength="2"
+                                       name="startTime"
+                                       id="startTime"
+                                       readonly/>
+                            </div>
+                            <span class="tips " data-id="examStartTime"></span>
+                        </div>
+                        <div class="_animateinputbox _withtime _withinfo col m-6" style="margin-left:13px;">
+                            <span class="_selectTitle" style="color: #7eadcc;margin-left:3px;">End Time</span>
+
+                            <div class="inputdateactionblock" style="
+                           position: relative;
+                           display: block;
+                           padding: 0 20px 0 0;
+                           border: none;
+                           min-height: 26px;
+                           cursor: pointer;
+                           margin-top: 5px!important;
+                           border-bottom: 1px solid #c8c8d3;
+                           font-size: 13px;
+                           color: #999 !important;
+                           ">
+                                <input maxlength="2"
+                                       name="endTime"
+                                       id="endTime"
+                                       readonly/>
+                            </div>
+                            <span class="tips " data-id="examEndTime"></span>
+                        </div>
+                    </div>
+                </div><br/>
+                <div class="container">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-6">
+                            <label class="_customCHeckbox">
+                                <input type="checkbox" name="autoCorrect" checked="" class="checkbox" id="autoCorrect"/>
+                                <span class="clr-black">&nbsp;Auto Correct</span>
+                            </label>
+                        </div>
+                        <div class="_circleRadioRadianceWrap col m-6">
+                            <label class="_customCHeckbox">
+                                <input type="checkbox" name="canReview" checked="" class="checkbox" id="canReview"/>
+                                <span class="clr-black">&nbsp;Can Review</span>
+                            </label>
+                        </div>
+                    </div>
+                </div><br/><br/>
+                <div class="_animateInputBox">
+                    <input type="number"
+                           name="questionMarks"
+                           class="_animate"
+                           id="questionMarks"
+                    />
+                    <span class="_staticLabel">Each Question Marks</span>
+                </div>
+                <div class="_animateInputBox">
+                    <input type="number"
+                           name="nagetiveMarks"
+                           class="_animate"
+                           id="nagetiveMarks"
+                    />
+                    <span class="_staticLabel">Negative Marks</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

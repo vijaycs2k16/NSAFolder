@@ -1,0 +1,48 @@
+<div class="_acountingTableWrap">
+    <div class="_acountingTitleBlock _forOverview">
+        <a href="javascript:;" class="btn blue slim icon-plus btnPositioned" title="Create" id="top-bar-createBtn">New</a>
+    </div>
+    <div class="_acountingTableBlock">
+        <table class="list tableProjects tableFixed _currencyTable">
+            <colgroup>
+                <col width="10%"/>
+                <col width="20%"/>
+                <col width="20%"/>
+                <col width="20%"/>
+                <col width="10%"/>
+                <col width="10%"/>
+            </colgroup>
+            <thead>
+            <tr class="forToggle">
+                <th class="text-left">Code</th>
+                <th class="text-left">Name</th>
+                <th class="text-left">Rate</th>
+                <th class="text-left">Country</th>
+                <th class="text-left">Default</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody class="forToggle" id="taxTable">
+            <% collection.forEach(function(elem,index){ %>
+
+            <tr data-id="<%=elem._id%>">
+               <td class="text-left"><%=elem.code%></td>
+               <td class="text-left"><%=elem.name%></td>
+               <td class="text-left"><span class="fontSemiBold"><%=(elem.rate * 100).toFixed(2)%> %</span></td>
+               <td class="text-left"><%=elem.country%></td>
+               <td class="text-left">
+                   <%if (elem.isDefault) {%>
+                    <input type="checkbox" checked="checked" class="checkBox" disabled/>
+                   <%}%>
+               </td>
+                <td class="text-left">
+                    <a href="javascript:;" class="icon-note goToEdit _actionCircleBtn" aria-hidden="true"></a>
+                    <a href="javascript:;" class="icon-trash goToRemove _actionCircleBtn" aria-hidden="true"></a>
+                </td>
+            </tr>
+
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>

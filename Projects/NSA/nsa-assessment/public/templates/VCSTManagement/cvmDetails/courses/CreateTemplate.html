@@ -1,0 +1,95 @@
+<div class="form-holder _newForm">
+    <form method="post" action="" id="invoiceForm">
+        <h4 class="_dialogMainTitle">Add Title</h4>
+        <div class="_formWrap _enlargedItemMargin newItem">
+            <div class="_formBlock _equal">
+                <div class="_animateInputBox">
+                    <input type="text"
+                           class="_animate "
+                           id="name"
+                           required
+                           value=""/>
+                    <label class="_animate">Title</label>
+                </div>
+                <div class="_animateInputBox">
+                    <input type="text"
+                           class="_animate "
+                           id="code"
+                           required
+                           maxlength="48"
+                           value=""/>
+                    <label class="_animate">Code</label>
+                </div>
+                <div class="_formBlock">
+                    <div class="_animateSelectBox _withInfo ">
+                        <!--<div class="col m-9">-->
+                        <span class="_selectTitle" style="font-size: 12px;top: -13px;left: -12px" >Classes</span><br/>
+                        <div id="variantsClassBlock" class="_variantsBlock _varientClass multi-select" style=" z-index: 4!important;width: 406px; bottom: 0px;left:3px">
+                            <div class="_checkCategoriesWrap">
+                                <ul id="checkedClassCategories" class="_checkCategories">
+                                </ul>
+                                <span id="showClsBtn" class="_arrow"></span>
+                            </div>
+                            <ul id="classCategories" class="_categoriesList"></ul>
+                        </div>
+                        <!--</div>-->
+                    </div>
+                </div>
+
+                <div class="_formBlock">
+                    <div class="_animateSelectBox _withInfo">
+                        <!--<div class="col m-6 margin-top15-left15">-->
+                            <span class="_selectTitle" style="font-size: 12px;top: -13px;left: -12px" >Subjects</span><br/>
+                            <div id="variantsCenterBlock" class="_variantsBlock _variantsSubjects multi-select" style=" z-index: 3!important; width: 406px; bottom:-1px; left:2px;">
+                                <div class="_checkCategoriesWrap">
+                                    <ul id="checkedProductCategories" class="_checkCategories"></ul>
+                                    <span id="showBtn" class="_arrow"></span>
+                                </div>
+                                <ul id="productCategories" class="_categoriesList"></ul>
+                            </div>
+                        </div>
+                    </div>
+                <br/><br/>
+                <div class="_textGrey">
+                    <label style="color:#7eadcc">Title Status</label>
+                </div>
+                <div class="container">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-6">
+                            <div class="_tipsWrap">
+                                <label for="yes" class="">Active</label>
+                                <input type="radio"
+                                       name="status"
+                                       id="yes"
+                                       class="_circleRadioRadiance"
+                                       checked=""
+                                       value="1">
+                                <label for="yes"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                                <span class="tips icon-info"
+                                      data-id="yes"></span>
+                            </div>
+                        </div>
+                        <div class="_circleRadioRadianceWrap col m-6">
+                            <div class="_tipsWrap">
+                                <label for="no" class="">Deactive</label>
+                                <input type="radio"
+                                       name="status"
+                                       id="no"
+                                       value="0"
+                                       class="_circleRadioRadiance"
+                                       >
+                                <label for="no"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                                <span class="tips icon-info"
+                                      data-id="no"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

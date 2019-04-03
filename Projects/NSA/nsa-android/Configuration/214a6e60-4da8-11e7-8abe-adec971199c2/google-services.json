@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "945515151730",
+    "firebase_url": "https://ritas-kochi.firebaseio.com",
+    "project_id": "ritas-kochi",
+    "storage_bucket": "ritas-kochi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945515151730:android:206188e1cfba8982",
+        "android_client_info": {
+          "package_name": "ritas.publication.in.kochi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945515151730-int9l5jajtbed2q8ageph6j62upr9pni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsVpQdRyGH59kuyrOBxS5fPZKu3xH37JQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "98215237170",
+    "firebase_url": "https://vincentkeralapuram-c67e8.firebaseio.com",
+    "project_id": "vincentkeralapuram-c67e8",
+    "storage_bucket": "vincentkeralapuram-c67e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98215237170:android:c30bad03078d7b23",
+        "android_client_info": {
+          "package_name": "vincent.management.in.keralapuram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98215237170-ckpcq293gl5i0sljh4jtlegc8m1vujqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4WCOb6c84_Nkhqiz0nPpgnG-licuGVSY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

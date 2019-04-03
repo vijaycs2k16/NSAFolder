@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_password_change"
+    android:orientation="vertical"
+    android:background="@color/overlayColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nexrise.publication.in.nexrise.PasswordChangeActivity">
+
+
+
+    <EditText
+        android:layout_marginTop="@dimen/margin15"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/colorGray"
+        android:layout_height="@dimen/height40"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/margin15"
+        android:background="@drawable/border"
+        android:hint="@string/enter_old_pass"
+       android:textSize="@dimen/common_text_size"
+        android:id="@+id/oldpassword" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height40"
+        android:paddingLeft="@dimen/margin15"
+        android:paddingRight="0dp"
+        android:background="@drawable/border"
+        android:layout_marginTop="@dimen/margin15"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:hint="@string/enter_new_pass"
+        android:textColorHint="@color/colorGray"
+        android:inputType="textPassword"
+        android:textSize="@dimen/common_text_size"
+        android:id="@+id/newpassword" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height40"
+        android:layout_marginTop="@dimen/margin15"
+        android:paddingLeft="@dimen/margin15"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:hint="@string/confirm_new_pass"
+        android:textColorHint="@color/colorGray"
+        android:inputType="textPassword"
+        android:textSize="@dimen/common_text_size"
+        android:id="@+id/confirmpassword" />
+
+    <Button
+        android:layout_marginTop="@dimen/margin15"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:text="@string/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        style="@style/RoundedCornerButton"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height40"
+        android:layout_marginTop="@dimen/margin15"
+        android:paddingLeft="@dimen/margin15"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:textSize="@dimen/common_text_size"
+        android:background="@color/overlayForegroundColor"
+        android:id="@+id/notehint"/>
+
+
+
+</LinearLayout>

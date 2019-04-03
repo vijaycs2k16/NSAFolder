@@ -1,0 +1,64 @@
+{
+  "development":{
+    "zone": "Asia/Calcutta",
+
+
+    "server" : {
+       "host" : "localhost",
+       "port" : 7878
+    },
+    "register": {
+      "sms": false
+    },
+
+    "elasticSearch":{
+      "master" : {
+        "host": "localhost",
+        "port": 9200,
+        "log": "trace"
+      },
+      "slave" : {
+        "host": "localhost",
+        "port": 9200,
+        "log": "trace"
+      },
+      "indexDefaultName" : "nsa",
+      "defaultTypeName" : "users",
+      "index" : {
+        "userIndex": "users",
+        "studentType": "student",
+        "empType": "employee",
+        "vehicleType": "vehicle",
+        "parentType":"parentInformation",
+        "calendarIndex" : "calendar",
+        "notesType" : "notes",
+        "eventsType" : "events",
+        "examsType" : "exams",
+        "assignmentsType" : "assignments",
+        "attendanceType" : "attendance",
+        "assessmentIndex" : "assessment",
+        "marksType": "marks",
+        "notificationsIndex" : "notifications",
+        "notificationsType" : "notification_master",
+        "notificationDetailsType" : "notification_details",
+        "assignmentsIndex": "assignments",
+        "assignmentsMasterType" : "assignment_master",
+        "assignmentDetailsType" : "assignment_details",
+        "attendanceIndex" : "attendance",
+        "attendancesMasterType" : "attendance_master"
+
+      }
+    },
+
+    "sms": {
+      "valueLeaf": {
+        "url": "http://alerts.valueleaf.com/api/v3/?method=sms.json&api_key=A586b079f0426f330ced62773e7ff6a01&format=json&json=",
+        "groupStatusUrl": "http://alerts.valueleaf.com/api/v3/?method=sms.groupstatus&api_key=A586b079f0426f330ced62773e7ff6a01&format=json&groupid=",
+        "statusUrl": "http://alerts.valueleaf.com/api/v3/?method=sms.status&api_key=A586b079f0426f330ced62773e7ff6a01&format=json&id="
+      }
+    }
+
+
+  }
+
+}

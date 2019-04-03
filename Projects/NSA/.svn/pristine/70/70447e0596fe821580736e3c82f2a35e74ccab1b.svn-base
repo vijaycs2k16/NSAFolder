@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="halloffame">
+<parameter name="award_Name" value="Star of the Month"></parameter>
+<parameter name="date_Value" value="10-Jun-2018"></parameter>
+<parameter name="student" value="Harish Kannan"></parameter>
+<parameter name="category_desc" value="This is automated for testing purpose"></parameter>
+	<test name="HallOfFame">
+		<classes>
+			<class name="com.nsa.testing.tests.HallOfFame" />
+		</classes>
+	</test>
+</suite> 

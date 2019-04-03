@@ -1,0 +1,3 @@
+//fee Transaction Details
+
+alter table nsa.fee_transaction_details add(tenant_id timeuuid, school_id uuid, academic_year text);

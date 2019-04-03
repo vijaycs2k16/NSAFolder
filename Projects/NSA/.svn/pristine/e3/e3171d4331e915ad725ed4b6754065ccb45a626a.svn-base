@@ -1,0 +1,25 @@
+
+<div id="productList">
+   <!-- <div class="productItem deleteRow _productRow" >
+        <div data-name="productName" class="">
+
+            <div class="_animateInputBox _withInfo eidtTopic">
+
+                <input type="text"
+                       class="_animate name"
+                       id="name"
+                       required
+                       value=""/>
+
+                <label class="_animate">Topic Name</label>
+                <span href="javascript:;" class="icon-trash tips goToRemove removeJob _actionCircleBtn show" aria-hidden="true"></span>
+            </div>
+        </div>
+    </div>-->
+</div>
+
+<div id="newItem">
+    <div class="addProductItem">
+        <span href="javascript:;" class="icon-plus btn  show blue slim">Add More Topic Name</span>
+    </div>
+</div>

@@ -1,0 +1,689 @@
+define([
+    'Backbone',
+    'jQuery',
+    'Underscore',
+    'Lodash',
+    'text!templates/VAssessment/questionBank/CreateTemplate.html',
+    'text!templates/VAssessment/questionBank/QuestionItems.html',
+    'text!templates/VAssessment/questionBank/QuestionItem.html',
+    'collections/Persons/PersonsCollection',
+    'collections/Departments/DepartmentsCollection',
+    'views/dialogViewBase',
+    'views/Products/orderRows/ProductItems',
+    'models/VQuestionBank',
+    'common',
+    'populate',
+    'vconstants',
+    'views/Assignees/AssigneesView',
+    'dataService',
+    'helpers/keyValidator',
+    'helpers',
+    'services/examSchedule',
+    'services/examManagment'
+], function (Backbone,
+             $,
+             _,
+             lodash,
+             CreateTemplate,
+             QuestionItems,
+             QuestionItem,
+             PersonsCollection,
+             DepartmentsCollection,
+             ParentView,
+             ProductItemView,
+             QuotationModel,
+             common,
+             populate,
+             CONSTANTS,
+             AssigneesView,
+             dataService,
+             keyValidator,
+             helpers, examScheduleService, examManagmentService) {
+
+    var CreateView = ParentView.extend({
+        el         : '#content-holder',
+        contentType: 'VQuestionBank',
+        template   : _.template(CreateTemplate),
+        imageSrc            : '',
+
+        initialize: function (options) {
+            if (options) {
+                this.visible = options.visible;
+            }
+            _.bindAll(this, 'render', 'saveItem');
+            this.currentModel = new QuotationModel();
+            this.responseObj = {};
+            this.collection = options.collection;
+            this.currencySymbol = '₹';
+            this.deletedProducts = [];
+            this.render();
+        },
+
+        events: {
+            'click button.saveItem': 'saveItem',
+            'click button.savenextItem': 'savenextItem',
+            'click a.RegistrationBtn'     : 'registration',
+            'mouseenter .avatar': 'showEdit',
+            'mouseleave .avatar': 'hideEdit',
+            'click #resetPrices': 'resetPrices',
+            'keypress .forNum'  : 'keydownHandler',
+            'click .addProductItem a': 'getProducts',
+            'click .removeJob'       : 'deleteRow',
+            'click .active'       : 'activeChoice',
+            //'click .newSelectList li:not(.miniStylePagination,#generateJobs)': 'chooseOption'
+
+            'change .productCenterCategory' : 'changeCenter',
+            'click #showCenterBtn'      : examScheduleService.showCenters,
+            'click ._varientCenter'     : examScheduleService.showCenters,
+            'click .deleteCenter'       : 'deleteCenters',
+            'click ._enlargedItemMargin' : 'closeMultiselect',
+            'click ._formWrap'          : 'hideSelect',
+            'input .multiSelectSearch'   : examManagmentService.multiSelectSearch
+        },
+
+        activeChoice: function (e) {
+            $('input[type="checkbox"]').on('click', function() {
+                $('input[type="checkbox"]').not(this).prop('checked', false);
+            });
+            var $target = $(e.target);
+            var thisEl = this.$el;
+            var sList = "";
+            var sThisVal="";
+            $('input.active[type=checkbox]').each(function () {
+                sThisVal = (this.checked ? "1" : "0");
+                if (sThisVal == '1') {
+                    $(this).val('1')
+                }
+                if (sThisVal == '0') {
+                    $(this).val('0')
+                }
+                sList += (sList=="" ? sThisVal : "," + sThisVal);
+            });
+        },
+
+        deleteRow: function (e) {
+            var target = $(e.target);
+            var tr = target.closest('tr');
+            var jobId = tr.find('#discountValue').val();
+            var product = _.findWhere(this.responseObj['#productsDd'], {_id: jobId});
+            if (product) {
+                product.selectedElement = false;
+            }
+
+            e.stopPropagation();
+            e.preventDefault();
+
+            tr.remove();
+            var append = "Removed option " + "[" + jobId + "]" + " from the List";
+
+            if (tr.remove() && jobId.length) {
+                return App.render({
+                    type: 'error',
+                    message: append
+                });
+            }
+
+            if (tr.remove() && !jobId.length) {
+                return App.render({
+                    type: 'error',
+                    message: 'Removed option from the list'
+                });
+            }
+        },
+
+        hideDialog: function () {
+            $('.edit-dialog').remove();
+        },
+
+        hideSelect: function() {
+            $('._categoriesList').hide();
+        },
+
+        getProducts: function (e) {
+            var selectedProducts = this.$el.find('.productItem');
+            var selectedLength = selectedProducts.length;
+            this.$el.find('#productList').append(_.template(QuestionItem, {model: {}, id: selectedLength + 4}));
+        },
+
+
+        chooseOption: function (e) {
+            var target = $(e.target);
+            var $target = $(e.target);
+            var $thisEl = this.$el;
+            var id = target.attr('id');
+            e.preventDefault();
+            $('.newSelectList').hide();
+            target.closest('.current-selected').text(target.text()).attr('data-id', target.attr('id'));
+            var holder = $(e.target).parents('._newSelectListWrap').find('.current-selected');
+            holder.text($(e.target).text()).attr('data-id', $(e.target).attr('id'));
+            var centerid = $thisEl.find('#center').attr('id');
+            var subjectId = $thisEl.find('#subject').attr('data-id');
+            var subjectid = $thisEl.find('#subject').attr('id');
+            var topicId = $thisEl.find('#topics').attr('data-id');
+            var topicid = $thisEl.find('#topics').attr('id');
+            var centerId = $thisEl.find('#center').attr('data-id');
+            var classesID = $thisEl.find('#classes').attr('data-id')
+            var classesId = $thisEl.find('#classes').attr('id')
+            var SubTopics = $thisEl.find('#subTopic').attr('data-id')
+            var images = this.imageSrc;
+            if( id == classesID ){
+                this.selectClasses(classesID)
+            }
+            if (subjectid == 'subject') {
+                this.selectTopic(subjectId);
+            }
+            if(topicid == 'topics'){
+                this.selectSubTopic(topicId)
+            }
+
+
+            return false;
+        },
+        resetClasses: function(){
+            this.$el.find('#checkedProductCenter').empty();
+            this.$el.find('#productCenterCategories').empty();
+            this.responseObj['#subTopic'] = [];
+            this.responseObj['#subject'] = [];
+            this.responseObj['#topics'] = [];
+            this.$el.find('#topics').text('Select');
+            $('#topics').data('data-id', '');
+            this.$el.find('#subject').text('Select');
+            this.$el.find('#subTopic').text('Select');
+        },
+
+        selectTopic: function (sid) {
+            var self = this;
+            if (sid !== '' ) {
+                dataService.getData('/vtopic/subject/classDetail/', {subject: sid}, function (topics) {
+                    var topics =  lodash.flatMap(topics.data, ele => lodash(ele.topics).map(topic => ({name : topic.name, _id : topic._id})).value());
+                    self.responseObj['#topics'] = topics;
+                });
+            } else {
+                self.responseObj['#topics'] = [];
+                $('#topics').data('id', '');
+                $('#topics').text('Select');
+            }
+            return false;
+        },
+
+        selectClasses: function(classid){
+            var self = this;
+            self.resetClasses();
+            dataService.getData('/vsubject/details/'+ classid, {}, function (subjects) {
+                subjects = _.map(subjects.data, function (subject) {
+                    subject._id = subject.subject._id;
+                    subject.name = subject.subject.subjectName;
+                    return subject;
+                });
+                //self.renderCenters(courses)
+                self.responseObj['#subject'] = subjects
+
+            })
+
+        },
+
+        selectSubTopic: function(subTopic){
+            var self = this;
+            if (subTopic !== '') {
+                dataService.getData('/vcourse/subtopics/'+ subTopic, {}, function (topics) {
+                    var data = topics.data.length > 0 ? topics.data[0].subtopic : null
+                    var TopicDats = [];
+                    _.map(data, function(topic){
+                        topic.name = topic.name;
+                        TopicDats.push(topic)
+                    })
+                    self.responseObj['#subTopic'] = TopicDats;
+                });
+            } else {
+                self.responseObj['#subTopic'] = [];
+                $('#subTopic').data('id', '');
+                $('#subTopic').text('Select');
+            }
+            return false;
+        },
+
+        savenextItem: function () {
+            var self = this;
+            var mid = 55;
+            var thisEl = this.$el;
+            var centerName = thisEl.find('#center').attr('data-id');
+           // var courseName = thisEl.find('#course').attr('data-id');
+            var subjectName = thisEl.find('#subject').attr('data-id');
+            var topicName = thisEl.find('#topics').attr('data-id');
+            var questionName = CKEDITOR.instances.editor.getData();
+            var description = CKEDITOR.instances.editor1.getData();
+            var explanation = CKEDITOR.instances.editor2.getData();
+            //var score = thisEl.find('#point').val();
+            var e = document.getElementById("Weightage");
+            var weightage = e.options[e.selectedIndex].value;
+            var f = document.getElementById("point");
+            var score = f.options[f.selectedIndex].value;
+            var choiceValue = thisEl.find('#createDiscountOrNot').val();
+            var listProducts = this.$el.find('.productList');
+            var listLength = listProducts.length;
+            var selectedProducts = this.$el.find('.productItem');
+            var selectedLength = selectedProducts.length;
+            var form = [];
+            var data;
+            var selectedLength = selectedProducts.length;
+            var targetEl;
+            var productId;
+            var quantity;
+            var price;
+            var isValid
+            var imags = self.imageSrc;
+           // var courses = this.selectCenters;
+            var classess =  thisEl.find('#classes').attr('data-id')
+            var subTopics = thisEl.find('#subTopic').attr('data-id')
+            //var choice = thisEl.find('.discountValue').val();
+            var multiChoice = thisEl.find('#createDiscountOrNot').val();
+
+            if (_.isEmpty(classess)) {
+                return App.render({
+                    type: 'error',
+                    message: "Class should't be empty."
+                });
+            }
+
+            if (!subjectName) {
+                return App.render({
+                    type: 'error',
+                    message: "Subject Name should't be empty."
+                });
+            }
+
+            if (!topicName) {
+                return App.render({
+                    type: 'error',
+                    message: "Topic Name should't be empty."
+                });
+            }
+
+            if (!questionName) {
+                return App.render({
+                    type: 'error',
+                    message: "Question can't be empty."
+                });
+            }
+
+            for (i = selectedLength - 1; i >= 0; i--) {
+                targetEl = selectedProducts.length === i ? this.$el.find('#productItem') : $(selectedProducts[i]);
+                var idName = targetEl.find('.discountValue').attr('id');
+                var choice = CKEDITOR.instances[idName].getData();
+                var active = targetEl.find('.active').val();
+                var IsChecked = $('.active').is(':checked');
+
+                if(!IsChecked) {
+                    return App.render({
+                        type: 'error',
+                        message: "Tick the Correct Answer"
+                    });
+                }
+
+                if (active == 1) {
+                    isValid = true;
+                }
+                else {
+                    isValid = false;
+                }
+
+                var answer = {
+                    desc: choice,
+                    isValid: isValid
+                };
+                form.push({
+                        desc: choice,
+                        isValid: isValid
+                    }
+                );
+            }
+
+            if (!weightage) {
+                return App.render({
+                    type: 'error',
+                    message: "Weightage can't be empty."
+                });
+            }
+            if (!score) {
+                return App.render({
+                    type: 'error',
+                    message: "Score can't be empty."
+                });
+            }
+
+            var arr = [];
+
+            form.reverse();
+
+            data = {
+                type : choiceValue,
+                point : score,
+                form : [{desc : questionName, explanation: explanation, images: self.imageSrc, ans : form}],
+                desc : description,
+                subject : subjectName,
+                topic : topicName,
+                weightage : weightage,
+                classDetail : classess,
+                subTopic :subTopics != '' ? subTopics : null
+            };
+            this.currentModel.save({questions: data}, {
+                wait   : true,
+                success: function (model) {
+                    if(model.attributes.success === true){
+                        self.redirectAfterSave(self, model);
+                        var textInput=$('#customers input[type="text"]').val('');
+                        $('#answer1').html('');
+                        $('#answer2').html('');
+                        var textAreaInput =$('#description').val('');
+                        var explanationInput =$('#explanation').val('');
+                        $("input[type='checkbox']").attr("checked",false);
+                        return App.render({
+                            type: 'notify',
+                            message:CONSTANTS.RESPONSES.CREATE_SUCCESS
+                        });
+
+                        $('#customers input[type="text"]').val('');
+                    }
+                },
+
+                error: function (model, xhr) {
+                    self.errorNotification(xhr);
+                }
+            });
+
+        },
+
+
+        saveItem: function () {
+            var self = this;
+            var mid = 55;
+            var thisEl = this.$el;
+            var centerName = thisEl.find('#center').attr('data-id');
+            //var courseName = thisEl.find('#course').attr('data-id');
+            var subjectName = thisEl.find('#subject').attr('data-id');
+            var topicName = thisEl.find('#topics').attr('data-id');
+            var questionName = CKEDITOR.instances.editor.getData();
+            var description = CKEDITOR.instances.editor1.getData();
+            var explanation = CKEDITOR.instances.editor2.getData();
+            //var score = thisEl.find('#point').val();
+            var e = document.getElementById("Weightage");
+            var weightage = e.options[e.selectedIndex].value;
+            var f = document.getElementById("point");
+            var score = f.options[f.selectedIndex].value;
+            var choiceValue = thisEl.find('#createDiscountOrNot').val();
+            var listProducts = this.$el.find('.productList');
+            var listLength = listProducts.length;
+            var selectedProducts = this.$el.find('.productItem');
+            var selectedLength = selectedProducts.length;
+            var form = [];
+            var data;
+            var selectedLength = selectedProducts.length;
+            var targetEl;
+            var productId;
+            var quantity;
+            var price;
+            var isValid
+            var imags = self.imageSrc;
+            //var choice = thisEl.find('.discountValue').val();
+            var multiChoice = thisEl.find('#createDiscountOrNot').val();
+           // var courses = this.selectCenters;
+            var classess = thisEl.find('#classes').attr('data-id')
+            var subTopics = thisEl.find('#subTopic').attr('data-id')
+
+            for (i = selectedLength - 1; i >= 0; i--) {
+                targetEl = selectedProducts.length === i ? this.$el.find('#productItem') : $(selectedProducts[i]);
+                var idName = targetEl.find('.discountValue').attr('id');
+                var choice = CKEDITOR.instances[idName].getData();
+                var active = targetEl.find('.active').val();
+                var IsChecked = $('.active').is(':checked');
+                if(!IsChecked) {
+                    return App.render({
+                        type: 'error',
+                        message: "Tick the Correct Answer"
+                    });
+                }
+
+                if (active == 1) {
+                    isValid = true;
+                }
+                else {
+                    isValid = false;
+                }
+
+                var answer = {
+                    desc: choice,
+                    isValid: isValid
+                };
+                form.push({
+                        desc: choice,
+                        isValid: isValid
+                    }
+                );
+            }
+
+            if (_.isEmpty(classess)) {
+                return App.render({
+                    type: 'error',
+                    message: "Class should't be empty."
+                });
+            }
+
+            if (!subjectName) {
+                return App.render({
+                    type: 'error',
+                    message: "Subject Name should't be empty."
+                });
+            }
+
+            if (!topicName) {
+                return App.render({
+                    type: 'error',
+                    message: "Topic Name should't be empty."
+                });
+            }
+
+            if (!questionName) {
+                return App.render({
+                    type: 'error',
+                    message: "Question can't be empty."
+                });
+            }
+            if (!weightage) {
+                return App.render({
+                    type: 'error',
+                    message: "Weightage can't be empty."
+                });
+            }
+            if (!score) {
+                return App.render({
+                    type: 'error',
+                    message: "Score can't be empty."
+                });
+            }
+
+            var arr = [];
+
+            form.reverse();
+
+            data = {
+                type : choiceValue,
+                point : score,
+                form : [{desc : questionName, explanation: explanation, images: self.imageSrc, ans : form}],
+                desc : description,
+                subject : subjectName,
+                topic : topicName,
+                weightage : weightage,
+                classDetail : classess,
+                subTopic : subTopics != '' ? subTopics : null
+            };
+            this.currentModel.save({questions: data}, {
+                wait   : true,
+                success: function (model) {
+                    App.render({
+                        type: 'notify',
+                        message: "Question Saved"
+                    });
+                    var url = 'erp/' + 'VQuestionBank';
+                    Backbone.history.navigate(url + '/list', {trigger: true});
+
+                },
+
+                error: function (model, xhr) {
+                    self.errorNotification(xhr);
+                }
+            });
+
+        },
+        redirectAfterSave: function (content) {
+            clearSample();
+        },
+
+        hideDialog: function () {
+            $('.edit-dialog').remove();
+        },
+
+        render: function () {
+            var self = this;
+            var $thisEl = this.$el;
+            var formString;
+            var productItemContainer;
+            var buttons;
+            var template;
+            var timeLine;
+            this.template = _.template(CreateTemplate);
+
+            formString = this.template({
+                model             : this.currentModel.toJSON(),
+            });
+            $thisEl.html(formString);
+            $thisEl.find('#templateDiv').html(template);
+            this.$el.find('#productItemsHolder').html(_.template(QuestionItems));
+
+            dataService.getData('/nsaclass/', {}, function (nsaclasses) {
+                nsaclasses = _.map(nsaclasses.data, function (nsaclass) {
+                    nsaclass.name = nsaclass.className;
+                    nsaclass._id = nsaclass._id
+                    return nsaclass;
+                });
+                self.responseObj['#classes'] = nsaclasses;
+            });
+
+            this.delegateEvents(this.events);
+            return this;
+        },
+
+        renderCenters : function(objs){
+            var $thisEl = this.$el;
+            var $checkedCategoryContainer = $thisEl.find('#checkedProductCenter');
+            var $categoriesBlock = $thisEl.find('#variantsCenterBlock');
+            var $categoryContainer = $thisEl.find('#productCenterCategories');
+            var checkedSelectedId;
+            var checkedName;
+            $categoryContainer.append('<input type="text" id="myCenterInput" class="multiSelectSearch" placeholder="Search for center.." title="Type in a center">')
+            $categoryContainer.append('<li><label class="_customCHeckbox"><input type="checkbox" class="checkbox productCenterCategory" id="1" data-value="ALL" data-id="1"> <span></span></label><label class="_checkboxLabel" for="1">ALL</label></li>');
+            _.each(objs, function (category) {
+                checkedName = '';
+                checkedSelectedId = '';
+
+                if (objs.indexOf(category._id) >= 0) {
+                    $categoryContainer.append('<li><label class="_customCHeckbox"><input checked="checked" type="checkbox" class="checkbox productCenterCategory" id="' + category._id + '" data-value="' + category.name + '" data-id="' + category._id + '"> <span></span></label><label class="_checkboxLabel" for="' + category._id + '">' + category.name + '</label></li>');
+                    checkedSelectedId = category._id;
+                    checkedName = category.name;
+                } else {
+                    $categoryContainer.append('<li><label class="_customCHeckbox"><input type="checkbox" class="checkbox productCenterCategory" id="' + category._id + '" data-value="' + category.name + '" data-id="' + category._id + '"> <span></span></label><label class="_checkboxLabel" for="' + category._id + '">' + category.name + '</label></li>');
+                }
+
+                if (checkedName) {
+                    $checkedCategoryContainer.append('<li><span class="checkedProductCenter"  data-value="' + checkedName + '" data-id="' + checkedSelectedId + '">' + checkedName + '</span><span class="deleteTag icon-close3"></span></li>');
+                }
+            });
+        },
+        deleteCenters: function(e) {
+            var $thisEl = this.$el;
+            var $target = $thisEl.find(e.target);
+            var id = $thisEl.find($target.closest('li')
+                .find('.checkedProductCenter')[0])
+                .data('id');
+
+            e.stopPropagation();
+            //$thisEl.find('.productCenterCategory').prop('checked', false)
+            $('#checkedProductCategories').empty();
+
+            $thisEl.find('.productCenterCategory[data-id="' + id + '"]')
+                .prop('checked', false);
+            $target.closest('li').remove();
+            this.selectBatches = [];
+            $thisEl.find('#productCategories').empty();
+            // $thisEl.find('.productCategory').prop('checked', false);
+            this.changeCenter(e);
+            if (typeof this.useFilter === 'function') {
+                this.useFilter();
+            }
+        },
+
+
+        changeCenter : function(e){
+            var $thisEl = this.$el;
+            var self = this;
+            var $categoryContainer = $thisEl.find('#checkedProductCenter');
+            var $target = $(e.target);
+            var categoryId = $target.data('id');
+            var categoryName = $target.data('value');
+            var idsArray = [];
+            var checkedProductCategory = $thisEl.find('.checkedProductCenter');
+            var checkedValues = $thisEl.find('.productCenterCategory')
+            e.stopPropagation();
+
+            if(categoryId == '1') {
+                if($target.is(':checked')) {
+                    $thisEl.find('.productCenterCategory').prop('checked', true)
+                    $thisEl.find('#checkedProductCenter').empty();
+                    checkedValues.each(function (key, item) {
+                        if($(item).data('id') != 1) {
+                            $categoryContainer.append('<li><span class="checkedProductCenter"  data-value="' + $(item).data('value') + '" data-id="' + $(item).data('id') + '">' + $(item).data('value') + '</span><span class="deleteCenter icon-close3"></span></li>');
+                        }
+
+                    });
+                } else {
+                    $thisEl.find('#checkedProductCenter').empty();
+                    $thisEl.find('.productCenterCategory').prop('checked', false)
+                }
+
+            }
+
+            if (checkedProductCategory && checkedProductCategory.length) {
+                checkedProductCategory.each(function (key, item) {
+                    idsArray.push($(item).data('id'));
+                });
+            }
+
+            if(categoryId && categoryId != '1') {
+                if (idsArray.length && idsArray.indexOf(categoryId) >= 0) {
+                    $categoryContainer.find('[data-id=' + categoryId + ']').closest('li').remove();
+                } else {
+                    $categoryContainer.append('<li><span class="checkedProductCenter"  data-value="' + categoryName + '" data-id="' + categoryId + '">' + categoryName + '</span><span class="deleteCenter icon-close3"></span></li>');
+                }
+            }
+
+
+            this.selectCenters = [];
+            var checkedProductCategory = $thisEl.find('.checkedProductCenter');
+            if (checkedProductCategory && checkedProductCategory.length) {
+                checkedProductCategory.each(function (key, item) {
+                    self.selectCenters.push($(item).data('id'));
+                });
+            }
+
+
+            if(!_.isEmpty(self.selectCenters)){
+                this.selectCourse(self.selectCenters);
+            }
+
+            if (typeof this.useFilter === 'function') {
+                this.useFilter();
+            }
+        },
+    });
+
+    return CreateView;
+});

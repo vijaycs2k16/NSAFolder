@@ -1,0 +1,74 @@
+<div class="_acountingTableWrap">
+    <div class="dialog-tabs-item">
+        <div class="_formWrap">
+            <div class="_formBlock _equal">
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Center</span>
+                    <div class="_newSelectListWrap">
+                        <a id="studentCenter"
+                           name="center"
+                           class="current-selected"
+                           data-id="<%= data ? data.center._id: ''%>"
+                           href="javascript:;"><%= data ? data.center.name: 'Select Center'%></a>
+                    </div>
+                </div>
+            </div>
+            <div class="_formBlock _equal">
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Year</span>
+                    <div class="_newSelectListWrap">
+                        <a id="studentYear"
+                           name="batch"
+                           class="current-selected"
+                           data-id="<%=data? data.year.name : yearToday%>"
+                           href="javascript:;"><%=data? data.year.name : yearToday%></a>
+                    </div>
+                </div>
+            </div>
+            <div class="_formBlock _equal">
+                <div class="_animateSelectBox _withInfo">
+                    <button class="btn btnBlue searchBtn">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="_acountingTableBlock" style="margin: 6px;" >
+        <table id="report" class="display" style="width:100% !important;">
+
+            <thead>
+            <tr class="forToggle">
+                <th class="text-left">Student/Month</th>
+                <%
+                console.log("collection", collection)
+                _.forEach(collection.months ,function(value,key) {
+                %>
+                <th class="text-left"><%=value.month%></th>
+                <% }) %>
+                <th class="text-left">Total</th>
+            </tr>
+            </thead>
+            <tbody class="forToggle">
+            <%
+            _.forEach(collection.student ,function(value,key) {
+            %>
+            <tr data-id="value1.center">
+                <td class="text-left"><%=value.name.first%> <span class="textBlue"> </span></td>
+                <%
+                _.forEach(collection.months ,function(mon,key) {
+                var obj = lodash.filter(value.leave , {month: mon.monthNo});
+                var leavCount = 0;
+                if(obj.length > 0) {
+                    leavCount = obj[0].count;
+                }
+                %>
+                <td class="text-left"><%=leavCount%></td>
+                <% }) %>
+                <td class="text-left"><span class="textBlue"><%=value.total%> </span></td>
+            </tr>
+
+            <% }) %>
+            </tbody>
+
+        </table>
+    </div>
+</div>

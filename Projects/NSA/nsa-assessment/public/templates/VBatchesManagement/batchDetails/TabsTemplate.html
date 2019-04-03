@@ -1,0 +1,41 @@
+<div class="_breadcrunmbs">
+    <span class="_breadcrunmbItem">Batch Management</span>
+</div>
+<div class="form-holder tabsHolder">
+    <div class="inner">
+        <ul class="dialog-tabs _forOverview">
+            <li>
+                <a href="javascript:;" class="" id="batch">Batch</a>
+            </li>
+            <!--<li>
+                <a href="javascript:;" class="hide" id="schedule">Class Schedule</a>
+            </li>-->
+            <li>
+                <a href="javascript:;" class="hide" id="classSch">Class Schedule</a>
+            </li>
+            <% var isStudent = App.currentUser.student%>
+            <%if(!isStudent) { %>
+            <li>
+                <a href="javascript:;" class="hide" id="subjectschedule">Subject Schedule</a>
+            </li>
+            <% } %>
+            <li>
+                <a href="javascript:;" class="hide" id="offLineschedule">Offline Schedule</a>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+        <div class="dialog-tabs-items">
+            <div class="dialog-tabs-item" id="batchTab">
+            </div>
+            <!--<div class="dialog-tabs-item hide" id="scheduleTab">
+            </div>-->
+            <div class="dialog-tabs-item hide" id="classScTab">
+            </div>
+            <div class="dialog-tabs-item hide" id="subjectTab">
+            </div>
+            <div class="dialog-tabs-item hide" id="offLineTab">
+            </div>
+        </div>
+    </div>
+</div>
+

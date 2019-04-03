@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1066831077413",
+    "firebase_url": "https://deltacentral-817e7.firebaseio.com",
+    "project_id": "deltacentral-817e7",
+    "storage_bucket": "deltacentral-817e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066831077413:android:6f15618368f0480d",
+        "android_client_info": {
+          "package_name": "delta.management.in.kollam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066831077413-oorjgefgb0d3k71s4ee16ngp69146066.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjMAXObgZ14Gx1nekrkBR8bwfro8ed9ao"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

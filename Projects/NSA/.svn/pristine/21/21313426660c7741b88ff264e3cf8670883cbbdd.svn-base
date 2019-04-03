@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h6 class="panel-title"><span class="text-semibold text-uppercase"><i class="fa fa-users position-left"></i>User Groups</span><i class="icon-arrow-right15 text-pink-600"></i> <small>List of User Groups </small></h6>
+        <div class="heading-elements">
+            <!--<input  type="button" value="Add User Group" data-size="75%" data-title="Add UserGroup" data-toggle="from-right" data-id="#addUserGroup" class="btn btn-sm btn-primary heading-btn" (click)="addUserGroups($event)"/>-->
+            <input  type="button" value="Create User Group" data-size="50%" data-title="Create User Group" data-toggle="from-right" data-id="#addUserGroup" class="btn btn-sm btn-primary" (click)="addUserGroups($event)"/>
+            <input hidden id="warningGroupUsers" (click)="request_delete_warning()" type="button" style="display: none;">
+            <input hidden id="deleteButton" (click)="request_delete($event)" type="button" style="display: none;">
+            <input hidden id="groupUserEditButton" (click)="editGroupUsers($event)" data-title="Edit User Group" data-size="50%" data-id="#addUserGroup" type="button" style="display: none;">
+
+        </div>
+    </div>
+    <div class="panel-body">
+        <table class="table datatable-user-group">
+            <thead>
+            <tr>
+                <th data-priority="1">User Group Names</th>
+                <th>Members</th>
+                <th>Created By</th>
+                <th>Created Date</th>
+                <th data-priority="2">Action</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+<add-user-groups></add-user-groups>

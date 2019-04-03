@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="timetablegenerate">
+	
+	<parameter name="tmetblcls" value="Class 3"></parameter>
+	<parameter name="tmetblsec" value="Section A"></parameter>
+	<parameter name="empname" value="Wesley"></parameter>
+	<parameter name="subjctname" value="Biology"></parameter>
+	<parameter name="subjcttchr" value="Jagadesh"></parameter>
+	<parameter name="maxi_prds" value="5"></parameter>
+	<parameter name="maxi_prds1" value="4"></parameter>
+	<parameter name="maxi_prds2" value="5"></parameter>
+	<parameter name="subjctname1" value="Value Education"></parameter>
+	<parameter name="subjcttchr1" value="Ruth Elizebeth"></parameter>
+	<parameter name="subjctname2" value="Psychology"></parameter>
+	<parameter name="subjcttchr2" value="Kavitha"></parameter>
+	<parameter name="subjctname3" value="Work Experience"></parameter>
+	<parameter name="subjcttchr3" value="Kamala"></parameter>
+	<parameter name="subjctname4" value="Hindi"></parameter>
+	<parameter name="subjcttchr4" value="Shalini Kannan"></parameter>
+	<parameter name="Class1sel" value="Class 1"></parameter>
+	
+	<test name="GenerateTmeTbl">
+		<classes>
+		   <!--  <class name="com.nsa.testing.tests.ExamSchedule"/> -->
+			<class name="com.nsa.testing.tests.GenerateTmeTbl"/>
+		</classes>
+	</test>
+</suite> 

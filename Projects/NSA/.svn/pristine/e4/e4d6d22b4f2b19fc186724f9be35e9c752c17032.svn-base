@@ -1,0 +1,36 @@
+{
+  "HomeworkActivity":[
+    {
+      "Due date":"27/09/2016",
+      "Subject":"English",
+      "Type":"Presentation",
+      "Reminder":"1 Hour before",
+      "Std":"5th",
+      "Section":"A",
+      "Repeat":"None",
+      "Priority":"Low",
+      "Teacher name":"Raj"
+    },
+    {
+      "Due date":"28/09/2016",
+      "Subject":"Tamil",
+      "Type":"Test",
+      "Reminder":"2 Hours before",
+      "Std":"7th",
+      "Section":"B",
+      "Repeat":"Every month",
+      "Priority":"High",
+      "Teacher name":"Radha"
+    },
+    {
+      "Due date":"30/09/2016",
+      "Subject":"Maths",
+      "Type":"Paper",
+      "Reminder":"1 Hour before",
+      "Std":"7th",
+      "Repeat":"Every week",
+      "Priority":"Medium",
+      "Teacher name":"Sumanth"
+    }
+  ]
+}

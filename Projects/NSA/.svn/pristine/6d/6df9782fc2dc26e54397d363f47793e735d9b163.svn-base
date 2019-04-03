@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/class_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/width3"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/svgLayoutIconColor" />
+
+
+    <TextView
+        android:id="@+id/classtimm"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height50"
+        android:layout_marginLeft="@dimen/margin60"
+        android:layout_weight="2.0"
+        android:gravity="center_vertical"
+        android:text="Class 12th A Timetable"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/common_text_size"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/classtime"
+        android:layout_weight="0.5"
+        app:srcCompat="@drawable/ic_arrow_right" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+.treevue ul, .treevue ol {
+    cursor: auto !important;
+}
+.treevue li {
+    list-style:none !important;
+    /* Create a little space to the left for the open/close images */
+    margin-left: 10px !important;
+    padding-left:18px !important;
+}
+.treevue li.treevue-expanded {
+    background: url(arrow-down.png) no-repeat 0.35em .58em !important;
+    cursor: pointer !important;
+    background-size: 11px !important;
+}
+.treevue li.treevue-collapsed {
+    background: url(arrow-right-1.png) no-repeat 0.65em .35em !important;
+    cursor: pointer !important;
+    background-size: 6px !important;
+}
+.treevue label:hover {
+    background:rgba(0,0,0, 0.05) !important;
+}
+.treeitem_focus {
+    outline:solid 1px black !important;
+}
+
+.treeitem_label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: inherit;
+    /* margin-left: -4px; */
+    padding-left: 4px;
+}

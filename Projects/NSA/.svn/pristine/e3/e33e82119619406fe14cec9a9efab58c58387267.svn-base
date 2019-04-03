@@ -1,0 +1,90 @@
+<div class="form-holder _newForm">
+    <form method="post" action="" id="invoiceForm">
+        <h4 class="_dialogMainTitle">Edit Assessment Schedule</h4>
+        <div class="_formWrap _enlargedItemMargin">
+            <div class="_formBlock _equal">
+                <div class="_animateInputBox hide">
+                    <input type="text"
+                           class="_animate "
+                           id="name"
+                           required
+                           value="<%=model.name%>"/>
+                    <label class="_animate">Name</label>
+                </div>
+                <div class="_animateInputBox">
+                    <span class="_staticLabel">Start Date</span>
+                    <input type="text"
+                           name="examDate"
+                           class="_animate"
+                           id="examDate"
+                           value="<%=moment(model.dateBeginAhead).format('LL')%>"
+                           readonly
+                    />
+                </div>
+                <div class="_animateInputBox">
+                    <span class="_staticLabel">End Date</span>
+                    <input type="text"
+                           name="examEndDate"
+                           class="_animate"
+                           id="examEndDate"
+                           value="<%=moment(model.dateEnd ? model.dateEnd : model.dateBeginAhead).format('LL')%>"
+                           readonly
+                    />
+                </div>
+                <div class="container hide">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-6">
+                            <div class="_tipsWrap">
+                                <label for="online" class="">Online</label>
+                                <input type="radio"
+                                       name="examMode"
+                                       id="online"
+                                       value="online"
+                                <%=model.examMode ? checked='checked' : ''%>
+                                class="_circleRadioRadiance">
+                                <label for="online"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </br>
+                <div class="_animateSelectBox examConfigDiv hide">
+                    <span class="_selectTitle">Exam Configuration</span>
+                    <div class="_newSelectListWrap">
+                        <a id="examConfig"
+                           name="examConfig"
+                           class="current-selected"
+                           data-id="<%=model.config ? model.config._id: null%>"
+                           href="javascript:;"><%=model.config ? model.config.name : 'Select'%></a>
+                    </div>
+                </div>
+                <div class="_animateSelectBox paperConfigDiv hide">
+                    <span class="_selectTitle">Paper Configuration</span>
+                    <div class="_newSelectListWrap">
+                        <a id="paperConfig"
+                           name="paperConfig"
+                           class="current-selected"
+                           data-id="<%=model.paperConfig ? model.paperConfig._id: null%>"
+                           href="javascript:;"><%=model.paperConfig ? model.paperConfig.name : 'Select'%></a>
+                    </div>
+                </div>
+                <div class="container" style="margin-left:-15px;">
+                    <div class="canReadAndWrite row">
+                        <div class="_animateSelectBox col m-12">
+                            <span class="_selectTitle margin-left-15">Section</span>
+                            <div class="_newSelectListWrap">
+                                <a id="sections"
+                                   name="sections"
+                                   class="current-selected"
+                                   data-id="<%=model.section ? model.section._id: null%>"
+                                   href="javascript:;"><%=model.section ? model.section.sectionName : 'Select Section'%></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

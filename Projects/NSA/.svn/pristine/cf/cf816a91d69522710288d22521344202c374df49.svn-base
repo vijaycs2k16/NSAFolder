@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "722184622652",
+    "firebase_url": "https://mercyschool-9add7.firebaseio.com",
+    "project_id": "mercyschool-9add7",
+    "storage_bucket": "mercyschool-9add7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722184622652:android:44a512820c5351ce",
+        "android_client_info": {
+          "package_name": "mercyschool.management.in.aroor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "722184622652-61p0j04606fegnrfevt0hl71nbip7kjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATGUICbkpImryoxdGXTEar-gJA9vfAcxA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

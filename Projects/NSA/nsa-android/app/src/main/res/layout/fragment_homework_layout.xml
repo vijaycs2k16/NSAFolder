@@ -1,0 +1,197 @@
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/cardElevation1"
+    android:layout_marginBottom="@dimen/margin5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/layoutBackground"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height30"
+        android:background="@color/overlayForegroundColor"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:id="@+id/tag"
+        android:paddingLeft="@dimen/padding10"
+        android:textSize="@dimen/title_text_size"
+        android:textColor="@color/colorBlack"
+        android:text="asdfasdfasdfadasdf"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height50">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/width3"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/svgLayoutIconColor"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding10"
+                android:id="@+id/assignment_name"
+                android:paddingTop="@dimen/padding5"
+                android:paddingBottom="@dimen/padding5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/title_text_size"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/timeTextColor"
+                android:gravity="end"
+                android:id="@+id/due_date_value"
+                android:paddingTop="@dimen/padding5"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="italic"
+                android:paddingBottom="@dimen/margin5"
+                android:paddingRight="@dimen/padding15"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding5"
+                android:paddingLeft="@dimen/padding10"
+                android:paddingTop="@dimen/padding5"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="TextView"
+                android:textColor="@color/descriptionTextColor"
+                android:textSize="@dimen/description_text_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin5"
+                android:layout_marginRight="@dimen/margin5"
+                app:srcCompat="@drawable/ic_arrow_right"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/margin5"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+                    <ImageView
+                        android:layout_width="@dimen/width15"
+                        android:layout_height="@dimen/height15"
+                        android:textColor="@color/priorityMedium"
+                        android:id="@+id/priority_value"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_marginStart="@dimen/margin10"
+                        android:textSize="@dimen/common_text_size"
+                        app:srcCompat="@drawable/badge" />
+
+                    <TextView
+                        android:text="High priority"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding5"
+                        android:textSize="@dimen/small_text_size"
+                        android:textColor="@color/timeTextColor"
+                        android:id="@+id/textView8" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+
+                    <TextView
+                        android:text="sent"
+                        android:layout_width="wrap_content"
+                        android:minWidth="80dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding5"
+                        android:paddingRight="@dimen/padding5"
+                        android:textSize="@dimen/common_text_size"
+                        android:textColor="@color/timeTextColor"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_marginStart="@dimen/margin10"
+                        android:id="@+id/status" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/attachment"
+                    android:visibility="gone"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/width15"
+                        android:layout_height="@dimen/height15"
+                        app:srcCompat="@drawable/ic_clip"
+                        android:id="@+id/attachment_icon"/>
+
+                    <TextView
+                        android:text="Attachments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/small_text_size"
+                        android:paddingLeft="@dimen/padding5"
+                        android:textColor="@color/timeTextColor"
+                        android:id="@+id/attachment_number"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,24 @@
+ SpannableStringBuilder spanstr = new SpannableStringBuilder("Bhashyam Blooms Administrative Block:\n" +
+                "Bhashyam Blooms Road, \n" +
+                "3rd Lane, Chandramouli Nagar,\n" +
+                "Ring Road, Guntur, \n" +
+                "Andhra Pradesh - 522007.\n" +
+                "Phone Number:  0863 - 2246015, 0863 - 2256939,\n" +
+                "Mobile: 098485 36968, 98487 11189\n" +
+                "\n" +
+                "Secondary Campus:\n" +
+                "Mobile: 098487 11196\n" +
+                "Email: blooms@bhashyam.in\n" +
+                "\n" +
+                "Bhashyam Toddlers:\n" +
+                "Mobile: 80968 28888\n" +
+                "Email: bloomstoddlers@bhashyam.in\n" +
+                "\n" +
+                "App Related queries:\n" +
+                "Mobile: 98487 78355\n");
+        spanstr.setSpan(new StyleSpan(Typeface.BOLD), 0, 37, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spanstr.setSpan(new StyleSpan(Typeface.BOLD), 218, 235, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spanstr.setSpan(new StyleSpan(Typeface.BOLD), 282, 303, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spanstr.setSpan(new StyleSpan(Typeface.BOLD), 356, 378, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+Map Not needed for bhashyam

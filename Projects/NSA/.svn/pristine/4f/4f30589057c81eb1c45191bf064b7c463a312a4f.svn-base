@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\xml\\preferences.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\searchable.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\xml\\searchable.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\global_tracker.xml",
+        "source": "E:\\android\\app\\build\\generated\\res\\google-services\\debug\\xml\\global_tracker.xml"
+    }
+]

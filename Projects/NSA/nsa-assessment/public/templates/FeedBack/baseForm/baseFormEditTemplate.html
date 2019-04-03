@@ -1,0 +1,226 @@
+<div class="form-holder _newForm _ordersDialog">
+    <form method="post" action="" id="createPersonsForm">
+        <h4 class="_dialogMainTitle">Edit Question</h4><br/>
+        <div class="row">
+            <div class="cropImages form" style="display:none;">
+                <div class="formTitle">
+                    <h3 class="left">Crop Images</h3>
+                </div>
+                <div class="image_input" style="float: left;margin-right: 20px;"></div>
+                <img class="image_output"/>
+            </div>
+            <div class="_formWrap">
+                <div class="_formBlock ">
+                    <div class="_animateSelectBox _withInfo col m-9">
+                        <span class="_selectTitle margin-left-15">Course</span>
+                        <div class="_newSelectListWrap">
+                            <a id="course"
+                               name="course"
+                               class="current-selected"
+                               data-id="<%=model.course._id ? model.course._id: null%>"
+                               href="javascript:;"><%=model.course.courseName ? model.course.courseName : 'Course Name'%></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="_formBlock ">
+                    <div class="_animateSelectBox _withInfo">
+                        <span class="_selectTitle">Subject</span>
+                        <div class="_newSelectListWrap">
+                            <a id="subject"
+                               name="subject"
+                               class="current-selected"
+                               data-id="<%=model.subject._id ? model.subject._id: null%>"
+                               href="javascript:;"><%=model.subject.subjectName ? model.subject.subjectName : 'Subject Name'%></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="_formBlock ">
+                    <div class="_animateSelectBox _withInfo">
+                        <span class="_selectTitle">Topic</span>
+                        <div class="_newSelectListWrap">
+                            <a id="topics"
+                               name="topics"
+                               class="current-selected"
+                               data-id="<%=model.topicData._id ? model.topicData._id: null%>"
+                               href="javascript:;"><%=model.topicData.name ? model.topicData.name : 'Topic Name'%></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <table  id='customers' style="height: 340px; width: 70%; margin: 9px 229px;">
+            <tbody>
+            <tr style="height: 23px;">
+                <td  class="custom" colspan="6" style="width: 382px; height: 23px;">
+                    <div class="_animateSelectBox _withInfo" >
+                        Type :
+                        <select id="createDiscountOrNot" class="createDiscountOrNot">
+                            <option value="multi">Multiple Choice</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <% for (var xs in model.form){%>
+            <tr style="height: 23px;">
+                <td style="width: 115px; height: 23px;">Question:</td>
+                <td style="width: 547px; height: 23px;" >
+                    <div class="  m-12" >
+                        <div class="_animateSelectBox _withInfo" style="margin-bottom: 0px;">
+                            <input type="text"
+                                   name="questionName"
+                                   class="_animate questionName"
+                                   id="questionName"
+                                   required
+                                   autofocus
+                                   value="<%=model.form[xs].desc%>"
+                                   maxlength="300"/>
+                        </div>
+                    </div>
+                </td>
+
+                <td style="width: 547px; height: 23px;" colspan="4">
+                    <div class=" _enlargedItemMargin">
+                        <div class="_avatarBlock">
+                            <div class="avatar image_border-custom">
+                                <div class="upload">Edit
+                                    <input type="file"
+                                           value="Edit"
+                                           id="inputImg"
+                                           accept="image/*">
+                                </div>
+                                <canvas id="avatar"
+                                        width="140"
+                                        height="140">
+                                </canvas>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+            <% } %>
+
+            <tr style="height: 23px;">
+                <td style="width: 115px; height: 23px;">Description:</td>
+                <td style="width: 547px; height: 23px;" colspan="5">
+                    <div class="  m-12" >
+                        <div class="_animateTextareaBox counterWrap">
+                            <textarea class="_animate description" style="height: 80px;"
+                                      id="description"
+                                      maxlength="250"
+                                      required><%=model.desc%></textarea>
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+            <tr style="height: 23px;">
+                <td  style="width: 115px; height: 23px;">&nbsp;Choice&nbsp;</td>
+                <td class="custom" style="width: 547px; height: 23px;" colspan="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+            <% for (var xl in model.form[0].ans){%>
+
+            <tr class="productItem deleteRow left-alignment _productRow" id="<%=model._id%>">
+                <td style="width: 115px; height: 23px;">
+                    <div class="container">
+                        <div class=" _forCheckBox" style="top: 7px;position: relative;">
+                            <label class="inputBox _newSelectListWrap">
+                                <label class="_animatedCheckbox">
+
+                                    <%if (model.form[xs].ans[xl].isValid === true) { %>
+                                    <input id="active" data-id="salesPurchases_isCustomer"
+                                           class="checkbox shippingRadio checkVakue active" checked
+                                           type="checkbox"/>
+                                    <span style="height: 17px;"></span>
+                                    <% } else { %>
+                                    <input id="active" data-id="salesPurchases_isCustomer"
+                                           class="checkbox shippingRadio checkVakue active"
+                                           type="checkbox"/>
+                                    <span style="height: 17px;"></span>
+
+                                    <% }  %>
+
+                                </label>
+                            </label>
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 547px; height: 23px;" >
+                    <div class="  m-12" >
+                        <div class="_animateSelectBox _withInfo" style="margin-bottom: 0px;">
+                            <input type="text"
+                                   name="discountValue"
+                                   class="_animate discountValue"
+                                   id="discountValue"
+                                   required
+                                   autofocus
+                                   value="<%=model.form[xs].ans[xl].desc%>"
+                                   maxlength="32"/>
+                        </div>
+                    </div>
+                </td>
+
+                <td class=""  colspan="4">
+                    <span title="Delete" class="icon-close5 removeJob"></span>
+                </td>
+            </tr>
+            <% } %>
+
+            <tr style="height: 23px;">
+                <td style="width: 115px; height: 23px;">&nbsp;&nbsp;    Answer <br/>Explanation:</td>
+                <td style="width: 547px; height: 23px;" colspan="5">
+                    <div class="  m-12" >
+                        <div class="_animateTextareaBox counterWrap">
+                            <textarea class="_animate explanation" style="height: 80px;"
+                                      id="explanation"
+                                      maxlength="250"
+                                      required> <%=model.form[0].explanation%></textarea>
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+
+
+            <tr style="height: 23px;">
+                <td style="width: 115px; height: 23px;">
+                    <div class="_animateSelectBox _withInfo" style=" top: 11px;left: -4px;">Weightage:
+                            <select id="Weightage" class="Weightage" style="position: relative;left: 68px;width: 38px;top: -16px;">
+                            <option class="weight" value="<%=model.weightage%>"><%=model.weightage%></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </td>
+                <td style="width: 547px; height: 23px;" colspan="5">
+                    <div class="_animateSelectBox _withInfo" >Score:
+                        <select id="point" class="point" style="width: 38px;">
+                            <option class="score" value="<%=model.point%>"><%=model.point%></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="container">
+            <div class="canReadAndWrite row">
+                <div class="_circleRadioRadianceWrap col m-5">
+                </div>
+                <div class="_animateInputBox col m-4">
+                    <button type="button" class="btn slim cancelBtn">Cancel</button>&nbsp;
+                    <button type="button" class="btn blue slim updateBtn">Save</button>
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+</div>

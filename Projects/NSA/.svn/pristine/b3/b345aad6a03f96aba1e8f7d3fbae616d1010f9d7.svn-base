@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1051858127274",
+    "firebase_url": "https://holychild-94c17.firebaseio.com",
+    "project_id": "holychild-94c17",
+    "storage_bucket": "holychild-94c17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051858127274:android:02c64931d236eb66",
+        "android_client_info": {
+          "package_name": "holychild.management.in.malda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051858127274-ibont9u15r89uk1sv98qcfp4fun8emsr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDts4zn_r7NWO23d0HfZ_dVVPAOrd7y0J8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

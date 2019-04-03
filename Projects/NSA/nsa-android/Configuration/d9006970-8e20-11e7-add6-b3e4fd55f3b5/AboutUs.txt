@@ -1,0 +1,12 @@
+String htmlText = "<html><body style=\"text-align:justify\"> %s </body></Html>";
+        String myData = "<b>GEOGRAPHY AND HISTORY</b></br>Kodinhi is a small village in Nannambra Pachayat, Tirurangadi Taluk of Malappuram Dist with its world fame for the number of twin’s birth.Madrasathul  Anwar Higher Secondary School (MAHSS) situated in the heart of Kodinhi, near Erukulam – Cheruppara. Now the area known as Anwar Nagar.</br>" +
+                "It was founded in 1998 , by a group of community leaders  under Sunni Education Centre managing Committee. The progressive leaders aimed to eradicate the educational backwardness of the geographical area, by establishing a high standard, quality educational institution, which can torch light in the dark areas of the society.</br>" +
+                "<b>ACADEMIC</b></br>" +
+                "MAHSS” classes ranging  from LKG to plus two with more than 1400 students. It follows Central  scheme in KG and LP sections and State scheme in UP,HS and HSS sections. Since last 8 years, it sustains its " +
+                "100% result in SSLC Examinations, with prominent number of full A pluses, which makes the school one among the best school in the " +
+                "Malappuram District. In higher secondary, Humanities and Commerce streams are offered in batch of 50 students each.</br>" +
+                "<b>CO-CURRICULAR</b></br>" +
+                "School keeps the monopoly in District Junior and Senior OPPANA , in the arts festival. Several times , it kept the rolling trophy for sub dist Junior " +
+                "and Senior foot ball . Scout, guide , JRC, Karate, Abacus clubs are working for the physical and mental development of the students. Also " +
+                "planning to start SPC , Bulbul and Cub units in near future. School is equipped with smart room, Lab, Library and Computer Lab and a children’s Park. All its KG class rooms are smart class rooms, with " +
+                "modest seating arrangements. School is still in the improvement path, by executing modern technologies and adapting latest trends in education… ";

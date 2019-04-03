@@ -1,0 +1,326 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/overlayColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/overlayForegroundColor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/overlayForegroundColor"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/study_value"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:layout_weight="1.5"
+                android:background="@color/overlayForegroundColor"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding5"
+                android:paddingLeft="@dimen/padding12"
+                android:paddingTop="@dimen/padding5"
+                android:text="Schedules"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/common_text_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/time_table_help"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height20"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                app:srcCompat="@drawable/ic_help" />
+
+        </LinearLayout>
+
+        <include layout="@layout/progress_bar"
+            android:visibility="gone"
+            android:id="@id/progress_bar"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin5"
+                android:layout_marginLeft="@dimen/margin5"
+                android:layout_marginRight="@dimen/margin5"
+                android:layout_marginTop="@dimen/margin5"
+                app:cardBackgroundColor="@color/layoutBackground"
+                app:cardElevation="@dimen/cardElevation1"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@color/layoutBackground"
+                    android:orientation="vertical"
+                    tools:context="nexrise.publication.in.nexrise.EmptyFragment">
+
+                    <LinearLayout
+                        android:id="@+id/myclass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/width3"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:background="@color/svgLayoutIconColor" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/classtime"
+                            android:layout_weight="0.5"
+                            app:srcCompat="@drawable/ic_class" />
+
+                        <TextView
+                            android:id="@+id/classtime"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/height50"
+                            android:layout_weight="2.0"
+                            android:gravity="center_vertical"
+                            android:text="My Classes"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/common_text_size"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/image1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/classtime"
+                            android:layout_weight="0.5"
+                            app:srcCompat="@drawable/ic_arrow_down_circle" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height1"
+                        android:background="@color/overlayForegroundColor" />
+
+                    <LinearLayout
+                        android:id="@+id/class_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height1"
+                        android:background="@color/overlayForegroundColor"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/width3"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:background="@color/svgLayoutIconColor" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/message_to"
+                            android:layout_weight="0.5"
+                            android:tint="@color/svgLayoutIconColor"
+                            app:srcCompat="@drawable/ic_time_table" />
+
+                        <TextView
+                            android:id="@+id/message_to"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/height50"
+                            android:layout_weight="2.0"
+                            android:gravity="center_vertical"
+                            android:text="My Timetable"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/common_text_size" />
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/message_to"
+                            android:layout_weight="0.5"
+                            app:srcCompat="@drawable/ic_arrow_right" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height1"
+                        android:background="@color/overlayForegroundColor" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height50"
+                        android:orientation="horizontal"
+                        android:id="@+id/class_timetable"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="@dimen/width3"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:background="@color/svgLayoutIconColor" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/message_to"
+                            android:layout_weight="0.5"
+                            android:tint="@color/svgLayoutIconColor"
+                            app:srcCompat="@drawable/ic_timetable_menu" />
+
+                        <TextView
+                            android:id="@+id/otherclasstime"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/height50"
+                            android:layout_weight="2.0"
+                            android:gravity="center_vertical"
+                            android:text="Class Timetable"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/common_text_size" />
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/message_to"
+                            android:layout_weight="0.5"
+                            app:srcCompat="@drawable/ic_arrow_right" />
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height1"
+                        android:background="@color/overlayForegroundColor" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height50"
+                        android:id="@+id/teacher_timetable"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="@dimen/width3"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:background="@color/svgLayoutIconColor" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:tint="@color/svgLayoutIconColor"
+                            app:srcCompat="@drawable/ic_notification" />
+
+                        <TextView
+                            android:id="@+id/otherteachertime"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/height50"
+                            android:layout_weight="2.0"
+                            android:gravity="center_vertical"
+                            android:text="Employee Timetable"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/common_text_size" />
+                        <ImageView
+                            android:id="@+id/imageView19"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/message_to"
+                            android:layout_weight="0.5"
+                            app:srcCompat="@drawable/ic_arrow_right" />
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height1"
+                        android:background="@color/overlayForegroundColor" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height50"
+                        android:orientation="horizontal"
+                        android:id="@id/view_notes"
+                        android:visibility="visible"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="@dimen/width3"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:background="@color/svgLayoutIconColor" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/message_to"
+                            android:layout_weight="0.5"
+                            android:tint="@color/svgLayoutIconColor"
+                            app:srcCompat="@drawable/ic_notepad_line" />
+
+                        <TextView
+                            android:id="@+id/notes"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/height50"
+                            android:layout_weight="2.0"
+                            android:gravity="center_vertical"
+                            android:text="Class Notes"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/common_text_size" />
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/message_to"
+                            android:layout_weight="0.5"
+                            app:srcCompat="@drawable/ic_arrow_right" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

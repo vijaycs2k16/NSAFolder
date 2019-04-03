@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="categories">
+	<parameter name="title" value="Categories"></parameter>
+	<parameter name="categoryname" value="specialEvents"></parameter>
+	<parameter name="decsription" value="special event is conducted for all students"></parameter>
+	<test name="ActivityCategory">
+		<classes>
+			<class name="com.nsa.testing.tests.ActivityCategory" />
+		</classes>
+	</test>
+</suite> 

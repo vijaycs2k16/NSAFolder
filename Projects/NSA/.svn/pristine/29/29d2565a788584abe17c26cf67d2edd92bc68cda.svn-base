@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="login">
+	<parameter name="scholname" value="Student Scholarship"></parameter>
+	<parameter name="validityDate" value="12-Jun-2018"></parameter>
+	<parameter name="amount" value="2000"></parameter>
+	<parameter name="scholdesc" value="This is testing purpose"></parameter>
+	<test name="LoginTest">
+		<classes>
+		   <class name="com.nsa.testing.tests.FeeScholarshipTest" /> 
+		</classes>
+	</test>
+</suite> 

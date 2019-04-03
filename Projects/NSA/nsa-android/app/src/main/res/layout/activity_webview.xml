@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_webview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/margin5"
+    android:paddingLeft="@dimen/margin5"
+    android:paddingRight="@dimen/margin5"
+    android:paddingTop="@dimen/margin5"
+    tools:context="nexrise.publication.in.nexrise.FeeManagement.WebviewActivity">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.02" />
+
+    <FrameLayout
+        android:id="@+id/otp_frame"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/webView"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

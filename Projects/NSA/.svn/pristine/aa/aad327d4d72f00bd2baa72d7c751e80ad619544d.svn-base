@@ -1,0 +1,46 @@
+<div class="form-holder _newForm">
+    <form method="post" action="" class="_bundleReturnForm" id="bundleReturn">
+        <h4 class="_dialogMainTitle">Return Bundle Product</h4>
+        <div class="_formWrap">
+            <div class="_formBlock _equal">
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Product</span>
+                    <div class="_newSelectListWrap">
+                        <a id="productsBundle"
+                           class="current-selected productsBundle"
+                           data-id=""
+                           href="javascript:;">Select Bundle</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="_formBlock _equal">
+                <div class="_animateInputBox">
+                    <span class="_staticLabel">Bundle Quantity</span>
+                    <span id="bundleQuantity" class="_staticInfo" id="paymentMethod">
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="_formWrap">
+            <div class="_formBlock _equal">
+                <div class="_animateInputBox _withInfo counterWrap" style="bottom: 20px;">
+                    <div class="_animateTextareaBox counterEl">
+                        <textarea id="reason"
+                                  class="_animate internal_Notes message-box-height"
+                                  required
+                                  maxlength="160" ></textarea>
+                        <label for="reason" class="_animate">Reason</label>
+                        <div class="counter-wrap">
+                            <span class="counter-label">Characters left:</span>
+                            <span class="counter-value" id="counterValue">160</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="_formBlock">
+            <div id="productItemsHolder"></div>
+        </div>
+    </form>
+</div>

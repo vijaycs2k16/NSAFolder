@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="@dimen/minHeight40">
+
+            <TextView
+                android:id="@+id/exam"
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_table"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding3"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingRight="@dimen/padding15"
+                android:paddingTop="@dimen/padding3"
+                android:text="09:45 - 10:30"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text10" />
+
+            <TextView
+                android:id="@+id/english"
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_style"
+                android:gravity="center"
+                android:padding="@dimen/padding3"
+                android:text="Android Lollipop"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text10" />
+
+            <TextView
+                android:id="@+id/tamil"
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_style"
+                android:gravity="center"
+                android:padding="@dimen/padding3"
+                android:text="21"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text10" />
+
+            <TextView
+                android:id="@+id/maths"
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_style"
+                android:gravity="center"
+                android:padding="@dimen/padding3"
+                android:text="21"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text10" />
+
+            <TextView
+                android:id="@+id/science"
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_style"
+                android:gravity="center"
+                android:padding="@dimen/padding3"
+                android:text="21"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text10" />
+
+            <TextView
+                android:id="@+id/social"
+                android:layout_width="@dimen/width100"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_style"
+                android:gravity="center"
+                android:padding="@dimen/padding3"
+                android:text="21"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text10" />
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

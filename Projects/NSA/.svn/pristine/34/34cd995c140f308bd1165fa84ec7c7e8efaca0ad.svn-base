@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding10">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/headings"
+        android:textStyle="bold"
+        android:id="@+id/todayDate"
+        android:text=""/>
+
+    <include layout="@layout/progress_bar"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin5"
+        android:background="@drawable/border_table_style">
+
+        <TableRow
+            android:minHeight="@dimen/minHeight50"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5"
+            android:id="@+id/table_teacher">
+
+            <TextView
+                android:background="@drawable/border_overlay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:id="@+id/cell1"
+                android:text="TIME"
+                android:textStyle="bold"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"/>
+
+            <TextView
+                android:background="@drawable/border_overlay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="@dimen/common_text_size"
+                android:id="@+id/cell2"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="SUBJECT"/>
+
+            <TextView
+                android:background="@drawable/border_overlay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="@dimen/common_text_size"
+                android:id="@+id/cell3"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="CLASS"/>
+
+            <TextView
+                android:background="@drawable/border_overlay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="@dimen/title_text_size"
+                android:id="@+id/cell4"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="UPLOAD NOTES"/>
+        </TableRow>
+
+        <ListView
+            android:id="@+id/teacher_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"/>
+
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<%
+collection.forEach(function(elem,index){
+%>
+<tr data-id="<%=elem._id%>">
+    <td class=" "><%=elem.studentName%></td>
+    <td class=" "><%=elem.center.centerName%></td>
+    <td class=" "><%=elem.batch.batchName%></td>
+</tr>
+<% }) %>

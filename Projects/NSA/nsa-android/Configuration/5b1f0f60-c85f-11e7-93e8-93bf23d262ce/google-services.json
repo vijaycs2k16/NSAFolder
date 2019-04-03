@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "272250007473",
+    "firebase_url": "https://narayana-7e5a1.firebaseio.com",
+    "project_id": "narayana-7e5a1",
+    "storage_bucket": "narayana-7e5a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272250007473:android:8ca55fa7f5d332a6",
+        "android_client_info": {
+          "package_name": "narayana.management.in.kannur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272250007473-9qlokcsmsssbdhtdo3oegtqosqksh5qk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSb8J846vkITBUk24REKOq2lKYnQTLbC8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

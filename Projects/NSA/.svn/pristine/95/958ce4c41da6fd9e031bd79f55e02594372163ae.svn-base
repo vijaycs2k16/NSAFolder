@@ -1,0 +1,57 @@
+INSERT INTO nsa.feature
+(id, description, name, status)
+VALUES(5b64e028-019d-49ac-affc-f3e1ec4449ac, '', 'Fee-Defaulters', true);
+
+
+// WbAdmin 
+
+INSERT INTO nsa.school_feature (tenant_id,school_id,id,order_by,activated_date,additional_links,asset_url,content,description,doc_desc,email,expire_date,feature_id,feature_name,icon,images,keywords,link,parent_feature_id,push,school_name,sms,status,tags,title,user_types,is_channels,is_override,help_text, notify_hostelers, academic_year) VALUES (
+8eb846a0-4549-11e7-9543-276f818a8422,4e3d3bf5-e262-4e7a-9a02-ef542107f6e7,b655ac0d-5d46-4d88-89f1-2f92dcf1795b,3,'2017-05-03 16:23:50',NULL,'88d34e03-d9d0-431a-ae06-7a92ce2b4d3c/b655ac0d-5d46-4d88-89f1-2f92dcf1795b /',NULL,NULL,NULL,false,'2020-05-03 16:23:50',5b64e028-019d-49ac-affc-f3e1ec4449ac,'Fee-Defaulters','icon-font-size2',NULL,NULL,'./fee-Defaulters',88d34e03-d9d0-431a-ae06-7a92ce2b4d3c,true,'NEXSCHOOLAPP',true,true,NULL,'Fee Structure',['Employee','SchoolAdmin'],false,false,
+'Fee Structure helps you define for which terms the fee is applicable for and what are the fee types that are a part of the fees to be assigned. Fee structure can be added by clicking on Create Fee Structure and providing the applicable terms and the fee types. The fee structures that are created can be viewed in the table below.
+',false,'2017-2018');
+
+
+
+
+INSERT INTO nsa.feature
+(id, description, name, status)
+VALUES(90c1673a-e65d-450b-a9c3-4b858b4fa225, '', 'Fee-Reports', true);
+
+
+INSERT INTO nsa.school_feature (tenant_id,school_id,id,order_by,activated_date,additional_links,asset_url,content,description,doc_desc,email,expire_date,feature_id,feature_name,icon,images,keywords,link,parent_feature_id,push,school_name,sms,status,tags,title,user_types,is_channels,is_override,help_text, notify_hostelers, academic_year) VALUES (
+8eb846a0-4549-11e7-9543-276f818a8422, 4e3d3bf5-e262-4e7a-9a02-ef542107f6e7,528a699d-fda4-4539-9677-926b2d09f631,4,'2017-05-03 16:23:50',NULL,'88d34e03-d9d0-431a-ae06-7a92ce2b4d3c/528a699d-fda4-4539-9677-926b2d09f631/',NULL,NULL,NULL,false,'2020-05-03 16:23:50',90c1673a-e65d-450b-a9c3-4b858b4fa225,' Fee-Reports','icon-font-size2',NULL,NULL,'./fee-Reports',88d34e03-d9d0-431a-ae06-7a92ce2b4d3c,true,'NEXSCHOOLAPP',true,true,NULL,'Fee Reports',['Employee','SchoolAdmin'],false,false,
+'Fee Structure helps you define for which terms the fee is applicable for and what are the fee types that are a part of the fees to be assigned. Fee structure can be added by clicking on Create Fee Structure and providing the applicable terms and the fee types. The fee structures that are created can be viewed in the table below.
+',false,'2017-2018');
+
+
+
+// NexApp enable - Production
+
+
+INSERT INTO nsa.school_feature 
+(tenant_id, school_id, academic_year, id, activated_date, additional_links, asset_url, content, description, doc_desc, email, expire_date, feature_id, feature_name, help_text, icon, images, is_channels, is_override, keywords, link, mobile_priority, notify_hostelers, order_by, parent_feature_id, push, school_name, screen, sms, status, tags, title, user_types, is_mobile)
+VALUES(d9006970-8e20-11e7-add6-b3e4fd55f3b5, 6bb083e9-c5c7-4d1d-a3a8-69130993bb4f, '2018-2019', 587dd15b-4378-4e00-8e98-a7e5c65ae73d, '2017-05-04 03:23:50', NULL, '92585ffc-ee5a-49ad-951c-912fc3a87eff/587dd15b-4378-4e00-8e98-a7e5c65ae73d/', NULL, NULL, NULL, false, '2020-05-04 03:23:50', b5f97137-bb1c-4e08-ad60-0dbaec586e38, 'NexApp', '', 'icon-users4', NULL, false, false, NULL, NULL, 14, false, 7, 92585ffc-ee5a-49ad-951c-912fc3a87eff, false, 'M.A.H.S.S,Kodinjhi', 'NexApp', true, true, NULL, 'NexApp', ['Employee', 'SchoolAdmin'],true);
+
+INSERT INTO nsa.school_feature
+(tenant_id, school_id, academic_year, id, activated_date, additional_links, asset_url, content, description, doc_desc, email, expire_date, feature_id, feature_name, help_text, icon, images, is_channels, is_override, keywords, link, mobile_priority, notify_hostelers, order_by, parent_feature_id, push, school_name, screen, sms, status, tags, title, user_types,is_mobile)
+VALUES(ac09d510-0a7f-11e8-9d65-7b54a53a3e63, 98cad5fc-aff5-4f2e-9f3b-cc59fff9397a, '2018-2019', 587dd15b-4378-4e00-8e98-a7e5c65ae73d, '2017-05-04 03:23:50', NULL, '92585ffc-ee5a-49ad-951c-912fc3a87eff/587dd15b-4378-4e00-8e98-a7e5c65ae73d/', NULL, NULL, NULL, false, '2020-05-04 03:23:50', b5f97137-bb1c-4e08-ad60-0dbaec586e38, 'NexApp', '', 'icon-users4', NULL, false, false, NULL, NULL, 14, false, 7, 92585ffc-ee5a-49ad-951c-912fc3a87eff, false, 'J.B. LUDHANI HIGH SCHOOL', 'NexApp', true, true, NULL, 'NexApp', ['Employee', 'SchoolAdmin'],true);
+
+INSERT INTO nsa.school_feature
+(tenant_id, school_id, academic_year, id, activated_date, additional_links, asset_url, content, description, doc_desc, email, expire_date, feature_id, feature_name, help_text, icon, images, is_channels, is_override, keywords, link, mobile_priority, notify_hostelers, order_by, parent_feature_id, push, school_name, screen, sms, status, tags, title, user_types, is_mobile)
+VALUES(aad20bd3-6278-11e8-b0ab-238473771afb, a33d5105-9315-4ab7-a8bd-dfd5975fa660, '2018-2019', 587dd15b-4378-4e00-8e98-a7e5c65ae73d, '2017-05-04 03:23:50', NULL, '92585ffc-ee5a-49ad-951c-912fc3a87eff/587dd15b-4378-4e00-8e98-a7e5c65ae73d/', NULL, NULL, NULL, false, '2020-05-04 03:23:50', b5f97137-bb1c-4e08-ad60-0dbaec586e38, 'NexApp', '', 'icon-users4', NULL, false, false, NULL, NULL, 14, false, 7, 92585ffc-ee5a-49ad-951c-912fc3a87eff, false, 'CHHATRAPATHY SHIVAJI DAV SEC SCHOOL', 'NexApp', true, true, NULL, 'NexApp', ['Employee', 'SchoolAdmin'], true);
+
+INSERT INTO nsa.school_feature
+(tenant_id, school_id, academic_year, id, activated_date, additional_links, asset_url, content, description, doc_desc, email, expire_date, feature_id, feature_name, help_text, icon, images, is_channels, is_override, keywords, link, mobile_priority, notify_hostelers, order_by, parent_feature_id, push, school_name, screen, sms, status, tags, title, user_types, is_mobile)
+VALUES(be3184d0-500e-11e7-9f5f-87d439384c1d, 6833e9cd-a70b-4a63-ab6c-0cdaef4a440c, '2018-2019', 587dd15b-4378-4e00-8e98-a7e5c65ae73d, '2017-05-04 03:23:50', NULL, '92585ffc-ee5a-49ad-951c-912fc3a87eff/587dd15b-4378-4e00-8e98-a7e5c65ae73d/', NULL, NULL, NULL, false, '2020-05-04 03:23:50', b5f97137-bb1c-4e08-ad60-0dbaec586e38, 'NexApp', '', 'icon-users4', NULL, false, false, NULL, NULL, 14, false, 7, 92585ffc-ee5a-49ad-951c-912fc3a87eff, false, 'Auxilium English Medium School', 'NexApp', true, true, NULL, 'NexApp', ['Employee', 'SchoolAdmin'],true);
+
+INSERT INTO nsa.school_feature
+(tenant_id, school_id, academic_year, id, activated_date, additional_links, asset_url, content, description, doc_desc, email, expire_date, feature_id, feature_name, help_text, icon, images, is_channels, is_override, keywords, link, mobile_priority, notify_hostelers, order_by, parent_feature_id, push, school_name, screen, sms, status, tags, title, user_types, is_mobile)
+VALUES(8eb846a0-4549-11e7-9543-276f818a8422, 4e3d3bf5-e262-4e7a-9a02-ef542107f6e7, '2017-2018', 587dd15b-4378-4e00-8e98-a7e5c65ae73d, '2017-05-03 21:53:50', NULL, '92585ffc-ee5a-49ad-951c-912fc3a87eff/587dd15b-4378-4e00-8e98-a7e5c65ae73d/', NULL, NULL, NULL, false, '2020-05-03 21:53:50', b5f97137-bb1c-4e08-ad60-0dbaec586e38, 'NexApp', '', 'icon-users4', NULL, false, false, NULL, '', 14, false, 7, 92585ffc-ee5a-49ad-951c-912fc3a87eff, false, 'NexschoolApp School', 'NexApp', true, true, NULL, 'NexApp', ['Employee', 'SchoolAdmin'], true);
+
+INSERT INTO nsa.school_feature
+(tenant_id, school_id, academic_year, id, activated_date, additional_links, asset_url, content, description, doc_desc, email, expire_date, feature_id, feature_name, help_text, icon, images, is_channels, is_override, keywords, link, mobile_priority, notify_hostelers, order_by, parent_feature_id, push, school_name, screen, sms, status, tags, title, user_types, is_mobile)
+VALUES(af3b4c30-0afe-11e8-9ca0-d939b9ef5273, 244d1cde-e8ab-4602-a08f-78a1ed04e56a, '2018-2019', 587dd15b-4378-4e00-8e98-a7e5c65ae73d, '2017-05-04 08:53:50', NULL, '92585ffc-ee5a-49ad-951c-912fc3a87eff/587dd15b-4378-4e00-8e98-a7e5c65ae73d/', NULL, NULL, NULL, false, '2020-05-04 08:53:50', b5f97137-bb1c-4e08-ad60-0dbaec586e38, 'NexApp', '', 'icon-users4', NULL, false, false, NULL, NULL, 14, false, 7, 92585ffc-ee5a-49ad-951c-912fc3a87eff, false, 'LUDHANI VIDYA MANDIR', 'NexApp', true, true, NULL, 'NexApp', ['Employee', 'SchoolAdmin'], true);
+
+INSERT INTO nsa.school_feature
+(tenant_id, school_id, academic_year, id, activated_date, additional_links, asset_url, content, description, doc_desc, email, expire_date, feature_id, feature_name, help_text, icon, images, is_channels, is_override, keywords, link, mobile_priority, notify_hostelers, order_by, parent_feature_id, push, school_name, screen, sms, status, tags, title, user_types, is_mobile)
+VALUES(214a6e60-4da8-11e7-8abe-adec971199c2, 81f43ec4-a62c-4809-b8d4-c638f01d875f, '2018-2019', 587dd15b-4378-4e00-8e98-a7e5c65ae73d, '2017-05-04 03:23:50', NULL, '92585ffc-ee5a-49ad-951c-912fc3a87eff/587dd15b-4378-4e00-8e98-a7e5c65ae73d/', NULL, NULL, NULL, false, '2020-05-04 03:23:50', b5f97137-bb1c-4e08-ad60-0dbaec586e38, 'NexApp', '', 'icon-users4', NULL, false, false, NULL, NULL, 14, false, 7, 92585ffc-ee5a-49ad-951c-912fc3a87eff, false, 'St Ritas Public School', 'NexApp', true, true, NULL, 'NexApp', ['Employee', 'SchoolAdmin'], true);

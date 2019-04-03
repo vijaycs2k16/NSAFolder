@@ -1,0 +1,15 @@
+<% collection.forEach(function(journal, index){
+%>
+<tr data-id="<%=journal._id%>">
+    <td class="notForm centerCell">
+        <label class="_customCHeckbox">
+            <input type="checkbox" value="<%=journal._id%>" class="checkbox listCB"/>
+            <span></span>
+        </label>
+    </td>
+    <td class="editable" data-content="name" data-type="input"><%=journal.course_name%></td>
+    <td class="editable" data-content="transaction"><%=journal.course_name ? journal.course_name : ''%></td>
+    <td class="editable" data-content="debitAccount"><%= journal.course_name %></td>
+    <td class="editable" data-content="creditAccount"><%= journal.course_name %></td>
+</tr>
+<% }) %>

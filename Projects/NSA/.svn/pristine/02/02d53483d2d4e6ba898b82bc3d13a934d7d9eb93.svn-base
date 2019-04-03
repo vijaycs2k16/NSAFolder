@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="common_font">
+        <item name="android:fontFamily">fonts/android_7.ttf</item>
+    </style>
+</resources>

@@ -1,0 +1,115 @@
+<div class="form-holder _newForm select-disabled">
+    <form method="post" action="" id="invoiceForm">
+        <h4 class="_dialogMainTitle">View Paper Configuration</h4>
+        <div class="_formWrap _enlargedItemMargin newItem">
+            <div class="_formBlock _equal">
+                <div class="container" style="margin-left:-15px;">
+                    <div class="canReadAndWrite row">
+                        <div class="_animateSelectBox col m-12">
+                            <span class="_selectTitle margin-left-15">Class</span>
+                            <div class="_newSelectListWrap">
+                                <a id="classpc"
+                                   name="classpc"
+                                   class="current-selected"
+                                   href="javascript:;"><%= model.classDetail ? model.classDetail.className: "None"%></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="canReadAndWrite row">
+                        <div class="_animateSelectBox col m-6" style="margin-left:-15px;">
+                            <span class="_selectTitle margin-left-15">Subjects</span>
+                            <div class="_newSelectListWrap">
+                                <a id="subject"
+                                   name="subject"
+                                   class="input-select"
+                                   href="javascript:;"><%= subjects ? subjects: "None"%></a>
+                            </div>
+                        </div>
+                        <div class="_animateSelectBox col m-6">
+                            <span class="_selectTitle margin-left-15">Topics</span>
+                            <div class="_newSelectListWrap">
+                                <a id="topics"
+                                   name="topics"
+                                   class="input-select"
+                                   href="javascript:;"><%= topics ? topics: "None"%></a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br/><br/>
+                <div class="_animateInputBox">
+                    <input type="text"
+                           class="_animate "
+                           id="paperName"
+                           name="paperName"
+                           value="<%=model.name ? model.name: ''%>"/>
+                    <label class="_animate">Paper Name</label>
+                </div>
+                <div class="_animateInputBox">
+                    <input type="number"
+                           class="_animate "
+                           id="questions"
+                           name="questions"
+                           maxlength="48"
+                           value="<%=model.num ? model.num: ''%>"/>
+                    <label class="_animate">No Of Questions</label>
+                </div>
+                <div class="container">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-4">
+                            <div class="_tipsWrap">
+                                <label for="manual" class="">Manual Questions</label>
+                                <input type="radio"
+                                       name="questionType"
+                                       id="manual"
+                                       class="_circleRadioRadiance"
+                                       value="ManualQuestions" <%= model.questionMode === 'ManualQuestions' ? checked ='checked' : '' %>
+                                >
+                                <label for="manual"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_circleRadioRadianceWrap col m-4">
+                            <div class="_tipsWrap">
+                                <label for="weightage" class="">Weightage Base</label>
+                                <input type="radio"
+                                       name="questionType"
+                                       id="weightage"
+                                       value="WeightageBase" <%= model.questionMode === 'WeightageBase' ? checked ='checked' : '' %>
+                                       class="_circleRadioRadiance">
+                                <label for="weightage"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_circleRadioRadianceWrap col m-4">
+                            <div class="_tipsWrap">
+                                <label for="random" class="">Random</label>
+                                <input type="radio"
+                                       name="questionType"
+                                       id="random"
+                                       value="Random" <%= model.questionMode === 'Random' ? checked ='checked' : '' %>
+                                       class="_circleRadioRadiance">
+                                <label for="random"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div><br/>
+
+                <div class="container">
+                    <div class="canReadAndWrite generatedQuestions row">
+                        <div class="col m-12">
+                            <div class="_bundleListTitle">Questions</div>
+                            <ul id='generatedQues' class="_productsForBundle"></ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,49 @@
+
+
+    <tbody id="productList">
+
+    <% for (var i = 0; i < 4; i++) {
+    var index = i + 4;
+    %>
+    <tr class="productItem deleteRow left-alignment _productRow" >
+        <td style="width: 115px; height: 23px;">
+            <div class="container">
+                <div class=" _forCheckBox" style="top: 7px;position: relative;">
+                    <label class="inputBox _newSelectListWrap">
+                        <label class="_animatedCheckbox">
+                            <input id="active" data-id="salesPurchases_isCustomer"
+                                   class="checkbox shippingRadio checkVakue active"
+                                   type="checkbox"/>
+                            <span style="height: 17px;"></span>
+                        </label>
+                    </label>
+                </div>
+            </div>
+        </td>
+        <td style="width: 1200px; height: 23px;" >
+            <div class="  m-12" >
+                <div class="_animateSelectBox _withInfo" style="margin-bottom: 0px;">
+                    <div  id="editor<%=index%>" class="editor discountValue">
+
+                    </div>
+                </div>
+            </div>
+        </td>
+
+        <td class=""  colspan="4">
+            <span title="Delete" class="icon-close5 removeJob"></span>
+        </td>
+    </tr>
+    <% }%>
+    </tbody>
+
+    <tr class="" id="newItem">
+        <td class="addProductItem1">
+            <a href="javascript:;" class="btn blue slim">Add Choice</a>
+        </td>
+    </tr>
+
+    <script>
+        initSample();
+
+    </script>

@@ -1,0 +1,61 @@
+<div class="_acountingTableWrap">
+    <div class="dialog-tabs-item">
+        <div class="_formWrap">
+            <div class="_formBlock _equal">
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Center</span>
+                    <div class="_newSelectListWrap">
+                        <a id="center"
+                           name="center"
+                           class="current-selected"
+                           data-id="<%= data ? data.center._id: ''%>"
+                           href="javascript:;"><%= data ? data.center.name: 'Select Center'%></a>
+                    </div>
+                </div>
+            </div>
+            <div class="_formBlock _equal">
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Department</span>
+                    <div class="_newSelectListWrap">
+                        <a id="department"
+                           name="department"
+                           class="current-selected"
+                           data-id="<%= data ? data.department._id: ''%>"
+                           href="javascript:;"><%= data ? data.department.name: 'Select Department'%></a>
+                    </div>
+                </div>
+            </div>
+            <div class="_formBlock _equal">
+                <div class="_animateSelectBox _withInfo">
+                    <button class="btn btnBlue searchBtn">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="_acountingTableBlock">
+        <table id="example1" class="display" style="width:100%">
+            <thead>
+            <tr class="forToggle">
+                <th class="text-left">Employee</th>
+                <% if(dataPermission.data.update || dataPermission.data.delete) { %>
+                <th class="text-left">Action</th>
+                <% } %>
+            </tr>
+            </thead>
+            <tbody>
+            <% collection.forEach(function(elem,index){ %>
+            <tr data-id="<%=elem._id%>">
+                <td><%=elem.name ? elem.name : ''%></td>
+                <% if(dataPermission.data.update || dataPermission.data.delete) { %>
+                <td>
+                    <a href="javascript:;" class="icon-note goToEdit _actionCircleBtn show" aria-hidden="true"></a>
+                    <a href="javascript:;" class="iconmoon-eye goToView _actionCircleBtn show" aria-hidden="true"></a>
+                </td>
+                <% } %>
+            </tr>
+
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>

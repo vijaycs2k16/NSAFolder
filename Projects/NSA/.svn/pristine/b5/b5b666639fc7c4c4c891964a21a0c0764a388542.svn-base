@@ -1,0 +1,183 @@
+{
+  "development":{
+    "zone": "Asia/Calcutta",
+    "gps": {
+      "baseUrl": "http://gpsvts.net/apiMobile",
+      "host": "www.gpsvts.net",
+      "port": "80",
+      "basePath": "/apiMobile",
+      "apiKeyUrl": "/getApiKey",
+      "trackingUrl": "/getVehicleLocations",
+      "trackingSingle": "/getSelectedVehicleLocation",
+      "userId": "magsun",
+      "signature": "6fa21a3ff9bc0abf350617c673ee98ef",
+      "apiKey": "b269aaee4f655fc475b0706f707e140d",
+      "interval": 5000,
+      "validity" : 380,
+      "schedule": {
+        "dayOfWeek": {
+          "start": 1,
+          "end": 6
+        },
+        "hour": [6, 7, 8, 9, 15, 16, 17, 18],
+        "secondInterval": 3,
+        "resetHour": [10, 19]
+      }
+    },
+    "cassandra":{
+      "contactPoints":[
+        "127.0.0.1"
+      ],
+      "protocolOptions":"{ port: 9042 }",
+      "keyspace":"nsa",
+      "queryOptions":"{consistency: models.consistencies.one}",
+      "username": "cassandra",
+      "password":"cassandra"
+    },
+    "elasticSearch":{
+      "master" : {
+        "host": "localhost",
+        "port": 9200,
+        "log": "trace"
+      },
+      "slave" : {
+        "host": "localhost",
+        "port": 9200,
+        "log": "trace"
+      },
+      "indexDefaultName" : "nsa",
+      "defaultTypeName" : "users",
+      "index" : {
+        "userIndex": "users",
+        "studentType": "student",
+        "empType": "employee",
+        "vehicleType": "vehicle",
+        "calendarIndex" : "calendar",
+        "notesType" : "notes",
+        "eventsType" : "events",
+        "examsType" : "exams",
+        "assignmentsType" : "assignments",
+        "attendanceType" : "attendance",
+        "assessmentIndex" : "assessment",
+        "marksType": "marks",
+        "notificationsIndex" : "notifications",
+        "notificationsType" : "notification_master",
+        "notificationDetailsType" : "notification_details",
+        "assignmentsIndex": "assignments",
+        "assignmentsMasterType" : "assignment_master",
+        "assignmentDetailsType" : "assignment_details"
+      }
+    },
+    "sms": {
+      "valueLeaf": {
+        "url": "http://alerts.valueleaf.com/api/v3/?method=sms.json&api_key=A0ad91a9c237d01dfaa7a86b9dc8a9b1f&format=json&json="
+      }
+    },
+    "server" : {
+       "host" : "localhost",
+       "port" : 4444
+    },
+    "kafka" : {
+      "host" : "localhost",
+      "port" : 2181,
+      "topic" : {
+        "logger": "logger-topic",
+        "sms": "sms-topic"
+      }
+    },
+    "notificationHost": ["nexschoolapp.com", "app.nexschoolapp.com", "52.66.126.193", "localhost"]
+  },
+
+  "production":{
+    "zone": "Asia/Calcutta",
+    "cassandra":{
+      "contactPoints":[
+        "127.0.0.1"
+      ],
+      "protocolOptions":"{ port: 9042 }",
+      "keyspace":"nsa",
+      "queryOptions":"{consistency: models.consistencies.one}",
+      "username": "cassandra",
+      "password":"cassandra"
+    },
+    "elasticSearch":{
+      "master" : {
+        "host": "localhost",
+        "port": 9200,
+        "log": "trace"
+      },
+      "slave" : {
+        "host": "localhost",
+        "port": 9200,
+        "log": "trace"
+      },
+      "indexDefaultName" : "nsa",
+      "defaultTypeName" : "users",
+      "index" : {
+        "userIndex": "users",
+        "studentType": "student",
+        "empType": "employee",
+        "vehicleType": "vehicle",
+        "calendarIndex" : "calendar",
+        "notesType" : "notes",
+        "eventsType" : "events",
+        "examsType" : "exams",
+        "assignmentsType" : "assignments",
+        "attendanceType" : "attendance",
+        "assessmentIndex" : "assessment",
+        "marksType": "marks",
+        "notificationsIndex" : "notifications",
+        "notificationsType" : "notification_master",
+        "notificationDetailsType" : "notification_details",
+        "assignmentsIndex": "assignments",
+        "assignmentsMasterType" : "assignment_master",
+        "assignmentDetailsType" : "assignment_details"
+      }
+    },
+    "gps": {
+      "baseUrl": "http://gpsvts.net/apiMobile",
+      "host": "www.gpsvts.net",
+      "port": "80",
+      "basePath": "/apiMobile",
+      "apiKeyUrl": "/getApiKey",
+      "trackingUrl": "/getVehicleLocations",
+      "trackingSingle": "/getSelectedVehicleLocation",
+      "userId": "magsun",
+      "signature": "6fa21a3ff9bc0abf350617c673ee98ef",
+      "apiKey": "b269aaee4f655fc475b0706f707e140d",
+      "interval": 5000,
+      "validity" : 380,
+      "schedule": {
+        "dayOfWeek": {
+          "start": 1,
+          "end": 6
+        },
+        "hour": [6, 7, 8, 9, 15, 16, 17, 18],
+        "secondInterval": 3,
+        "resetHour": [10, 18]
+
+      }
+    },
+    "sms": {
+      "valueLeaf": {
+        "url": "http://alerts.valueleaf.com/api/v3/?method=sms.json&api_key=A0ad91a9c237d01dfaa7a86b9dc8a9b1f&format=json&json="
+      }
+    },
+    "server" : {
+      "host" : "localhost",
+      "port" : 4444
+    },
+    "kafka" : {
+      "host" : "localhost",
+      "port" : 2181,
+      "topic" : {
+        "logger": "logger-topic",
+        "sms": "sms-topic"
+      }
+    }
+  },
+  "notificationHost": ["nexschoolapp.com", "app.nexschoolapp.com", "52.66.126.193", "localhost"],
+  "aws": {
+    "s3BaseUrl":"https://s3.amazonaws.com/"
+  }
+}

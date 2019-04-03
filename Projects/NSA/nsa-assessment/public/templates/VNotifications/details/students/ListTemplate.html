@@ -1,0 +1,58 @@
+<div class="_acountingTableWrap">
+    <% if(data.create) { %>
+    <div class="_acountingTitleBlock _forOverview">
+        <a href="javascript:;" class="btn blue slim icon-plus btnPositioned" title="Create"
+           id="top-bar-createBtn">New</a>
+    </div>
+    <% } %>
+    <div class="_acountingTableBlock">
+        <table id="example2" class="display datatable-align" style="width:100%">
+
+            <thead>
+            <tr class="forToggle">
+                <th class="text-left">Title</th>
+                <% if(App.currentUser.student != null) { %>
+                <th class="text-left" style="width: 50%">Message</th>
+                <th class="text-left">Received Date</th>
+                <% } else { %>
+                <th class="text-left">Updated By</th>
+                <% } %>
+                <th class="text-left">Status</th>
+                <% if(data.update || data.delete) { %>
+                <th class="text-left">Action</th>
+                <% } %>
+            </tr>
+            </thead>
+            <tbody class="forToggle" id="currencyTable">
+            <%
+            collection.forEach(function(elem,index){
+            %>
+            <tr data-id="<%=elem._id%>">
+                <td><%=elem.title%></td>
+                <% if(App.currentUser.student != null) { %>
+                    <td><%=elem.message%></td>
+                    <td><%=new Date(elem.data[0].updatedDate).toDateString() %> - <%= new Date(elem.data[0].updatedDate).toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })%></td>
+                    <td> <span data-color="bgGreenLight" class="text-center _tagSmall">Received</span> </td>
+                    <% } else { %>
+                    <td><%=elem.updatedBy%></td>
+                    <td>
+                        <span data-color="<%= (elem.status == 'true' || elem.status == true) ? 'bgGreenLight' : 'bgRed' %>" class="text-center _tagSmall"><%= (elem.status == 'true' || elem.status == true) ? 'Sent' : 'Draft' %></span>
+                    </td>
+                    <% if(data.update || data.delete) { %>
+                        <td>
+                            <% if(elem.status == "true" || elem.status == true) {%>
+                                <a href="javascript:;" class="iconmoon-eye <%= data.update ? 'goToEdit show': 'hide'%> _actionCircleBtn" aria-disabled="<%= data.update ? 'true': 'false'%>"></a>
+                                <a href="javascript:;" class="icon-trash <%= data.delete ? 'goToRemove show': 'hide'%>  _actionCircleBtn" aria-disabled="<%= data.delete ? 'true': 'false'%>"></a>
+                            <% } else { %>
+                                <a href="javascript:;" class="icon-note <%= data.update ? 'goToEdit show': 'hide'%> _actionCircleBtn" aria-hidden="<%= data.update ? 'true': 'false'%>"></a>
+                                <a href="javascript:;" class="icon-trash <%= data.delete ? 'goToRemove show': 'hide'%>  _actionCircleBtn" aria-hidden="<%= data.delete ? 'true': 'false'%>"></a>
+                            <% } %>
+                        </td>
+                    <% } %>
+                <% } %>
+            </tr>
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>

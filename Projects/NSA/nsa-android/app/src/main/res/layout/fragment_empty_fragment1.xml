@@ -1,0 +1,104 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="nexrise.publication.in.nexrise.OverviewFragment">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/overview"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginBottom="@dimen/margin10"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_help"
+                android:layout_width="0dp"
+                android:id="@+id/help"
+                android:layout_height="@dimen/height20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:id="@+id/calendarabs">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:weightSum="2">
+            <TextView
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_height="@dimen/height30"
+                android:text="Current Day"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:background="@color/appColor"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height30"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:text="Absent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/colorRed"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:weightSum="2"
+            android:layout_marginBottom="@dimen/margin15">
+            <TextView
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_height="@dimen/height30"
+                android:gravity="center"
+                android:text="Holidays"
+                android:textColor="@color/colorWhite"
+                android:background="@color/green"
+
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height30"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:text="Events"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@color/yellow"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+        <!-- TODO: Update blank fragment layout -->
+
+
+    </LinearLayout>
+</ScrollView>

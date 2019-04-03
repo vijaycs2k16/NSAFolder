@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="@dimen/padding10"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/progress_bar"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"/>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_table_style"
+    tools:context="nexrise.publication.in.nexrise.TimetableFeature.HolidaysListviewFragment">
+    <TableRow
+        android:minHeight="@dimen/minHeight50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:background="@drawable/border_overlay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/s_no"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/description_text_size"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"/>
+
+        <TextView
+            android:background="@drawable/border_overlay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/description_text_size"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1.5"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/holiday_caps"/>
+
+        <TextView
+            android:background="@drawable/border_overlay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/description_text_size"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1.0"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/schedule"/>
+    </TableRow>
+
+
+    <ListView
+        android:id="@+id/holidaysListView"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/border"/>
+
+</TableLayout>
+</LinearLayout>

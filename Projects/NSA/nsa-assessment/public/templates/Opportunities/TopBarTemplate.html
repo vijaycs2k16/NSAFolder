@@ -1,0 +1,39 @@
+<%
+var studentCoun = false;
+if(App.currentUser.profile._id == 1524552351000) {
+studentCoun = true;
+}%>
+<h3><%=contentType%></h3>
+<div id="createBtnHolder" class="btnsBlock">
+    <% if(!studentCoun) { %>
+        <% if(data.create) { %>
+            <a href="javascript:;" class="btn blue slim icon-plus" title="Create" id="top-bar-createBtn">New</a>
+            <%if(viewType=='kanban') {%>
+                <a id="kanban-settings-Btn" class="btn blue slim" title="Kanban Settings">Settings</a>
+            <%}%>
+         <% } %>
+        <% if(data.delete) { %>
+            <a href="javascript:;" class="btn blue slim" title="Remove" id="top-bar-deleteBtn">Delete</a>
+        <% } %>
+    <% } %>
+</div>
+
+<div id="template-switcher" class="template-switcher right" style="margin-right: 25px">
+    <ul class="btn-list">
+        <li title="Detail view">
+            <a href="javascript:;"
+               class="changeContentView icon-rect2 <%= (viewType == 'datelist') ? 'selected' : ''%>"
+               data-view-type="datelist"
+               id="dateListBtn"></a>
+        </li>
+        <li title="Kanban view">
+            <a href="javascript:;"
+               class="changeContentView icon-kanban <%= (viewType == 'kanban') ? 'selected' : ''%>"
+               data-view-type="kanban" id="kanbanBtn"></a></li>
+        <li title="List view">
+            <a href="javascript:;"
+               class="changeContentView icon-list5 <%= (viewType == 'list') ? 'selected' : ''%>"
+               data-view-type="list" id="listBtn"></a></li>
+        <!-- <li><a href="javascript:;" class="changeContentView icon icon-btn dark <%= (viewType == 'form') ? 'selected' : ''%>" data-view-type="form" id="formBtn">m</a></li> -->
+    </ul>
+</div>

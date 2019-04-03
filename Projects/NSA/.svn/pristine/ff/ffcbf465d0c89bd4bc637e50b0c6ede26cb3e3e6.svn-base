@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_exam_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/headings"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin5"
+            android:text="My Exam Schedule"/>
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exam_table_layout"
+        android:layout_below="@id/relative"
+        android:background="@drawable/border_table_style"
+        android:layout_marginTop="@dimen/margin15">
+        <TableRow
+            android:minHeight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:background="@drawable/border_overlay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="S.NO"
+                android:textStyle="bold"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"/>
+
+            <TextView
+                android:background="@drawable/border_overlay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1.0"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="EXAM"/>
+
+            <TextView
+                android:background="@drawable/border_overlay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1.0"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="SCHEDULE"/>
+        </TableRow>
+
+        <!-- TODO: Update blank fragment layout -->
+        <ListView
+            android:id="@+id/examListView"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/border"/>
+
+
+    </TableLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:tint="@color/colorWhite"
+        android:background="@color/appColor"
+        app:backgroundTint="@color/appColor"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/margin5"/>
+
+
+</RelativeLayout>

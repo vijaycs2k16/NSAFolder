@@ -1,0 +1,414 @@
+<div class="form-holder _newForm _employeeEdit">
+    <form method="post" action="" id="editEmployeeForm" class="form editEmployeeForm">
+        <h4 class="_dialogTitlePositioned">Edit Student</h4>
+        <ul class="dialog-tabs">
+            <li>
+                <a href="javascript:;" class="active">Main</a>
+            </li>
+            <li>
+                <a href="javascript:;" class="">Personal Information</a>
+            </li>
+            <li>
+                <a href="javascript:;" class="">Course Details</a>
+            </li>
+        </ul>
+        <div class="dialog-tabs-items">
+            <div class="dialog-tabs-item active">
+                <div class="_formWrap">
+                    <div class="_avatarBlock">
+                        <div class="avatar">
+                            <div class="upload">Edit
+                                <input type="file" value="Edit" id="inputImg">
+                            </div>
+                            <canvas id="avatar"
+                                    width="140"
+                                    height="140">
+                            </canvas>
+                        </div>
+                        <div id="newItem">
+                            <div class="">
+                                <span class="addCourseDuration btn " id="removeImage" style="border:none">RemoveImage</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_formBlock">
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   class="_animate"
+                                   id="studentFirst"
+                                   autofocus
+                                   value="<%=model.studentName%>"
+                                   maxlength="32"/>
+                            <label class="_animate">First Name<span class="text-danger"> *</span></label>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   class="_animate"
+                                   id="studentlast"
+                                   value="<%=model.lastName%>"
+                                   maxlength="32"/>
+                            <label class="_animate">Last Name</label>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="number"
+                                   class="_animate"
+                                   id="studentMobile"
+                                   value="<%=model.studentPhone%>"
+                                   maxlength="20"/>
+                            <label class="_animate">Mobile<span class="text-danger"> *</span></label>
+                        </div>
+                        <% if(model.isRegistration == true) {%>
+                            <div class="_animateSelectBox _withInfo">
+                                <span class="_selectTitle">Center<span class="text-danger"> *</span></span>
+                                <div class="_newSelectListWrap">
+                                    <a id="studentCenter"
+                                       name="studentCenter"
+                                       class="current-selected select-disabled"
+                                       readonly
+                                       data-id="<%=model.center ? model.center._id: null%>"
+                                       href="javascript:;"><%=model.center ? model.center.centerName : 'Select center'%></a>
+                                </div>
+                                <span class="tips icon-info" data-id="studentCenter"></span>
+                            </div>
+                        <div class="_animateSelectBox _withInfo">
+                            <span class="_selectTitle">Course<span class="text-danger">*</span></span>
+
+                            <div class="_newSelectListWrap">
+                                <a id="studentCourse"
+                                   name="studentCourse"
+                                   class="current-selected select-disabled"
+                                   readonly
+                                   data-id="<%=model.course ? model.course._id: null%>"
+                                   href="javascript:;"><%=model.course ? model.course.courseName : 'Select Course'%> </a>
+                            </div>
+                            <span class="tips icon-info" data-id="studentCourse"></span>
+                        </div>
+                        <div class="_animateSelectBox _withInfo">
+                            <span class="_selectTitle">Batch</span>
+
+                            <div class="_newSelectListWrap">
+                                <a id="StudentBatch"
+                                   name="StudentBatch"
+                                   class="current-selected select-disabled"
+                                   readonly
+                                   data-id="<%=model.batch ? model.batch._id: null%>"
+                                   href="javascript:;"><%=model.batch ? model.batch.batchName : 'Select batch'%> </a>
+                            </div>
+                            <span class="tips icon-info" data-id="StudentBatch"></span>
+                        </div>
+                    </div>
+                        <% } else{%>
+                           <div class="_animateSelectBox _withInfo">
+                                <span class="_selectTitle">Center<span class="text-danger"> *</span></span>
+                                <div class="_newSelectListWrap">
+                                    <a id="studentCenter"
+                                       name="studentCenter"
+                                       class="current-selected"
+                                       data-id="<%=model.center ? model.center._id: null%>"
+                                       href="javascript:;"><%=model.center ? model.center.centerName : 'Select center'%></a>
+                                </div>
+                                <span class="tips icon-info" data-id="studentCenter"></span>
+                            </div>
+                        <div class="_animateSelectBox _withInfo">
+                            <span class="_selectTitle">Course<span class="text-danger">*</span></span>
+
+                            <div class="_newSelectListWrap">
+                                <a id="studentCourse"
+                                   name="studentCourse"
+                                   class="current-selected"
+                                   data-id="<%=model.course ? model.course._id: null%>"
+                                   href="javascript:;"><%=model.course ? model.course.courseName : 'Select Course'%> </a>
+                            </div>
+                            <span class="tips icon-info" data-id="studentCourse"></span>
+                        </div>
+                        <div class="_animateSelectBox _withInfo">
+                            <span class="_selectTitle">Batch</span>
+
+                            <div class="_newSelectListWrap">
+                                <a id="StudentBatch"
+                                   name="StudentBatch"
+                                   class="current-selected"
+                                   data-id="<%=model.batch ? model.batch._id: null%>"
+                                   href="javascript:;"><%=model.batch ? model.batch.batchName : 'Select batch'%> </a>
+                            </div>
+                            <span class="tips icon-info" data-id="StudentBatch"></span>
+                        </div>
+                    </div>
+                        <%}%>
+                        <!--<div class="_animateSelectBox _withInfo">
+                            <span class="_selectTitle">Course<span class="text-danger">*</span></span>
+
+                            <div class="_newSelectListWrap">
+                                <a id="studentCourse"
+                                   name="studentCourse"
+                                   class="current-selected"
+                                   data-id="<%=model.course ? model.course._id: null%>"
+                                   href="javascript:;"><%=model.course ? model.course.courseName : 'Select Course'%> </a>
+                            </div>
+                            <span class="tips icon-info" data-id="studentCourse"></span>
+                        </div>
+                        <div class="_animateSelectBox _withInfo">
+                            <span class="_selectTitle">Batch</span>
+
+                            <div class="_newSelectListWrap">
+                                <a id="StudentBatch"
+                                   name="StudentBatch"
+                                   class="current-selected"
+                                   data-id="<%=model.batch ? model.batch._id: null%>"
+                                   href="javascript:;"><%=model.batch ? model.batch.batchName : 'Select batch'%> </a>
+                            </div>
+                            <span class="tips icon-info" data-id="StudentBatch"></span>
+                        </div>
+                    </div>-->
+                    <div class="_formBlock">
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   class="_animate"
+                                   id="personalEmail"
+                                   value="<%=model.studentEmail%>"
+                                   maxlength="48"/>
+                            <label class="_animate">Email<span class="text-danger"> *</span></label>
+                        </div>
+                        <div class="_animateInputBox">
+                            <span class="_staticLabel">Date of Birth</span>
+                            <input type="text"
+                                   name="dateBirth"
+                                   class="_animate"
+                                   id="dateBirth"
+                                   value="<%=model.studentDetails ? model.studentDetails.dateOfBirth ? model.studentDetails.dateOfBirth: null : null%>"
+                                   placeholder="Date of Birth"/>
+                        </div>
+                        <div class="_animateSelectBox">
+                            <span class="_selectTitle">Gender</span>
+                            <div class="_newSelectListWrap">
+                                <a id="studentGender"
+                                   class="current-selected"
+                                   data-id="<%=model.studentGender ? model.studentGender: null%>"
+                                   href="javascript:;"><%=model.studentGender ? model.studentGender : 'Select gender'%> </a>
+                            </div>
+                        </div>
+                        <!--<div class="_animateInputBox">
+                            <input type="password"
+                                   class="_animate"
+                                   id="password"
+                                   value="<%=model.studentPassword ? model.studentPassword : null%>"
+                                   maxlength="48"/>
+                            <label class="_animate">Password</label>
+                        </div>-->
+                        <div class="_textGrey">
+                            <label style="color: #7eadcc">Student Status</label>
+                        </div>
+                        <div class="container">
+                            <div class="canReadAndWrite row">
+                                <div class="_circleRadioRadianceWrap col m-6">
+                                    <div class="_tipsWrap">
+                                        <label for="yes" class="">Active</label>
+                                        <input type="radio"
+                                               name="question"
+                                               id="yes"
+                                               class="_circleRadioRadiance"
+                                        <%=model.studentStatus ? checked='checked' : ''%>
+                                               value="1">
+                                        <label for="yes"
+                                               class="_circleRadioRadianceLabel">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="_circleRadioRadianceWrap col m-6">
+                                    <div class="_tipsWrap">
+                                        <label for="no" class="">Deactive</label>
+                                        <input type="radio"
+                                               name="question"
+                                               id="no"
+                                               value="0"
+                                               class="_circleRadioRadiance"
+                                        <%=!model.studentStatus ? checked='checked' : ''%>
+                                        >
+                                        <label for="no"
+                                               class="_circleRadioRadianceLabel">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cropImages form" style="display:none;">
+                        <div class="formTitle">
+                            <h3 class="left">Crop Images</h3>
+                        </div>
+                        <div class="image_input" style="float: left;margin-right: 20px;"></div>
+                        <img class="image_output"/>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog-tabs-item">
+                <div class="_formWrap">
+                    <h4 class="_titleBlueBorder">Contact Information</h4>
+
+                    <div class="_formBlock _equal">
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="street"
+                                   class="_animate homeAddress"
+                                   id="studentStreet1"
+                                   value="<%=model.studentDetails ? model.studentDetails.street1 ? model.studentDetails.street1 : null : null%>"
+                                   maxlength="60"/>
+                            <label class="_animate">Street</label>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="city"
+                                   class="_animate homeAddress"
+                                   id="studentCity"
+                                   value="<%=model.studentDetails ? model.studentDetails.city ? model.studentDetails.city : null : null%>"
+                                   maxlength="60"/>
+                            <label class="_animate">City</label>
+                        </div>
+                    </div>
+                    <div class="_formBlock _equal">
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="state"
+                                   class="_animate homeAddress"
+                                   id="studentState"
+                                   value="<%=model.studentDetails ? model.studentDetails.state ? model.studentDetails.state : null : null%>"
+                                   maxlength="32"/>
+                            <label class="_animate">State</label>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="zip"
+                                   class="_animate homeAddress"
+                                   id="studentZip"
+                                   value="<%=model.studentDetails ? model.studentDetails.pincode ? model.studentDetails.pincode : null : null%>"
+                                   maxlength="32"/>
+                            <label class="_animate">Zip Code</label>
+                        </div>
+                    </div>
+                    <h4 class="_titleBlueBorder">Parent Information</h4>
+
+                    <div class="_formBlock _equal">
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="street"
+                                   class="_animate homeAddress"
+                                   id="studentFatherName"
+                                   value="<%=model.studentDetails ? model.studentDetails.faterName ? model.studentDetails.faterName : null : null%>"
+                                   maxlength="60"/>
+                            <label class="_animate">Father Name</label>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="street"
+                                   class="_animate homeAddress"
+                                   id="occupation"
+                                   value="<%=model.studentDetails ? model.studentDetails.occupation ? model.studentDetails.occupation : null : null%>"
+                                   maxlength="60"/>
+                            <label class="_animate">Occupation</label>
+                        </div>
+                    </div>
+                    <div class="_formBlock _equal">
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="street"
+                                   class="_animate homeAddress"
+                                   id="fatherAnnualIncome"
+                                   value="<%=model.studentDetails ? model.studentDetails.annualIncome ? model.studentDetails.annualIncome : null : null%>"
+                                   maxlength="60"/>
+                            <label class="_animate">Annual Income</label>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="street"
+                                   class="_animate homeAddress"
+                                   id="studentMotherName"
+                                   value="<%=model.studentDetails ? model.studentDetails.motherName ? model.studentDetails.motherName : null : null%>"
+                                   maxlength="60"/>
+                            <label class="_animate">Mother Name</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog-tabs-item">
+                <div class="_formWrap">
+                    <div class="_formBlock _equal">
+                        <div class="_animateInputBox">
+                            <span class="_staticLabel">Course Start Date</span>
+                            <input type="text"
+                                   name="dateBirth"
+                                   class="_animate"
+                                   id="courseStartDate"
+                                   value="<%=model.courseStartDate ? model.courseStartDate : null%>"
+                                   placeholder="Course Start Date"
+                                   readonly/>
+                        </div>
+                        <div class="_animateInputBox">
+                            <span class="_staticLabel">Course End Date</span>
+                            <input type="text"
+                                   name="dateBirth"
+                                   class="_animate"
+                                   id="courseEndDate"
+                                   value="<%=model.courseEndDate ? model.courseEndDate : null%>"
+                                   placeholder="Course End Date"
+                                   readonly/>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="street"
+                                   class="_animate homeAddress"
+                                   id="CourseFee"
+                                   value="<%=model.totalFees ? model.totalFees : null%>"
+                                   maxlength="60"/>
+                            <label class="_animate">Course Fee</label>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="street"
+                                   class="_animate homeAddress"
+                                   id="registrationNo"
+                                   value="<%=model.registrationNo ? model.registrationNo : null%>"
+                                   maxlength="60"/>
+                            <label class="_animate">Registration Number</label>
+                        </div>
+                    </div>
+                    <div class="_formBlock _equal">
+                        <div class="_animateInputBox">
+                            <span class="_staticLabel">Date of Joining</span>
+                            <input type="text"
+                                   name="dateBirth"
+                                   class="_animate"
+                                   id="dateofJoining"
+                                   value="<%=model.studentDetails ? model.studentDetails.dateOfJoining ? model.studentDetails.dateOfJoining : null : null%>"
+                                   placeholder="Date of Joining"
+                                   readonly/>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="street"
+                                   class="_animate homeAddress"
+                                   id="schoolName"
+                                   value="<%=model.studentDetails ? model.studentDetails.schoolName ? model.studentDetails.schoolName : null : null%>"
+                                   maxlength="60"/>
+                            <label class="_animate">School Name</label>
+                        </div>
+                        <div class="_animateSelectBox _withInfo">
+                            <span class="_selectTitle">Board Of Education</span>
+
+                            <div class="_newSelectListWrap">
+                                <a id="boardOfEdu"
+                                   name="boardOfEdu"
+                                   class="current-selected"
+                                   data-id="<%=model.studentDetails ? model.studentDetails.boardOfEdu ? model.studentDetails.boardOfEdu: null : null%>"
+                                   href="javascript:;"><%=model.studentDetails ? model.studentDetails.boardOfEdu ? model.studentDetails.boardOfEdu : 'SelectBOE': 'SelectBOE'%> </a>
+                            </div>
+                            <span class="tips icon-info" data-id="boardOfEdu"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog-tabs-item">
+                <div class="assignees-container _formWrap _innedFlexDiv"></div>
+            </div>
+        </div>
+    </form>
+</div>

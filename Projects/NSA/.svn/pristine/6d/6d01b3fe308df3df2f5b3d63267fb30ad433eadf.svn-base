@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="login">
+	<parameter name="validusername" value="pbadmin"></parameter>
+	<parameter name="validpassword" value="1234"></parameter>
+	<parameter name="Invalidpassword" value="4321"></parameter>
+	<parameter name="Invalidusername" value="wadmin"></parameter>
+	<!-- <parameter name="uppercaseusername" value="WBADMIN"></parameter>
+	<parameter name="uppercasepassword" value="WBADM22"></parameter> -->
+	<parameter name="emptyusername" value=""></parameter>
+	<parameter name="emptypassword" value=""></parameter>
+	<test name="LoginTest">
+		<classes>
+			<class name="com.nsa.testing.tests.LoginTest" />
+		</classes>
+	</test>
+</suite> 

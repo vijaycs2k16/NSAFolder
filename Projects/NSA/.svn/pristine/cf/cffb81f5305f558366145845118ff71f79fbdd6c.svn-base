@@ -1,0 +1,20 @@
+/**
+ * Created by Manivanan on 16/02/18.
+ */
+
+var express = require('express');
+var router = express.Router();
+var testConfigurationHandler = require('../handlers/testConfiguration');
+
+module.exports = function (models, event) {
+    var configurationHandler = new testConfigurationHandler(models, event);
+
+    router.get('/', configurationHandler.getTestConfig);
+    router.post('/', configurationHandler.create);
+    router.put('/:id',  configurationHandler.update);
+    router.delete('/:id',  configurationHandler.remove);
+    //router.post('/manual/selected', configurationHandler.getManualSelected);
+    //router.post('/random/without/selected/:limit', configurationHandler.getRandomWithOutSelected);
+
+    return router;
+};

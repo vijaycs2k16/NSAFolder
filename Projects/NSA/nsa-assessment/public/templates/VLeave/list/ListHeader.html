@@ -1,0 +1,104 @@
+﻿﻿<%var isCAdmin = App.currentUser.profile._id === 1522230115000 ? 'select-disabled' : '' %>
+<div class="dialog-tabs-item">
+    <div class="_formWrap">
+        <div class="_formBlock _equal">
+            <div class="_animateSelectBox _withInfo">
+                <span class="_selectTitle">Center</span>
+                <div class="_newSelectListWrap">
+                    <a id="center"
+                       name="center"
+                       class="current-selected <%= isCAdmin %>"
+                       data-id=""
+                       href="javascript:;">Select Center</a>
+                </div>
+            </div>
+        </div>
+        <div class="_formBlock _equal">
+            <div class="_animateSelectBox _withInfo">
+                <span class="_selectTitle">Course</span>
+                <div class="_newSelectListWrap">
+                    <a id="course"
+                       name="course"
+                       class="current-selected"
+                       data-id=""
+                       href="javascript:;">Select Course</a>
+                </div>
+            </div>
+        </div>
+        <div class="_formBlock _equal">
+            <div class="_animateSelectBox _withInfo">
+                <span class="_selectTitle">Batch</span>
+                <div class="_newSelectListWrap">
+                    <a id="batch"
+                       name="batch"
+                       class="current-selected"
+                       data-id=""
+                       href="javascript:;">Select Batch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="_tableVacationListwrap">
+    <table class="vacation-list">
+
+        <colgroup class="borders">
+            <col width="10%">
+            <col width="7%">
+        </colgroup>
+
+        <colgroup id="columnForDays" class="borders">
+        </colgroup>
+
+        <thead>
+        <tr id="caption">
+            <th colspan="1" rowspan="2" class="month _newSelectListWrap">
+                <a id="monthSelect" data-type="monthSelect" class="current-selected"
+                   data-content="<%=options.month.number%>" href="javascript:;"><%=options.month.name%></a>
+            </th>
+            <th id="legandCaption" class="subHeaderHolder">
+                Date Of Absence
+            </th>
+            <th class="V">
+                V
+            </th>
+            <th colspan="2">
+                Vacation
+            </th>
+            <th class="M">
+                M
+            </th>
+            <th colspan="2">
+                Medical
+            </th>
+            <th class="S">
+                S
+            </th>
+            <th colspan="2">
+                Sick
+            </th>
+            <th class="E">
+                E
+            </th>
+            <th colspan="2">
+                Education
+            </th>
+            <th rowspan="2" class="_newSelectListWrap">
+                <a id="yearSelect" class="current-selected" data-content="<%=options.year%>" href="javascript:;"><%=options.year%></a>
+            </th>
+        </tr>
+        <tr class="subHeaderHolder">
+        </tr>
+        <tr class="subHeaderHolder">
+        </tr>
+        </thead>
+
+        <tbody id="listTable"></tbody>
+        <tfoot id="listTotal"></tfoot>
+    </table>
+    <label class="_animatedCheckbox">
+        <input id="sms" class="sms" name="media"  type="checkbox" >
+        <span></span>
+    </label><label>SMS</label>
+</div>

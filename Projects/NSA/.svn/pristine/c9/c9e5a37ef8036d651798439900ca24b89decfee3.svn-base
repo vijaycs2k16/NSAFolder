@@ -1,0 +1,29 @@
+INSERT INTO nsa.feature
+(id, description, name, status)
+VALUES(0892d552-d56f-447e-af21-bbdc1023a3fb, '', 'Report Card', true);
+
+
+
+// wbadmin
+
+INSERT INTO nsa.school_feature
+(tenant_id, school_id, academic_year, id, activated_date, additional_links, asset_url, content, description, doc_desc, email, expire_date, feature_id, feature_name, help_text, icon, images, is_channels, is_override, keywords, link, mobile_priority, notify_hostelers, order_by, parent_feature_id, push, school_name, screen, sms, status, tags, title, user_types)
+VALUES(8eb846a0-4549-11e7-9543-276f818a8422, 4e3d3bf5-e262-4e7a-9a02-ef542107f6e7, '2017-2018', 0892d552-d56f-447e-af21-bbdc1023a3fb, '2017-05-03 16:23:50', NULL, '330d83af-dede-4d21-989f-500fe360b853/0892d552-d56f-447e-af21-bbdc1023a3fb/', NULL, NULL, NULL, false, '2020-05-03 16:23:50', be7419be-9a24-4ebf-9613-fe5443727376, 'Report Card', 'Examination marks can be entered subject wise for each student and the total is calculated. Choose class,
+section and exam name, a mark list with student names is populated. Click on plus icon beside the student name for 
+entering marks for additional subjects. "Update" against each student to compute the total. 
+The mark list will be generated for the entire class. 
+Click on "Publish" to send marks to all parents.', 'icon-paste3', NULL, NULL, NULL, NULL, './report-card', NULL, false, 4, 330d83af-dede-4d21-989f-500fe360b853, true, 'NEXSCHOOLAPP', NULL, true, true, NULL, 'Report Card', [Employee, SchoolAdmin]);
+
+
+
+//HolyInnocents
+
+
+INSERT INTO nsa.school_feature
+(tenant_id, school_id, academic_year, id, activated_date, additional_links, asset_url, content, description, doc_desc, email, expire_date, feature_id, feature_name, help_text, icon, images, is_channels, is_override, keywords, link, mobile_priority, notify_hostelers, order_by, parent_feature_id, push, school_name, screen, sms, status, tags, title, user_types)
+VALUES(9feb8160-60a2-11e8-b0ab-238473771afb, e3f57f9d-e3dd-4da3-90b3-8e8956a9f477, '2017-2018', 0892d552-d56f-447e-af21-bbdc1023a3fb, '2017-05-03 16:23:50', NULL, '330d83af-dede-4d21-989f-500fe360b853/0892d552-d56f-447e-af21-bbdc1023a3fb/', NULL, NULL, NULL, false, '2020-05-03 16:23:50', be7419be-9a24-4ebf-9613-fe5443727376, 'Report Card', 'Examination marks can be entered subject wise for each student and the total is calculated. Choose class,
+section and exam name, a mark list with student names is populated. Click on plus icon beside the student name for
+entering marks for additional subjects. "Update" against each student to compute the total.
+The mark list will be generated for the entire class.
+Click on "Publish" to send marks to all parents.', 'icon-paste3', NULL, NULL, NULL, NULL, './report-card', NULL, false, 4, 330d83af-dede-4d21-989f-500fe360b853, true, 'NEXSCHOOLAPP', NULL, true, true, NULL, 'Report Card', [Employee, SchoolAdmin]);
+

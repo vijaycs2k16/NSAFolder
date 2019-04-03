@@ -1,0 +1,12 @@
+alter table nsa.school_grading_system add application text;
+
+use nsa;
+alter table nsa.school_details add type text;
+
+alter table nsa.school_class_subjects add grade boolean;
+
+alter table nsa.school_exam_schedule add (term_id uuid, term_name text, academic set<frozen<school_subject_schedule>>, non_academic set<frozen<school_subject_schedule>>);
+
+alter table nsa.school_mark_list add (term_id uuid, term_name text);
+
+alter table nsa.school_mark_list_details add (term_id uuid, term_name text, non_academic_marks_details set<frozen<user_subject_mark_details>>);

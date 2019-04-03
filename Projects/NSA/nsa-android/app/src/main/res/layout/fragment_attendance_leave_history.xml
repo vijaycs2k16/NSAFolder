@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context="nexrise.publication.in.nexrise.Attendence.AttendanceLeaveHistoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/attendance_history_linear">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="search"
+            android:id="@+id/text"
+            android:paddingLeft="@dimen/padding5"
+            android:textColorHint="@color/colorGray"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/curveborder"
+            android:drawableRight="@android:drawable/ic_menu_search"/>
+
+    </LinearLayout>
+    <include layout="@layout/progress_bar"/>
+   <ListView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/attendance_history_linear"
+       android:id="@+id/leave_list">
+
+   </ListView>
+
+</RelativeLayout>

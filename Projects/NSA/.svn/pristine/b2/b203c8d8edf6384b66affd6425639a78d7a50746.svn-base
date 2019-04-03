@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Employee">
+	<parameter name="fName" value="Bala"></parameter>
+	<parameter name="mName" value="aditya"></parameter>
+	<parameter name="lName" value="Kamala"></parameter>
+	<parameter name="shortName" value="KSK"></parameter>
+	<parameter name="stdStay" value="Day School"></parameter>	
+	<parameter name="stdGender" value="Female"></parameter>
+	<parameter name="motherTong" value="Tamil"></parameter>
+	<parameter name="stdComty" value="Community"></parameter>
+	<parameter name="stNation" value="Indian"></parameter>
+	<parameter name="stdDoB" value="18-Jun-1998"></parameter>
+	<parameter name="stdPoB" value="Native"></parameter>
+	<parameter name="stdAdminNo" value="AD1001"></parameter>
+	<parameter name="stdAdminDate" value="18-Jun-2002"></parameter>
+	<parameter name="stdPwsd" value="1234"></parameter>
+	<parameter name="stdClass" value="Class 1"></parameter>
+	
+	<parameter name="lang1" value="Bengali"></parameter>
+	<parameter name="lang2" value="Bengali"></parameter>
+	<parameter name="lang3" value="Bengali"></parameter>
+	<parameter name="fatherName" value="Father"></parameter>
+	<parameter name="fatherPhone" value="1235645564"></parameter>
+	<parameter name="motherName" value="Mother"></parameter>
+	<parameter name="motherPhone" value="2345612345"></parameter>
+	<test name="EmploeeTest">
+		<classes>
+		   <class name="com.nsa.testing.tests.StudentTest" /> 
+		</classes>
+	</test>
+</suite> 

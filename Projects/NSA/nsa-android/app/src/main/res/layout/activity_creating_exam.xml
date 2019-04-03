@@ -1,0 +1,167 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="nexrise.publication.in.nexrise.TimetableFeature.CreatingExam">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:inputType="textPersonName"
+            android:hint="Enter Exam Name"
+            android:textColorHint="@color/colorGray"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/common_text_size"
+            android:paddingLeft="@dimen/padding30"
+            android:background="@drawable/border"
+            android:textColor="@color/colorGray"
+            android:id="@+id/short_description" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:id="@+id/datesclick">
+
+            <TextView
+                android:padding="@dimen/padding15"
+                android:id="@+id/setdate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:text="Date"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/common_text_size"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text=""
+                android:gravity="center_vertical|left"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:id="@+id/dateView"
+                android:textColor="@color/colorGray"
+                android:layout_marginRight="@dimen/margin15"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:weightSum="2"
+            android:id="@+id/timesclick">
+            <TextView
+                android:padding="@dimen/padding15"
+                android:id="@+id/settime"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:text="Time"
+                android:layout_weight="1"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:text=" "
+                android:gravity="center_vertical|left"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:layout_marginRight="@dimen/margin15"
+                android:id="@+id/timeview"
+                android:textColor="@color/colorGray"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:weightSum="2">
+            <TextView
+                android:padding="@dimen/padding15"
+                android:id="@+id/setclass"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:text="Class"
+                android:layout_weight="1"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height30"
+                android:layout_weight="1"
+                android:background="@drawable/spinner"
+                android:layout_marginRight="15dp"
+                android:id="@+id/classspinner1"
+                android:layout_gravity="center">
+
+            </Spinner>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:weightSum="2">
+            <TextView
+                android:padding="@dimen/padding15"
+                android:id="@+id/setsubject"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:text="Subject"
+                android:layout_weight="1"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height30"
+                android:layout_weight="1"
+                android:background="@drawable/spinner"
+                android:layout_marginRight="@dimen/margin15"
+                android:id="@+id/subjectspinner1"
+                android:textSize="@dimen/common_text_size"
+                android:layout_gravity="center">
+
+            </Spinner>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:weightSum="2">
+            <TextView
+                android:padding="@dimen/padding15"
+                android:id="@+id/setmarks"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:text="Marks"
+                android:layout_weight="1"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"/>
+            <EditText
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="@dimen/margin15"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:background="@drawable/border"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+
+        <CheckBox
+            android:layout_marginLeft="@dimen/margin10"
+            android:padding="@dimen/padding5"
+            android:text="Notify to Parents/Students"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox2"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

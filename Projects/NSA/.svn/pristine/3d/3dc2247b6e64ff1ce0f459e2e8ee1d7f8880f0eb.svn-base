@@ -1,0 +1,178 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h6 class="panel-title">
+            <span class="text-semibold text-uppercase"><i class="icon-file-text2 position-left"></i>Fee Reports </span> <i class="icon-arrow-right15 text-pink-600"></i> <small>Fee Reports </small>
+        </h6>
+    </div>
+     <div class="panel-body" style="margin-bottom:0px">
+        <form class="form-horizontal" action="#">
+            <div class="row form-horizontal">
+
+                <div class="col-md-14">
+                    <div class="col-sm-10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="getDataByDuration" class="form-control" type="hidden" (click)="getDataByDuration($event)">
+                        <label class="control-label margin-left2 hidden-xs">
+                            <input type="radio" name="filter" value="today" checked (click)="duration($event)">&nbsp;&nbsp;Duration
+                        </label>
+                        <button [disabled]="!isDuration" #date type="button" class="margin-left30 hidden-xs btn btn-default attendance daterange-basic-all">
+                            <i class="icon-calendar22 position-left"></i>
+                            <span></span>
+                            <b class="caret"></b>
+                        </button>
+                        <label class="control-label margin-left30">
+                            <input type="radio" name="filter" value="today" checked (click)="today($event)"> Today
+                        </label>
+                        <label class="control-label margin-left30">
+                            <input type="radio" name="filter" value="week" (click)="week($event)"> This Week
+                        </label>
+                        <label class="control-label margin-left30">
+                            <input type="radio" name="filter" value="month" (click)="month($event)"> This Month
+                        </label>
+                        <label class="control-label margin-left30">Mode of Payment &nbsp;&nbsp;<span class="text-danger">*</span>
+                        </label>
+                        <label class="control-label margin-left10">
+
+                        <select #SelectMode id="bootstrap-mode"  class="select-change" data-width="100%"></select>
+                            </label>
+
+                    </div>
+                </div>
+            </div>
+
+                   <!-- <div class="form-group" id="term">
+                        <label class="col-lg-4 control-label" id="term-label">Term&nbsp;<span class="text-danger">*</span></label>
+                        <div class="col-lg-8">
+                            <select #SelectTerm id="term-name" class="select-change"></select>
+                        </div>
+                    </div>-->
+                        <!--<div class="col-sm-2">
+                            <div class="row">
+                                <select #singleMode id="bootstrap-mode"  data-width="100%">
+                                </select>
+                            </div>
+                        </div>-->
+
+                        <!--<div class="form-group">
+                            <label class="control-label col-sm-2">Mode Of Payment
+                            </label>
+                            <div class="col-sm-8">
+                                <div class="row">
+                                    <select #singleMode id="bootstrap-mode"  data-width="100%">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>-->
+
+                <!--<div class="col-md-2 margin-left40">
+                    <div class="form-group">
+                        <label class="control-label col-sm-4">Employee
+                        </label>
+                        <div class="col-sm-8">
+                            <div class="row">
+                                <select class="bootstrap-select" data-width="100%">
+                                    <option value="sub1">&#45;&#45; Select Employee &#45;&#45;</option>
+                                    <option value="sub2">George David</option>
+                                    <option value="sub2">Lidy Sandy</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+            <div>
+                <div class="row form-horizontal">
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                </div>
+
+                </div>
+
+            <div class="row form-horizontal">
+                <div class="col-md-2 margin-left30">
+                    <div class="form-group">
+                        <label class="control-label col-sm-4">Class <span class="text-danger">*</span>
+                        </label>
+                        <div class="col-sm-8">
+                            <div class="row">
+                                <select  (click)="getSectionByClass()" #singleClass id="bootstrap-class" class="select-change" data-width="100%">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sections" class="col-md-2  margin-left30 hide">
+                    <div class="form-group">
+                        <label class="control-label col-sm-4">Section
+                        </label>
+                        <div class="col-sm-8">
+                            <div class="row">
+                                <select #singleSection  id="bootstrap-section" data-width="100%">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 margin-left30">
+                    <div class="form-group">
+                        <label class="control-label col-sm-4">Fee Name <span class="text-danger">*</span>
+                        </label>
+                        <div class="col-sm-8">
+                            <div class="row">
+                                <select #singleFee id="bootstrap-fee" data-width="100%">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 navbar-right txt-align-right">
+                    <div class="form-group">
+                        <input class="btn btn-default " id="cancel-back" value="Clear" (click)="resetForm()" type="reset">
+                        <input class="btn btn btn-primary ui-wizard-content margin-right10 ui-formwizard-button" id="cancel-next" value="Search" (click)="save()" type="button">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <table class="table datatable-fee-reports">
+            <thead>
+            <tr>
+                <th data-priority="1">Admn No</th>
+                <th >Name</th>
+                <th>Class </th>
+                <th>Section </th>
+                <th>Fee Name</th>
+                <th>Fee Amt</th>
+                <th>Amt Paid</th>
+                <th>Mode</th>
+                <th>Transaction Date</th>
+                <th>Ref. Number</th>
+
+            </tr>
+            </thead>
+            <tbody></tbody>
+
+            <tfoot>
+            <tr>
+                <th data-priority="1"></th>
+                <th ></th>
+                <th> </th>
+                <th> </th>
+                <th colspan="2" class="text-right"></th>
+                <th> Amt Paid</th>
+                <th></th>
+                <th></th>
+                <th></th>
+
+            </tr>
+
+            </tfoot>
+        </table>
+    </div>
+</div>
+

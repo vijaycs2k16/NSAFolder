@@ -1,0 +1,42 @@
+﻿<div class="_tableUsers">
+<table class="list stripedList" style=" width: 112%;">
+    <colgroup>
+        <col width="10px">
+        <col width="25%">
+        <col width="25%">
+        <col width="25%">
+        <col width="15%">
+        <col width="10%">
+        <col width="10%">
+        <col width="10%">
+    </colgroup>
+    <thead>
+    <tr>
+        <th class="centerCell">
+            <label class="_customCHeckbox">
+                <input type="checkbox" id="checkAll"/>
+                <span></span>
+            </label>
+        </th>
+        <th class="oe_sortable" data-sort="department">Name<span class="arrow down"></span><span
+                class="arrow up"></span></th>
+        <!--<th class="oe_sortable" data-sort="department">Course<span class="arrow down"></span><span-->
+                <!--class="arrow up"></span></th>-->
+        <th class="oe_sortable" data-sort="department">Start Date<span class="arrow down"></span><span
+                class="arrow up"></span></th>
+        <th class="oe_sortable" data-sort="department">End Date<span class="arrow down"></span><span
+                class="arrow up"></span></th>
+        <th class="oe_sortable" data-sort="department">Start Time<span class="arrow down"></span><span
+                class="arrow up"></span></th>
+        <th class="oe_sortable" data-sort="department">End Time<span class="arrow down"></span><span
+                class="arrow up"></span></th>
+       <!-- <th class="oe_sortable" data-sort="email">Batch<span class="arrow down"></span><span
+                class="arrow up"></span></th>-->
+        <%if(data.update || data.delete) { %>
+        <th class="oe_sortable" data-sort="profile">Action<span class="arrow down" style="width: 200%"></span><span
+                class="arrow up"></span></th>
+        <% } %>
+    </tr>
+    </thead>
+    <tbody id="listTable" class="enableTableOdd"></tbody>
+</table></div>

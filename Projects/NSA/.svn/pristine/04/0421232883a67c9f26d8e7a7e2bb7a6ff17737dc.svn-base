@@ -1,0 +1,55 @@
+<div class="_acountingTableWrap">
+    <div class="_acountingTitleBlock _forOverview">
+        <% if(data.create) { %>
+        <a href="javascript:;" class="btn blue slim icon-plus btnPositioned" title="Create"
+           id="top-bar-createBtn">New</a>
+        <% } %>
+    </div>
+    <div class="_acountingTableBlock">
+        <table id="example4" class="display" style="width:100%">
+            <colgroup>
+                <col width="10%">
+                <col width="50px">
+                <col width="50px">
+                <col width="50px">
+                <col width="50px">
+
+            </colgroup>
+            <thead>
+            <tr class="forToggle left-alignment">
+                <th class="text-left">Topic Name</th>
+                <th class="text-left">Title Name</th>
+                <th class="text-left">Subject Name</th>
+                <th class="text-left">Class Name</th>
+                <% if(data.update || data.delete) { %>
+                <th class="text-left">Action</th>
+                <% } %>
+            </tr>
+            </thead>
+            <tbody class="forToggle " id="currencyTable">
+            <%
+            collection.forEach(function(elem,index){
+            %>
+            <% var str = elem.topicNames;
+            var temp = new Array();
+            temp = str.toString().split(",").join("\n");
+            %>
+            <tr class="left-alignments" data-id="<%=elem._id%>" data-topic="<%=elem.topics ? JSON.stringify(elem.topics) : ''%>">
+                <td style="display:block;text-overflow: ellipsis;width: 200px;overflow: hidden; white-space: nowrap;">
+                    <%=elem.topicNames %>
+                </td>
+                <td><%= elem.title ? elem.title.titleName : " - " %></td>
+                <td><%= elem.subject ? elem.subject.subjectName : " - " %></td>
+                <td><%= elem.classDetail ? elem.classDetail.className : " - " %></td>
+                <% if(data.update || data.delete) { %>
+                <td>
+                    <a href="javascript:;" class="icon-note <%= data.update ? 'goToEdit show' : 'hide' %> _actionCircleBtn" ></a>
+                    <a href="javascript:;" class="icon-trash <%= data.delete ? 'goToRemove show' : 'hide' %> _actionCircleBtn"></a></td>
+                <% } %>
+            </tr>
+
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>

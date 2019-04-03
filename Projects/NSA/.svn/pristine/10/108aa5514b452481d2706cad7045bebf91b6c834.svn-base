@@ -1,0 +1,134 @@
+<div class="form-holder _newForm _ordersDialog">
+    <div class="noteWrapper">
+        <div class="container">
+            <div class="canReadAndWrite row">
+                <div class="col m-1"></div>
+                <div class="col m-8">
+                    <div class="container">
+                        <div class="canReadAndWrite row">
+                            <div class="_circleRadioRadianceWrap col m-2">
+                                <label>Rating :</label></div>
+                            <div class="_circleRadioRadianceWrap col m-2">
+                                <div class="_tipsWrap">
+                                    <label for="one" class="">1</label>
+                                    <input type="radio"
+                                           name="rating"
+                                           id="one"
+                                           class="_circleRadioRadiance"
+                                           value="1">
+                                    <label for="one"
+                                           class="_circleRadioRadianceLabel">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="_circleRadioRadianceWrap col m-2">
+                                <div class="_tipsWrap">
+                                    <label for="two" class="">2</label>
+                                    <input type="radio"
+                                           name="rating"
+                                           id="two"
+                                           value="2"
+                                           class="_circleRadioRadiance">
+                                    <label for="two"
+                                           class="_circleRadioRadianceLabel">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="_circleRadioRadianceWrap col m-2">
+                                <div class="_tipsWrap">
+                                    <label for="three" class="">3</label>
+                                    <input type="radio"
+                                           name="rating"
+                                           id="three"
+                                           value="3"
+                                           class="_circleRadioRadiance">
+                                    <label for="three"
+                                           class="_circleRadioRadianceLabel">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="_circleRadioRadianceWrap col m-2">
+                                <div class="_tipsWrap">
+                                    <label for="four" class="">4</label>
+                                    <input type="radio"
+                                           name="rating"
+                                           id="four"
+                                           value="4"
+                                           class="_circleRadioRadiance">
+                                    <label for="four"
+                                           class="_circleRadioRadianceLabel">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="_circleRadioRadianceWrap col m-2">
+                                <div class="_tipsWrap">
+                                    <label for="five" class="">5</label>
+                                    <input type="radio"
+                                           name="rating"
+                                           id="five"
+                                           value="5"
+                                           class="_circleRadioRadiance">
+                                    <label for="five"
+                                           class="_circleRadioRadianceLabel">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br/><br/>
+                    <div class="addNote createHolder">
+                        <div class="_withCounter counterWrap">
+                            <textarea class="counterEl feedbackStyle" id="noteArea" placeholder="Add a Note...Max 500 symbols." maxlength="500"></textarea>
+                            <div class="counter-wrap">
+                                <span class="counter-label">Characters left:</span>
+                                <span class="counter-value" id="counterValue">500</span>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <buttom class="btn blue btnSave" id="addNote">
+                                <span>Save</span>
+                            </buttom>
+                            <buttom class="btn cancelNote" id="cancelNote">
+                                <span>Cancel</span>
+                            </buttom>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                        <input type="hidden" id="getNoteKey" value="">
+                    </div>
+                </div>
+            </div>
+            <div id="timeline" class="_timeline">
+                <div id="timeLineBody" class="noteMainContainer timeNote">
+
+                    <div id="5aa25dcc1373eb2edc666840" class="noteContainer noteContent">
+                        <div class="contentHolder">
+                            <div class="noteBody">
+
+
+                                <div class="itemCircle">
+                                    <span class="icon-calendar" aria-hidden="true"></span>
+                                </div>
+                                <div class="noteTopBox clearfix">
+                                    <span class="noteType"><b>You</b> left a Note</span>
+                                    <span class="dateNote">09 Mar, 2018, 15:41:24</span>
+                                </div>
+
+
+                                <div class="noteText ">your very beautiful </div>
+
+
+                            </div>
+                            <div class="noteBtnBlock">
+                                <a href="javascript:;" data-type="edit" class="editDelNote btn blue btnSave editNote">Edit</a>
+
+                                <a href="javascript:;" data-type="del" class="editDelNote btn btnSave">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

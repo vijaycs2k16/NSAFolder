@@ -1,0 +1,320 @@
+<div class="form-holder _newForm _employeeCreate">
+    <form method="post" action="" id="createEmployeeForm">
+        <h4 class="_dialogTitlePositioned">Create Student</h4>
+        <ul class="dialog-tabs">
+            <li>
+                <a href="javascript:;" class="active">Main</a>
+            </li>
+            <li>
+                <a href="javascript:;" class="">Personal Information</a>
+            </li>
+            <li>
+                <a href="javascript:;" class="">Course Details</a>
+            </li>
+        </ul>
+        <div class="dialog-tabs-items">
+            <div class="dialog-tabs-item active">
+                <div class="_formWrap">
+                    <div class="_avatarBlock">
+                        <div class="avatar">
+                            <div class="upload">Edit
+                                <input type="file"
+                                       value="Edit"
+                                       id="inputImg"
+                                       accept="image/*">
+                            </div>
+                            <canvas id="avatar"
+                                    width="140"
+                                    height="140">
+                            </canvas>
+                        </div>
+                    </div>
+                    <div class="_formBlock">
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   class="_animate"
+                                   id="studentFirst"
+                                   autofocus
+                                   maxlength="32"/>
+                            <label class="_animate">First Name<span class="text-danger">*</span></label>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   class="_animate"
+                                   id="studentlast"
+                                   maxlength="32"/>
+                            <label class="_animate">Last Name</label>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="number"
+                                   class="_animate"
+                                   id="studentMobile"
+                                   maxlength="20"/>
+                            <label class="_animate">Mobile<span class="text-danger">*</span></label>
+                        </div>
+                        <div class="_animateSelectBox _withInfo">
+                            <span class="_selectTitle">Center<span class="text-danger"> *</span></span>
+                            <div class="_newSelectListWrap">
+                                <a id="studentCenter"
+                                   name="studentCenter"
+                                   class="current-selected"
+                                   data-id="Select"
+                                   href="javascript:;">Select</a>
+                            </div>
+                            <span class="tips icon-info" data-id="studentCenter"></span>
+                        </div>
+                        <div class="_animateSelectBox _withInfo">
+                            <span class="_selectTitle">Course<span class="text-danger"> *</span></span>
+
+                            <div class="_newSelectListWrap">
+                                <a id="studentCourse"
+                                   name="studentCourse"
+                                   class="current-selected"
+                                   data-id="Select"
+                                   href="javascript:;">Select</a>
+                            </div>
+                            <span class="tips icon-info" data-id="studentCourse"></span>
+                        </div>
+                        <div class="_animateSelectBox _withInfo">
+                            <span class="_selectTitle">Batch</span>
+
+                            <div class="_newSelectListWrap">
+                                <a id="StudentBatch"
+                                   name="StudentBatch"
+                                   class="current-selected"
+                                   data-id="Select"
+                                   href="javascript:;">Select</a>
+                            </div>
+                            <span class="tips icon-info" data-id="StudentBatch"></span>
+                        </div>
+                    </div>
+                    <div class="_formBlock">
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   class="_animate"
+                                   id="personalEmail"
+                                   require
+                                   maxlength="48"/>
+                            <label class="_animate">Email<span class="text-danger"> *</span></label>
+                        </div>
+                        <div class="_animateInputBox">
+                            <span class="_staticLabel">Date of Birth</span>
+                            <input type="text"
+                                   name="dateBirth"
+                                   class="_animate"
+                                   id="dateBirth"
+                                   placeholder="Date of Birth"
+                                   readonly/>
+                        </div>
+                        <div class="_animateSelectBox">
+                            <span class="_selectTitle">Gender</span>
+                            <div class="_newSelectListWrap">
+                                <a href="javascript:;"
+                                   class="current-selected"
+                                   id="studentGender"
+                                   data-id="Male">Male</a>
+                            </div>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="password"
+                                   class="_animate"
+                                   id="password"
+                                   maxlength="48"/>
+                            <label class="_animate">Password</label>
+                        </div>
+                        <div class="_textGrey">
+                            <label style="color: #7eadcc">Student Status</label>
+                        </div>
+                        <div class="container">
+                            <div class="canReadAndWrite row">
+                                <div class="_circleRadioRadianceWrap col m-6">
+                                    <div class="_tipsWrap">
+                                        <label for="yes" class="">Active</label>
+                                        <input type="radio"
+                                               name="question"
+                                               id="yes"
+                                               class="_circleRadioRadiance"
+                                               value="1"
+                                               checked="">
+                                        <label for="yes"
+                                               class="_circleRadioRadianceLabel">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="_circleRadioRadianceWrap col m-6">
+                                    <div class="_tipsWrap">
+                                        <label for="no" class="">Deactive</label>
+                                        <input type="radio"
+                                               name="question"
+                                               id="no"
+                                               value="0"
+                                               class="_circleRadioRadiance">
+                                        <label for="no"
+                                               class="_circleRadioRadianceLabel">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="cropImages form" style="display:none;">
+                        <div class="image_input" style="float: left;margin-right: 20px;"></div>
+                        <img class="image_output"/>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog-tabs-item">
+                <div class="_formWrap">
+                    <h4 class="_titleBlueBorder">Contact Information</h4>
+
+                    <div class="_formBlock _equal">
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="street"
+                                   class="_animate homeAddress"
+                                   id="studentStreet1"
+                                   maxlength="60"/>
+                            <label class="_animate">Street</label>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="city"
+                                   class="_animate homeAddress"
+                                   id="studentCity"
+                                   maxlength="60"/>
+                            <label class="_animate">City</label>
+                        </div>
+                    </div>
+                    <div class="_formBlock _equal">
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="state"
+                                   class="_animate homeAddress"
+                                   id="studentState"
+                                   maxlength="32"/>
+                            <label class="_animate">State</label>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="zip"
+                                   class="_animate homeAddress"
+                                   id="studentZip"
+                                   maxlength="32"/>
+                            <label class="_animate">Zip Code</label>
+                        </div>
+                    </div>
+                    <h4 class="_titleBlueBorder">Parent Information</h4>
+
+                    <div class="_formBlock _equal">
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="street"
+                                   class="_animate homeAddress"
+                                   id="studentFatherName"
+                                   maxlength="60"/>
+                            <label class="_animate">Father Name</label>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="street"
+                                   class="_animate homeAddress"
+                                   id="occupation"
+                                   maxlength="60"/>
+                            <label class="_animate">Occupation</label>
+                        </div>
+                    </div>
+                    <div class="_formBlock _equal">
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="street"
+                                   class="_animate homeAddress"
+                                   id="fatherAnnualIncome"
+                                   maxlength="60"/>
+                            <label class="_animate">Annual Income</label>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="street"
+                                   class="_animate homeAddress"
+                                   id="studentMotherName"
+                                   maxlength="60"/>
+                            <label class="_animate">Mother Name</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog-tabs-item">
+                <div class="_formWrap">
+                    <div class="_formBlock _equal">
+                        <div class="_animateInputBox">
+                            <span class="_staticLabel">Course Start Date</span>
+                            <input type="text"
+                                   name="dateBirth"
+                                   class="_animate"
+                                   id="courseStartDate"
+                                   placeholder="Select"
+                                   readonly/>
+                        </div>
+                        <div class="_animateInputBox">
+                            <span class="_staticLabel">Course End Date</span>
+                            <input type="text"
+                                   name="dateBirth"
+                                   class="_animate"
+                                   id="courseEndDate"
+                                   placeholder="Select"
+                                   readonly/>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="street"
+                                   class="_animate homeAddress"
+                                   id="CourseFee"
+                                   maxlength="60"/>
+                            <label class="_animate">Course Fee</label>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="street"
+                                   class="_animate homeAddress"
+                                   id="registrationNo"
+                                   maxlength="60"/>
+                            <label class="_animate">Registration Number</label>
+                        </div>
+                    </div>
+                    <div class="_formBlock _equal">
+                        <div class="_animateInputBox">
+                            <span class="_staticLabel">Date of Joining</span>
+                            <input type="text"
+                                   name="dateBirth"
+                                   class="_animate"
+                                   id="dateofJoining"
+                                   placeholder="Select"
+                                   readonly/>
+                        </div>
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="street"
+                                   class="_animate homeAddress"
+                                   id="schoolName"
+                                   maxlength="60"/>
+                            <label class="_animate">School Name</label>
+                        </div>
+                        <div class="_animateSelectBox _withInfo">
+                            <span class="_selectTitle">Board Of Education</span>
+
+                            <div class="_newSelectListWrap">
+                                <a id="boardOfEdu"
+                                   name="boardOfEdu"
+                                   class="current-selected"
+                                   href="javascript:;">Select</a>
+                            </div>
+                            <span class="tips icon-info" data-id="boardOfEdu"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

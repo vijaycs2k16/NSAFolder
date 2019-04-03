@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor"
+    tools:context="nexrise.publication.in.nexrise.ParentFeatures.HomeworkFeature.ParentHomeworkFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/overlayColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/overlayForegroundColor"
+            android:weightSum="3">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/left_arrow"
+                android:id="@+id/prev_week"
+                android:gravity="left"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_weight="2.4"
+                android:text="Current Week"
+                android:gravity="center"
+                android:textSize="@dimen/headings"
+                android:id="@+id/current_week"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBlack"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/right_arrow"
+                android:id="@+id/next_week"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/overlayForegroundColor"
+            android:weightSum="2"
+            android:visibility="gone">
+            <TextView
+                android:text="homework"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding12"
+                android:textAllCaps="true"
+                android:id="@+id/study_value"
+                android:paddingTop="@dimen/padding5"
+                android:textStyle="bold"
+                android:layout_weight="1.5"
+                android:background="@color/overlayForegroundColor"
+                android:paddingBottom="@dimen/margin5"
+                android:textSize="@dimen/common_text_size" />
+            <ImageView
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_help"
+                android:id="@+id/help"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/progress_bar"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/transparent"
+                android:background="@color/overlayForegroundColor"
+                android:paddingLeft="@dimen/padding5"
+                android:paddingRight="@dimen/padding5"
+                android:paddingBottom="@dimen/padding3"
+                android:id="@+id/fragment_class_listview"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

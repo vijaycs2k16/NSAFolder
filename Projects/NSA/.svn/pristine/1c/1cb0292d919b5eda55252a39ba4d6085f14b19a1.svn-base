@@ -1,0 +1,6 @@
+"MLA Road, Palluruthy\n" +
+                "Kochi - 682006\n" +
+                "Phone: 0484 2236360, 9497679360\n" +
+                "Email: stritaspublicschool@gmail.com"
+
+LatLng source = new LatLng(9.913073, 76.276876);

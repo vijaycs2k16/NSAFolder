@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LeaveAssignment">
+	<parameter name="DeptName" value="Computer Science"></parameter>
+	<parameter name="ReportManagerName" value="Jagadesh"></parameter>
+	<parameter name="selectEmpName" value="Kavitha"></parameter>
+	<test name="LeaveAssignment">
+		<classes>
+		   <class name="com.nsa.testing.tests.LeaveAssignmentTest" /> 
+		</classes>
+	</test>
+</suite>

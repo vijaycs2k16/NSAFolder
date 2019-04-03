@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ParentInformationTest">
+	<parameter name="srcStdName" value="Dhivya"></parameter>
+	<parameter name="newMobileNo" value="2233344445"></parameter>
+	<test name="ParentInformationTest">
+		<classes>
+		   <class name="com.nsa.testing.tests.ParentInformationTest" /> 
+		</classes>
+	</test>
+</suite> 

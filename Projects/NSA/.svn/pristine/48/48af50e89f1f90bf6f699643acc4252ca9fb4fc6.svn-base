@@ -1,0 +1,108 @@
+<%var studentDis = profile.profileName == 'Student' && App.currentUser.login != 'superAdmin' ? 'select-disabled': '' %>
+<div class="form-holder _newForm">
+    <form method="post" action="" id="createUserForm">
+        <div class="_formWrap">
+            <div class="_avatarBlock">
+                <div class="avatar left">
+                    <div class="upload">
+                        Edit
+                        <input type="file" value="Edit" id="inputImg" accept="image/*">
+                    </div>
+                    <canvas id="avatar" width="140" height="140"></canvas>
+                </div>
+                <div id="newItem">
+                    <div class="">
+                        <span class="addCourseDuration btn " id="removeImage" style="border:none">RemoveImage</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="_formBlock">
+                <div class="_animateInputBox">
+                    <span class="_staticLabel">User Name</span>
+                    <input type="text"
+                           name="login"
+                           class="_animate"
+                           id="login"
+                           autofocus
+                           required
+                           value="<%=login %>"
+                           maxlength="24"
+                           disabled
+                           readonly/>
+                </div>
+                <div class="_animateInputBox <%= studentDis %>">
+                    <input type="text"
+                           name="email"
+                           class="_animate"
+                           id="email"
+                           required
+                           value="<%= email %>"
+                           maxlength="48"/>
+                    <label class="_animate">Email</label>
+                </div>
+                <div class="_animateInputBox">
+                    <span class="_staticLabel">Password</span>
+                    <input type="text"
+                           name="dateBirth"
+                           class="_animate"
+                           value="<%= (originalPassword) ? originalPassword : ''%>"
+                           required
+                           disabled
+                           readonly/>
+                </div>
+                <div class="_animateSelectBox <%= studentDis %>">
+                    <span class="_selectTitle">Profile</span>
+                    <div class="_newSelectListWrap">
+                        <a href="javascript:;"
+                           class="current-selected"
+                           id="profilesDd"
+                           data-id="<%=(profile) ? profile._id : ''%>"><%=(profile)?profile.profileName:'Select Profile'%></a>
+                    </div>
+                </div>
+                <%if(isForProfile && profile.profileName == 'Student') { %>
+                <div class="_animateInputBox">
+                    <span class="_staticLabel">RegistrationNo</span>
+                    <input type="text"
+                           id="Regno"
+                           name="RegNo"
+                           class="_animate"
+                           value="<%=student.registrationNo%>"
+                           required
+                           disabled
+                           readonly/>
+                </div>
+
+                <div class="_animateInputBox">
+                    <span class="_staticLabel">ContactNo</span>
+                    <input type="text"
+                           name="contactNo"
+                           class="_animate"
+                           value="<%=student.studentPhone %>"
+                           required
+                           disabled
+                           readonly/>
+                </div>
+                <%}%>
+
+                <div class="_animateInputBox">
+                    <span class="_staticLabel">Timezone</span>
+                    <span class="_staticInfo"><%= timezone %></span>
+                </div>
+                <% if (isForProfile) {%>
+                    <span>Password</span>
+                    <button id="changePassword" class="changePassword">
+                        <span>Change Password</span>
+                    </button>
+                <%};%>
+            </div>
+        </div>
+        <div class="cropImages form" style="display:none;">
+            <div class="formTitle">
+                <h3 class="left">Crop Images</h3>
+            </div>
+            <div class="image_input" style="float: left;margin-right: 20px;"></div>
+            <img class="image_output"/>
+        </div>
+    </form>
+</div>

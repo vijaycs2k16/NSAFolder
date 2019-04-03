@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="easydialog-1.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.michaelye.easydialog/easydialog/1.4/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.michaelye.easydialog/easydialog/1.4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.michaelye.easydialog/easydialog/1.4/5d79d39c4cfff08c97bf74f3f63b4e8909346dda/easydialog-1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

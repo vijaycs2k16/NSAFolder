@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding10"
+        android:paddingBottom="@dimen/padding10"
+        android:id="@+id/repeat_alertdialog_radiogroup">
+
+        <RadioButton
+            android:text="Every Day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginStart="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin3"
+            android:layout_marginBottom="@dimen/margin3"
+            android:id="@+id/repeat_daily"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/backgroundColor"/>
+        <RadioButton
+            android:text="Every Weekday (MON-FRI)"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginStart="@dimen/margin10"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin3"
+            android:layout_marginBottom="@dimen/margin3"
+            android:id="@+id/repeat_weekday"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/backgroundColor"/>
+        <RadioButton
+            android:text="Every Week"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginStart="@dimen/margin10"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin3"
+            android:layout_marginBottom="@dimen/margin3"
+            android:id="@+id/repeat_every_week"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/backgroundColor"/>
+        <RadioButton
+            android:text="Every Other Week"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginStart="@dimen/margin10"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin3"
+            android:layout_marginBottom="@dimen/margin3"
+            android:id="@+id/repeat_every_other_week"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/backgroundColor"/>
+        <RadioButton
+            android:text="Every Month"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginStart="@dimen/margin10"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin3"
+            android:layout_marginBottom="@dimen/margin3"
+            android:id="@+id/repeat_every_month"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/backgroundColor"/>
+    </RadioGroup>
+
+
+</LinearLayout>

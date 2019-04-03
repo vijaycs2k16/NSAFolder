@@ -1,0 +1,47 @@
+<div class="_acountingTableWrap">
+    <div class="_acountingTitleBlock _forOverview">
+        <a href="javascript:;" class="btn blue slim icon-plus btnPositioned" title="Create" id="top-bar-createBtn">New</a>
+    </div>
+    <div class="_acountingTableBlock">
+        <table class="list tableProjects tableFixed _acountingTable">
+            <colgroup>
+                <col width="25%"/>
+                <col width="15%"/>
+                <col width="20%"/>
+                <col width="20%"/>
+                <col width="10%"/>
+                <col width="10%"/>
+            </colgroup>
+            <thead>
+            <tr class="forToggle">
+                <th class="text-left">Name</th>
+                <th class="text-left">Bank</th>
+                <th class="text-left">Account</th>
+                <th class="text-left">Chart of Account</th>
+                <th class="text-left">Currency</th>
+                <th class="text-left"></th>
+            </tr>
+            </thead>
+            <tbody class="forToggle" id="paymentMethodsTable">
+            <% collection.forEach(function(elem,index){ %>
+            <tr data-id="<%= elem._id%>">
+                <td class="text-left"><span><%=elem.name %></span></td>
+                <td class="text-left"><span><%=elem.bank %></span></td>
+                <td class="text-left"><span><%=elem.account %></span></td>
+                <td class="text-left"><span><%=elem.chartAccount ? elem.chartAccount.name : '' %></span></td>
+                <td class="text-left"><span><%=elem.currency %></span></td>
+                <td class="text-left">
+                    <a href="javascript:;" class="icon-note goToEdit _actionCircleBtn" aria-hidden="true"></a>
+                    <a href="javascript:;" class="icon-trash goToRemove _actionCircleBtn" aria-hidden="true"></a>
+                </td>
+            </tr>
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+

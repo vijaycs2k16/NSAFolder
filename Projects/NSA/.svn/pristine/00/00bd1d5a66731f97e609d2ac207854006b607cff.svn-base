@@ -1,0 +1,97 @@
+<div class="content-wrapper pdf-content" style="display:none">
+    <!-- Invoice template -->
+    <div class="panel panel-white" id="HTMLtoPDF" style="position: absolute;font-size: 20px;">
+        <div id="printThis">
+            <div class="panel-heading">
+                <div class="row">
+                    <div *ngIf="!enable" class="col-md-4">
+                        <a><img id="printerLogo" style="background-color: #ffffff;display:block;margin:auto; margin-top:40px"  width="100" height="100" src="{{schoolDetails}}" ></a>
+                    </div>
+                    <div *ngIf="enable" class="col-md-8 text-center" style="left:100px">
+                        <b *ngIf="user" style ="color: red; font-size: 25px; " class="title">{{user.school_name}}</b><br>
+                        <span *ngIf="address" style ="font-size: 18px;" [innerHTML]="address"></span><br>
+                    </div>
+                    <div *ngIf="!enable" class="col-md-8">
+                        <b *ngIf="user" style ="color: red; font-size: 25px; " class="title">{{user.school_name}}</b><br>
+                        <span *ngIf="address" [innerHTML]="address"></span><br>
+                        <span *ngIf="feeDetails" class="title txt-align-center">{{feeDetails.feeAssignmentName}} - {{feeDetails.academicYear}}</span>
+                    </div>
+                </div><hr/>
+            </div>
+            <div class="panel-body"  style="margin-top:-45px;">
+                <div class="row" style="margin-top: 1px !important; margin-bottom: -20px !important;">
+                    <div class="col-md-5 col-lg-6 content-group">
+                        <span *ngIf="!enable" class="text-uppercase txt-align-left text-semibold">Student Details:</span>
+                        <ul class="list-condensed list-unstyled txt" *ngIf="feeDetails">
+                            <li *ngIf="!enable">Name:&nbsp;<b>{{feeDetails.firstName}}</b></li>
+                            <li *ngIf="enable">Student Name:&nbsp;<b>{{feeDetails.firstName}}</b></li>
+                            <li *ngIf="!enable">Class:&nbsp;{{feeDetails.className}} / {{feeDetails.sectionName}}</li>
+                            <li *ngIf="!enable">Invoice Date:&nbsp;{{transactions.txn_date | date: 'dd-MM-yyyy' }}</li>
+                        </ul>
+                        <ul class="list-condensed list-unstyled txt" *ngIf="contact">
+                            <li *ngIf="enable">Father Name:&nbsp;<b>{{contact.fatherName}}</b></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-7 txt-align-center col-lg-6 content-group">
+                        <ul class="list-condensed list-unstyled txt-align-left" *ngIf="transactions">
+                            <li *ngIf="!enable">Invoice Number :&nbsp;{{transactions.tracking_id ? transactions.tracking_id.substr(7) :'-'}}</li>
+                            <li *ngIf="enable">Receipt No :&nbsp;{{transactions.tracking_id ? transactions.tracking_id.substr(9) :'-'}}</li>
+                            <li *ngIf="!enable">Mode:&nbsp;<span *ngIf="!enable" class="text-semibold">{{transactions.payment_gateway}}</span>
+                            <li *ngIf="enable">Date:&nbsp;{{transactions.txn_date | date: 'dd-MM-yyyy'}} </li>
+                            <li *ngIf="enable">Admission No:&nbsp;{{feeDetails.admissionNo}}</li>
+                            <li *ngIf="!enable">Paid On:&nbsp;{{transactions.txn_date | date: 'dd-MM-yyyy-hh:mm'}} </li>
+                            <li *ngIf="enable">Class:&nbsp;{{feeDetails.className}} / {{feeDetails.sectionName}}</li>
+                        </ul>
+                    </div>
+                </div><hr style="margin-bottom: -25px !important;"/>
+                <div class="table-responsive no-boader">
+                    <table class="table" style="margin-top: -25px !important; margin-bottom: -20px !important;">
+                        <thead>
+                        <tr>
+                            <th>S.no</th>
+                            <th *ngIf="!enable">Term</th>
+                            <th *ngIf="!enable">Description</th>
+                            <th *ngIf="enable"></th>
+                            <th *ngIf="enable" style="left:250px">Fee Details</th>
+                            <th>Amount</th>
+                        </tr>
+                        </thead>
+                        <tbody *ngIf="feeDetails">
+                        <tr *ngFor="let feeDetail of feeDetails.feeTypes; let i=index">
+                            <td>{{i + 1}}</td>
+                            <td *ngIf="!enable">{{feeDetails.termName}}</td>
+                            <td  *ngIf="!enable" class="no-margin">{{feeDetail.name}}</td>
+                            <td  *ngIf="enable"></td>
+                            <td  *ngIf="enable" class="no-margin">{{feeDetail.name}}</td>
+                            <td>{{feeDetail.amount}}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <th>Paid&nbsp;Amount</th>
+                            <td>
+                                {{transactions.amount}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="feeDetails.netAmount - feeDetails.paidAmount > 0">
+                            <td style="border-top: 0px;"></td>
+                            <td style="border-top: 0px;"></td>
+                            <th style="border-top: 0px;">Pending&nbsp;Amount</th>
+                            <td style="border-top: 0px;">
+                                {{feeDetails.netAmount - feeDetails.paidAmount}}
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <hr/>
+                </div>
+
+                <p *ngIf="enable">Rupees (in words):&nbsp;{{transactions.numberToTextAmount}}&nbsp;only.</p><br>
+                <p *ngIf="enable">Payment Mode:&nbsp;<span class="text-semibold">{{transactions.payment_gateway}}</span></p>
+                <p *ngIf="enable">Fee once paid will not be refunded &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="margin-left:200px;">Authorized Signatory</span></p>
+                <p *ngIf="!enable" class="text-muted">This is a computer generated invoice. No signature is required.</p>
+            </div>
+        </div>
+        <!-- /invoice template -->
+    </div>
+</div>

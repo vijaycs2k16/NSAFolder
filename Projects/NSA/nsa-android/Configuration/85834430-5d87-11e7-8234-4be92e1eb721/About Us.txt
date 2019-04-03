@@ -1,0 +1,6 @@
+String htmlText = "<html><body style=\"text-align:justify\"> %s </body></Html>";
+        String myData = "<center> BHASHYAM BLOOMS </center></br>I am on a constant search to discover what the world of education is up to within the country and globally. Many models in learning and methodologies have become inspiration for us to figure out ways of achieving the same results, and  we have been adapting them. Eventually, we would want our students to be prepared for the world that is soon to be theirs so that they can build it responsibly. </br></br>" +
+                "<b>Bhashyam RamaKrishna</b></br> <b>Chairman</b> ";
+
+        WebView webview = (WebView)findViewById(R.id.about_us);
+        webview.loadData(String.format(htmlText, myData), "text/html", "utf-8");

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "415428326708",
+    "firebase_url": "https://jayajayasankara-8f6fe.firebaseio.com",
+    "project_id": "jayajayasankara-8f6fe",
+    "storage_bucket": "jayajayasankara-8f6fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415428326708:android:dfb9f603a5a8f000",
+        "android_client_info": {
+          "package_name": "jayasankara.management.in.chennai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415428326708-4hli7nusq5t0dapvd5kccv08fli7ldgg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC9p3NYK41bZtfCnht-VAx0E7CJ46eHcQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

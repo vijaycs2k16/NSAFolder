@@ -1,0 +1,79 @@
+<div id="reporttcStudent" class="overlay-popup footer-popup" style="display: none;">
+    <!-- RIGHT PANEL STARTS -->
+    <div class="cd-panel">
+        <div class="cd-panel-header">
+            <!-- <div class="hidden-xs simple-field-hf"></div> -->
+            <div class="simple-field-hf">
+            </div>
+            <a (click)="closeOverlay($event)" class="cd-panel-close">Close</a>
+        </div>
+        <div class="cd-panel-container generatetcReport">
+            <div class="cd-panel-content" id="side-panel-container">
+                <form class="form-horizontal">
+                    <div class="modal-body">
+                        <div class="row form-horizontal">
+                            <div class="col-md-3 margin-left20">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-4">Class <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-sm-8">
+                                        <div class="row">
+                                            <select (click)="getSectionByClass()" class="select-change" #singleClasss id="attendance-classs" data-width="100%">
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sectionss" class="col-md-3 margin-left20 hide">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-4">Section <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-sm-8">
+                                        <div class="row">
+                                            <select #singleSections id="attendance-sections" data-width="100%">
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 navbar-right txt-align-right">
+                                <div class="form-group">
+                                    <input class="btn btn-default " id="cancel-back" value="Clear" (click)="resetForm()"   type="button">
+                                    <input class="btn btn btn-primary ui-wizard-content margin-right10 ui-formwizard-button" (click)="getStudentData()" id="cancel-next" value="Search" type="button">
+                                </div>
+                            </div>
+                        </div>
+
+                        <legend class="text-semibold">
+                            <i class="icon-paragraph-justify2"></i>
+                            Student List
+                        </legend>
+                        <table class="table datatable-student-tc-report" >
+                            <thead>
+                            <tr>
+                                <th><input type="checkbox" id="student-tc-select-all" checked/></th>
+                                <th class="">Student Id</th>
+                                <th data-priority="1">Student Name</th>
+                                <th data-priority="2">Phone Number</th>
+                                <th data-priority="3">Conduct</th>
+                                <th data-priority="4">Progress</th>
+                                <th data-priority="5">Reason Of Leaving School</th>
+                                <th data-priority="6">Remarks</th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="overlay-footer">
+                        <div class="right-align overlay-footer-content-rt">
+                            <button type="button" class="btn btn-default" (click)="closeOverlay($event)">Close</button>
+                            <input hidden id="gentTreport" (click)="save('generatetcReport', $event)" type="button" style="display: none;">
+                            <button type="button" id="generatetcReport" disabled="disabled" class="btn btn-primary btn-ladda btn-ladda-progress"style="padding-right:15px;">Generate TC Report</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- cd-panel-container -->
+        </div>
+    </div>
+    <!-- right panel script -->
+</div>

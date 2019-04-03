@@ -1,0 +1,5 @@
+<vector android:height="22dp" android:viewportHeight="512.0"
+    android:viewportWidth="512.0" android:width="22dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/SvgMenuIconColor" android:pathData="M0,151V490.6h512V151H0zM136.1,416.4H73.4v-31.3h62.7V416.4zM136.1,352.7H73.4v-31.3h62.7V352.7zM136.1,288.9H73.4v-31.3h62.7V288.9zM236.9,416.4h-62.7v-31.3h62.7V416.4zM236.9,352.7h-62.7v-31.3h62.7V352.7zM236.9,288.9h-62.7v-31.3h62.7V288.9zM337.8,416.4h-62.7v-31.3h62.7V416.4zM337.8,352.7h-62.7v-31.3h62.7V352.7zM337.8,288.9h-62.7v-31.3h62.7V288.9zM337.8,225.2h-62.7v-31.3h62.7V225.2zM438.6,352.7h-62.7v-31.3h62.7V352.7zM438.6,288.9h-62.7v-31.3h62.7V288.9zM438.6,225.2h-62.7v-31.3h62.7V225.2z"/>
+    <path android:fillColor="@color/SvgMenuIconColor" android:pathData="M403.3,21.4l0,58.5l-31.3,0l0,-58.5l-232,0l0,58.5l-31.3,0l0,-58.5l-108.7,0l0,98.2l512,0l0,-98.2z"/>
+</vector>

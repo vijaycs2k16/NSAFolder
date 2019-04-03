@@ -1,0 +1,13 @@
+<% collection.forEach(function(item, index){ %>
+<tr data-id="<%=item._id%>">
+    <td data-content="name" class="editable text-left"><%=item.term_name ? item.term_name: '-'%></td>
+    <td data-content="name" class="editable text-left"><%=item.title ? item.title.titleName: '-'%></td>
+    <td data-content="name" class="editable text-left"><%=item.classDetail ? item.classDetail.className: '-'%></td>
+    <td data-content="name" class="editable text-left"><%=item.subject ? item.subject.subjectName: '-'%></td>
+    <td style="text-align: left">
+        <a href="javascript:;" class="icon-note goToEdit _actionCircleBtn show" aria-hidden="true"></a>
+        <a href="javascript:;" class="icon-trash goToRemove _actionCircleBtn show" aria-hidden="true" ></a>
+    </td>
+</tr>
+<% }) %>
+

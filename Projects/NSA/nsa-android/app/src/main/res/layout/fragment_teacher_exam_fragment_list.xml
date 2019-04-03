@@ -1,0 +1,65 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_table_style">
+
+    <TableRow
+        android:minHeight="@dimen/minHeight50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:background="@drawable/border_overlay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="S.no"
+            android:textStyle="bold"
+            android:textSize="@dimen/description_text_size"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"/>
+
+        <TextView
+            android:background="@drawable/border_overlay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/description_text_size"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1.0"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Exam"/>
+
+        <TextView
+            android:background="@drawable/border_overlay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/description_text_size"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1.0"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Room No"/>
+
+        <TextView
+            android:background="@drawable/border_overlay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/description_text_size"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1.0"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Schedule"/>
+    </TableRow>
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:id="@+id/examListView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/border"/>
+
+</TableLayout>

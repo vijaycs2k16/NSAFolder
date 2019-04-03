@@ -1,0 +1,17 @@
+<div class="form-holder">
+    <fieldset>
+        <div class="inner">
+            <div class="_templateInvoiceWrp">
+                <div id="templateDiv" class="_templateDiv"></div>
+                <div class="addingInfoWrp">
+                    <div id="historyDiv" class="_pureTemplate"></div>
+                    <div id="attachments" class="invoiceAttachments"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+    </fieldset>
+
+    <div class="clearfix"></div>
+</div>

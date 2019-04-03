@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/layoutBackground"
+    android:id="@+id/past_events_linear">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/past_events_tag"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/common_text_size"
+        android:textAllCaps="true"
+        android:paddingLeft="@dimen/padding10"
+        android:paddingTop="@dimen/padding10"
+        android:background="@color/backgroundColor"
+        android:paddingBottom="@dimen/padding10"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="@dimen/margin3"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/card_color"
+            android:background="@color/svgLayoutIconColor"
+            />
+        <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/height50"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/common_text_size"
+            android:paddingLeft="@dimen/padding15"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/textView17"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="TextView "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/height50"
+            android:id="@+id/textView18"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/common_text_size"
+            android:paddingLeft="@dimen/padding15"
+            android:layout_weight="0.8"
+            android:textColor="@color/colorBlack"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin5"
+            app:srcCompat="@drawable/ic_arrow_right"
+            android:id="@+id/right_arrow"
+            android:visibility="invisible"
+            android:layout_weight="0.2"/>
+    </LinearLayout>
+</LinearLayout>

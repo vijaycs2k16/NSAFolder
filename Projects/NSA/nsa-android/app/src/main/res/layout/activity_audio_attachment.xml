@@ -1,0 +1,154 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height40"
+            android:gravity="center"
+            android:id="@+id/recording_indication">
+            <TextView
+                android:id="@+id/recording"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:text="Recording audio"
+                android:paddingLeft="@dimen/padding15"
+                android:visibility="visible"
+                android:textColor="@android:color/black"
+                android:textSize="13sp" />
+
+            <Chronometer
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/common_text_size"
+                android:id="@+id/timer"
+                android:gravity="center"
+                android:layout_toRightOf="@id/recording"
+                android:layout_marginLeft="@dimen/margin10"/>
+        </RelativeLayout>
+
+        <nexrise.publication.in.nexrise.MMS.VisualizerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height200"
+            android:id="@+id/visualizer"
+            android:layout_below="@+id/recording_indication"
+            android:layout_marginTop="@dimen/margin10"
+            android:background="@color/dashboard_cardview"
+            android:scaleY="-1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/visualizer"
+            android:layout_marginTop="@dimen/margin20"
+            android:id="@+id/recorder">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingRight="10dp"
+                android:id="@+id/frame_layout"
+                android:paddingTop="5dp">
+
+                <SeekBar
+                    android:id="@+id/media_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_gravity="bottom" />
+
+                <TextView
+                    android:id="@+id/playback_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:ellipsize="end"
+                    android:inputType="text"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:layout_below="@id/frame_layout"
+                android:weightSum="5">
+                <ImageView
+                    android:id="@+id/play"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_play"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:id="@+id/pause"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/ic_pause"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/record"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_record"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:id="@+id/stop"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_stop" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="@dimen/width220"
+            android:layout_height="wrap_content"
+            android:text="Browse files"
+            style="@style/RoundedCornerButton"
+            android:id="@+id/browse"
+            android:elevation="@dimen/cardElevation3"
+            android:padding="@dimen/padding10"
+            android:layout_marginTop="@dimen/margin20"
+            android:layout_below="@id/recorder"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/common_text_size"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding10"
+            android:layout_below="@id/browse"
+            android:layout_marginTop="@dimen/margin20"
+            android:background="@color/lighter_gray"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/common_text_size"
+            android:text="NOTE: User can record a new audio and upload it or can select browse files to upload an audio from mobile. The uploaded audio takes 10 - 15 minutes to get approved, once it is approved it will be available in Create MMS -> Select Audio"/>
+    </RelativeLayout>
+
+</ScrollView>

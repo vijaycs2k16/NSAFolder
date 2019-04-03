@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_class"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow"
+    tools:context="nexrise.publication.in.nexrise.ParentFeatures.Attendance.ParentAttendanceActivity">
+
+    <include layout="@layout/progress_bar"/>
+    <include layout="@layout/class_activity_floating_actionbar"/>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_events_feature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:background="@drawable/actionbar_tablayout_color"
+        app:backgroundTint="@color/background_tint"
+        android:tint="@color/colorWhite"
+        app:elevation="@dimen/elevation4"
+        app:borderWidth="0dp"
+        app:srcCompat="@drawable/ic_input_add1"
+        app:fabSize="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

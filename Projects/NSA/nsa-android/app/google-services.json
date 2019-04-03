@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "145826900150",
+    "project_id": "firebase-nexapp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145826900150:android:79c147d9f06896f8",
+        "android_client_info": {
+          "package_name": "nexrise.publication.in.nexrise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrZMlULiSwaEel5fUTRJnE-dBYQIFM-ps"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-88089660-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

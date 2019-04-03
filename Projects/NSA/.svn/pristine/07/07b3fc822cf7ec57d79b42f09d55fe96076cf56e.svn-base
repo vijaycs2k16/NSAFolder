@@ -1,0 +1,61 @@
+<div class="form-holder _newForm">
+    <form method="" style="height: 400px; overflow: auto">
+        <h4 class="_dialogMainTitle">Edit Chapter</h4>
+        <div class="_formWrap _enlargedItemMargin">
+            <div class="_formBlock _equal">
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Title</span>
+                    <div class="_newSelectListWrap">
+                        <a id="title"
+                           name="title"
+                           class="current-selected"
+                           data-id="<%=model.title ? model.title._id: null%>"
+                           href="javascript:;"><%=model.title ? model.title.titleName : 'Select Title'%></a>
+                    </div>
+                </div>
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Subject</span>
+                    <div class="_newSelectListWrap">
+                        <a id="subject"
+                           name="subject"
+                           class="current-selected"
+                           data-id="<%=model.subject ? model.subject._id: null%>"
+                           href="javascript:;"><%=model.subject ? model.subject.subjectName : 'Select Subject'%></a>
+                    </div>
+                </div>
+                   <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Classes</span>
+                    <div class="_newSelectListWrap">
+                        <a id="Class_st"
+                           name="Class_st"
+                           class="current-selected"
+                           data-id="<%=model.classDetail ? model.classDetail._id: null%>"
+                           href="javascript:;"><%=model.classDetail ? model.classDetail.className : 'Select Class'%></a>
+                    </div>
+                </div>
+                <div class=" deleteRow _productRow" >
+                    <div data-name=" productName" class="">
+                        <% if(model._id) {%>
+                        <% var len = model.topics%>
+                        <% len.forEach(function(val) { %>
+                        <div class="productItem _animateInputBox _withInfo">
+
+                            <input type="text"
+                                   class="_animate name"
+                                   id="name"
+                                   required
+                                   data-id="<%= val._id ? val._id : '' %>"
+                                   value="<%= val.name ? val.name : '' %>">
+
+                            <label class="_animate">Topic Name</label>
+                            <span href="javascript:;" class="icon-trash tips goToRemove removeJob _actionCircleBtn show" aria-hidden="true"></span>
+                        </div>
+                        <% })%>
+                        <% } %>
+                    </div>
+                </div>
+                <div id="productItemsHolder"></div>
+            </div>
+        </div>
+    </form>
+</div>

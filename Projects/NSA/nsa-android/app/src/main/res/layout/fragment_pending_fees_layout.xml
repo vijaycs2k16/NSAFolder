@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:weightSum="4"
+    android:background="@color/layoutBackground">
+
+    <ImageView
+        android:layout_width="@dimen/width5"
+        android:layout_height="match_parent"
+        android:id="@+id/pending_fees_imageview"
+        android:gravity="center_vertical"
+        android:background="@drawable/actionbar_tablayout_color"
+        android:paddingLeft="@dimen/margin10"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height50"
+        android:id="@+id/textView11"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/common_text_size"
+        android:paddingLeft="@dimen/margin15"
+        android:layout_weight="2" />
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height50"
+        android:id="@+id/textView13"
+        android:paddingLeft="@dimen/padding10"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/common_text_size"
+        android:layout_weight="2" />
+    <ImageView
+
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_arrow_right"
+        android:layout_width="@dimen/width20"
+       android:layout_height="match_parent" />
+
+</LinearLayout>

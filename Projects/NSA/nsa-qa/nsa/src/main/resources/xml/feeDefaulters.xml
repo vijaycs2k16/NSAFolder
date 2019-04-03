@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="feeDefaulters">
+	    <parameter name="selClass" value="Class 1"></parameter>	
+	    <parameter name="selSection" value="Section A"></parameter>
+	    <parameter name="feeSelection" value="School regular fee"></parameter>
+	<test name="FeeDefaulters">
+		<classes>
+		   <class name="com.nsa.testing.tests.FeeDefaultersTest" /> 
+		</classes>
+	</test>
+</suite> 

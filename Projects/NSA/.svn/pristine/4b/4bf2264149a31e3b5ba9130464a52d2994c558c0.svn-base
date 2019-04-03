@@ -1,0 +1,37 @@
+﻿<div id="searchContainer"></div>
+<div class="_tableJournalWrap">
+    <table class="list stripedList">
+        <colgroup>
+            <col width="23%">
+            <col width="12%">
+            <col width="12%">
+            <col width="12%">
+            <col width="12%">
+            <col width="12%">
+            <col width="12%">
+            <col width="12%">
+        </colgroup>
+        <thead>
+        <tr>
+            <th class="oe_sortable" data-sort="name">Center<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable" data-sort="transaction">Reg No<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable" data-sort="debitAccount">Student<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable" data-sort="creditAccount">Course<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable" data-sort="creditAccount">Fee Amount<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable" data-sort="creditAccount">Discount<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable" data-sort="creditAccount">Paid<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable" data-sort="creditAccount">Outstanding<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+        </tr>
+        </thead>
+        <tbody id="listTable" class="enableTableOdd"></tbody>
+        <tfoot id="listTotal"></tfoot>
+    </table>
+</div>

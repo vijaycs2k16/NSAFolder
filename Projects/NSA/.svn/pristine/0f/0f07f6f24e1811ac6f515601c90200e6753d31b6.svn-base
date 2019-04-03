@@ -1,0 +1,37 @@
+<% var symbol = '₹' %>
+<% var percentage = '%' %>
+<% var space = ' ' %>
+<div class="_acountingTableWrap">
+    <div class="_acountingTitleBlock">
+        <% if(dataPermission.data.create) { %>
+        <a href="javascript:;" class="btn blue slim icon-plus btnPositioned" title="Create"
+           id="top-bar-createBtn">New</a>
+        <% } %>
+    </div>
+    <div class="_acountingTableBlock">
+        <table id="example1" class="display" style="width:100%">
+            <thead>
+            <tr class="forToggle">
+                <th class="text-left">Center</th>
+                <% if(dataPermission.data.update || dataPermission.data.delete) { %>
+                <th class="text-left">Action</th>
+                <% } %>
+            </tr>
+            </thead>
+            <tbody>
+            <% data.forEach(function(elem,index){ %>
+            <tr data-id="<%=elem._id%>">
+                <td><%=elem.centerName ? elem.centerName : ''%></td>
+                <% if(dataPermission.data.update || dataPermission.data.delete) { %>
+                <td>
+                    <a href="javascript:;" class="icon-note goToEdit _actionCircleBtn show" aria-hidden="true"></a>
+                    <a href="javascript:;" class="icon-trash goToRemove _actionCircleBtn show" aria-hidden="true"></a>
+                </td>
+                <% } %>
+            </tr>
+
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>

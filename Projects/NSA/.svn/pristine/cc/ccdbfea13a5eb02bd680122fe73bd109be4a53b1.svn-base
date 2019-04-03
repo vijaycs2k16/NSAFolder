@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/overlayForegroundColor"
+    tools:context="nexrise.publication.in.nexrise.ExamFeature.StudentReportTableActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height40"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:text=""
+        android:id="@+id/exam_name"
+        android:textSize="@dimen/common_text_size"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+    <include layout="@layout/progress_bar"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height40"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginBottom="@dimen/margin2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/height50"
+            android:id="@+id/textView23"
+            android:background="@drawable/border_style"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="Subject" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/height50"
+            android:id="@+id/textView32"
+            android:background="@drawable/border_style"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="Marks" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/student_report_table_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/overlayForegroundColor"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10" />
+
+</LinearLayout>

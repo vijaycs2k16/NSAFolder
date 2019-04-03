@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tab_host">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <DatePicker
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:datePickerMode="spinner"
+                        android:calendarViewShown="false"
+                        android:id="@+id/datePicker" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TimePicker
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:timePickerMode="spinner"
+                        android:id="@+id/timePicker" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/height50"
+               android:orientation="horizontal">
+
+               <Button
+                   android:text="CANCEL"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@color/colorLightGray"
+                   android:id="@+id/cancel"
+                   android:layout_weight="1" />
+
+               <Button
+                   android:text="OK"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/ok"
+                   android:background="@color/colorLightGray"
+                   android:layout_weight="1" />
+           </LinearLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

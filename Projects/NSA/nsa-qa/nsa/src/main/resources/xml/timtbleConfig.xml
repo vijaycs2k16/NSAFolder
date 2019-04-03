@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="timetableconfig">
+	
+	<parameter name="selcls" value="Class 4"></parameter>
+	<parameter name="setprds" value="11"></parameter>
+	<parameter name="setexmsec" value="Section A"></parameter>
+	<test name="TimetableConfig">
+		<classes>
+			<class name="com.nsa.testing.tests.TimetableConfig"/>
+		</classes>
+	</test>
+</suite> 

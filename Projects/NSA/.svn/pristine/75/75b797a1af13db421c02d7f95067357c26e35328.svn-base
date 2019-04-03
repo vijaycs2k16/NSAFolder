@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="subjectallocation">
+<parameter name="subj_Name" value="Telugu"></parameter>
+<parameter name="academics_Radio" value="Academic"></parameter>	
+<test name="SubjectAllocation">
+		<classes>
+			<class name="com.nsa.testing.tests.SubjectAllocation" />
+		</classes>
+	</test>
+</suite> 

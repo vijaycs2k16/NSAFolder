@@ -1,0 +1,25 @@
+<div id="searchContainer"></div>
+<div class="_tableWrap _tablePurchasePaymentsWrap">
+    <table class="list task-list stripedList">
+        <col width="100px">
+        <col width="100px">
+        <col width="100px">
+        <col width="100px">
+        <col width="100px">
+        <thead>
+        <tr>
+            <th class="oe_sortable sortDn text-left" data-sort="createdBy.date">Exam Name<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable text-left" data-sort="description">Duration (mins)<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable text-left" data-sort="warehouse.name">Course Name<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable text-left" data-sort="createdBy.user.login">No of Questions<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+            <th class="oe_sortable text-left" data-sort="createdBy.user.login">Action<span class="arrow down"></span><span
+                    class="arrow up"></span></th>
+
+        </thead>
+        <tbody id="listTable" class="enableTableOdd"></tbody>
+    </table>
+</div>

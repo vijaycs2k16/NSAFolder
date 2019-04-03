@@ -1,0 +1,68 @@
+package nexrise.publication.in.nexrise.Gallery.CustomGallery.ArrayAdapter;
+
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
+
+import java.util.ArrayList;
+
+import nexrise.publication.in.nexrise.Gallery.CustomGallery.BeanClass.Image;
+import nexrise.publication.in.nexrise.R;
+
+/**
+ * Created by karthik on 19-12-2016.
+ */
+
+public class CustomVideoSelectAdapter extends CustomGenericAdapter<Image> {
+
+    CustomVideoSelectAdapter(Context context, ArrayList<Image> imageList) {
+        super(context, imageList);
+    }
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        CustomVideoSelectAdapter.ViewHolder viewHolder;
+
+        if (convertView == null) {
+            convertView = layoutInflater.inflate(R.layout.grid_view_item_image_select, null);
+
+            viewHolder = new CustomVideoSelectAdapter.ViewHolder();
+            viewHolder.imageView = (ImageView) convertView.findViewById(R.id.image_view_image_select);
+            viewHolder.view = convertView.findViewById(R.id.view_alpha);
+
+            convertView.setTag(viewHolder);
+
+        } else {
+            viewHolder = (CustomVideoSelectAdapter.ViewHolder) convertView.getTag();
+        }
+
+        viewHolder.imageView.getLayoutParams().width = size;
+        viewHolder.imageView.getLayoutParams().height = size;
+
+        viewHolder.view.getLayoutParams().width = size;
+        viewHolder.view.getLayoutParams().height = size;
+
+        if (arrayList.get(position).isSelected) {
+            viewHolder.view.setAlpha(0.5f);
+            ((FrameLayout) convertView).setForeground(context.getResources().getDrawable(R.drawable.ic_done_white));
+
+        } else {
+            viewHolder.view.setAlpha(0.0f);
+            ((FrameLayout) convertView).setForeground(null);
+        }
+
+        Glide.with(context)
+                .load(arrayList.get(position).path)
+                .placeholder(R.drawable.image_placeholder).into(viewHolder.imageView);
+
+        return convertView;
+    }
+
+    private static class ViewHolder {
+        public ImageView imageView;
+        public View view;
+    }
+}

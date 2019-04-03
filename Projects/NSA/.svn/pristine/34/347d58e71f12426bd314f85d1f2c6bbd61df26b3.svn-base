@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "653372886157",
+    "firebase_url": "https://indiamission-80a6a.firebaseio.com",
+    "project_id": "indiamission-80a6a",
+    "storage_bucket": "indiamission-80a6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653372886157:android:cbf9e655ed6027b1",
+        "android_client_info": {
+          "package_name": "indiamission.management.in.telangana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653372886157-is4l637sfi7rncrull7idf8h66rt1cm0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2lLcSposZy6VhA88xNp5kwIGYfNDdWTg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

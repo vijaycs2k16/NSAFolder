@@ -1,0 +1,207 @@
+ <div class="_formWrap">
+            <div class="_formBlock">
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Center</span>
+                    <div class="_newSelectListWrap">
+                        <a id="centerC"
+                           name="centerC"
+                           class="current-selected"
+                           data-id="<%= data ? data.center._id: ''%>"
+                           href="javascript:;"><%= data ? data.center.name: 'Select Center'%></a>
+                    </div>
+                </div>
+            </div>
+             <div class="_formBlock">
+                 <div class="_animateSelectBox _withInfo">
+                     <span class="_selectTitle">Course</span>
+                     <div class="_newSelectListWrap">
+                         <a id="course_CS"
+                            name="course_CS"
+                            class="current-selected"
+                            data-id="<%= data ? data.course._id: ''%>"
+                            href="javascript:;"><%= data ? data.course.name: 'Select Course'%></a>
+                     </div>
+                 </div>
+             </div>
+             <div class="_formBlock">
+                 <div class="_animateSelectBox _withInfo">
+                     <span class="_selectTitle">Batch</span>
+                     <div class="_newSelectListWrap">
+                         <a id="batch_CS"
+                            name="batch_CS"
+                            class="current-selected"
+                            data-id="<%= data ? data.batch._id: ''%>"
+                            href="javascript:;"><%= data ? data.batch.name: 'Select Batch'%></a>
+                     </div>
+                 </div>
+             </div>
+             <div class="_formBlock">
+                 <div class="_animateSelectBox _withInfo">
+                     <span class="_selectTitle">Class</span>
+                     <div class="_newSelectListWrap">
+                         <a id="class_CS"
+                            name="class_CS"
+                            class="current-selected"
+                            data-id="<%= data ? data.classObj._id: ''%>"
+                            href="javascript:;"><%= data ? data.classObj.name: 'Select Class'%></a>
+                     </div>
+                 </div>
+             </div>
+            <div class="_formBlock">
+                <div class="_animateSelectBox _withInfo">
+                    <button class="btn btnBlue searchBtn">Search</button>
+                </div>
+            </div>
+        </div>
+    <div class="_acountingTableBlock">
+
+        <table id="example5" class="display" style="width:100%">
+            <thead>
+            <tr class="forToggle">
+                <th class="text-left">Type</th>
+                <th class="text-left">Subject Name</th>
+                <th class="text-left">Topic Name</th>
+                <th class="text-left">Subtopics</th>
+                <th class="text-left">Faculty Name</th>
+                <th class="text-left">Class Date</th>
+                <th class="text-left">Start Time</th>
+                <th class="text-left">End Time</th>
+                <th class="text-left">Feedback</th>
+                <th class="text-left">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% collection.forEach(function(elem,index){ %>
+            <tr id="<%=elem._id%>" class="productItem">
+                <td><div class="_animateSelectBox">
+                    <div class="_newSelectListWrap">
+                        <a id="type"
+                           name="type"
+                           class="current-selected"
+                           data-id="<%=elem.type ? elem.type: null%>"
+                           href="javascript:;"><%=elem.type ? elem.type : 'Select Type'%></a>
+                    </div>
+                    <span class="tips " data-id="subject"></span>
+                </div></td>
+                <td><div class="_animateSelectBox">
+                    <div class="_newSelectListWrap">
+                        <a id="subject"
+                           name="subject"
+                           class="current-selected"
+                           data-id="<%=elem.subject ? elem.subject._id: null%>"
+                           href="javascript:;"><%=elem.subject ? elem.subject.subjectName : 'Subject Name'%></a>
+                    </div>
+                    <span class="tips " data-id="subject"></span>
+                </div></td>
+                <td> <div id="topicDataBlocks" class="_variantsBlock _variantsTopics" style="width:200px;">
+                    <div class="_checkCategoriesWrap">
+                        <ul id="checkedDataTopics" class="_checkCategories">
+                            <% if(elem.topicDetails) { %>
+                            <% elem.topicDetails.forEach(function(esl,index){ %>
+                            <li><span class="checkedDataTopics" data-value="<%= esl.name%>" data-id="<%=esl._id%>"><%= esl.name%></span><span class="deleteDataTag1 icon-close3"></span></li>
+                            <% } )%>
+                            <% } %>
+
+                        </ul>
+
+                        <span id="showBtn2" class="_arrow"></span>
+                    </div>
+                    <ul id="topicDataCategories" class="_categoriesList">
+                    </ul>
+                </div></td>
+                <td> <div id="topicBlocks" class="_variantsBlock _variantsTopics" style="width:200px;">
+                    <div class="_checkCategoriesWrap">
+                        <ul id="checkedTopics" class="_checkCategories">
+                            <% if(elem.subtopics) { %>
+                            <% elem.subtopics.forEach(function(esl,index){ %>
+                            <li><span class="checkedTopics" data-value="<%= esl.name%>" data-id="<%=esl._id%>"><%= esl.name%></span><span class="deleteTag1 icon-close3"></span></li>
+                            <% } )%>
+                            <% } %>
+
+                        </ul>
+
+                        <span id="showBtn1" class="_arrow"></span>
+                    </div>
+                    <ul id="topicCategories" class="_categoriesList"></ul>
+                </div></td>
+                <td><div class="_animateSelectBox">
+                    <div class="_newSelectListWrap">
+                        <a id="faculty"
+                           name="faculty"
+                           class="current-selected"
+                           data-id="<%=elem.faculty ? elem.faculty._id: null%>"
+                           href="javascript:;"><%=elem.faculty ? elem.faculty.name.first + ' ' +  elem.faculty.name.first : 'Faculty Name'%></a>
+                    </div>
+                    <span class="tips " data-id="subject"></span>
+                </div></td>
+                <td> <div class="_animateInputBox "style="width:89px">
+                    <input class="_animate extrainfo classDate"
+                           type="text"
+                           name="classDate"
+                           id="classDate<%=index%>"
+                           value="<%=elem.classDate ? moment(elem.classDate).format('D MMM, YYYY') : ''%>"
+                           readonly
+                           placeholder="Class Date"/>
+                </div></td>
+                <td> <div class="_animateinputbox _withtime _withinfo">
+                    <div class="inputdateactionblock" style="
+                               position: relative;
+                               display: block;
+                               padding: 0 20px 0 0;
+                               border: none;
+                               min-height: 26px;
+                               cursor: pointer;
+                               border-bottom: 1px solid #c8c8d3;
+                               font-size: 13px;
+                               color: #999 !important;
+                               width: 90px;
+                               ">
+                        <input maxlength="2"
+                               name="time"
+                               class="timepickerOne"
+                               id="timepickerOne<%=index%>"
+                               value="<%=elem.classStartTime ?  moment(elem.classStartTime).format('hh:mm A'): null%>"
+                               readonly/>
+                    </div>
+                    <span class="tips " data-id="classStartTime"></span>
+                </div></td>
+                <td><div class="_animateinputbox _withtime _withinfo">
+                    <div class="inputdateactionblock" style="
+                               position: relative;
+                               display: block;
+                               padding: 0 20px 0 0;
+                               border: none;
+                               min-height: 26px;
+                               cursor: pointer;
+                               border-bottom: 1px solid #c8c8d3;
+                               font-size: 13px;
+                               color: #999 !important;
+                               width: 90px;
+                               ">
+                        <input maxlength="2"
+                               name="time"
+                               class="timepickerTwo"
+                               id="timepickerTwo<%=index%>"
+                               value="<%=elem.classEndTime ?  moment(elem.classEndTime).format('hh:mm A'): null%>"
+                               readonly/>
+                    </div>
+                    <span class="tips " data-id="classEndTime"></span>
+                </div></td>
+                <td><div class="_animateInputBox _withInfo">
+                    <input type="text"
+                           class="_animate "
+                           id="name"
+                           required
+                           value="<%=elem.feedback ? elem.feedback: '' %>"/>
+                    <span class="tips icon-info" data-id="name"></span>
+                </div></td>
+                <td><div class="SaveCancel">
+                    <a href="javascript:;" class="icon-checked goToEdit _actionCircleBtn show visibleVisble saveStatus <%=permissionObj.update ? '' : 'hide'%>"  disabled="" aria-hidden="true"></a>
+                    <a href="javascript:;" class="icon-trash goToRemove _actionCircleBtn show visibleVisble delStatus <%=permissionObj.delete ? '' : 'hide'%>" disabled="" aria-hidden="true"></a></div>
+                </td>
+            </tr>
+
+            <% }) %>
+            </tbody>
+        </table>
+    </div>

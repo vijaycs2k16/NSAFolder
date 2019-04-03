@@ -1,0 +1,1136 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\android\app\src\main\AndroidManifest.xml:2:1-308:12
+	package
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:3:5-45
+		INJECTED from E:\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from E:\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\android\app\src\main\AndroidManifest.xml
+uses-feature#android.hardware.camera
+ADDED from E:\android\app\src\main\AndroidManifest.xml:6:5-60
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:6:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from E:\android\app\src\main\AndroidManifest.xml:7:5-70
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:7:19-67
+uses-feature#0x00020000
+ADDED from E:\android\app\src\main\AndroidManifest.xml:8:5-10:35
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.2.1\AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:9:9-41
+	android:required
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:10:9-32
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from E:\android\app\src\main\AndroidManifest.xml:12:5-75
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:12:22-72
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from E:\android\app\src\main\AndroidManifest.xml:13:5-71
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:13:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from E:\android\app\src\main\AndroidManifest.xml:14:5-71
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:14:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from E:\android\app\src\main\AndroidManifest.xml:15:5-72
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:15:22-69
+uses-permission#android.permission.CAMERA
+ADDED from E:\android\app\src\main\AndroidManifest.xml:16:5-65
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:16:22-62
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from E:\android\app\src\main\AndroidManifest.xml:17:5-79
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:17:22-76
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from E:\android\app\src\main\AndroidManifest.xml:18:5-80
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:18:22-77
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from E:\android\app\src\main\AndroidManifest.xml:19:5-71
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:19:22-68
+uses-permission#android.permission.MANAGE_DOCUMENTS
+ADDED from E:\android\app\src\main\AndroidManifest.xml:20:5-75
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:20:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\android\app\src\main\AndroidManifest.xml:21:5-80
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:21:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\android\app\src\main\AndroidManifest.xml:22:5-81
+MERGED from [com.daimajia.slider:library:1.1.5] E:\android\app\build\intermediates\exploded-aar\com.daimajia.slider\library\1.1.5\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:22:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from E:\android\app\src\main\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:23:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from E:\android\app\src\main\AndroidManifest.xml:24:5-81
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:24:22-78
+uses-permission#android.permission.INTERNET
+ADDED from E:\android\app\src\main\AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.2.1\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.2.1\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.2.1\AndroidManifest.xml:18:5-66
+MERGED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.2.1\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-crash:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.2.1\AndroidManifest.xml:18:5-66
+MERGED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.2.1\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-gcm:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\10.2.1\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\10.2.1\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:20:5-66
+MERGED from [com.daimajia.slider:library:1.1.5] E:\android\app\build\intermediates\exploded-aar\com.daimajia.slider\library\1.1.5\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:25:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from E:\android\app\src\main\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:26:22-75
+uses-permission#${applicationId}.android.permission.C2D_MESSAGE
+ADDED from E:\android\app\src\main\AndroidManifest.xml:27:5-87
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:27:22-84
+		INJECTED from E:\android\app\src\main\AndroidManifest.xml
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from E:\android\app\src\main\AndroidManifest.xml:28:5-86
+MERGED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:28:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from E:\android\app\src\main\AndroidManifest.xml:29:5-87
+MERGED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:29:22-84
+uses-permission#android.permission.WAKE_LOCK
+ADDED from E:\android\app\src\main\AndroidManifest.xml:30:5-68
+MERGED from [com.google.android.gms:play-services-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.2.1\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.2.1\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.2.1\AndroidManifest.xml:22:5-67
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:30:22-65
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from E:\android\app\src\main\AndroidManifest.xml:33:5-88
+MERGED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:33:22-85
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from E:\android\app\src\main\AndroidManifest.xml:36:5-81
+MERGED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:36:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from E:\android\app\src\main\AndroidManifest.xml:37:5-83
+MERGED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:37:22-80
+permission#${applicationId}.android.permission.C2D_MESSAGE
+ADDED from E:\android\app\src\main\AndroidManifest.xml:39:5-41:47
+	android:protectionLevel
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:41:9-44
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:40:9-71
+		INJECTED from E:\android\app\src\main\AndroidManifest.xml
+application
+ADDED from E:\android\app\src\main\AndroidManifest.xml:43:5-306:19
+MERGED from [com.android.support:design:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\AndroidManifest.xml:22:5-20
+MERGED from [uk.co.chrisjenx:calligraphy:2.1.0] E:\android\app\build\intermediates\exploded-aar\uk.co.chrisjenx\calligraphy\2.1.0\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:cardview-v7:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\10.2.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\AndroidManifest.xml:23:5-27:19
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.1\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-base:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.1\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.2.1\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-clearcut:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\10.2.1\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gass:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\10.2.1\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.2.1\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.2.1\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-v4-impl\10.2.1\AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-appinvite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.2.1\AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.android.gms:play-services-auth:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.1\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-cast-framework:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.2.1\AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\10.2.1\AndroidManifest.xml:18:5-19
+MERGED from [com.android.support:mediarouter-v7:24.0.0] E:\android\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:palette-v7:24.0.0] E:\android\app\build\intermediates\exploded-aar\com.android.support\palette-v7\24.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-config:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\10.2.1\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-common:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.2.1\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-awareness:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-awareness\10.2.1\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-location:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\10.2.1\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-places:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\10.2.1\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.2.1\AndroidManifest.xml:24:5-19
+MERGED from [com.google.firebase:firebase-crash:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.2.1\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.2.1\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.android.gms:play-services-drive:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\10.2.1\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-auth:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\10.2.1\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-messaging:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.2.1\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.android.gms:play-services-fitness:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\10.2.1\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\10.2.1\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gcm:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\10.2.1\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\10.2.1\AndroidManifest.xml:23:5-19
+MERGED from [com.google.firebase:firebase-appindexing:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-appindexing\10.2.1\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-identity:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\10.2.1\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-nearby:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\10.2.1\AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-panorama:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\10.2.1\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\10.2.1\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\10.2.1\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-vision:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\10.2.1\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-wearable:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\10.2.1\AndroidManifest.xml:18:5-19
+MERGED from [com.github.michaelye.easydialog:easydialog:1.4] E:\android\app\build\intermediates\exploded-aar\com.github.michaelye.easydialog\easydialog\1.4\AndroidManifest.xml:11:5-14:19
+MERGED from [com.jjoe64:graphview:4.2.1] E:\android\app\build\intermediates\exploded-aar\com.jjoe64\graphview\4.2.1\AndroidManifest.xml:11:5-12:19
+MERGED from [com.github.johnkil.print:print:1.3.1] E:\android\app\build\intermediates\exploded-aar\com.github.johnkil.print\print\1.3.1\AndroidManifest.xml:12:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] E:\android\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-core:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-core\10.2.1\AndroidManifest.xml:5:5-20
+	android:label
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:47:9-41
+	android:supportsRtl
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:49:9-35
+	android:allowBackup
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:45:9-35
+	android:icon
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:46:9-43
+	android:largeHeap
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:48:9-33
+	android:theme
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:50:9-40
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:44:9-73
+activity#nexrise.publication.in.nexrise.Common.SplashScreenActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:51:9-59:20
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:53:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:52:13-86
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\android\app\src\main\AndroidManifest.xml:54:13-58:29
+action#android.intent.action.MAIN
+ADDED from E:\android\app\src\main\AndroidManifest.xml:55:17-69
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:55:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\android\app\src\main\AndroidManifest.xml:57:17-77
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:57:27-74
+activity#nexrise.publication.in.nexrise.Common.LoginActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:60:9-62:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:62:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:61:13-79
+activity#nexrise.publication.in.nexrise.HomeworkFeature.AddHomeWorkActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:63:9-66:55
+	android:windowSoftInputMode
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:66:13-52
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:65:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:64:13-94
+activity#nexrise.publication.in.nexrise.HomeworkFeature.HomeworkTypeActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:67:9-69:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:69:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:68:13-95
+activity#nexrise.publication.in.nexrise.ReusedActivities.DueDateActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:70:9-100
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:70:19-97
+activity#nexrise.publication.in.nexrise.ReusedActivities.DueTimeActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:71:9-100
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:71:19-97
+activity#nexrise.publication.in.nexrise.ReusedActivities.AttachmentActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:72:9-74:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:74:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:73:13-94
+activity#nexrise.publication.in.nexrise.HomeworkFeature.DetailsPageActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:75:9-77:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:77:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:76:13-94
+activity#nexrise.publication.in.nexrise.TimetableFeature.ClassActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:78:9-80:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:80:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:79:13-89
+activity#nexrise.publication.in.nexrise.NavigationDrawerActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:81:9-89:20
+	android:label
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:84:13-45
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:83:13-74
+	android:theme
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:85:13-56
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:82:13-83
+meta-data#android.app.searchable
+ADDED from E:\android\app\src\main\AndroidManifest.xml:86:13-88:54
+	android:resource
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:88:17-51
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:87:17-54
+activity#nexrise.publication.in.nexrise.FeeManagement.FeeManagementParentActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:90:9-91:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:91:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:90:19-106
+activity#nexrise.publication.in.nexrise.TimetableFeature.CreatingExam
+ADDED from E:\android\app\src\main\AndroidManifest.xml:92:9-97
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:92:19-94
+activity#nexrise.publication.in.nexrise.TimetableFeature.TeacherActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:93:9-100
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:93:19-97
+activity#nexrise.publication.in.nexrise.TimetableFeature.ClassWeekActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:94:9-96:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:96:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:95:13-93
+activity#nexrise.publication.in.nexrise.EventsFeature.EventDetailsActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:97:9-99:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:99:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:98:13-93
+activity#nexrise.publication.in.nexrise.EventsFeature.AddEventActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:100:9-102:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:102:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:101:13-89
+activity#nexrise.publication.in.nexrise.EventsFeature.AttendeesActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:103:9-105:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:105:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:104:13-90
+activity#nexrise.publication.in.nexrise.EventsFeature.LocationActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:106:9-108:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:108:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:107:13-89
+meta-data#com.google.android.geo.API_KEY
+ADDED from E:\android\app\src\main\AndroidManifest.xml:110:9-112:71
+	android:value
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:112:13-68
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:111:13-58
+activity#nexrise.publication.in.nexrise.EventsFeature.DurationActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:114:9-116:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:116:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:115:13-89
+activity#nexrise.publication.in.nexrise.EventsFeature.PastEventsActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:117:9-122:20
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:118:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:117:19-97
+activity#nexrise.publication.in.nexrise.FeeManagement.FeeDefaultersActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:123:9-103
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:123:19-100
+activity#nexrise.publication.in.nexrise.FeeManagement.FeesDetailsActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:124:9-126:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:126:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:125:13-92
+activity#nexrise.publication.in.nexrise.FeeManagement.FeeDefaultersDetailsActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:127:9-110
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:127:19-107
+activity#nexrise.publication.in.nexrise.Notifications.CreateNotification
+ADDED from E:\android\app\src\main\AndroidManifest.xml:128:9-130:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:130:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:129:13-91
+activity#nexrise.publication.in.nexrise.Notifications.NotificationDetailsActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:131:9-109
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:131:19-106
+activity#nexrise.publication.in.nexrise.Notifications.MyNotificationActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:132:9-134:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:134:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:133:13-95
+activity#nexrise.publication.in.nexrise.Profile.ProfileActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:135:9-91
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:135:19-88
+activity#nexrise.publication.in.nexrise.Attendence.AttendenceActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:136:9-97
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:136:19-94
+activity#nexrise.publication.in.nexrise.Attendence.AttendanceHistoryActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:137:9-139:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:139:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:138:13-95
+activity#nexrise.publication.in.nexrise.Attendence.AttendanceActivityFragment
+ADDED from E:\android\app\src\main\AndroidManifest.xml:140:9-142:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:142:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:141:13-96
+activity#nexrise.publication.in.nexrise.Attendence.ApplyLeaveActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:143:9-146:57
+	android:windowSoftInputMode
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:146:13-54
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:145:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:144:13-88
+activity#nexrise.publication.in.nexrise.Profile.ProfileUpdateActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:147:9-97
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:147:19-94
+activity#nexrise.publication.in.nexrise.ProgressReportFeature.ProgressReportActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:148:9-112
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:148:19-109
+activity#nexrise.publication.in.nexrise.ProgressReportFeature.ProgressResultsActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:149:9-113
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:149:19-110
+activity#nexrise.publication.in.nexrise.ProgressReportFeature.StudentDetailsActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:150:9-112
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:150:19-109
+activity#nexrise.publication.in.nexrise.ProgressReportFeature.OverallReportActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:151:9-111
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:151:19-108
+activity#nexrise.publication.in.nexrise.Journals.Journals
+ADDED from E:\android\app\src\main\AndroidManifest.xml:152:9-85
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:152:19-82
+activity#nexrise.publication.in.nexrise.ProgressReportFeature.GradeActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:153:9-103
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:153:19-100
+activity#nexrise.publication.in.nexrise.TransportManager.ParentTransportActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:154:9-156:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:156:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:155:13-99
+activity#nexrise.publication.in.nexrise.TransportManager.TransportMapActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:157:9-159:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:159:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:158:13-96
+activity#nexrise.publication.in.nexrise.Gallery.GalleryActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:160:9-91
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:160:19-88
+activity#nexrise.publication.in.nexrise.Gallery.FullImageActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:161:9-93
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:161:19-90
+activity#nexrise.publication.in.nexrise.Gallery.GalleryView
+ADDED from E:\android\app\src\main\AndroidManifest.xml:162:9-87
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:162:19-84
+activity#nexrise.publication.in.nexrise.Gallery.CreateAlbumActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:163:9-95
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:163:19-92
+activity#nexrise.publication.in.nexrise.Gallery.CreateVideoActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:164:9-95
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:164:19-92
+activity#nexrise.publication.in.nexrise.Gallery.CustomGallery.Activities.AlbumSelectActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:165:9-120
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:165:19-117
+activity#nexrise.publication.in.nexrise.Gallery.CustomGallery.Activities.HelperActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:166:9-115
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:166:19-112
+activity#nexrise.publication.in.nexrise.Gallery.CustomGallery.Activities.ImageSelectActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:167:9-169:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:169:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:168:13-111
+activity#nexrise.publication.in.nexrise.Gallery.ShareWithActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:170:9-93
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:170:19-90
+activity#nexrise.publication.in.nexrise.PasswordChangeActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:171:9-173:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:173:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:172:13-81
+activity#nexrise.publication.in.nexrise.FeedbackActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:174:9-176:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:176:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:175:13-75
+activity#nexrise.publication.in.nexrise.ContactUsActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:177:9-179:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:179:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:178:13-76
+activity#nexrise.publication.in.nexrise.AboutUsActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:180:9-182:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:182:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:181:13-74
+activity#nexrise.publication.in.nexrise.ParentFeatures.Attendance.ParentAttendanceActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:183:9-185:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:185:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:184:13-109
+activity#nexrise.publication.in.nexrise.ParentFeatures.ParentLogin.ParentLogin
+ADDED from E:\android\app\src\main\AndroidManifest.xml:186:9-106
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:186:19-103
+activity#nexrise.publication.in.nexrise.ParentFeatures.Attendance.StatusAttendanceActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:187:9-118
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:187:19-115
+activity#nexrise.publication.in.nexrise.ProgressReportFeature.ParentStudentLogin.StudentDetailsActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:188:9-131
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:188:19-128
+activity#nexrise.publication.in.nexrise.TimetableFeature.ViewNotesActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:189:9-102
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:189:19-99
+activity#nexrise.publication.in.nexrise.ParentFeatures.HomeworkFeature.ParentDetailsActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:190:9-120
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:190:19-117
+activity#nexrise.publication.in.nexrise.HomeworkFeature.SubjectHomeWorkActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:191:9-193:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:193:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:192:13-98
+activity#nexrise.publication.in.nexrise.TimetableFeature.ExamSubjectActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:194:9-104
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:194:19-101
+activity#nexrise.publication.in.nexrise.UploadActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:195:9-82
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:195:19-79
+activity#nexrise.publication.in.nexrise.EventsFeature.PastEventDetailActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:196:9-198:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:198:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:197:13-96
+activity#nexrise.publication.in.nexrise.Gallery.SelectOptionActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:199:9-96
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:199:19-93
+activity#nexrise.publication.in.nexrise.Journals.JournalViewActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:200:9-96
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:200:19-93
+receiver#com.google.android.gms.analytics.AnalyticsReceiver
+ADDED from E:\android\app\src\main\AndroidManifest.xml:202:9-208:20
+	android:enabled
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:204:13-35
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:203:13-78
+intent-filter#com.google.android.gms.analytics.ANALYTICS_DISPATCH
+ADDED from E:\android\app\src\main\AndroidManifest.xml:205:13-207:29
+action#com.google.android.gms.analytics.ANALYTICS_DISPATCH
+ADDED from E:\android\app\src\main\AndroidManifest.xml:206:17-94
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:206:25-91
+receiver#nexrise.publication.in.nexrise.PushNotification.MyReceiver
+ADDED from E:\android\app\src\main\AndroidManifest.xml:209:9-216:20
+	android:permission
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:211:13-73
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:210:13-86
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from E:\android\app\src\main\AndroidManifest.xml:212:13-215:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from E:\android\app\src\main\AndroidManifest.xml:213:17-81
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:213:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from E:\android\app\src\main\AndroidManifest.xml:214:17-86
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:214:25-83
+service#nexrise.publication.in.nexrise.PushNotification.MessageReceivingService
+ADDED from E:\android\app\src\main\AndroidManifest.xml:218:9-228:19
+	android:enabled
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:220:13-35
+	android:label
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:221:13-70
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:219:13-99
+intent-filter#.PushNotification.MyReceiver+NavigationDrawerActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:222:13-227:29
+action#NavigationDrawerActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:225:17-67
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:225:25-64
+action#.PushNotification.MyReceiver
+ADDED from E:\android\app\src\main\AndroidManifest.xml:226:17-71
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:226:25-68
+service#com.google.android.gms.analytics.AnalyticsService
+ADDED from E:\android\app\src\main\AndroidManifest.xml:229:9-232:40
+	android:enabled
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:231:13-35
+	android:exported
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:232:13-37
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:230:13-77
+activity#nexrise.publication.in.nexrise.Gallery.SelectedImagesActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:234:9-236:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:236:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:235:13-89
+activity#nexrise.publication.in.nexrise.Gallery.CustomGallery.Activities.VideoSelectActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:237:9-120
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:237:19-117
+activity#nexrise.publication.in.nexrise.Gallery.CustomGallery.Activities.VideoAlbumSelectActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:238:9-125
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:238:19-122
+activity#nexrise.publication.in.nexrise.Taxanomy.TaxonomyActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:239:9-241:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:241:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:240:13-84
+activity#nexrise.publication.in.nexrise.FeeManagement.WebviewActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:242:9-97
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:242:19-94
+activity#nexrise.publication.in.nexrise.Notifications.NotificationLogActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:243:9-245:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:245:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:244:13-96
+activity#nexrise.publication.in.nexrise.FeeManagement.FeeManagementEmployeeActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:246:9-248:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:248:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:247:13-102
+service#com.amazonaws.mobileconnectors.s3.transferutility.TransferService
+ADDED from E:\android\app\src\main\AndroidManifest.xml:250:9-252:38
+	android:enabled
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:252:13-35
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:251:13-93
+activity#nexrise.publication.in.nexrise.TimetableFeature.ViewNotesCalendarActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:254:9-255:85
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:255:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:254:19-107
+activity#nexrise.publication.in.nexrise.Attendence.OverallAttendanceActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:256:9-104
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:256:19-101
+activity#nexrise.publication.in.nexrise.EventsFeature.AttendeesListActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:257:9-259:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:259:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:258:13-94
+activity#nexrise.publication.in.nexrise.Common.AttachmentPreviewActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:260:9-262:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:262:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:261:13-91
+activity#nexrise.publication.in.nexrise.Dashboard.DashboardActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:263:9-95
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:263:19-92
+activity#nexrise.publication.in.nexrise.Attendence.LeaveApprovalActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:264:9-100
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:264:19-97
+activity#nexrise.publication.in.nexrise.Attendence.ApprovalDetailActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:265:9-101
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:265:19-98
+activity#nexrise.publication.in.nexrise.TransportManager.TeacherTransportActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:266:9-268:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:268:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:267:13-100
+activity#nexrise.publication.in.nexrise.ParentProfileActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:269:9-271:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:271:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:270:13-80
+activity#nexrise.publication.in.nexrise.ParentFeatures.HomeworkFeature.ParentHomeworkActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:272:9-274:77
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:274:13-74
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:273:13-112
+activity#nexrise.publication.in.nexrise.HomeworkFeature.HomeworkActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:275:9-277:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:277:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:276:13-91
+activity#nexrise.publication.in.nexrise.Gallery.AlbumsActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:278:9-280:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:280:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:279:13-81
+activity#nexrise.publication.in.nexrise.Gallery.ImagesActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:281:9-90
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:281:19-87
+activity#nexrise.publication.in.nexrise.EventsFeature.EventsFeatureActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:282:9-284:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:284:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:283:13-94
+activity#nexrise.publication.in.nexrise.ExamFeature.ExamActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:285:9-287:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:287:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:286:13-83
+activity#nexrise.publication.in.nexrise.ExamFeature.ExamDetailsActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:288:9-290:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:290:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:289:13-90
+activity#nexrise.publication.in.nexrise.ExamFeature.StudentReportTableActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:291:9-106
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:291:19-103
+activity#nexrise.publication.in.nexrise.Gallery.BaseImageActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:292:9-93
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:292:19-90
+activity#nexrise.publication.in.nexrise.Common.BaseActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:293:9-87
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:293:19-84
+activity#nexrise.publication.in.nexrise.Gallery.VideoPreviewActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:294:9-96
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:294:19-93
+activity#nexrise.publication.in.nexrise.HallOfFame.HallOfFameActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:295:9-297:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:297:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:296:13-88
+activity#nexrise.publication.in.nexrise.HallOfFame.HallOfFameDetailsActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:298:9-301:57
+	android:windowSoftInputMode
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:301:13-54
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:300:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:299:13-95
+activity#nexrise.publication.in.nexrise.HomeworkFeature.AdminHomeworkActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:302:9-304:86
+	android:configChanges
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:304:13-83
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:303:13-96
+activity#nexrise.publication.in.nexrise.ParentFeatures.ParentLogin.MultipleSchoolsActivity
+ADDED from E:\android\app\src\main\AndroidManifest.xml:305:9-127
+	android:name
+		ADDED from E:\android\app\src\main\AndroidManifest.xml:305:19-115
+uses-sdk
+INJECTED from E:\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:multidex:1.0.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:design:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-compat:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-fragment:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:appcompat-v7:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\AndroidManifest.xml:20:5-43
+MERGED from [uk.co.chrisjenx:calligraphy:2.1.0] E:\android\app\build\intermediates\exploded-aar\uk.co.chrisjenx\calligraphy\2.1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:cardview-v7:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.roomorama:caldroid:3.0.1] E:\android\app\build\intermediates\exploded-aar\com.roomorama\caldroid\3.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\10.2.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-ads:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\AndroidManifest.xml:22:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.2.1\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-clearcut:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-gass:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\10.2.1\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-v4-impl\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-appinvite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.2.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-cast-framework:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.2.1\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-cast:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:mediarouter-v7:24.0.0] E:\android\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:palette-v7:24.0.0] E:\android\app\build\intermediates\exploded-aar\com.android.support\palette-v7\24.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-config:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.2.1\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-awareness:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-awareness\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-location:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\10.2.1\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-places:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.2.1\AndroidManifest.xml:23:5-43
+MERGED from [com.google.firebase:firebase-crash:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-drive:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-auth:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-database-connection:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\10.2.1\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\10.2.1\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-messaging:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-storage:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\10.2.1\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage-common:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\10.2.1\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-fitness:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-games:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-gcm:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-appindexing:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-appindexing\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-identity:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-instantapps:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-instantapps\10.2.1\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-nearby:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\10.2.1\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-panorama:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-plus:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-vision:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\10.2.1\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-wallet:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\10.2.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-wearable:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\10.2.1\AndroidManifest.xml:17:5-43
+MERGED from [com.github.michaelye.easydialog:easydialog:1.4] E:\android\app\build\intermediates\exploded-aar\com.github.michaelye.easydialog\easydialog\1.4\AndroidManifest.xml:7:5-9:41
+MERGED from [com.jjoe64:graphview:4.2.1] E:\android\app\build\intermediates\exploded-aar\com.jjoe64\graphview\4.2.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.daimajia.slider:library:1.1.5] E:\android\app\build\intermediates\exploded-aar\com.daimajia.slider\library\1.1.5\AndroidManifest.xml:7:5-9:41
+MERGED from [dev.dworks.libs:astickyheader:0.1.0] E:\android\app\build\intermediates\exploded-aar\dev.dworks.libs\astickyheader\0.1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.davemorrissey.labs:subsampling-scale-image-view:3.1.3] E:\android\app\build\intermediates\exploded-aar\com.davemorrissey.labs\subsampling-scale-image-view\3.1.3\AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.johnkil.print:print:1.3.1] E:\android\app\build\intermediates\exploded-aar\com.github.johnkil.print\print\1.3.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] E:\android\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-core:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-core\10.2.1\AndroidManifest.xml:4:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:24.2.1] E:\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from E:\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-ads-lite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.2.1\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.2.1\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.2.1\AndroidManifest.xml:19:5-78
+MERGED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.2.1\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-nearby:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\10.2.1\AndroidManifest.xml:4:5-78
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:21:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\AndroidManifest.xml:20:22-76
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\AndroidManifest.xml:25:9-232
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\AndroidManifest.xml:25:72-181
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\AndroidManifest.xml:25:182-230
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\AndroidManifest.xml:25:19-71
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\AndroidManifest.xml:26:9-131
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\AndroidManifest.xml:26:92-129
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.2.1\AndroidManifest.xml:26:19-91
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.1\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.1\AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.1\AndroidManifest.xml:20:20-65
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.1\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.1\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.1\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.1\AndroidManifest.xml:19:19-85
+activity#com.google.android.gms.appinvite.PreviewActivity
+ADDED from [com.google.android.gms:play-services-appinvite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.2.1\AndroidManifest.xml:20:9-25:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.2.1\AndroidManifest.xml:20:51-74
+	android:theme
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.2.1\AndroidManifest.xml:20:75-121
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.2.1\AndroidManifest.xml:20:19-50
+intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.2.1\AndroidManifest.xml:21:13-24:29
+action#com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.2.1\AndroidManifest.xml:22:17-89
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.2.1\AndroidManifest.xml:22:25-87
+category#android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-appinvite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.2.1\AndroidManifest.xml:23:17-75
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.2.1\AndroidManifest.xml:23:27-73
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.1\AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.1\AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.1\AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.1\AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.1\AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.1\AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.1\AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.1\AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.1\AndroidManifest.xml:24:18-63
+receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
+ADDED from [com.google.android.gms:play-services-cast-framework:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.2.1\AndroidManifest.xml:5:9-99
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.2.1\AndroidManifest.xml:5:19-97
+service#com.google.android.gms.cast.framework.media.MediaNotificationService
+ADDED from [com.google.android.gms:play-services-cast-framework:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.2.1\AndroidManifest.xml:6:9-103
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.2.1\AndroidManifest.xml:6:18-101
+service#com.google.android.gms.cast.framework.ReconnectionService
+ADDED from [com.google.android.gms:play-services-cast-framework:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.2.1\AndroidManifest.xml:7:9-92
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.2.1\AndroidManifest.xml:7:18-90
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:22:5-81
+MERGED from [com.google.android.gms:play-services-gcm:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\10.2.1\AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\10.2.1\AndroidManifest.xml:20:5-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:22:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:30:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:31:13-34:29
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:33:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:33:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:39:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:39:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:39:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:43:9-47:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:43:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:43:18-82
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:44:13-46:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:44:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:45:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\AndroidManifest.xml:45:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.2.1\AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.2.1\AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.2.1\AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.2.1\AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.2.1\AndroidManifest.xml:6:79-143
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.2.1\AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:27:162-184
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.2.1\AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\AndroidManifest.xml:32:16-87
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.2.1\AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.2.1\AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.2.1\AndroidManifest.xml:23:18-87
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.2.1\AndroidManifest.xml:24:13-26:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.2.1\AndroidManifest.xml:24:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.2.1\AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.2.1\AndroidManifest.xml:25:25-75
+service#com.google.android.gms.tagmanager.TagManagerService
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:24:9-134
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:24:110-132
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:24:85-109
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:24:18-84
+activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:25:9-32:20
+	android:noHistory
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:25:94-118
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:25:19-93
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:26:13-31:29
+data
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:27:17-71
+	android:scheme
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:27:23-69
+action#android.intent.action.VIEW
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:28:17-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:28:25-66
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.1] E:\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.1\AndroidManifest.xml:30:27-75
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:28:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:28:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:31:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:34:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:37:5-91
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:37:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:38:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:38:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:39:5-93
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:39:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:42:5-73
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.10] E:\android\app\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.10\AndroidManifest.xml:42:22-70

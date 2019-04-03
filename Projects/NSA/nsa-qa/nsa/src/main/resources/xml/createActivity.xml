@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="createActivity">
+	<parameter name="activity_Name"
+		value="Second Anniversary"></parameter>
+	<parameter name="activity_description"
+		value="Second Anniversary"></parameter>
+	<parameter name="to_Date" value="06/12/2018"></parameter>
+	<parameter name="from_Date" value="06/13/2018"></parameter>
+	<parameter name="st_Time" value="10:00:AM"></parameter>
+	<parameter name="ed_Time" value="1:00:PM"></parameter>
+	<parameter name="type" value="Events"></parameter>
+	<parameter name="category" value="Automation Quality Check"></parameter>
+	<parameter name="venue_selection" value="School Play Ground"></parameter>
+	<test name="CreateActivity">
+		<classes>
+			<class name="com.nsa.testing.tests.CreateActivity" />
+		</classes>
+	</test>
+</suite> 

@@ -1,0 +1,212 @@
+
+<table class="_productTable">
+    <colgroup>
+        <col width="220px">
+        <col width="100px">
+        <col width="100px">
+        <col width="100px">
+        <col width="200px">
+    </colgroup>
+    <thead>
+    </thead>
+    <tbody id="productList">
+    <% if(model.length > 0) {
+    model[0].course.forEach(function(val) { %>
+    <tr class="productItem deleteRow _productRow" id="<%=val._id%>">
+        <td data-name="productName" class="text-left">
+            <div class="_animateSelectBox">
+                <div class="_newSelectListWrap">
+                    <a id="courseDd"
+                       class="current-selected courseDd"
+                       data-id="<%=val.course ? val.course._id: null%>"
+                       href="javascript:;"><%=val.course ? val.course.courseName : 'Select Course'%></a>
+                    </a>
+                </div>
+                <span class="tips " data-id="batch"></span>
+            </div>
+        </td>
+        <td data-name="productName" class="text-left">
+            <div class="_animateInputBox">
+                <input type="number"
+                       name="priceListName"
+                       class="_animate priceListName"
+                       id="priceListName"
+                       required
+                       autofocus
+                       value="<%=val.centerCourseFees%>"
+                       maxlength="32"/>
+                <label class="_animate">Course Fees</label>
+            </div>
+        </td>
+        <% if(val.centerCourseStatus == true )  {%>
+        <td data-name="productName" class="text-left">
+            <div class="container">
+                <div class=" _forCheckBox" style="top: 7px;position: relative;">
+                    <label class="inputBox _newSelectListWrap">
+                        <label for="active">Active</label>
+                        <label class="_animatedCheckbox">
+                            <input  data-id="salesPurchases_isCustomer"
+                                    class="checkbox shippingRadio active" checked
+                                    value='1' type="checkbox"/>
+                            <span style="height: 17px;"></span>
+                        </label>
+                    </label>
+                </div>
+            </div>
+        </td>
+        <% }%>
+        <% if(val.centerCourseStatus == false )  {%>
+        <td data-name="productName" class="text-left">
+            <div class="container">
+                <div class=" _forCheckBox" style="top: 7px;position: relative;">
+                    <label class="inputBox _newSelectListWrap">
+                        <label for="active">Active</label>
+                        <label class="_animatedCheckbox">
+                            <input  data-id="salesPurchases_isCustomer"
+                                    class="checkbox shippingRadio active"
+                                    value='0' type="checkbox"/>
+                            <span style="height: 17px;"></span>
+                        </label>
+                    </label>
+                </div>
+            </div>
+        </td>
+        <% }%>
+        <% if(val.isDiscountApplicable == true )  {%>
+        <td data-name="productName" class="text-left">
+            <div class=" _forCheckBox" style="top: 7px;position: relative;">
+                <label class="inputBox _newSelectListWrap">
+                    <label for="discount">Discount</label>
+                    <label class="_animatedCheckbox">
+                        <input  data-id="salesPurchases_isCustomer"
+                                class="checkbox shippingRadio  checkVakue defaultShipAdress" value="1" checked
+                                value='true' type="checkbox"/>
+                        <span style="height: 17px;"></span>
+                    </label>
+                </label>
+            </div>
+        </td>
+        <td>
+            <div class="_formBlock shippingAddress">
+                <div class="canReadAndWrite row">
+                    <div class=" col m-10" style="right: 39px;position: relative;top: 2px;">
+                        <% if(val.discountType == 'flat' )  {%>
+                        <select  class="createDiscountOrNot" >
+                            <option value="flat" selected>Flat</option>
+                            <option value="percentage" >Percentage</option>
+                        </select>
+                        <% }%>
+                        <% if(val.discountType == 'percentage' )  {%>
+                        <select class="createDiscountOrNot" >
+                            <option value="flat">Flat</option>
+                            <option value="percentage" selected>Percentage</option>
+                        </select>
+                        <% }%>
+                    </div>
+                    <div class=" col m-5" style="left: 110px;bottom: 24px;">
+                        <div class="_animateInputBox">
+                            <input type="number"
+                                   name="discountValue"
+                                   class="_animate discountValue"
+                                   id="discountValue"
+                                   required
+                                   autofocus
+                                   value="<%=val.discountValue%>"
+                                   maxlength="32"/>
+                            <label class="_animate">Discount Value</label>
+                        </div>
+                    </div>
+                    <div class=" col m-7" style="left: 110px;bottom: 24px;">
+                        <div class="_animateInputBox _withInfo discPriceHide" id="discPriceHide">
+                            <input type="text"
+                                   name="discountPrice"
+                                   class="_animate discountPrice"
+                                   id="discountPrice"
+                                   required
+                                   autofocus
+                                   readonly="readonly"
+                                   value="<%=val.actualFees%>"
+                                   maxlength="32"/>
+                            <span class="" data-id="sss"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+        <% }%>
+        <% if(val.isDiscountApplicable == false )  {%>
+        <td data-name="productName" class="text-left">
+            <div class=" _forCheckBox" style="top: 7px;position: relative;">
+                <label class="inputBox _newSelectListWrap">
+                    <label for="discount">Discount</label>
+                    <label class="_animatedCheckbox">
+                        <input id="defaultShipAdress" data-id="salesPurchases_isCustomer"
+                               class="checkbox shippingRadio  checkVakue defaultShipAdress"
+                               value='false'  type="checkbox"/>
+                        <span style="height: 17px;"></span>
+                    </label>
+                </label>
+            </div>
+        </td>
+        <td>
+            <div class="_formBlock shippingAddress hidden">
+                <div class="canReadAndWrite row">
+                    <div class=" col m-10" style="right: 39px;position: relative;top: 2px;">
+                        <% if(val.discountType == 'flat' )  {%>
+                        <select  class="createDiscountOrNot" >
+                            <option value="flat" selected>Flat</option>
+                            <option value="percentage" >Percentage</option>
+                        </select>
+                        <% }%>
+                        <% if(val.discountType == 'percentage' )  {%>
+                        <select class="createDiscountOrNot" >
+                            <option value="flat">Flat</option>
+                            <option value="percentage" selected>Percentage</option>
+                        </select>
+                        <% }%>
+                    </div>
+
+                    <div class=" col m-5"  style="left: 110px;bottom: 24px;">
+                        <div class="_animateInputBox">
+                            <input type="text"
+                                   name="discountValue"
+                                   class="_animate discountValue"
+                                   id="discountValue"
+                                   required
+                                   autofocus
+                                   value="<%=val.discountValue%>"
+                                   maxlength="32"/>
+                            <label class="_animate">Discount Value</label>
+                        </div>
+                    </div>
+                    <div class=" col m-7" style="left: 110px;bottom: 24px;">
+                        <div class="_animateInputBox _withInfo discPriceHide" id="discPriceHide">
+                            <input type="text"
+                                   name="discountPrice"
+                                   class="_animate discountPrice"
+                                   id="discountPrice"
+                                   required
+                                   autofocus
+                                   readonly="readonly"
+                                   value="<%=val.actualFees%>"
+                                   maxlength="32"/>
+                            <span class="" data-id="sss"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+        <% }%>
+        <td class="deleteCell ">
+            <span title="Delete" class="icon-close5 removeJob"></span>
+        </td>
+    </tr>
+    <% })
+    }%>
+    </tbody>
+    <tr class="" id="newItem">
+        <td class="addProductItem">
+            <a href="javascript:;" class="btn blue slim" style="width: 170px">Add Center Course Fees</a>
+        </td>
+    </tr>
+</table>

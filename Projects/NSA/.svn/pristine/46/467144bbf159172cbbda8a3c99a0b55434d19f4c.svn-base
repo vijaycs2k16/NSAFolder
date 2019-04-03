@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_contextual_action_bar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\menu\\menu_contextual_action_bar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\actionbar_with_send_button.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\menu\\actionbar_with_send_button.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\actionbar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\menu\\actionbar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\upload_images.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\menu\\upload_images.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\add_search_tick_actionbar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\menu\\add_search_tick_actionbar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\navigation_drawer.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\menu\\navigation_drawer.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\add_homework_actionbar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\menu\\add_homework_actionbar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\search_notification_actionbar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\menu\\search_notification_actionbar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\video_conferencing.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\menu\\video_conferencing.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\download_actionbar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\menu\\download_actionbar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\delete.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\menu\\delete.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\left_column_drawer.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\menu\\left_column_drawer.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_navigation_drawer_drawer.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\menu\\activity_navigation_drawer_drawer.xml"
+    }
+]

@@ -1,0 +1,4 @@
+<b>St.Vincent's ICSE School</b>,</br>Perumpuzha P.O.,</br> Keralapuram,</br> Kollam - 691504</br> Ph : 0474 2547860</br>
+
+lat: 8.946112
+lang: 76.661701

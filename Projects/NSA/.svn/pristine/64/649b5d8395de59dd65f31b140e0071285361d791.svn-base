@@ -1,0 +1,1426 @@
+[
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_details_page.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_details_page.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\overview_list_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\overview_list_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_fee_management.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_fee_management.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_leave_status.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_leave_status.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_upload.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_upload.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_homework.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_homework.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_our_school_location.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_our_school_location.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_playback_control.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\layout\\mr_playback_control.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_hall_of_fame.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_hall_of_fame.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_drawer_listview_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_drawer_listview_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gallery_grid_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\gallery_grid_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_parent_homework.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_parent_homework.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_notification_list_view.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_notification_list_view.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_hall_of_fame_details.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_hall_of_fame_details.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_holidays_listview.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_holidays_listview.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tab_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\tab_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_creating_exam.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_creating_exam.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_albums.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_albums.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_student_report_table_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_student_report_table_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_dialog.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.github.michaelye.easydialog\\easydialog\\1.4\\res\\layout\\layout_dialog.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_class_today_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_class_today_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\video_grid_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\video_grid_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_settings.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_time_table.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_time_table.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_exam_subject_list_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_exam_subject_list_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_parent_attendance.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_parent_attendance.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_attendance_fragment.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_attendance_fragment.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_status_list_item.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_status_list_item.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_student_report_table.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_student_report_table.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\parent_login_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\parent_login_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_chat.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_chat.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_expanded_controller_activity.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\layout\\cast_expanded_controller_activity.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview_row.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\listview_row.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_class_tabbed.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_class_tabbed.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_log.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\notification_log.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\spinner_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_drawer.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_drawer.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_navigation_drawer.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_navigation_drawer.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fees_details.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_fees_details.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_tracks_chooser_dialog_row_layout.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\layout\\cast_tracks_chooser_dialog_row_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_videos_grid_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_videos_grid_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_event.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_event.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_navigation_drawer.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\nav_header_navigation_drawer.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_individual_student_comment_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_individual_student_comment_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash_screen.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_log.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\item_log.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_teacher_exam_list_view.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_teacher_exam_list_view.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dashboard.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\date_grid_fragment.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.roomorama\\caldroid\\3.0.1\\res\\layout\\date_grid_fragment.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_mini_controller.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\layout\\cast_mini_controller.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\floating_actionbar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\floating_actionbar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_teacher_transport.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_teacher_transport.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\description_show_dialog.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\description_show_dialog.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_class.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_class.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_teacher_exam_list.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_teacher_exam_list.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_attendance_history_list_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_attendance_history_list_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_teacher_tomorrow_time_table.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_teacher_tomorrow_time_table.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_status_attendance.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_status_attendance.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_parent_details.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_parent_details.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_journals.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_journals.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_weekly_time_table.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_weekly_time_table.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_attendence.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_attendence.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_contact_us.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_contact_us.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_journal_view.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_journal_view.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_tracks_chooser_dialog_layout.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\layout\\cast_tracks_chooser_dialog_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\todaytimetable.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\todaytimetable.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_progress_card_list_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_progress_card_list_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_teacher_exam.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_teacher_exam.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_weekly_teachee_time_table.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_weekly_teachee_time_table.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_student_comment.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_student_comment.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_overall_report_table.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_overall_report_table.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_teacher_class_tabbed.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_teacher_class_tabbed.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_feedback.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_feedback.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\myclasses_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\myclasses_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_notification_details.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_notification_details.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fee_defaulters.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_fee_defaulters.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_exam_details.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_exam_details.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_overall_attendance.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_overall_attendance.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_video_select.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_video_select.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\overview_fragment.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\overview_fragment.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_past_events_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_past_events_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_details.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_details.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\completed_button.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\completed_button.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_notifications_details.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_notifications_details.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_class.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_class.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_overallgraph.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_overallgraph.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_home_work_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_add_home_work_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_selected_images.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_selected_images.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_call.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_call.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_progress.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\10.2.1\\res\\layout\\place_autocomplete_progress.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_parent_homework_list_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_parent_homework_list_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gallery_enlarge_image.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\gallery_enlarge_image.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_teaxcher_exam.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_teaxcher_exam.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_full_image.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_full_image.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_attendance_overall_list_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_attendance_overall_list_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\exam_details_actionbar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\exam_details_actionbar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\progress_bar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\progress_bar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fee_management.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_fee_management.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_attachment_preview.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_attachment_preview.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_event.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_event.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\hall_of_fame_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\hall_of_fame_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_create_notification.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_create_notification.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_hall_of_fame.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_hall_of_fame.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_profile_update.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_profile_update.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_event.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_add_event.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_portions.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_portions.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\calendar_view.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.roomorama\\caldroid\\3.0.1\\res\\layout\\calendar_view.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_activity_exam.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_activity_exam.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_progress_card_view.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_progress_card_view.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_events_feature_list.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_events_feature_list.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_attendees_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_attendees_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_intro_overlay.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\layout\\cast_intro_overlay.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gallery_view.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_gallery_view.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_leave_history_alert.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_leave_history_alert.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\total_marks.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\total_marks.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_status_list_group.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_status_list_group.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\popup_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\popup_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_fee_history.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_fee_history.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\repeat_alert_dialog.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\repeat_alert_dialog.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_navigation_drawer.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\content_navigation_drawer.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_attendance_alert_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_attendance_alert_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\add_homework_actionbar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\add_homework_actionbar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_teacher_time_table.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_teacher_time_table.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_parent_comment_fragment.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_parent_comment_fragment.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\normal_date_cell.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.roomorama\\caldroid\\3.0.1\\res\\layout\\normal_date_cell.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_class_today.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_class_today.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\exam_list_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\exam_list_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_overall_report_table_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_overall_report_table_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\student_mark_list.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\student_mark_list.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_parent_login.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_parent_login.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_selectable_header.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\layout_selectable_header.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_bar_navigation_drawer.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\app_bar_navigation_drawer.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\render_type_default.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.daimajia.slider\\library\\1.1.5\\res\\layout\\render_type_default.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_details_listview_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_details_listview_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_video_select_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_video_select_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_exam_details.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_exam_details.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_progress_results.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_progress_results.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fees_details_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_fees_details_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\exam_details_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\exam_details_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_exam.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_exam.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\otp_fragment.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\otp_fragment.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_homework_type.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_homework_type.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grid_view_item_album_select.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\grid_view_item_album_select.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_time_table_spinner_classname.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_time_table_spinner_classname.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_student_comment_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_student_comment_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\calendar_progressbar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\calendar_progressbar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_past_events.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_past_events.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gallery_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\gallery_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_time_table_spinner.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_time_table_spinner.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_event_details.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_event_details.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_create_exam.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_create_exam.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\enlarge_image_alert_dialog.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\enlarge_image_alert_dialog.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_profile_list_view_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_profile_list_view_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_selectable_item.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\layout_selectable_item.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_today_time_table.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_today_time_table.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_selected_images_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_selected_images_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_bar_graph.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_bar_graph.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_examplein.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_examplein.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_select_option.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_select_option.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\calendar_fragment.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\calendar_fragment.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_due_time.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_due_time.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_events_feature_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_events_feature_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\land_login.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\land_login.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\indicator_layout.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.daimajia.slider\\library\\1.1.5\\res\\layout\\indicator_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_parent_time_table.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_parent_time_table.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_videos.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_videos.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\class_fragment_floating_actionbar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\class_fragment_floating_actionbar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_progress_results_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_progress_results_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\weekly_listview.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\weekly_listview.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_photo.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_photo.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_chooser_list_item.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\layout\\mr_chooser_list_item.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_teacher_today_time_table.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_teacher_today_time_table.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_controller_volume_item.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\layout\\mr_controller_volume_item.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_password_change.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_password_change.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_attachment.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_attachment.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\square_date_cell.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.roomorama\\caldroid\\3.0.1\\res\\layout\\square_date_cell.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grid_view_item_image_select.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\grid_view_item_image_select.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_maps.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_maps.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_badge.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\notification_badge.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\render_type_text.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.daimajia.slider\\library\\1.1.5\\res\\layout\\render_type_text.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_help_text.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\layout\\cast_help_text.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_fee_management_parent.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_fee_management_parent.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_android_mobile_push_app.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_android_mobile_push_app.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_parent_transport.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_parent_transport.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_exam_schedule.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_exam_schedule.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_leave_history.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_leave_history.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_video_select.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_video_select.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_attendance_record.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_attendance_record.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_student_details2.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_student_details2.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_taxonomy.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_taxonomy.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pager_gallery_item.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\pager_gallery_item.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_gallery_grid.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_gallery_grid.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_video_preview.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_video_preview.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_parent_details.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_parent_details.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_attendance_status_list_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_attendance_status_list_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_view_notes_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_view_notes_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\leave_approval_list.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\leave_approval_list.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_album_select.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_album_select.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_parent_homework.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_parent_homework.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_due_date.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_due_date.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\class_activity_floating_actionbar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\class_activity_floating_actionbar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_profile.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_holidays_list.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_holidays_list.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\attendees_list_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\attendees_list_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_attendance_leave_list_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_attendance_leave_list_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_homework.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_homework.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_hud.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_hud.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gallery.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_gallery.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_overall_report_graph.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_overall_report_graph.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_parent_profile.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_parent_profile.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_pending_fees_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_pending_fees_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_overall_report.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_overall_report.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_chooser_dialog.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\layout\\mr_chooser_dialog.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_student_report_table.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_student_report_table.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_attendance_histoty.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_attendance_histoty.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_leave_approval.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_leave_approval.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_controller_material_dialog_b.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\layout\\mr_controller_material_dialog_b.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_home_work.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_add_home_work.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_progress_report.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_progress_report.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_custom_gallery_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_custom_gallery_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about_us.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_about_us.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\checkbox_dialog.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\checkbox_dialog.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_progress_report_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_progress_report_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_view_notes_calendar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_view_notes_calendar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_fragment.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\10.2.1\\res\\layout\\place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_powered_by_google.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\10.2.1\\res\\layout\\place_autocomplete_item_powered_by_google.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_volume_control.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\layout\\mr_volume_control.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_tomorrow_time_table.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_tomorrow_time_table.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_action.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\item_action.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_homework_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_homework_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\image_with_text.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\image_with_text.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_create_video.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_create_video.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\attachment_footer.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\attachment_footer.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_duration.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_duration.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_location.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_location.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tooltip_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\tooltip_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\button_layout_footer.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\button_layout_footer.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_exam_subject.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_exam_subject.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_fee.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_fee.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_dashboard.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_video_select_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_video_select_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_time_table_spinner_sectionnames.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_time_table_spinner_sectionnames.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_webview.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_webview.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_album_select.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_album_select.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_apply_leave.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_apply_leave.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\weekday_textview.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.roomorama\\caldroid\\3.0.1\\res\\layout\\weekday_textview.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_past_event_detail.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_past_event_detail.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\student_total.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\student_total.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_teacher_exam_fragment_list.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_teacher_exam_fragment_list.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\teachers_timetable.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\teachers_timetable.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_empty_fragment1.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_empty_fragment1.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_class_week.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_class_week.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_subject_home_work.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_subject_home_work.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\timetablecontent.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\timetablecontent.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_class_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_class_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_create_notification.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_create_notification.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\duration_alert_dialog.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\duration_alert_dialog.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_pending_fees.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_pending_fees.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_status.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_status.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_images.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_images.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_overall_attendance.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_overall_attendance.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_profile.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\content_profile.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_comment_page_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_comment_page_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_connect.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_connect.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gallery.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\gallery.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_teacher_transport_map.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_teacher_transport_map.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\add_comment.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\add_comment.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\common_listview_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\common_listview_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_prediction.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\10.2.1\\res\\layout\\place_autocomplete_item_prediction.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fee_defaulters_details.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_fee_defaulters_details.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\feenotify_header_drawer.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\feenotify_header_drawer.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gallery_grid_item.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\gallery_grid_item.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\city_bank_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\city_bank_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\approval_history_list.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\approval_history_list.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\approve_otp_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\approve_otp_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_approval_detail.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_approval_detail.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\slider_layout.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.daimajia.slider\\library\\1.1.5\\res\\layout\\slider_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gallery_header.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\gallery_header.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_notification.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_notification.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_comments_page.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_comments_page.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_student_details.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_student_details.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\add_homework_listview_footer.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\add_homework_listview_footer.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_holiday_list_view.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_holiday_list_view.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_profile_pic.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_profile_pic.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\enter_description_dialog.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\enter_description_dialog.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_events_listview.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_events_listview.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_view_notes_gridlayout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_view_notes_gridlayout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_image_select.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_image_select.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_grade.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_grade.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pay_button.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\pay_button.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_attendees.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_attendees.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_create_album.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_create_album.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\route_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\route_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_attendance_leave_history.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_attendance_leave_history.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_attendees_list.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_attendees_list.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_week_list_view.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_week_list_view.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\monthly_listview.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\monthly_listview.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_icon_node.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\layout_icon_node.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_notification_details.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\content_notification_details.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_view_notes.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_view_notes.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_events_feature.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_events_feature.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_parent_comments_page.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\fragment_parent_comments_page.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\priority_alert_dialog.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\priority_alert_dialog.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_selectoption_listview.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\layout\\activity_selectoption_listview.xml"
+    }
+]

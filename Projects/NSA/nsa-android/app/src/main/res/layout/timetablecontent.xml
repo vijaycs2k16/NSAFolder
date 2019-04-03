@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="120dp">
+    <TextView
+        android:id="@+id/timing"
+        android:text="Timings"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_width="@dimen/width100"
+        android:layout_height="@dimen/height65" />
+    <TextView
+        android:text="subjects"
+        android:gravity="center"
+        android:id="@+id/subjects"
+        android:layout_toRightOf="@+id/timing"
+        android:layout_alignRight="@+id/madam"
+        android:layout_alignEnd="@+id/madam"
+        android:layout_width="@dimen/width100"
+        android:layout_height="@dimen/height35" />
+
+    <TextView
+        android:text="teachers"
+        android:gravity="center"
+        android:id="@+id/madam"
+        android:layout_height="@dimen/height35"
+        android:layout_width="@dimen/width100"
+        android:layout_alignBottom="@+id/timing"
+        android:layout_toRightOf="@+id/timing"
+        android:layout_toEndOf="@+id/timing" />
+</RelativeLayout>

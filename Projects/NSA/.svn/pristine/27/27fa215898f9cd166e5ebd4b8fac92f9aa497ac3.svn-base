@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin2"
+    android:padding="@dimen/padding10">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/headings"
+        android:textStyle="bold"
+        android:id="@+id/todayDate"
+        android:text="hdhh"/>
+    <include layout="@layout/progress_bar"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_table_style"
+        >
+
+        <TableRow
+            android:minHeight="@dimen/minHeight50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/table_parent"
+            android:weightSum="5"
+            >
+
+        <TextView
+            android:background="@drawable/border_overlay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:text="TIME"
+            android:textStyle="bold"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"/>
+
+        <TextView
+            android:background="@drawable/border_overlay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1"
+            android:padding="@dimen/padding1"
+            android:gravity="center"
+            android:text="SUBJECT"/>
+
+        <TextView
+            android:background="@drawable/border_overlay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/timetable_col_3"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="TEACHER"/>
+
+        <TextView
+            android:background="@drawable/border_overlay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/view_notes_parent"
+            android:text="VIEW NOTES"/>
+
+        </TableRow>
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+         >
+    </ListView>
+    </TableLayout>
+
+</LinearLayout>

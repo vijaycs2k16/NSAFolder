@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/progress_report_linear1"
+    android:background="@color/backgroundColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/common_text_size"
+        android:textAllCaps="true"
+        android:paddingLeft="@dimen/padding10"
+        android:paddingTop="@dimen/padding10"
+        android:paddingBottom="@dimen/padding10"
+        android:visibility="gone"
+        android:id="@+id/events_progress_report_tag"/>
+
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/svgLayoutIconColor"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress_report_linear2"
+                android:background="@color/layoutBackground"
+                android:weightSum="2">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding15"
+                    android:id="@+id/progress_report_name"
+                    android:paddingTop="@dimen/padding5"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:paddingBottom="@dimen/padding5"
+                    android:textSize="@dimen/common_text_size"
+                    android:layout_weight="1.2" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin20"
+                    android:paddingRight="@dimen/margin10"
+                    android:id="@+id/progress_report_duration"
+                    android:paddingTop="@dimen/margin5"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:paddingBottom="@dimen/margin5"
+                    android:textSize="@dimen/common_text_size"
+                    android:layout_weight="0.8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/layoutBackground">
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding15"
+                    android:paddingTop="@dimen/padding5"
+                    android:paddingBottom="@dimen/padding15"
+                    android:layout_weight="1.2"
+                    android:textSize="@dimen/common_text_size"
+                    android:id="@+id/progress_report_description" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin20"
+                    android:paddingTop="@dimen/margin5"
+                    android:paddingRight="@dimen/margin10"
+                    android:paddingBottom="@dimen/margin5"
+                    android:layout_weight="0.8"
+                    android:visibility="gone"
+                    android:textSize="@dimen/common_text_size"
+                    android:id="@+id/progress_report_duration2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

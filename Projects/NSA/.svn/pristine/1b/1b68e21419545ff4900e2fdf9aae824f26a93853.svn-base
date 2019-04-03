@@ -1,0 +1,29 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h6 class="panel-title"><span class="text-semibold text-uppercase"><i
+                class="icon-clipboard position-left"></i>Report Card</span></h6>
+        <div class="heading-elements">
+            <input  type="button" value="Report card" data-size="50%" data-title="Report Card" data-toggle="from-right" data-id="#addReportCard" class="btn btn-sm btn-primary" (click)="addReportCard($event)"/>
+            <input hidden id="deleteButton" (click)="request_delete($event)" type="button" style="display: none;">
+            <input hidden id="EditButton" (click)="editReportCard($event)" data-title="Edit Report card" data-size="50%" data-id="#addReportCard" type="button" style="display: none;">
+        </div>
+    </div>
+
+    <div class="panel-body">
+        <table class="table datatable-report-card">
+            <thead>
+            <tr>
+                <th>Class - Section</th>
+                <th>Examination</th>
+                <th>Updated By</th>
+                <th>Status</th>
+                <th align="center" data-priority="3">Logs</th>
+                <th data-priority="2">Publish</th>
+                <th data-priority="1">Action</th>
+            </tr>
+            </thead>
+        </table>
+
+    </div>
+</div>
+<add-report-card></add-report-card>

@@ -1,0 +1,17 @@
+PUT http://localhost:9200/users/student/_mapping
+{
+  "properties" : {
+    "roll_no" : {
+      "type": "string"
+    },
+     "adharcard_no" : { 
+     	"type": "string"
+     },
+     "saral_id": { 
+     	"type": "string" 
+    },
+     "gr_no": { 
+     	"type": "string" 
+    }
+  }
+}

@@ -1,0 +1,44 @@
+<div class="form-holder _newForm">
+    <form method="post" action="" id="invoiceForm" style="height: auto;">
+        <h4 class="_dialogMainTitle">Edit Term Topics</h4>
+        <div >
+            <% var title = model.title.titleName + ' - ' + model.classDetail.className + ' - ' + model.subject.subjectName%>
+            <div class="_formWrap _enlargedItemMargin">
+                <div class="_formBlock _equal ">
+                    <div class="_animateSelectBox _withInfo select-disabled">
+                        <span class="_selectTitle" style="font-size: 100%">Title</span>
+                        <div class="_newSelectListWrap">
+                            <a id="title"
+                               name="title"
+                               class="current-selected"
+                               data-id="<%= title ? title._id : 'null'%>"
+                               href="javascript:;"><%= title ? title : 'Select'%></a>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="_animateSelectBox _withInfo select-disabled">
+                        <span class="_selectTitle" style="font-size: 100%">Term</span>
+                        <div class="_newSelectListWrap">
+                            <a id="term"
+                               name="term"
+                               class="current-selected"
+                               data-id="<%=model._id? model._id : 'null'%>"
+                               href="javascript:;"><%=model.term_name? model.term_name : 'Select'%></a>
+                        </div>
+                    </div>
+                        <div class="_animateSelectBox _withInfo ">
+                            <span class="_variantsLabel" style="color: #7eadcc">Topics</span><br/>
+                            <div id="topicBlocks" class="_variantsBlock multi-select" style=" z-index: 4!important; width: 527px; bottom: 0px;left:10px">
+                                <div class="_checkCategoriesWrap">
+                                    <ul id="checkedTopics" class="_checkCategories">
+                                    </ul>
+                                    <span id="showBtn1" class="_arrow"></span>
+                                </div>
+                                <ul id="topicCategories" class="_categoriesList"></ul>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="login">
+	<parameter name="feStrctname" value="Student Fee"></parameter>
+	<parameter name="term" value="Term 1"></parameter>
+	<parameter name="selectFeetype1" value="SPORTS FEE"></parameter>
+	<parameter name="selectFeetype2" value="TUITION FEE"></parameter>
+	<parameter name="selectFeetype3" value="BOOK FEE"></parameter>
+	<parameter name="status" value="Active"></parameter>
+	<parameter name="feeStrtdesc" value="This is testing purpose"></parameter>
+	<test name="LoginTest">
+		<classes>
+		   <class name="com.nsa.testing.tests.FeeStructureTest" /> 
+		</classes>
+	</test>
+</suite> 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Galery">
+	<parameter name="galleryName" value="Sports Day"></parameter>
+	<parameter name="albumDesc" value="This is Sports Day collection"></parameter>
+	<test name="Galery">
+		<classes>
+		   <class name="com.nsa.testing.tests.DashboardPhotosTest" /> 
+		</classes>
+	</test>
+</suite> 

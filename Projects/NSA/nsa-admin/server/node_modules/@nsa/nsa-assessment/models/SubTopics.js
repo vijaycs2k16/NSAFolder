@@ -1,0 +1,24 @@
+/**
+ * Created by Sathya on 10/1/2018.
+ */
+
+module.exports = (function () {
+    var mongoose = require('mongoose');
+    var ObjectId = mongoose.Schema.Types.ObjectId;
+
+    var subTopicSchema = new mongoose.Schema({
+        classDetail     : {type: ObjectId, ref: "ClassDetails", default: null},
+        subject         : {type: ObjectId, ref: "Subject", default: null},
+        topic           : {type: ObjectId, ref: "SubjectTopics", default: null},
+        subtopic        : [{name: {type: String}}],
+        title           : {type: ObjectId, ref: 'title'}
+    }, {collection: 'SubTopics'});
+
+    mongoose.model('SubTopics', subTopicSchema);
+
+    if (!mongoose.Schemas) {
+        mongoose.Schemas = {};
+    }
+
+    mongoose.Schemas.SubTopics = subTopicSchema;
+}) ();

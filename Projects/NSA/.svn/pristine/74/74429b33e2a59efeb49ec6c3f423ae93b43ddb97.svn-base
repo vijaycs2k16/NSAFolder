@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/cardElevation1"
+    android:layout_marginLeft="@dimen/margin5"
+    android:layout_marginRight="@dimen/margin5"
+    android:layout_marginTop="@dimen/margin5"
+    app:cardUseCompatPadding="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/layoutBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/student1"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/width3"
+            android:layout_height="match_parent"
+            android:background="@color/svgLayoutIconColor"
+            />
+        <ImageView
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_time_table"
+            android:tint="@color/svgLayoutIconColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/message_to"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height50"
+            android:layout_weight="2.0"
+            android:gravity="center_vertical"
+            android:text="Arnab Mukerjee \n Class 8 A "
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/common_text_size" />
+
+        <RelativeLayout
+            android:layout_weight="0.1"
+            android:id="@+id/notification_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:background="@drawable/badge">
+            <TextView
+                android:text="2"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/small_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/notification_count" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_weight="0.4"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_arrow_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

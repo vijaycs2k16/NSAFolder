@@ -1,0 +1,1 @@
+alter table nsa.school_grading_system add application text;

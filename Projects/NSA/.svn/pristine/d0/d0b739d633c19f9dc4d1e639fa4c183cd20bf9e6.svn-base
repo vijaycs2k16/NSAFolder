@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "283353331054",
+    "firebase_url": "https://sea-primary.firebaseio.com",
+    "project_id": "sea-primary",
+    "storage_bucket": "sea-primary.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283353331054:android:f9ea2b3d29044815",
+        "android_client_info": {
+          "package_name": "seaprimary.management.in.bangalore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283353331054-np2m2dg2q38tnnepqtoecn9dfaj95rc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWRO0Tmr-wJlJt5quqQ0wFjk_HYK-rrVM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

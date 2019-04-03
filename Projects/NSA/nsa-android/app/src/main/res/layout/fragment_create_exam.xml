@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nexrise.publication.in.nexrise.CreateExam2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="@dimen/padding10"
+                android:id="@+id/setdate"
+                android:layout_width="@dimen/width150"
+                android:layout_height="@dimen/height50"
+                android:text="Date"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height50">
+    <TextView
+        android:padding="@dimen/padding10"
+        android:id="@+id/settime"
+        android:layout_width="@dimen/width150"
+        android:layout_height="@dimen/height50"
+        android:text="Time"
+        android:clickable="true"
+        android:onClick="serve"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_weight="1" />
+
+</LinearLayout>
+
+
+        <TextView
+            android:padding="@dimen/padding10"
+            android:id="@+id/setmarks"
+            android:layout_width="@dimen/width150"
+            android:layout_height="@dimen/height50"
+            android:text="Marks"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+        <CheckBox
+            android:text="Notify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox2"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,92 @@
+<div class="_acountingTableWrap"><br>
+<div class="_formBlock _equal">
+    <div class="_animateSelectBox _withInfo">
+        <span class="_selectTitle">Class</span>
+        <div class="_newSelectListWrap">
+            <a id="subClass"
+               name="subClass"
+               class="current-selected"
+               data-id="<%=classId ? classId : ''%>"
+               href="javascript:;"><%=className ? className : 'Select'%></a>
+        </div>
+    </div>
+    <div class="_acountingTableWrap"><br>
+        <div class="_formBlock _equal">
+            <div class="_animateSelectBox _withInfo" style="left: 290px;bottom: 63px;">
+                <span class="_selectTitle">Title</span>
+                <div class="_newSelectListWrap">
+                        <a id="title"
+                       name="title"
+                       class="current-selected"
+                       data-id="<%=titleId ? titleId : ''%>"
+                       href="javascript:;"><%=titleName ? titleName : 'Select Title'%></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="_acountingTableWrap"><br>
+        <div class="_formBlock _equal">
+            <div class="_animateSelectBox _withInfo" style="left: 600px;bottom: 126px;">
+                <span class="_selectTitle">Subject</span>
+                <div class="_newSelectListWrap">
+                    <a id="subject"
+                       name="subject"
+                       class="current-selected"
+                        data-id="<%=subjectId ? subjectId : ''%>"
+                        href="javascript:;"><%=subName ? subName : 'Select Subject'%></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <%if(!isHide) { %>
+        <div >
+            <span style="margin-left: 35px">
+                <b>Topics Name</b>
+            </span>
+            <span style="margin-left: 165px">
+                <b>SubTopics Name</b>
+            </span>
+        </div>
+    <%}%>
+    <div class="inner-holder">
+        <div class="workflow-list-wrapper left">
+            <ul class="workflow-list" style="font-size: 11px;width:206px">
+                <% workflowsWIds.forEach(function(wId, index){
+                %>
+                <li data-id="<%=wId.topicId%>" data-sub="<%=wId.subtopics ? wId.subtopics._id : ''%>" class=" <%= index == 0 ? 'active': ''%>">
+                    <a href="javascript:;"
+                       data-id="<%=wId.topicId%>"
+
+                       title="<%=wId.topicName%>"
+                       class="workflow"><%=wId.topicName%></a>
+                </li>
+                <% }) %>
+            </ul>
+        </div>
+        <div id="workflowAccord" class="left">
+            <div id="workflowNames"></div>
+            <div id="details" class="workflow-details">
+                <!-- <div class="workflow-sub-list-wrapper left">
+                    <ul class="workflow-sub-list">
+                    </ul>
+                </div> -->
+                <div id="workflowSubAccord" class="left">
+                    <!--  <div id="workflowSubNames">
+                        <div class="cathegory">
+                          <a href="javascript:;">Element 1</a>
+                        </div>
+                      </div>-->
+                    <div id="sub-details" class="workflow-details">
+                        <div class="listWorkflow" style="font-size: 11px;">
+                            <div id="workflows" style="white-space: nowrap;"></div>
+                            <div id="addedStatus"></div>
+                            <button class="btn blue icon-plus" id="addNewStatus"><span>New</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>

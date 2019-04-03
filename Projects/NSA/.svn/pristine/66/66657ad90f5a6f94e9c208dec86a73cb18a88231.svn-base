@@ -1,0 +1,118 @@
+var nsaCassandra = require('@nsa/nsa-cassandra'),
+    events = require('@nsa/nsa-commons').events,
+    BaseError = require('@nsa/nsa-commons').BaseError,
+    es = require('../../services/search/elasticsearch/elasticsearch.service'),
+    async = require('async'),
+    taxanomyUtils = require('@nsa/nsa-commons').taxanomyUtils,
+    message = require('@nsa/nsa-commons').messages,
+    responseBuilder = require('@nsa/nsa-commons').responseBuilder,
+    constant = require('@nsa/nsa-commons').constants,
+    groups = require('../groups/groups.service'),
+    logger = require('../../../config/logger'),
+    lodash = require('lodash');
+
+
+
+exports.getGroupsDetails = function (req, res) {
+    nsaCassandra.groups.getGroupsDetails(req, function (err, result) {
+        if (err) {
+            logger.debug(err);
+            events.emit('ErrorJsonResponse', req, res, message.nsa22001);
+        } else {
+            events.emit('JsonResponse', req, res, result);
+        }
+    })
+};
+
+exports.getGroupsById = function (req, res) {
+    nsaCassandra.groups.getGroupsByClass(req, function (err, result) {
+        if (err) {
+            logger.debug(err);
+            events.emit('ErrorJsonResponse', req, res, message.nsa22001);
+        } else {
+            events.emit('JsonResponse', req, res, result);
+        }
+    })
+};
+
+exports.updateUserGroups = function(req, res) {
+    nsaCassandra.groups.getGroupsName(req, function (err, result) {
+        var group= result.length;
+        if(err) {
+            logger.debug(err);
+            events.emit('ErrorJsonResponse', req, res, {});
+        } else if(group > 0) {
+            events.emit('ErrorJsonResponse', req, res, {message : 'User Group Already Exists In This Name. Choose Another Group Name.'});
+        } else {
+            async.waterfall([
+                updateUserGroup.bind(null, req),
+                executeBatch.bind()
+            ], function (err, data) {
+                if (err) {
+                    logger.debug(err);
+                    events.emit('ErrorJsonResponse', req, res, {});
+                } else {
+                    events.emit('JsonResponse', req, res, {});
+                }
+            })
+        }
+    })
+};
+exports.saveUserGroups = function(req, res) {
+    nsaCassandra.groups.getGroupsName(req, function (err, result) {
+        var group= result.length;
+        if(err) {
+            logger.debug(err);
+            events.emit('ErrorJsonResponse', req, res, {});
+        } else if(group > 0) {
+            events.emit('ErrorJsonResponse', req, res, {message : 'User Group Already Exists In This Name. Choose Another Group Name.'});
+        } else {
+            async.waterfall([
+                saveUserGroup.bind(null, req),
+                executeBatch.bind()
+            ], function (err, data) {
+                if (err) {
+                    logger.debug(err);
+                    events.emit('ErrorJsonResponse', req, res, {});
+                } else {
+                    events.emit('JsonResponse', req, res, {});
+                }
+            })//waterfall
+        }
+    })
+};
+
+function executeBatch(req, data, callback) {
+    nsaCassandra.Base.baseService.executeBatch(data.batchObj, function(err, result) {
+        callback(err, data);
+    })
+};
+exports.executeBatch = executeBatch;
+
+
+function saveUserGroup(req, callback){
+    nsaCassandra.groups.saveUserGroup(req, function(err, result){
+        callback(err, req, result);
+    })
+};
+exports.saveUserGroup = saveUserGroup;
+
+
+function updateUserGroup(req, callback){
+    nsaCassandra.groups.updateUserGroup(req, function(err, result){
+        callback(err, req, result);
+    })
+};
+exports.updateUserGroup = updateUserGroup;
+
+
+exports.deleteUserGroups = function(req, res) {
+    nsaCassandra.groups.deleteUserGroups(req, function(err, result) {
+        if (err) {
+            logger.debug(err);
+            events.emit('ErrorJsonResponse', req, res, message.nsa22001);
+        } else {
+            events.emit('JsonResponse', req, res, {message:  message.nsa22004});
+        }
+    })
+};

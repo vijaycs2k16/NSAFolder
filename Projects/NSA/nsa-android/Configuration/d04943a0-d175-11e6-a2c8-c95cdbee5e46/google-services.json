@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "201925306539",
+    "firebase_url": "https://aloysius-d78a9.firebaseio.com",
+    "project_id": "aloysius-d78a9",
+    "storage_bucket": "aloysius-d78a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201925306539:android:fbedf35dbec334cf",
+        "android_client_info": {
+          "package_name": "aloysius.management.in.palluruthy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201925306539-e27bl3nj2isp9httgppikc6004posqlb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE7qgriL8-C3PYuEbGX4_o9m6x3cisYiY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

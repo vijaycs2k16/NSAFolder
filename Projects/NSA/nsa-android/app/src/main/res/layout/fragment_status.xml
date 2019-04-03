@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame"
+    tools:context="nexrise.publication.in.nexrise.HomeworkFeature.StatusFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include layout="@layout/progress_bar"/>
+
+  <ExpandableListView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/fragment_status_listview"
+      android:groupIndicator="@null"
+      android:background="@color/layoutBackground"/>
+
+</FrameLayout>

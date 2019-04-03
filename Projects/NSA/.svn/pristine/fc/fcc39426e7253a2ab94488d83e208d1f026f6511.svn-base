@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="onboardnotification">
+<parameter name="notifi_name" value="Welcome On-Board"></parameter>
+<parameter name="radio_name" value="Parent Login"></parameter>
+	<test name="OnboardNotification">
+		<classes>
+			<class name="com.nsa.testing.tests.OnboardNotification" />
+		</classes>
+	</test>
+</suite> 

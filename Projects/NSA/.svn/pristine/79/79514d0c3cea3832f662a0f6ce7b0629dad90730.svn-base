@@ -1,0 +1,50 @@
+<div class="_acountingTableWrap">
+    <div class="_acountingTableBlock" style="margin: 6px;" >
+        <table id="leads-report" class="display table-bordered" style="width:100% !important;">
+            <thead>
+            <tr class="forToggle">
+                <th class="text-center" rowspan="2">Employee</th>
+                <th class="text-center" rowspan="2">Center</th>
+                <th class="text-center" colspan="<%= collection.leadWflow%>">Leads</th>
+                <th class="text-center" colspan="<%= collection.oppWflow%>">Opportunities</th>
+            </tr>
+            <tr class="forToggle">
+                <%
+                console.log("collection", collection)
+                _.forEach(collection.workflow ,function(value,key) {
+                %>
+                <th class="text-left"><%=value.name%></th>
+                <% }) %>
+            </tr>
+
+            </thead>
+            <tbody class="forToggle">
+
+            <%
+            _.forEach(collection.opp ,function(value,index) {
+            console.log("index", index)
+            _.forEach(value.item ,function(center,key) {
+            %>
+            <tr data-id="<%=value._id.salesPerson%>">
+                <% if(key == 0) { %>
+                <td class="text-center" rowspan="<%=value.item.length%>"><%=value._id.name ? value._id.name: 'No Employee'%> <span class="textBlue"> </span></td>
+                <% } else {%>
+                <%}%>
+
+                <td class="text-center"><%=center.id ? center.id: ' - '%></td>
+                <% _.forEach(collection.workflow ,function(wf,key) { %>
+                <% var wfData = lodash.filter(center.children, {'name': wf.name })
+                if(wfData.length > 0) {  %>
+                <td class="text-center"><%=wfData[0].count%></td>
+                <% } else {%>
+                <td class="text-center">0</td>
+                <% } });%>
+
+            </tr>
+
+            <% } )}) %>
+            </tbody>
+
+        </table>
+    </div>
+</div>

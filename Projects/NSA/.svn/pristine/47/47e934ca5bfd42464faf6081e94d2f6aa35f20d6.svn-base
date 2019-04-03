@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="@drawable/login_bg"
+    android:scaleType="fitXY">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whiteWithOpacity"
+            android:layout_margin="@dimen/margin10"
+            android:gravity="center_vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/card"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin30"
+            app:cardBackgroundColor="@color/transparent"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="@dimen/cardElevation1">
+
+            <FrameLayout
+                style="@style/logo"
+                android:layout_gravity="center"
+                android:id="@+id/frame"
+                android:visibility="visible"
+                android:background="@drawable/logo1" />
+            </android.support.v7.widget.CardView>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height50"
+                android:background="@drawable/login_border"
+                android:ems="14"
+                android:drawableLeft="@drawable/user_icon"
+                android:foregroundGravity="right"
+                android:gravity="start|center_vertical|center"
+                android:hint="@string/user_name"
+                android:inputType="textEmailAddress|textWebEmailAddress|textAutoComplete|textAutoCorrect"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/padding10"
+                android:layout_marginBottom="6px"
+                android:drawablePadding="@dimen/margin10"
+                android:singleLine="true"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/common_text_size"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height50"
+                android:background="@drawable/login_border"
+                android:ems="14"
+                android:gravity="start|center_vertical"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/passowrd"
+                android:drawablePadding="@dimen/margin10"
+                android:paddingLeft="@dimen/padding10"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="@dimen/common_text_size"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height50"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginLeft="@dimen/margin8">
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/parent_caps"
+                        android:layout_weight="0.7"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/common_text_size"
+                        android:id="@+id/parent"
+                        android:paddingLeft="@dimen/padding5"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/employee_or_student"
+                        android:textColor="@color/colorBlack"
+                        android:layout_weight="1.3"
+                        android:layout_gravity="end"
+                        android:checked="true"
+                        android:textSize="@dimen/common_text_size"
+                        android:id="@+id/emp_student"
+                        android:paddingLeft="@dimen/padding5"/>
+                </RadioGroup>
+            <Button
+                android:text="@string/action_sign_in_short"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height50"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:textSize="@dimen/common_text_size"
+                android:elevation="@dimen/cardElevation3"
+                android:gravity="center"
+                style="@style/signin_button"
+                android:textStyle="bold"
+                android:id="@+id/signin" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

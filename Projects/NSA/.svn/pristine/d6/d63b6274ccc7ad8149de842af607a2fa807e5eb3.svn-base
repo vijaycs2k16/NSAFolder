@@ -1,0 +1,106 @@
+<tr class="productItem deleteRow _productRow" id="<%=model._id%>">
+    <td data-name="productName" class="text-left">
+        <div class="_animateSelectBox">
+            <div class="_newSelectListWrap">
+                <a id="courseDd"
+                   class="current-selected courseDd"
+                   data-id="<%=model.course ? model.course._id: null%>"
+                   href="javascript:;"><%=model.course ? model.course.courseName : 'Select Course'%></a>
+                </a>
+            </div>
+            <span class="tips " data-id="batch"></span>
+        </div>
+    </td>
+    <td data-name="productName" class="text-left">
+        <div class="_animateInputBox">
+            <input type="number"
+                   name="priceListName"
+                   class="_animate priceListName"
+                   id="priceListName"
+                   required
+                   autofocus
+                   value="<%model.centerCourseFees%>"
+                   maxlength="32"/>
+            <label class="_animate">Course Fees</label>
+        </div>
+    </td>
+
+    <td data-name="productName" class="text-left">
+        <div class="container">
+            <div class=" _forCheckBox" style="top: 7px;position: relative;">
+                <label class="inputBox _newSelectListWrap">
+                    <label for="active">Active</label>
+                    <label class="_animatedCheckbox">
+                        <input id="active" data-id="salesPurchases_isCustomer"
+                               class="checkbox shippingRadio active"
+                               type="checkbox"/>
+                        <span style="height: 17px;"></span>
+                    </label>
+                </label>
+            </div>
+        </div>
+    </td>
+
+    <td data-name="productName" class="text-left">
+        <div class=" _forCheckBox" style="top: 7px;position: relative;">
+            <label class="inputBox _newSelectListWrap">
+                <label for="discount">Discount</label>
+                <label class="_animatedCheckbox">
+                    <input id="defaultShipAdress" data-id="salesPurchases_isCustomer"
+                           class="checkbox shippingRadio  checkVakue defaultShipAdress" value="0"
+                           type="checkbox"/>
+                    <span style="height: 17px;"></span>
+                </label>
+            </label>
+        </div>
+    </td>
+    <td>
+
+        <div class="_formBlock shippingAddress hidden" id="shippingAddress">
+            <div class="canReadAndWrite row">
+                <div class=" col m-10" style="right: 39px;position: relative;top: 2px;">
+                    <select id="createDiscountOrNot" class="createDiscountOrNot" id="flat">
+                        <option value="flat">Flat</option>
+                        <option value="percentage" >Percentage</option>
+                    </select>
+                </div>
+
+                <div class=" col m-5" style="left: 110px;bottom: 24px;">
+                    <div class="_animateInputBox">
+                        <input type="number"
+                               name="discountValue"
+                               class="_animate discountValue"
+                               id="discountValue"
+                               required
+                               autofocus
+                               value="<%model.discountValue%>"
+                               maxlength="32"/>
+                        <label class="_animate">Discount Value</label>
+                    </div>
+                </div>
+
+                <div class=" col m-7" style="left: 110px;bottom: 24px;">
+                    <div class="_animateInputBox hidden _withInfo discPriceHide" id="discPriceHide">
+                        <input type="text"
+                               name="discountPrice"
+                               class="_animate discountPrice"
+                               id="discountPrice"
+                               required
+                               autofocus
+                               readonly="readonly"
+                               value=""
+                               maxlength="32"/>
+                        <span class="" data-id="sss"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </td>
+
+
+    <td class="deleteCell ">
+        <span title="Delete" class="icon-close5 removeJob"></span>
+    </td>
+</tr>

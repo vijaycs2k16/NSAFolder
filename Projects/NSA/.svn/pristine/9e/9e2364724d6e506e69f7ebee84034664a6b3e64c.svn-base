@@ -1,0 +1,47 @@
+<div class="_acountingTableWrap" style="margin: 5px;">
+    <div class="_acountingTableBlock">
+        <table id="example" class="display" style="width:100%">
+            <thead>
+            <tr class="forToggle">
+                <th class="centerCell text-right">
+                    <label class="_customCHeckbox">
+                        <input type="checkbox" id="checkAll"/>
+                        <span></span>
+                    </label>
+                </th>
+                <th >Image</th>
+                <th >Product Name</th>
+                <th >SKU</th>
+                <th >In Stock</th>
+                <th >Fulfilled</th>
+                <th >onHand</th>
+                <th >Bundle</th>
+            </tr>
+            </thead>
+            <tbody class="list1" id="listTable" style="text-align: center">
+            <% collection.forEach(function(product, index){ %>
+            <tr data-id="<%=product._id%>">
+                <% delimiter = ''; delimiter2 = '';%>
+                <td class="notForm">
+                    <label class="_customCHeckbox">
+                        <input type="checkbox" value="<%=product._id%>" class="checkbox"/>
+                        <span></span>
+                    </label>
+                </td>
+                <td><img class="iconEmployee" src="<%= product.imageSrc %>"></td>
+                <td><%=product.name%></td>
+                <td><%=product.info.SKU%></td>
+                <td><%=product.productAvailability.onHand ? product.productAvailability.onHand : 0%></td>
+                <td><%=product.productAvailability.allocated ? product.productAvailability.allocated : 0%></td>
+                <td><%=product.productAvailability.available ? product.productAvailability.available : 0%></td>
+                <% if(!_.isEmpty(product.bundles)) { %>
+                <td> <a> <span class="iconmoon-books" title="Return" style="font-size: 15px; cursor: pointer;"> </span> </a> </td>
+                <% } else  { %>
+                <td> - </td>
+                <% } %>
+            </tr>
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>

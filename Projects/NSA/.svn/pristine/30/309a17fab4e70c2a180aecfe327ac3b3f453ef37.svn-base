@@ -1,0 +1,77 @@
+<% orderCollection.forEach(function(order, index){ %>
+<% var currency =(order.currency && order.currency._id ? order.currency._id.symbol : '')%>
+
+<tr data-id="<%=order._id%>"
+    <% if (order.workflow && order.workflow.status === 'Done') { %>
+    class="notEditable"
+    <% } else if ((order.workflow) && (order.workflow._id === unlinkedWorkflowId)) { %>
+    class="unlinkedProduct"
+    <%}%>>
+    <td class="notForm centerCell">
+        <label class="_customCHeckbox">
+            <input type="checkbox" value="<%=order._id%>"
+            <% if (!order.removable) { %>
+            class="checkbox notRemovable" disabled='disabled'
+            <% } else {%>
+            class="checkbox"
+            <% } %>
+            />
+            <span></span>
+        </label>
+    </td>
+    <td class="text-left"><%=order.name%></td>
+    <td class="notForm centerCell _statusOrders smallPadding"><a class="textBlue" href="/#erp/registrationForm/<%= order.studentFeeDetails ? order.studentFeeDetails._id: null %>"><%=order.student ? order.student.registrationNo : ' - ' %></a> </td>
+    <% var allocateStatus = order.status ? order.status.allocateStatus : 'NOT' %>
+    <% var fulfillStatus = order.status ? order.status.fulfillStatus : 'NOT' %>
+    <% var bookFeeObj = (order &&  !Lodash.isUndefined(order.studentFeeDetails)) ? order.studentFeeDetails.feeTypeDetails.filter(function(val) { return val._id == "5a8035406029abc2ae19d698" }) : [], isBookPaid = (!Lodash.isEmpty(bookFeeObj) && bookFeeObj[0].completed) ? true : false; %>
+    <% var show = (isBookPaid) ? true : false %>
+    <!--<% var show = (order.isBookFee == null || order.isBookFee) ? true : false %>-->
+    <% var shippingStatus = order.status ? order.status.shippingStatus : 'NOT' %></td>
+    <td class="centerCell"><%=order.supplier && order.supplier.name ? order.supplier.name : ''%></td>
+    <td class="centerCell _statusOrders smallPadding">
+        <% if(show) { %>
+        <span title="Allocated" class="_allocationed <%=allocateStatus === 'NOA' ? 'icon-checked yellow' : allocateStatus === 'ALL' ? 'icon-checked green' : '_notDid'%>"></span>
+        <% } else { %>
+        <span title="Allocated" class=""> - </span>
+        <% } %>
+
+    </td>
+    <td class="centerCell _statusOrders smallPadding">
+        <% if(show) { %>
+        <span title="Fulfilled" class="icon-box <%=fulfillStatus === 'NOA' ? 'yellow' : fulfillStatus === 'ALL' ? 'green' : 'red'%> _fullfilled"></span>
+        <% } else { %>
+        <span title="Fulfilled" class=" _fullfilled"> - </span>
+        <% } %>
+
+    </td>
+    <td class="centerCell _statusOrders smallPadding">
+        <% if(show) { %>
+        <span title="Shipped"  class="icon-cargo <%=shippingStatus === 'NOA' ? 'yellow' : shippingStatus === 'ALL' ? 'green' : 'red'%> _shipped"></span>
+        <% } else { %>
+        <span title="Shipped" class="_shipped"> - </span>
+        <% } %>
+
+    </td>
+    <td class="smallPadding status_Order"><%=order.workflow ? order.workflow.name: 'Undefinded'%></td>
+    <td class="balance"><%=currency %><% if (order.paymentBalance) { %>
+        <%= currencySplitter((order.paymentBalance / 100).toFixed(2)) %>
+        <% } else { %>
+        0
+        <% } %>
+    </td>
+    <td class="paid"><%=currency %><% if (order.paymentsPaid) { %>
+        <%= currencySplitter((order.paymentsPaid / 100).toFixed(2)) %>
+        <% } else { %>
+        0
+        <% } %>
+    </td>
+    <td class="total"><%=currency %><%=(order.paymentInfo) ? currencySplitter(order.paymentInfo.total) : '0.00'%></td>
+    <td><%=order.orderDate%></td>
+    <td>
+        <div class="_channelImageWrap">
+            <div class="channelImg <%= order.channel && order.channel.type || ''%>" data-content="channelImage"></div>
+            <span class="_channelText" title="<%= order.channel && order.channel.name || ''%>"><%= order.channel && order.channel.name || ''%></span>
+        </div>
+    </td>
+</tr>
+<% }) %>

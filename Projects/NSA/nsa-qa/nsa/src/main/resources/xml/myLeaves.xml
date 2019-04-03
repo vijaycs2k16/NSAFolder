@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyLeaves">
+	<parameter name="leaveName" value="Sick Leave"></parameter>
+	<parameter name="startDate" value="11/06/2018"></parameter>
+	<parameter name="endDate" value="12/06/2018"></parameter>
+	<parameter name="reason" value="Sick"></parameter>
+	<test name="MyLeaves">
+		<classes>
+		   <class name="com.nsa.testing.tests.MyLeavesTest" /> 
+		</classes>
+	</test>
+</suite>

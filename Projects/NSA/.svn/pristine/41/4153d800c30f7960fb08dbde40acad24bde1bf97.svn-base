@@ -1,0 +1,60 @@
+/**
+ * Created by maggi on 19/05/17.
+ */
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { BaseService } from '../../../../../../services/index';
+import {CommonService} from "../../../../../../services/common/common.service";
+import {AddReportCardComponent} from "./add-report-card/add-report-card.component";
+import {ServiceUrls} from "../../../../../../common/index";
+
+
+@Component({
+    templateUrl: 'report-card.html'
+})
+
+export class ReportCardComponent implements OnInit {
+
+    @ViewChild(AddReportCardComponent) addReportCardComponent: AddReportCardComponent;
+
+    constructor(private baseService: BaseService,
+                private commonService: CommonService,
+                private serviceUrls: ServiceUrls) {
+
+    }
+    ngOnInit() {
+        this.baseService.setTitle('NSA-report-card');
+        this.baseService.enableDataTable(this.serviceUrls.getReportCard);
+
+    }
+
+    addReportCard(event: any) {
+        this.addReportCardComponent.addReportCard(event)
+    }
+
+    publishUpdate(event: any){
+        var value = event.target.value
+        if(value) {
+            this.commonService.put(this.serviceUrls.updateReportCard, value).then(
+                result => this.publishEventCallback(result,false),
+                error => this.publishEventCallback(<any>error, true))
+        }
+    }
+
+    publishEventCallback(result: any, err: any) {
+        if (err) {
+            this.baseService.showNotification("Report Card is not published.", "", 'bg-danger');
+        } else {
+            this.baseService.showNotification("Report Card is published.", "", 'bg-success');
+        }
+        this.reload();
+    }
+
+    reload() {
+        this.baseService.dataTableReload('datatable-report-card');
+    }
+
+    closeOverlay() {
+        this.baseService.enableDataTable(this.serviceUrls.getReportCard);
+        this.baseService.closeOverlay('#addReportCard');
+    }
+}

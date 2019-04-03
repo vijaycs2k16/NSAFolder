@@ -1,0 +1,74 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h6 class="panel-title"><span class="text-semibold text-uppercase"><i class = "icon-rotate-ccw3 position-left"></i>Fee DefaulterS</span></h6>
+    </div>
+    <div class="panel-body panel-body-padding" style="height:50px;">
+        <div class="row form-horizontal">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="control-label col-sm-4">Class Name <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <select  (click)="getSectionByClass()" class="select-change" #singleClass id="bootstrap-class" data-width="100%">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sections" class="col-md-3  margin-left40 hide">
+                <div class="form-group">
+                    <label class="control-label select-change col-sm-4" style="width:80px">Section
+                    </label>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <select #singleSection (click)="getFeeNames()" class="select-change" id="bootstrap-section" data-width="100%">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fee" class="col-md-3 margin-left40">
+                <div class="form-group">
+                    <label class="control-label select-change col-sm-4" style="width:90px;">Fee Name <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <select #singleFee (click)="getFeeNamesDetails()" class="select-change"  id="bootstrap-fee" data-width="100%">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 navbar-right txt-align-right">
+                <div class="form-group">
+                    <input class="btn btn-default " id="cancel-back" value="Clear" (click)="resetForm()"  type="button">
+                    <input class="btn btn btn-primary ui-wizard-content margin-right10 ui-formwizard-button" (click)="getFeeDetailsData()" id="cancel-next" value="Search" type="submit">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <!--<div class="panel-heading">-->
+        <!--<h6 class="panel-title second-panel-title"><span class="text-semibold text-uppercase"><i class = "icon-menu7 position-left"></i>FEE DEFAULTERS&nbsp;&nbsp;&nbsp;&nbsp;{{startDate | date:'yyyy-MM-dd'}}  -  {{endDate | date:'yyyy-MM-dd'}} </span></h6>-->
+    <!--</div>-->
+
+    <hr>
+
+    <table class="table datatable-fee-defaulters">
+        <thead>
+        <tr>
+            <th data-priority="1">Admn No. / Roll No.</th>
+            <th> Name</th>
+            <th>Class Name</th>
+            <th>Section Name</th>
+            <th>Fee Name</th>
+            <th>Total Amount</th>
+            <th data-priority="2">Amount Pending</th>
+        </tr>
+        </thead>
+    </table>
+</div>

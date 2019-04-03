@@ -1,0 +1,59 @@
+<div class="_acountingTableWrap"><br>
+    <div class="_formBlock _equal">
+        <div class="_animateSelectBox _withInfo">
+            <span class="_selectTitle">Class</span>
+            <div class="_newSelectListWrap">
+                <a id="subjectClass"
+                   name="subjectClass"
+                   class="current-selected"
+                   data-id="<%= dataObj ? dataObj._id: ''%>"
+                   href="javascript:;"><%= dataObj ? dataObj.className: 'Select Class'%></a>
+            </div>
+        </div>
+    </div>
+    <% if(collection.length > 0 ) { %>
+    <div class="_acountingTitleBlock _forOverview">
+        <% if(data.update) { %>
+
+
+        <a href="javascript:;" class="btn blue slim btnPositioned" title="Edit" id="top-bar-editBtn">Edit</a>
+        <a href="javascript:;" class="btn blue slim btnPositioned" title="Save" id="top-bar-saveBtn">Save</a>
+        <% } %>
+    </div>
+
+    <div class="_acountingTableBlock">
+        <div class="inner-holder _settingsHolder">
+            <div class="workflow-list-wrapper left">
+                <ul id="profilesList" class="workflow-list profile-list">
+                    <% collection.forEach(function(profile,index){ %>
+                    <li>
+                        <a data-value="<%= profile.subject._id%>" data-id="<%= profile.subject._id%>" title="<%= profile.subject.subjectName %>"><%=
+                            profile.subject.subjectName %></a>
+                    </li>
+                    <% }) %>
+                </ul>
+            </div>
+            <div id="profileTableWrapper" class="left">
+                <table class="list _modulesAccessTable" id="modulesAccessTable">
+                    <thead>
+                    <tr>
+                        <th>Topic Name &nbsp; &nbsp;</th>
+                        <th>Check All &nbsp; &nbsp;<br/>
+                            <input class="checkAll" type="checkbox" disabled="disabled"/>
+                        </th>
+                        <% collection[0].course.forEach(function(course,index){ %>
+                        <th><%= course.courseName %> &nbsp; &nbsp;<br/>
+                            <input type="checkbox" disabled="disabled"/>
+                        </th>
+                        <% }) %>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <% } else { %>
+    <div style="margin-left: 500px; margin-top: 200px;"><span>No Data Found </span></div>
+    <% } %>
+</div>

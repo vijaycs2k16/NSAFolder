@@ -1,0 +1,640 @@
+<%
+var isOnline = true;
+if(App.currentUser.profile._id == '1522230115000' ) {
+    isOnline = false;
+}
+        %>
+<div class="form-holder _newForm" style="display: inline-block">
+    <form method="post" action="" id="createRegisterForm">
+
+        <div class="_formWrap">
+            <div class="_formBlock">
+                <div class="_animateSelectBox">
+                    <span class="_selectTitle">Student</span>
+                    <div class="_newSelectListWrap">
+                        <a id="studentDd"
+                           class="current-selected"
+                           name="studentDd"
+                           href="javascript:;">Select Student
+                        </a>
+                    </div>
+                </div>
+                <div class="_animateInputBox">
+                    <input type="text"
+                           class="_animate"
+                           id="studentName"
+                           name="studentName"
+                           maxlength="25"/>
+                    <label class="_animate">Name <span class="text-danger">*</span><span class="text-grey"> (As per Aadhar Card ID Proof)</span></label>
+                </div>
+                <div class="_animateInputBox">
+                    <input type="text"
+                           class="_animate"
+                           id="lastName"
+                           name="lastName"
+                           maxlength="25"/>
+                    <label class="_animate">Last Name</label>
+                </div>
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Center <span class="text-danger"> *</span></span>
+
+                    <div class="_newSelectListWrap">
+                        <a id="center"
+                           name="center"
+                           class="current-selected"
+                           data-id="Select"
+                           href="javascript:;">Select</a>
+                    </div>
+                    <span class="tips icon-info" data-id="center"></span>
+                </div>
+                <div class="_animateInputBox">
+                    <span class="_staticLabel">Center Code</span>
+                    <span id="centerCode" name="centerCode" class="_staticInfo">
+                    </span>
+                </div>
+                <div class="_animateInputBox">
+                    <span class="_staticLabel">Registration No</span>
+                    <span id="registrationNo" name="registrationNo" class="_staticInfo"></span>
+                </div>
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Course <span class="text-danger"> *</span></span>
+
+                    <div class="_newSelectListWrap">
+                        <a id="course"
+                           name="course"
+                           class="current-selected"
+                           data-id=""
+                           href="javascript:;">Select</a>
+                    </div>
+                    <span class="tips icon-info" data-id="course"></span>
+                </div>
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Academic Year <span class="text-danger"> *</span> </span>
+
+                    <div class="_newSelectListWrap">
+                        <a id="academic"
+                           name="academic"
+                           class="current-selected"
+                           data-id="Select"
+                           href="javascript:;">Select Year</a>
+                    </div>
+                    <span class="tips icon-info" data-id="academic"></span>
+                </div>
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Batch <span class="text-danger"> *</span></span>
+
+                    <div class="_newSelectListWrap">
+                        <a id="batch"
+                           name="batch"
+                           class="current-selected"
+                           data-id=""
+                           href="javascript:;">Select</a>
+                    </div>
+                    <span class="tips icon-info" data-id="batch"></span>
+                </div>
+                <div class="_animateInputBox">
+                    <input type="text"
+                           class="_animate"
+                           name="studentEmail"
+                           id="studentEmail"
+                           maxlength="48"/>
+                    <label class="_animate">Email ID<span class="text-danger"> *</span></label>
+                </div>
+                <div class="_animateInputBox">
+                    <input type="number"
+                           class="_animate"
+                           name="studentPhone"
+                           id="studentPhone"
+                           maxlength="20"/>
+                    <label class="_animate">Mobile Number<span class="text-danger">*</span></label>
+                </div>
+                <div class="_animateInputBox">
+                    <span class="_staticLabel">Date of Birth</span>
+                    <input type="text"
+                           name="dateOfBirth"
+                           class="_animate"
+                           id="dateOfBirth"
+                           placeholder="Select"
+                           readonly
+                           />
+                </div>
+            </div>
+            <div class="_formBlock">
+                <div class="_animateInputBox">
+                    <input type="text"
+                           name="dateOfJoining"
+                           class="_animate"
+                           id="dateOfJoining"
+                           placeholder="Select"
+                           readonly/>
+                    <label class="_animate">Date Of Joining<span class="text-danger"> *</span></label>
+                </div>
+                <div class="_animateSelectBox">
+                    <span class="_selectTitle">Gender</span>
+
+                    <div class="_newSelectListWrap">
+                        <a href="javascript:;"
+                           class="current-selected"
+                           name="studentGender"
+                           id="studentGender"
+                           data-id="Male">Male</a>
+                    </div>
+                </div>
+                <div class="_animateInputBox">
+                    <input type="password"
+                           class="_animate"
+                           name="studentPassword"
+                           id="password"
+                           maxlength="48"/>
+                    <label class="_animate">Password<span class="text-danger"> *</span></label>
+                </div>
+                <div class="_animateInputBox">
+                    <input type="password"
+                           class="_animate"
+                           name="originalPassword"
+                           id="confirmpassword"
+                           maxlength="48"/>
+                    <label class="_animate">Confirm password<span class="text-danger"> *</span></label>
+                </div>
+                <div class="_animateInputBox">
+                    <input type="text"
+                           name="fatherName"
+                           class="_animate homeAddress"
+                           id="fatherName"
+                           maxlength="60"/>
+                    <label class="_animate">Father /Guardian Name</label>
+                </div>
+                <div class="_animateInputBox">
+                    <input type="text"
+                           name="motherName"
+                           class="_animate homeAddress"
+                           id="motherName"
+                           maxlength="60"/>
+                    <label class="_animate">Mother Name</label>
+                </div>
+                <div class="_animateInputBox">
+                    <input type="text"
+                           class="_animate"
+                           name="category"
+                           id="category"
+                           maxlength="48"/>
+                    <label class="_animate">Category <span
+                            class="text-grey">(As per your Category Certificate)</span></label>
+                </div>
+                <div class="_animateInputBox">
+                    <input type="text"
+                           name="occupation"
+                           class="_animate homeAddress"
+                           id="occupation"
+                           maxlength="60"/>
+                    <label class="_animate">Occupation</label>
+                </div>
+                <div class="_animateInputBox">
+                    <input type="number"
+                           name="annualIncome"
+                           class="_animate homeAddress"
+                           id="annualIncome"
+                           maxlength="60"/>
+                    <label class="_animate">Annual Income</label>
+                </div>
+                <div class="_animateSelectBox">
+                    <span class="_selectTitle">Followed By</span>
+                    <div class="_newSelectListWrap">
+                        <a id="followedBy"
+                           class="current-selected"
+                           name="followedBy"
+                           href="javascript:;">Select</a>
+                    </div>
+                </div>
+            </div>
+            <div class="_formWrap">
+                <h4 class="_titleBlueBorder">ACADEMIC DETAILS</h4>
+
+                <div class="container">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-2">
+                            <label>Course :</label></div>
+                        <div class="_circleRadioRadianceWrap margin-left-4 col m-2">
+                            <div class="_tipsWrap">
+                                <label for="Foundation" class="">Foundation</label>
+                                <input type="radio"
+                                       name="courseStudied"
+                                       id="Foundation"
+                                       class="_circleRadioRadiance"
+                                       value="Foundation"
+                                       checked="">
+                                <label for="Foundation"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_circleRadioRadianceWrap col m-2">
+                            <div class="_tipsWrap">
+                                <label for="10th" class="">10th Equivalent</label>
+                                <input type="radio"
+                                       name="courseStudied"
+                                       id="10th"
+                                       value="10th"
+                                       class="_circleRadioRadiance">
+                                <label for="10th"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_circleRadioRadianceWrap col m-2">
+                            <div class="_tipsWrap">
+                                <label for="12th" class="">12th Equivalent</label>
+                                <input type="radio"
+                                       name="courseStudied"
+                                       id="12th"
+                                       value="12th"
+                                       class="_circleRadioRadiance">
+                                <label for="12th"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_animateInputBox col m-4">
+                            <input type="text"
+                                   name="class"
+                                   class="_animate"
+                                   id="class"
+                                   maxlength="60"/>
+                            <label class="_animate margin-left-14 margin-top-5">Class</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-2">
+                            <label>Board of Education :</label></div>
+                        <div class="_circleRadioRadianceWrap margin-left-4 col m-2">
+                            <div class="_tipsWrap">
+                                <label for="CBSE" class="">CBSE</label>
+                                <input type="radio"
+                                       name="boardOfEdu"
+                                       id="CBSE"
+                                       class="_circleRadioRadiance"
+                                       value="CBSE"
+                                       checked="">
+                                <label for="CBSE"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_circleRadioRadianceWrap col m-2">
+                            <div class="_tipsWrap">
+                                <label for="State" class="">State Board</label>
+                                <input type="radio"
+                                       name="boardOfEdu"
+                                       id="State"
+                                       value="StateBoard"
+                                       class="_circleRadioRadiance">
+                                <label for="State"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_circleRadioRadianceWrap col m-2">
+                            <div class="_tipsWrap">
+                                <label for="ICSE" class="">ICSE</label>
+                                <input type="radio"
+                                       name="boardOfEdu"
+                                       id="ICSE"
+                                       value="ICSE"
+                                       class="_circleRadioRadiance">
+                                <label for="ICSE"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_animateInputBox col m-4">
+                            <input type="text"
+                                   name="othersBOE"
+                                   class="_animate"
+                                   id="othersBOE"
+                                   maxlength="60"/>
+                            <label class="_animate margin-left-14 margin-top-5">Others</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-2">
+                            <label>Name of The School :</label>
+                        </div>
+                        <div class="_animateInputBox col m-6">
+                            <input type="text"
+                                   name="schoolName"
+                                   class="_animate"
+                                   id="schoolName"
+                                   maxlength="60"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-2">
+                            <label>Marks Secured :</label>
+                        </div>
+                        <div class="_animateInputBox col m-6">
+                            <input type="number"
+                                   name="marksSecured"
+                                   class="_animate"
+                                   id="marksSecured"
+                                   maxlength="60"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-2">
+                            <label>Year of Passing<span class="text-grey"><br/>(If 12th Completed)</span> :</label>
+                        </div>
+                        <div class="_animateInputBox col m-6">
+                            <input type="text"
+                                   name="plustwoPassedYear"
+                                   class="_animate"
+                                   id="plustwoPassedYear"
+                                   maxlength="60"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-2">
+                            <label>Residential Address:</label>
+                        </div>
+                        <div class="container col m-3">
+                            <div class="_animateInputBox ">
+                                <input type="text"
+                                       class="_animate"
+                                       id="street1"
+                                       name="street1"
+                                       maxlength="48"/>
+                                <label class="_animate">Street1</label>
+                            </div>
+                            <br/>
+                            <div class="_animateInputBox ">
+                                <input type="text"
+                                       class="_animate"
+                                       name="city"
+                                       id="city"
+                                       maxlength="48"/>
+                                <label class="_animate">City</label>
+                            </div><br/>
+                            <div class="_animateInputBox">
+                                <input type="text"
+                                       class="_animate"
+                                       id="state"
+                                       name="state"
+                                       maxlength="48"/>
+                                <label class="_animate">State</label>
+                            </div>
+                        </div>
+                        <div class="container col m-3">
+                            <div class="_animateInputBox ">
+                                <input type="text"
+                                       class="_animate"
+                                       id="street2"
+                                       name="street2"
+                                       maxlength="48"/>
+                                <label class="_animate">Street2</label>
+                            </div>
+                            <br/>
+
+                            <div class="_animateInputBox">
+                                <input type="number"
+                                       class="_animate"
+                                       id="pincode"
+                                       name="pincode"
+                                       maxlength="48"/>
+                                <label class="_animate">Pincode</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container totalFee hide">
+                <div class="canReadAndWrite row">
+                    <div class="_circleRadioRadianceWrap">
+                        <label class="col float-none m-2">Course Amount :</label>
+                        <label class="col float-none m-4 totalAmount text-bold"></label>
+                        <label class="col float-none m-2">GST Amount :</label>
+                        <label class="col float-none m-4 totalGst text-bold"></label>
+                        <label class="col float-none m-2">Net Amount :</label>
+                        <label class="col float-none m-4 netFees text-bold"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="_formWrap">
+                <h4 class="_titleBlueBorder">Discount Fee Details</h4>
+                <div class="container discountTab hide">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-2">
+                            <label class="_customCHeckbox">
+                                <input type="checkbox" name="isDiscountApplicable" class="checkbox"/>
+                                <span class="clr-black">Discount Applicable</span>
+                            </label>
+                        </div>
+                        <div class="_animateInputBox discount hide col m-4">
+                            <input type="number"
+                                   name="discountAmount"
+                                   class="_animate discountAmount"
+                                   id="discountAmount"
+                                   maxlength="60"/>
+                            <label class="_animate margin-left-15">Enter Discount</label>
+                        </div>
+                        <div class="_animateInputBox discount hide col m-4">
+                            <input type="text"
+                                   name="netFees"
+                                   class="_animate"
+                                   id="netFees"
+                                   autofocus
+                                   disabled
+                                   maxlength="60"/>
+                            <label class="_animate margin-left-15" style="margin-top:-15px;">Net Fees</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="_formWrap">
+                <h4 class="_titleBlueBorder">Booking Fee</h4>
+                <div class="container discountTab hide">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-2">
+                            <label class="_customCHeckbox">
+                                <input type="checkbox" name="isBooking" class="checkboxBooking"/>
+                                <span class="clr-black">Booking</span>
+                            </label>
+                        </div>
+                        <div class="_animateInputBox booking hide col m-4">
+                            <input type="number"
+                                   name="bookingAmount"
+                                   class="_animate bookingAmount"
+                                   id="bookingAmount"
+                                   maxlength="60"/>
+                            <label class="_animate margin-left-15">Enter Booking Amount</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="_formWrap">
+                <h4 class="_titleBlueBorder">Payment Installments</h4>
+                <table class="list stripedList" id="feeInstallments">
+                    <colgroup>
+                        <col width="10px">
+                        <col width="10px">
+                        <col width="10px">
+                        <col width="10px">
+                        <col width="10px">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="text-left">Fee Type</th>
+                        <th class="text-left">Percentage</th>
+                        <th class="text-left">Fee Amount(with GST)</th>
+                        <th class="text-left">GST(Amount)</th>
+                        <th class="text-left">Pay Amount</th>
+                    </tr>
+                    </thead>
+                    <tbody class="feeTypeLists" id="feeTypes">
+                    </tbody>
+                </table>
+            </div>
+            <div class="container">
+                <div class="canReadAndWrite row">
+                    <div class="_circleRadioRadianceWrap col m-2">
+                        <label>Payment Mode :</label>
+                    </div>
+                    <div class="_circleRadioRadianceWrap col m-2">
+                        <div class="_tipsWrap">
+                            <label for="online" class="">Online</label>
+                            <input type="radio"
+                                   name="paymentMode"
+                                   id="online"
+                                   class="_circleRadioRadiance"
+                                   value="online"
+                                   checked="">
+                            <label for="online"
+                                   class="_circleRadioRadianceLabel">
+                            </label>
+                        </div>
+                    </div>
+                    <% if(isOnline) { %>
+                        <div class="_circleRadioRadianceWrap col m-2">
+                            <div class="_tipsWrap">
+                                <label for="dd" class="">DD</label>
+                                <input type="radio"
+                                       name="paymentMode"
+                                       id="dd"
+                                       value="DD"
+                                       class="_circleRadioRadiance">
+                                <label for="dd"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_circleRadioRadianceWrap col m-2">
+                            <div class="_tipsWrap">
+                                <label for="cheque" class="">Cheque</label>
+                                <input type="radio"
+                                       name="paymentMode"
+                                       id="cheque"
+                                       value="Cheque"
+                                       class="_circleRadioRadiance">
+                                <label for="cheque"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_circleRadioRadianceWrap col m-2">
+                            <div class="_tipsWrap">
+                                <label for="cash" class="">Cash</label>
+                                <input type="radio"
+                                       name="paymentMode"
+                                       id="cash"
+                                       value="Cash"
+                                       class="_circleRadioRadiance">
+                                <label for="cash"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_circleRadioRadianceWrap col m-2">
+                            <div class="_tipsWrap">
+                                <label for="neft" class="">NEFT</label>
+                                <input type="radio"
+                                       name="paymentMode"
+                                       id="neft"
+                                       value="neft"
+                                       class="_circleRadioRadiance">
+                                <label for="neft"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+       </div><br/>
+        <div class="container billDetails hide">
+            <div class="canReadAndWrite row">
+                <div class="_animateInputBox col m-3">
+                    <input type="text"
+                           class="_animate"
+                           id="billNo"
+                           name="billNo"
+                           maxlength="60"/>
+                    <label id="label" class="_animate margin-left-15">Enter Transaction No</label>
+                </div>
+                <div class="billDetails1">
+                    <div class="_animateInputBox col m-3">
+                        <input type="number"
+                               name="billAmount"
+                               class="_animate"
+                               id="billAmount"
+                               disabled
+                               maxlength="60"/>
+                        <label class="_animate margin-left-15" style="margin-top:-15px;">Amount</label>
+                    </div>
+                    <div class="_animateInputBox col m-3">
+                        <span class="_staticLabel margin-left-15">Date</span>
+                        <input type="text"
+                               name="billDate"
+                               class="_animate"
+                               id="billDate"
+                               placeholder="Date"
+                               readonly
+                        />
+                    </div>
+                    <div class="_animateInputBox col m-3">
+                        <input type="text"
+                               name="bankName"
+                               class="_animate"
+                               id="bankName"
+                               maxlength="60"/>
+                        <label class="_animate margin-left-15">Bank</label>
+                    </div>
+                </div>
+            </div>
+        </div><br/>
+        <div class="container">
+            <div class="canReadAndWrite row">
+                <div class="_circleRadioRadianceWrap col m-5">
+                </div>
+                <div class="_animateInputBox col m-4">
+                    <button type="button" class="btn slim cancelBtn">Cancel</button>&nbsp;
+                    <button type="button" class="btn blue slim saveBtn">Save</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <div class="formContentWrap">
+        <div class="formContentTitle">
+            <span class="closeBtn cancelBtn"></span>
+        </div>
+        <div id="formContent" class="formContent"></div>
+    </div>
+</div>

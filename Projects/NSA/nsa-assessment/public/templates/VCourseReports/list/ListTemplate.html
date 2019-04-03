@@ -1,0 +1,62 @@
+<div class="_acountingTableWrap">
+    <div class="dialog-tabs-item">
+        <div class="_formWrap">
+            <div class="_formBlock _equal">
+                <div class="_animateSelectBox _withInfo" >
+                    <span class="_selectTitle">Academic Year</span>
+                    <div class="_newSelectListWrap" style="width: 200px;">
+                        <a id="academic"
+                           name="academic"
+                           class="current-selected"
+                           data-id="<%=acObj ? acObj[0]._id : ''%>"
+                           href="javascript:;"><%=data ? data : '2018-2019'%> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="_acountingTableBlock" style="margin: 6px;" >
+        <table id="report" class="display" style="width:100% !important;">
+
+            <thead>
+            <tr class="forToggle">
+                <th class="text-left">Center/Course</th>
+                <%
+                console.log("collection", collection)
+                _.forEach(collection.course ,function(value,key) {
+                %>
+                <th class="text-left"><%=value[0].courseName%></th>
+                <% }) %>
+            </tr>
+            </thead>
+            <tbody class="forToggle">
+            <%
+            _.forEach(collection.center ,function(value,key) {
+            var aggTotal = lodash.sumBy(value, 'total');
+            console.log("aggTotal", aggTotal);
+            %>
+            <tr data-id="value1.center">
+                <td class="text-left"><%=value[0].centerName%> <span class="textBlue"> (<%= aggTotal %>)</span></td>
+                <%
+                _.forEach(value ,function(course,key) {
+                %>
+                <td class="text-left"><%=course.total%></td>
+                <% }) %>
+            </tr>
+
+            <% }) %>
+            </tbody>
+            <tfoot>
+            <tr class="forToggle">
+                <td class="text-left">Total</td>
+                <%
+                console.log("collection", collection)
+                _.forEach(collection.course ,function(value,key) {
+                %>
+                <td class="text-left"><span class="textBlue"><%=value.length%></span> </td>
+                <% }) %>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>

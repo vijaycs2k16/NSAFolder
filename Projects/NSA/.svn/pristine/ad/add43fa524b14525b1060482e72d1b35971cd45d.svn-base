@@ -1,0 +1,146 @@
+<% var isStudent = App.currentUser.student%>
+<% if(data.create) { %>
+<% if(isStudent == null) { %>
+<div class="_acountingTitleBlock _forOverview">
+    <a href="javascript:;" class="btn blue slim icon-plus btnPositioned" title="Create"
+       id="top-bar-createBtn">New
+    </a>
+</div>
+<% } %>
+<% } %>
+<!--<div class="_acountingTableWrap">
+    <% if(data.create) { %>
+    <% if(isStudent == null) { %>
+    <div class="_acountingTitleBlock _forOverview">
+        <a href="javascript:;" class="btn blue slim icon-plus btnPositioned" title="Create"
+           id="top-bar-createBtn">New
+        </a>
+    </div>
+    <% } %>
+    <% } %>
+    <div class="_acountingTableBlock">
+        <table id="example1" class="display" style="width:100%">
+
+            <thead>
+            <tr class="forToggle">
+                <th class="text-left">Center Name</th>
+                <th class="text-left">Batch Name</th>
+                <th class="text-left">Subject Name</th>
+                <th class="text-left">Course Name</th>
+                <th class="text-left">Faculty</th>
+                <th class="text-left">Topic Name</th>
+                <th class="text-left">Class Date</th>
+                <th class="text-left">Class Start Time</th>
+                <th class="text-left">Class End Time</th>
+                <th class="text-left">Class Duration</th>
+                <% if(data.update || data.delete) { %>
+                <% if(isStudent == null) { %>
+                <th class="text-left">Action</th>
+                <% } %>
+                <% } %>
+            </tr>
+            </thead>
+            <tbody>
+            <%
+            collection.forEach(function(elem,index){
+            %>
+            <%
+            function getResult(time){
+            var newDate = new Date(time);
+            var hours = newDate.getHours() > 12 ? newDate.getHours() - 12 : newDate.getHours()
+            var am_pm = newDate.getHours() >= 12 ? "PM" : "AM"
+            hours = hours < 10 ? "0" + hours : hours
+            var minutes = newDate.getMinutes() < 10 ? "0" + newDate.getMinutes() : newDate.getMinutes()
+            var seconds = newDate.getSeconds() < 10 ? "0" + newDate.getSeconds() : newDate.getSeconds()
+            return hours + ":" + minutes + ":" + seconds + " " + am_pm;
+            }
+            elem.classStartTime = getResult(elem.classStartTime)
+            elem.classEndTime = getResult(elem.classEndTime)%>
+            <tr data-id="<%=elem._id%>">
+                <td><%=elem.center ? elem.center.centerName : ''%></td>
+                <td><%=elem.batch ? elem.batch.batchName : ''%></td>
+                <td><%=elem.subject ? elem.subject.subjectName : ''%></td>
+                <td><%=elem.course ? elem.course.courseName : ''%></td>
+                <td><%=(elem.faculty) ? elem.faculty.name.first + ' ' + elem.faculty.name.last : ''%></td>
+                <td><%=elem.topicData ? elem.topicData.name : ''%></td>
+                <td><%= elem.classDate ? moment(elem.classDate).format('D MMM, YYYY') : ''%></td>
+                <td><%=elem.classStartTime%></td>
+                <td><%=elem.classEndTime%></td>
+                <td><%=elem.classhrs %></td>
+                <% if(data.update || data.delete) { %>
+                    <% if(isStudent == null) { %>
+                        <td>
+                            <a href="javascript:;" class="icon-note goToEdit _actionCircleBtn show visibleVisble" aria-hidden="true" ></a>
+                            <a href="javascript:;" class="icon-trash goToRemove _actionCircleBtn show visibleVisble" aria-hidden="true" ></a>
+                        </td>
+                    <% } %>
+                <% } %>
+            </tr>
+            <% }) %>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>Center</th>
+                <th>Batch</th>
+                <th>Subject</th>
+                <th>Course</th>
+                <th>Faculty</th>
+                <th>Topic</th>
+                <th>Class Date</th>
+                <th>Class Start Time</th>
+                <th>Class End Time</th>
+                <th>Class Duration</th>
+                <% if(data.update || data.delete) { %>
+                <th></th>
+                <%}%>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>-->
+
+
+<div class="_acountingTableBlock">
+    <table id="example1" class="display" style="width:100%">
+
+        <thead>
+        <tr class="forToggle">
+            <th class="text-left">Center</th>
+            <th class="text-left">Class Date</th>
+            <th class="text-left">Month</th>
+            <th class="text-left">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <%
+        collection.forEach(function(elem,index){
+        %>
+        <tr data-id="<%= elem.id + '-' + elem.classDate %>" data-val="<%= elem.centerName %>">
+            <td><%= elem.centerName %></td>
+            <td><%= elem.classDate ? moment(elem.classDate).format('D MMM, YYYY') : ''%></td>
+            <td><%= elem.classDate ? moment(elem.classDate).format(' MMMM ') : ''%></td>
+            <% if(data.update || data.delete) { %>
+            <% if(isStudent == null) { %>
+            <td>
+                <a href="javascript:;" class="icon-note goToEdit _actionCircleBtn show visibleVisble" aria-hidden="true" ></a>
+                <a href="javascript:;" class="icon-trash goToRemove _actionCircleBtn show visibleVisble" aria-hidden="true" ></a>
+            </td>
+            <% } %>
+            <% } else { %>
+            <td>
+                <a href="javascript:;" class="iconmoon-eye goToEdit _actionCircleBtn show visibleVisble" aria-hidden="true" ></a>
+            </td>
+            <% } %>
+        </tr>
+        <% }) %>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th>Center</th>
+            <th>Class Date</th>
+            <th>month</th>
+            <th></th>
+        </tr>
+        </tfoot>
+    </table>
+</div>

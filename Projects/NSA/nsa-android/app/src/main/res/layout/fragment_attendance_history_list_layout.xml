@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/overlayColor">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding10">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checked_list"
+            android:focusable="false"
+            android:gravity="center"
+            android:focusableInTouchMode="true"
+            android:checked="false"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/description_text_size"
+            android:layout_margin="@dimen/margin5"
+            android:id="@+id/student_name"
+            android:text="Arun g"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/description_text_size"
+            android:layout_margin="@dimen/margin5"
+            android:id="@+id/student_no"
+            android:text=""/>
+
+    </LinearLayout>
+
+</LinearLayout>

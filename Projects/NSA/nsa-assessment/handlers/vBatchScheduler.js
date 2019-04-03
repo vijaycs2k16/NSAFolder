@@ -1,0 +1,892 @@
+var mongoose = require('mongoose');
+var batchScheduleSchema = mongoose.Schemas.BatchSchedule;
+var subjectTopicSchema = mongoose.Schemas.SubjectTopics;
+var TopicSchema = mongoose.Schemas.Topic;
+var async = require('async');
+var scheduleConverter = require('../converters/vBatchscheduler.converter');
+var pageHelper = require('../helpers/pageHelper');
+var baseHandler = require('./baseHandler');
+var dateUtils = require('../utils/dateService');
+var _ = require('lodash');
+var baseService = require('../handlers/baseHandler');
+var ObjectId = mongoose.Types.ObjectId;
+var moment = require('moment');
+
+var Module = function (models) {
+    this.create = function (req, res, next) {
+        var Model = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+        var body = req.body;
+        var id = req.params.id;
+        var ids = [];
+        if(!_.isEmpty(body.ids)) {
+            _.forEach(body.ids, function(val) {
+                ids.push(ObjectId(val))
+            })
+        }
+
+        Model.remove({"_id": { $in: body.ids }}, function (err, classSchedule) {
+            if (err) {
+                return next(err);
+            }
+            Model.insertMany(body.data, function(err, classSchedule){
+                if (err) {
+                    return next(err);
+                }
+                res.status(200).send({success: classSchedule});
+            })
+        });
+    };
+
+    this.getDayViewForMobile = function(req, res, next){
+        var Model = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+        var sessionUser = req.session;
+        var date = new Date();
+        var headers = baseService.getHeaders(req);
+        var query = {};
+        if(!headers.isAcess) {
+            if(headers.student)
+                query = {
+                    center: sessionUser.cId,
+                    batch: sessionUser.bId,
+                    course: sessionUser.courseId,
+                    classDate: date.toLocaleDateString()
+                };
+            else
+                query = {
+                    center: sessionUser.cId,
+                    faculty: sessionUser.lid,
+                    classDate: date.toLocaleDateString()
+                };
+        }
+
+        Model.find(query).populate('subject').exec(function(err, response){
+            if(err)
+                next(err);
+            else
+                res.status(200).send({success: true, data: !_.isEmpty(response) ? convertBatchScheduleObj(response) : []});
+        })
+    }
+
+    function convertBatchScheduleObj(data) {
+        var arr = [];
+        _.forEach(data, function(val){
+            var obj = {};
+            obj.subject = val.subject.subjectName;
+            obj.startTime = moment(val.classStartTime).format('LT');
+            obj.endTime = moment(val.classEndTime).format('LT');
+            obj.hours = val.classhrs;
+            obj.classDate = val.classDate;
+            arr.push(obj);
+        })
+        return arr;
+    }
+
+    this.getViewForMobile = function (req, res, next) {
+        var Model = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+        var data = req.query;
+        var getData;
+        var headers = baseService.getHeaders(req);
+        var matchObj = {};
+        if(!headers.isAcess) {
+            if(headers.student)
+                matchObj = {$and:[{"batch": ObjectId(headers.bId)},{"center": ObjectId(headers.cid)}, {"course": ObjectId(headers.coId)} ]};
+            else
+                matchObj = {"center": ObjectId(headers.cid), "faculty": ObjectId(headers.lid)}
+        }
+
+        getData = function (cb) {
+            Model.aggregate([
+                {$match: matchObj},
+                {$project: {
+                        _id: 1,
+                        center: 1,
+                        faculty: 1,
+                        topicDetails:1,
+                        batch: 1,
+                        course: 1,
+                        subject: 1,
+                        topics: 1,
+                        classStartTime: 1,
+                        classEndTime: 1,
+                        classhrs: 1,
+                        classDate: 1,
+                        type : 1,
+                        month: { $month: '$classDate' },
+                        year: { $year: '$classDate' }
+                    }},
+                {$match: {$and:[{ month: parseInt(data.month) },{ year: parseInt(data.year) }]}},
+                {
+                    $project: {
+                        month: 0,
+                        year: 0
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Center",
+                        "localField": "center",
+                        "foreignField": "_id",
+                        "as": "center"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Course",
+                        "localField": "course",
+                        "foreignField": "_id",
+                        "as": "course"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Subject",
+                        "localField": "subject",
+                        "foreignField": "_id",
+                        "as": "subject"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Batch",
+                        "localField": "batch",
+                        "foreignField": "_id",
+                        "as": "batch"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Employees",
+                        "localField": "faculty",
+                        "foreignField": "_id",
+                        "as": "faculty"
+                    }
+                },
+                {$unwind: {path: "$center"}},
+                {$unwind: {path: "$course"}},
+                {$unwind: {path: "$batch"}},
+                {$unwind: {path: "$subject"}},
+                {$unwind: {path: "$faculty"}}
+            ], cb);
+        };
+
+        async.parallel([getData], function (err, result) {
+            if (err) {
+                return next(err);
+            }
+            res.status(200).send({data: _.flatten(result[0])});
+        });
+    };
+
+    this.getForView = function (req, res, next) {
+        var Model = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+        var data = req.query;
+        var sort = data.sort || {_id: 1};
+        var getTotal;
+        var getData;
+        var paginationObject = pageHelper(data);
+        var limit = paginationObject.limit;
+        var skip = paginationObject.skip;
+        var headers = baseService.getHeaders(req);
+        var matchObj = {};
+        if(!headers.isAcess) {
+            if(headers.student)
+                matchObj = {$and:[{"batch": ObjectId(headers.bId)},{"center": ObjectId(headers.cid)}, {"course": ObjectId(headers.coId)} ]}
+            else
+                matchObj = {"center": ObjectId(headers.cid)}
+        }
+
+        if(req.session.profileId === 1522230115000){
+            matchObj = {center: ObjectId(req.session.cId)};
+        }
+
+        getTotal = function (cb) {
+            Model
+                .find((matchObj) ? matchObj : {})
+                .count(function (err, result) {
+                    if (err) {
+                        return cb(err);
+                    }
+
+                    cb(null, result || 0);
+                });
+        };
+
+        getData = function (cb) {
+            Model.aggregate([
+                {$match: matchObj},
+                {
+                    "$lookup": {
+                        "from": "Topic",
+                        "localField": "topics",
+                        "foreignField": "topics._id",
+                        "as": "topic"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Center",
+                        "localField": "center",
+                        "foreignField": "_id",
+                        "as": "center"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Course",
+                        "localField": "course",
+                        "foreignField": "_id",
+                        "as": "course"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Subject",
+                        "localField": "subject",
+                        "foreignField": "_id",
+                        "as": "subject"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Batch",
+                        "localField": "batch",
+                        "foreignField": "_id",
+                        "as": "batch"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Employees",
+                        "localField": "faculty",
+                        "foreignField": "_id",
+                        "as": "faculty"
+                    }
+                },
+                {$unwind: {path: "$center"}},
+                {$unwind: {path: "$topic"}},
+                {$unwind: {path: "$course"}},
+                {$unwind: {path: "$batch"}},
+                {$unwind: {path: "$subject"}},
+                {$unwind: {path: "$faculty"}},
+                {
+                    $group: {
+                        _id: {"center": '$center._id', "centerName":"$center.centerName","classDate": "$classDate" }
+                    }
+                },
+                {
+                    $project: {
+                        _id: '$_id.center' + '$_id.classDate',
+                        id: '$_id.center',
+                        centerName: '$_id.centerName',
+                        classDate: '$_id.classDate',
+                    }
+                }
+            ], cb);
+        };
+
+        async.parallel([getTotal, getData], function (err, result) {
+            if (err) {
+                return next(err);
+            }
+            res.status(200).send({total: result[0], data: scheduleConverter.scheduleObjs(result[1])});
+        });
+    };
+
+    this.getByCenterAndDate = function (req, res, next) {
+        var Model = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+        var data = req.query;
+        var sort = data.sort || {_id: 1};
+        var getTotal;
+        var getData;
+        var paginationObject = pageHelper(data);
+        var limit = paginationObject.limit;
+        var skip = paginationObject.skip;
+        var headers = baseService.getHeaders(req);
+        var matchObj = {};
+        matchObj.$and = [];
+        if(!headers.isAcess) {
+            if(headers.student)
+                matchObj = {$and:[{"batch": ObjectId(headers.bId)},{"center": ObjectId(headers.cid)}, {"course": ObjectId(headers.coId)} ]}
+            else
+                matchObj = {"center": ObjectId(headers.cid)}
+        }
+
+        if(data.center){
+            matchObj = {$and:[{'center': ObjectId(data.center)}, {'classDate': new Date(data.classDate)}]};
+        }
+
+        getTotal = function (cb) {
+            Model
+                .find((matchObj) ? matchObj : {})
+                .count(function (err, result) {
+                    if (err) {
+                        return cb(err);
+                    }
+
+                    cb(null, result || 0);
+                });
+        };
+
+        getData = function (cb) {
+            Model.aggregate([
+                {$match: matchObj},
+                {
+                    "$lookup": {
+                        "from": "Topic",
+                        "localField": "topics",
+                        "foreignField": "topics._id",
+                        "as": "topic"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Center",
+                        "localField": "center",
+                        "foreignField": "_id",
+                        "as": "center"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Course",
+                        "localField": "course",
+                        "foreignField": "_id",
+                        "as": "course"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Subject",
+                        "localField": "subject",
+                        "foreignField": "_id",
+                        "as": "subject"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Batch",
+                        "localField": "batch",
+                        "foreignField": "_id",
+                        "as": "batch"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Employees",
+                        "localField": "faculty",
+                        "foreignField": "_id",
+                        "as": "faculty"
+                    }
+                },
+                {$unwind: {path: "$center"}},
+                {$unwind: {path: "$course"}},
+                {$unwind: {path: "$batch"}},
+                {$unwind: {path: "$subject"}},
+                {$unwind: {path: "$faculty"}}
+            ], cb);
+        };
+
+        async.parallel([getTotal, getData], function (err, result) {
+            if (err) {
+                return next(err);
+            }
+            res.status(200).send({total: result[0], data: scheduleConverter.scheduleObjs(result[1])});
+        });
+    };
+
+
+
+
+    this.deleteByCenterAndDate = function (req, res, next) {
+        var Model = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+        var data = req.body;
+
+        Model.remove({'center': ObjectId(data.center), 'classDate': new Date(data.classDate)}, function(err, result) {
+            if(err) {
+
+                return next(err);
+            }
+            res.status(200).send({sucess: "suces"});
+        });
+    };
+
+
+    this.getTopicsByBatch = function (req, res, next) {
+        var batch = req.query.bid ? req.query.bid : baseHandler.getBatch(req);
+        var filter = req.query.filter.date.value
+        var batchScheduleModel = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+        if(batch) {
+            batchScheduleModel.aggregate([
+                {
+                    "$match": {
+                        "batch": mongoose.Types.ObjectId(batch),
+                        classDate: {
+                            $gte: new Date(filter[0]),
+                            $lte: new Date(filter[1]),
+                        }
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Topic",
+                        "localField": "topics",
+                        "foreignField": "topics._id",
+                        "as": "topic"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Center",
+                        "localField": "center",
+                        "foreignField": "_id",
+                        "as": "center"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Course",
+                        "localField": "course",
+                        "foreignField": "_id",
+                        "as": "course"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Subject",
+                        "localField": "subject",
+                        "foreignField": "_id",
+                        "as": "subject"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Batch",
+                        "localField": "batch",
+                        "foreignField": "_id",
+                        "as": "batch"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Employees",
+                        "localField": "faculty",
+                        "foreignField": "_id",
+                        "as": "faculty"
+                    }
+                },
+                {$unwind: {path: "$course"}},
+                {$unwind: {path: "$batch"}},
+                {$unwind: {path: "$subject"}},
+                {$unwind: {path: "$faculty"}}
+            ], function (err, response) {
+                if (err) {
+                    return next(err);
+                }
+                dateUtils.formatObjectsDates(scheduleConverter.scheduleObjs(response), ['classDate', 'dateOfJoining', 'date'], 'type1', function (err, data) {
+                    res.status(200).send({data: data});
+                })
+            });
+        } else {
+            res.status(200).send({data: []});
+        }
+
+    };
+
+
+
+    this.getFacultyTopics = function (req, res, next) {
+        var filter = req.query.filter.date.value
+        var batchScheduleModel = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+        if(req.session.userType === 'Employee') {
+            batchScheduleModel.aggregate([
+                {
+                    "$match": {
+                        "faculty": mongoose.Types.ObjectId(req.session.lid),
+                        classDate: {
+                            $gte: new Date(filter[0]),
+                            $lte: new Date(filter[1]),
+                        }
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Topic",
+                        "localField": "topics",
+                        "foreignField": "topics._id",
+                        "as": "topic"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Center",
+                        "localField": "center",
+                        "foreignField": "_id",
+                        "as": "center"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Course",
+                        "localField": "course",
+                        "foreignField": "_id",
+                        "as": "course"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Subject",
+                        "localField": "subject",
+                        "foreignField": "_id",
+                        "as": "subject"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Batch",
+                        "localField": "batch",
+                        "foreignField": "_id",
+                        "as": "batch"
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "Employees",
+                        "localField": "faculty",
+                        "foreignField": "_id",
+                        "as": "faculty"
+                    }
+                },
+                {$unwind: {path: "$topic"}},
+                {$unwind: {path: "$course"}},
+                {$unwind: {path: "$batch"}},
+                {$unwind: {path: "$subject"}},
+                {$unwind: {path: "$faculty"}}
+            ], function (err, response) {
+                if (err) {
+                    return next(err);
+                }
+                dateUtils.formatObjectsDates(scheduleConverter.scheduleObjs(response), ['classDate', 'dateOfJoining', 'date'], 'type1', function (err, data) {
+                    res.status(200).send({data: data});
+                })
+            });
+        } else {
+            res.status(200).send({data: []});
+        }
+
+    };
+
+    this.getForDd = function (req, res, next) {
+        var Model = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+        var query = req.query;
+
+        Model
+            .find(query, {})
+            .exec(function (err, result) {
+                if (err) {
+                    return next(err);
+                }
+
+                res.status(200).send({data: result});
+            });
+    };
+
+    this.getWriteOff = function (req, res, next) {
+        var Model = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+
+        Model
+            .find({transaction: 'WriteOff'}, {_id: 1, name: 1})
+            .sort({name: 1})
+            .exec(function (err, result) {
+                if (err) {
+                    return next(err);
+                }
+
+                res.status(200).send({data: result});
+            });
+    };
+
+    this.getByAccount = function (req, res, next) {
+        var body = req.query;
+        var Model = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+        var transaction = body.transaction;
+        var debitAccount = body.debitAccount;
+        var creditAccount = body.creditAccount;
+        var query = {};
+
+        if (transaction) {
+            query.transaction = transaction;
+        }
+
+        if (debitAccount) {
+            query.debitAccount = debitAccount;
+        }
+
+        if (creditAccount) {
+            query.creditAccount = creditAccount;
+        }
+
+        Model.find(query, function (err, result) {
+            if (err) {
+                return next(err);
+            }
+
+            res.status(200).send({data: result || []});
+        });
+    };
+
+    this.putchBulk = function (req, res, next) {
+        var body = req.body;
+        var uId;
+        var Model = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+
+        async.each(body, function (data, cb) {
+            var id = data._id;
+
+            data.editedBy = {
+                user: uId,
+                date: new Date().toISOString()
+            };
+            delete data._id;
+
+            Model.findByIdAndUpdate(id, {$set: data}, {new: true}, function (err, model) {
+                if (err) {
+                    return cb(err);
+                }
+
+                cb();
+            });
+        }, function (err) {
+            if (err) {
+                return next(err);
+            }
+
+            res.status(200).send({success: 'updated'});
+        });
+
+    };
+
+    this.getTopicsByCCS = function (req, res, next) {
+        var Model = models.get(req.session.lastDb, 'Topic', TopicSchema);
+        var query = req.query;
+
+        var course = _.map(query.course, function(course){ return mongoose.Types.ObjectId(course)});
+        var subjects = _.map(query.subject, function(sub){ return mongoose.Types.ObjectId(sub)});
+
+        Model.aggregate([
+            {$match: {$and: [{"course":{$in: course} },{"subject": {$in: subjects}}]}},
+            {
+                "$lookup": {
+                    "from": "Topic",
+                    "localField": "_id",
+                    "foreignField": "_id",
+                    "as": "topic"
+                }
+            },
+            {
+                "$lookup": {
+                    "from": "Course",
+                    "localField": "course",
+                    "foreignField": "_id",
+                    "as": "course"
+                }
+            },
+            {
+                "$lookup": {
+                    "from": "Subject",
+                    "localField": "subject",
+                    "foreignField": "_id",
+                    "as": "subject"
+                }
+            },
+            {$unwind: {path: "$topic"}},
+            {$unwind: {path: "$course"}},
+            {$unwind: {path: "$subject"}},
+        ],function (err, result) {
+            if (err) {
+                return next(err);
+            }
+            res.status(200).send({data: scheduleConverter.scheduleObjects(result)});
+        })
+    };
+
+
+    this.getTopicsByClassS = function (req, res, next) {
+        var Model = models.get(req.session.lastDb, 'SubjectTopics', subjectTopicSchema);
+        var query = req.query;
+        var body = req.body;
+        var objectId = mongoose.Types.ObjectId;
+        var subj;
+
+        if(Array.isArray(query.subject)){
+            var subjects = _.map(query.subject, function(sub){ return mongoose.Types.ObjectId(sub)});
+            subj = {subject: {$in: subjects}}
+        } else {
+            subj = {subject: objectId(query.subject)};
+        }
+        Model.aggregate([
+            {$match: {$and: [{"classDetail": mongoose.Types.ObjectId(query.classId) },{"title": mongoose.Types.ObjectId(query.titleId) }]}},
+            {$match: subj},
+            {$unwind: {path: "$topics"}},
+            {
+                "$lookup": {
+                    "from": "Question",
+                    "localField": "topics._id",
+                    "foreignField": "topic",
+                    "as": "questions"
+                }
+            },
+            {
+                "$lookup": {
+                    "from": "SubTopics",
+                    "localField": "topics._id",
+                    "foreignField": "topic",
+                    "as": "subtopics"
+                }
+            },
+            {
+                "$lookup": {
+                    "from": "Subject",
+                    "localField": "subject",
+                    "foreignField": "_id",
+                    "as": "subject"
+                }
+            },
+            {$unwind: {path: "$subject", preserveNullAndEmptyArrays: true}},
+        ],function (err, result) {
+            if (err) {
+                return next(err);
+            }
+            res.status(200).send({data: result});
+        })
+    };
+
+    this.remove = function (req, res, next) {
+        var id = req.params.id;
+        var Journal = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+
+        Journal.findByIdAndRemove(id, function (err, batch) {
+            if (err) {
+                return next(err);
+            }
+            res.status(200).send({success: batch});
+
+        });
+    };
+
+    this.bulkRemove = function (req, res, next) {
+        var Journal = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+        var body = req.body || {ids: []};
+        var ids = body.ids;
+
+        Journal.remove({_id: {$in: ids}}, function (err, removed) {
+            if (err) {
+                return next(err);
+            }
+            res.status(200).send(removed);
+        });
+    };
+
+    this.update = function (req, res, next) {
+        var batchModel = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+        var body = req.body;
+        var _id = req.params.id;
+        batchModel.findByIdAndUpdate(_id, body, {new: true}, function (err, list) {
+            if (err) {
+                return next(err);
+            }
+
+            getById(req,{id: _id}, function (err, result) {
+                if (err) {
+                    return next(err);
+                }
+                res.status(200).send(result);
+            });
+            //res.status(200).send({success: 'Topic updated success'});
+        });
+    };
+
+    function getById(req, options, callback) {
+        var id = options.id;
+
+        var Model = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+
+        Model.findById(id).populate({path : 'center'}).populate({path : 'batch'}).populate({path : 'course'}).populate({path : 'subject'}).populate({path : 'faculty'}).populate({path : 'topics'}).exec(function (err, result) {
+            if (err) {
+                return callback(err);
+            }
+            callback(null, result);
+        });
+    }
+
+    //get schedule details For Employee
+    function getScheduleForEmp(req, next) {
+        var Model = models.get(req.session.lastDb, 'BatchSchedule', batchScheduleSchema);
+        var empId = ObjectId(req.session.lid);
+
+        Model.aggregate([
+            {
+                $match: {faculty: empId}
+            },
+            {
+                "$lookup": {
+                    "from": "Topic",
+                    "localField": "topics",
+                    "foreignField": "topics._id",
+                    "as": "topic"
+                }
+            },
+            {
+                "$lookup": {
+                    "from": "Center",
+                    "localField": "center",
+                    "foreignField": "_id",
+                    "as": "center"
+                }
+            },
+            {
+                "$lookup": {
+                    "from": "Course",
+                    "localField": "course",
+                    "foreignField": "_id",
+                    "as": "course"
+                }
+            },
+            {
+                "$lookup": {
+                    "from": "Subject",
+                    "localField": "subject",
+                    "foreignField": "_id",
+                    "as": "subject"
+                }
+            },
+            {
+                "$lookup": {
+                    "from": "Batch",
+                    "localField": "batch",
+                    "foreignField": "_id",
+                    "as": "batch"
+                }
+            },
+            {
+                "$lookup": {
+                    "from": "Employees",
+                    "localField": "faculty",
+                    "foreignField": "_id",
+                    "as": "faculty"
+                }
+            },
+            {$unwind: {path: "$topic"}},
+            {$unwind: {path: "$center"}},
+            {$unwind: {path: "$course"}},
+            {$unwind: {path: "$subject"}},
+            {$unwind: {path: "$batch"}},
+            {$unwind: {path: "$faculty"}}
+        ], function (err, data) {
+            next(err, req, data);
+        });
+    }
+    this.getScheduleForEmp = getScheduleForEmp;
+
+};
+
+module.exports = Module;

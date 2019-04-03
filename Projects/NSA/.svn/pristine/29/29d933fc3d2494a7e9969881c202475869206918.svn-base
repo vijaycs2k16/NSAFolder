@@ -1,0 +1,23 @@
+<div class="form-holder _newForm">
+    <form method="post" action="" class="_stockCorrectionForm" id="stockCorrection">
+        <h4 class="_dialogMainTitle">Add School Onboard</h4>
+        <div class="_formWrap">
+            <div class="_formBlock _equal">
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">School</span>
+                    <div class="_newSelectListWrap">
+                        <a id="schoolId"
+                           name="schoolId"
+                           class="current-selected schoolId"
+                           data-id=""
+                           href="javascript:;">Select School</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="_formBlock">
+                <div id="productItemsHolder"></div>
+            </div>
+        </div>
+    </form>
+</div>

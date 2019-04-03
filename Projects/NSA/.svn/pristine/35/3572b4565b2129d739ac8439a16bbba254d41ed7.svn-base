@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context="nexrise.publication.in.nexrise.ProgressReportFeature.OverallReportGraphFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <com.jjoe64.graphview.GraphView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="3"
+       android:id="@+id/line_graph"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin5"
+        android:layout_marginRight="@dimen/margin5"
+        android:paddingBottom="@dimen/padding5"
+        android:paddingTop="@dimen/padding5"
+        android:stretchColumns="*"
+        android:background="@color/colorWhite">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:text="A1"
+                android:background="@color/green"
+                android:layout_width="@dimen/width20"
+                android:layout_height="@dimen/height20"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin10"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:text=" English"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView24"
+                android:paddingLeft="@dimen/padding10"
+                android:textColor="@color/colorBlack"/>
+
+            <ImageView
+                android:text="A2"
+                android:layout_width="@dimen/width20"
+                android:layout_height="@dimen/height20"
+                android:id="@+id/textView25"
+                android:background="@color/colorBlue"
+                android:layout_marginLeft="@dimen/margin10"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:text=" Tamil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView26"
+                android:paddingLeft="@dimen/padding10"
+                android:textColor="@color/colorBlack"/>
+
+            <ImageView
+                android:text="B2"
+                android:layout_width="@dimen/width20"
+                android:layout_height="@dimen/height20"
+                android:layout_marginLeft="@dimen/margin10"
+                android:textColor="@color/colorWhite"
+                android:background="@color/yellow"
+                android:id="@+id/textView29" />
+
+            <TextView
+                android:text=" Maths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView30"
+                android:textColor="@color/colorBlack"
+                android:paddingLeft="@dimen/padding10"/>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding10">
+
+            <ImageView
+                android:text="C1"
+                android:layout_width="@dimen/width20"
+                android:layout_height="@dimen/height20"
+                android:background="@color/colorRed"
+                android:layout_marginLeft="@dimen/padding10"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/textView31" />
+
+            <TextView
+                android:text=" Science"
+                android:paddingLeft="@dimen/padding10"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView33" />
+
+
+            <ImageView
+                android:text="E"
+                android:layout_width="@dimen/width20"
+                android:layout_height="@dimen/height20"
+                android:gravity="center"
+                android:background="@color/colorBlack"
+                android:layout_marginLeft="@dimen/margin10"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/textView40" />
+
+            <TextView
+                android:text=" Social"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding10"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/textView41"
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+{"_id":{"$oid":"5adebe33ad977705148e8785"},"sequence":5,"status":"New","name":"Cold Visit","wId":"CRM Tasks","visible":true,"__v":0}
+{"_id":{"$oid":"5adebe5cad977705148e8786"},"sequence":6,"status":"New","name":"Followup Visit","wId":"CRM Tasks","visible":true,"__v":0}
+{"_id":{"$oid":"5adebe7dad977705148e8787"},"sequence":7,"status":"New","name":"Demo Completed","wId":"CRM Tasks","visible":true,"__v":0}
+{"_id":{"$oid":"5adebe9dad977705148e8788"},"sequence":8,"status":"New","name":"Proposal Sent","wId":"CRM Tasks","visible":true,"__v":0}
+{"_id":{"$oid":"5adebeb8ad977705148e8789"},"sequence":9,"status":"New","name":"Cost Finalization","wId":"CRM Tasks","visible":true,"__v":0}
+{"_id":{"$oid":"5adebeccad977705148e878a"},"sequence":10,"status":"New","name":"Agreement","wId":"CRM Tasks","visible":true,"__v":0}
+{"_id":{"$oid":"5adebf01ad977705148e878b"},"sequence":11,"status":"New","name":"FollowUp Visit","wId":"CRM Tasks","visible":true,"__v":0}
+{"_id":{"$oid":"5adebf21ad977705148e878c"},"sequence":12,"status":"New","name":"Closed","wId":"CRM Tasks","visible":true,"__v":0}
+{"_id":{"$oid":"5adebf58ad977705148e878d"},"sequence":13,"status":"New","name":"Data Collected","wId":"CRM Tasks","visible":true,"__v":0}
+{"_id":{"$oid":"528cdcb4f3f67bc40b000006"},"__v":0,"attachments":[],"color":"#2C3E50","name":"stage 1","sequence":3,"status":"New","wId":"Opportunities","wName":"opportunity","source":"opportunity","targetSource":["opportunity"],"visible":true}
+{"_id":{"$oid":"528cdd2af3f67bc40b000007"},"__v":0,"attachments":[],"color":"#2C3E50","name":"stage 2","sequence":2,"status":"In Progress","wId":"Opportunities","wName":"opportunity","source":"opportunity","targetSource":["opportunity"],"visible":true}
+{"_id":{"$oid":"528cdef4f3f67bc40b00000a"},"__v":0,"attachments":[],"color":"#2C3E50","name":"close","sequence":0,"status":"Done","wId":"Opportunities","wName":"opportunity","source":"opportunity","targetSource":["opportunity"],"visible":true}
+{"_id":{"$oid":"528cdf1cf3f67bc40b00000b"},"__v":0,"attachments":[],"color":"#2C3E50","name":"Lost","sequence":-1,"status":"Cancelled","wId":"Opportunities","wName":"opportunity","source":"opportunity","targetSource":["opportunity"],"visible":true}
+{"_id":{"$oid":"56dd819ccc599b971852913b"},"sequence":1,"status":"In Progress","name":"stage 3","wId":"Opportunities","visible":true,"color":"#2C3E50","__v":0}

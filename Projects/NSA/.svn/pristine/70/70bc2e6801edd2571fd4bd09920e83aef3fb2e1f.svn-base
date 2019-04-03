@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context="nexrise.publication.in.nexrise.Common.SplashScreenActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin10"
+        android:background="@color/whiteWithOpacity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logo_layout"
+                android:layout_centerHorizontal="true"
+                app:cardBackgroundColor="@color/transparent"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="@dimen/cardElevation1">
+
+                <FrameLayout
+                    style="@style/logo"
+                    android:layout_gravity="center"
+                    android:background="@drawable/logo1"/>
+            </android.support.v7.widget.CardView>
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_layout"
+                android:layout_centerHorizontal="true"
+                style="?android:attr/progressBarStyle"/>
+        </RelativeLayout>
+       </FrameLayout>
+</FrameLayout>
+

@@ -1,0 +1,35 @@
+<div class="_acountingTableWrap">
+    <div class="_acountingTableBlock" style="margin: 6px;" >
+        <table id="report" class="display">
+
+            <thead>
+            <tr>
+                <th >Center</th>
+                <th >Reg No</th>
+                <th >Student</th>
+                <th >Course</th>
+                <th>Fee Amount</th>
+                <th >Discount</th>
+                <th>Paid</th>
+                <th>Outstanding</th>
+            </tr>
+            </thead>
+            <tbody class="forToggle">
+            <% collection.forEach(function(trans, index){
+            %>
+            <tr data-id="<%=trans._id%>">
+                <td class="editable" data-content="name" data-type="input"><%= trans.student ? (trans.student.center ? trans.student.center.centerName: '' ) : ''  %></td>
+                <td class="editable" data-content="transaction"><%=trans.registrationNo %></td>
+                <td class="editable" data-content="debitAccount"><%= trans.student ? trans.student.studentName : '' %></td>
+                <td class="editable" data-content="creditAccount"><%= trans.student ? (trans.student.course ? trans.student.course.courseName: '' ) : ''  %></td>
+                <td class="editable" data-content="creditAccount"><%= trans.studentFeeDetails ? trans.studentFeeDetails.actualFeeAmount ? trans.studentFeeDetails.actualFeeAmount : 0 : 0  %></td>
+                <td class="editable" data-content="creditAccount"><%= trans.studentFeeDetails ? trans.studentFeeDetails.discountAmount ? trans.studentFeeDetails.discountAmount : 0 : 0   %></td>
+                <td class="editable paid" data-content="creditAccount"><%= trans.studentFeeDetails ? trans.studentFeeDetails.paidAmount ? (trans.studentFeeDetails.paidAmount).toFixed(2) : 0 : 0  %></td>
+                <td class="editable outstanding" data-content="creditAccount"><%= trans.studentFeeDetails ? (parseInt(trans.studentFeeDetails.actualFeeAmount ? trans.studentFeeDetails.actualFeeAmount : 0) - parseInt(trans.studentFeeDetails.paidAmount ? trans.studentFeeDetails.paidAmount : 0)) : ''  %></td>
+            </tr>
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>
+

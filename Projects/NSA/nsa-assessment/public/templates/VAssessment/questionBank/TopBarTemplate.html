@@ -1,0 +1,12 @@
+<h3>QuestionBank</h3>
+<div id="createBtnHolder" class="btnsBlock">
+    <% if(data.create) { %>
+    <a href="/#erp/VQuestionBank/new" class="btn blue slim icon-plus" title="Create" id="top-bar-Register">New</a>
+    <% } %>
+    <% if(data.delete) { %>
+    <a href="javascript:;" class="top-bar-deleteBtn" title="Remove" id="top-bar-deleteBtn"></a>
+    <% } %>
+    <a class="btn blue slim printPdf" id="printPdf" aria-hidden="true" style="margin-left: 10px">Export</a>
+</div>
+
+<div id="dateFilter" class="vocationFilter _filterDropDownWrap"></div>

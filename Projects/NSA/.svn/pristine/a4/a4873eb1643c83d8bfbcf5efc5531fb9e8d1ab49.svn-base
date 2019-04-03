@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "91810778544",
+    "firebase_url": "https://monfort-86009.firebaseio.com",
+    "project_id": "monfort-86009",
+    "storage_bucket": "monfort-86009.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91810778544:android:56dc6f1facccac6f",
+        "android_client_info": {
+          "package_name": "montfort.management.in.anakkara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91810778544-o4rcij30cge8a401u20jqqdhhogjp5oq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP-FtSPc1a7Ct749UpFSyIofj-Thdwj1Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

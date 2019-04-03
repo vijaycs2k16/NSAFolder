@@ -1,0 +1,22 @@
+<div class="form-holder _newForm">
+    <form method="post" action="" class="_stockCorrectionForm" id="stockCorrection">
+        <h4 class="_dialogMainTitle">Edit Title</h4>
+        <div class="_formWrap">
+            <div class="_formBlock _equal">
+                <div class="_animateSelectBox _withInfo">
+                    <span class="_selectTitle">Title</span>
+                    <div class="_newSelectListWrap">
+                        <a id="franchiseCenter"
+                           class="current-selected select-disabled"
+                           data-id="<%=model.title ? model.title._id: null%>"
+                           href="javascript:;"><%=model.title ? model.title.titleName : 'Select Title'%></a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="_formBlock">
+                <div id="productItemsHolder"></div>
+            </div>
+        </div>
+    </form>
+</div>

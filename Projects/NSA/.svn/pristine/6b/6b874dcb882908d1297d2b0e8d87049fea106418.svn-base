@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="nexrise.publication.in.nexrise.OverviewFragment">
+        <include layout="@layout/progress_bar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/overview"
+            android:layout_margin="@dimen/margin5"
+            >
+            <TextView
+                android:text=" "
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding12"
+                android:textAllCaps="true"
+                android:id="@+id/studentname"
+                android:paddingTop="@dimen/padding5"
+                android:textStyle="bold"
+                android:layout_weight="1.5"
+                android:paddingBottom="@dimen/padding5"
+                android:textSize="@dimen/common_text_size" />
+            <ImageView
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_help"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height20"
+                android:id="@+id/help"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:id="@+id/calendarabs">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height30"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:id="@+id/absent"
+                android:text="Absent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/colorRed"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_height="@dimen/height30"
+                android:id="@+id/present"
+                android:text="Present"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:background="@color/present"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <!-- TODO: Update blank fragment layout -->
+
+
+    </LinearLayout>
+</ScrollView>

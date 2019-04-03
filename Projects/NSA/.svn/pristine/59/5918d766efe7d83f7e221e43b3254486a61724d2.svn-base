@@ -1,0 +1,9 @@
+var models = require('@nsa/nsa-assessment')
+
+module.exports = (function () {
+    //For NSA Start
+    require('./school_notification');
+    require('./school_media_usage_log');
+    //For NSA End
+
+})();

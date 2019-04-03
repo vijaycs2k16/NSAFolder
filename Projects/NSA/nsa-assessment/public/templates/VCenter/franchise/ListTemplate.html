@@ -1,0 +1,43 @@
+<div class="_acountingTableWrap">
+    <div class="_acountingTitleBlock _forOverview">
+        <% if(data.create) { %>
+        <a href="javascript:;" class="btn blue slim icon-plus btnPositioned" title="Create" id="top-bar-createBtn">New</a>
+        <% } %>
+    </div>
+    <div class="_acountingTableBlock _locationTableWrap">
+        <table id="example" class="display" style="width:100%">
+            <thead>
+            <tr class="forToggle">
+                <th class="text-left">Center Name</th>
+                <th class="text-left">Incharge Name</th>
+                <th class="text-left">Phone No</th>
+                <th class="text-left">Email</th>
+                <th class="text-left">Status</th>
+                <% if(data.update || data.delete) { %>
+                    <th class="text-left">Action</th>
+                <% } %>
+            </tr>
+            <tbody>
+            <% collection.forEach(function(elem,index){ %>
+            <tr data-id="<%=elem._id%>">
+                <td><%=elem.centerName%></td>
+                <td><%=elem.centerIncharge%></td>
+                <td><%=elem.centerPhoneNo%></td>
+                <td><%=elem.centerEmail%></td>
+                <td> <% if(elem.centerStatus)  {%>
+                    <span data-color="bgGreenLight" class=" _tagSmall">Active</span>
+                    <% } else { %>
+                    <span data-color="bgRed" class=" _tagSmall">Deactive</span>
+                    <% } %></td>
+                <% if(data.update || data.delete) { %>
+                    <td>
+                        <a href="javascript:;" class="icon-note <%= data.update ? 'goToEdit show' : 'hide' %> _actionCircleBtn" ></a>
+                        <a href="javascript:;" class="icon-trash <%= data.delete ? 'goToRemove show' : 'hide' %> _actionCircleBtn"></a>
+                    </td>
+                <% } %>
+            </tr>
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>

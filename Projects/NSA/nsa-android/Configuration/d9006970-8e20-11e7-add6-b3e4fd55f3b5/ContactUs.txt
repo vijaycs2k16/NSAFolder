@@ -1,0 +1,2 @@
+String myData = "</br><b> Madrasathul Anwar Higher Secondary School</b></br>Anwar Nagar</br>Post : KODINHI 676309</br>Malappuram Dist. Kerala</br>Ph: 0494 2481185 , 0494 2119323</br>Mob : 9809037881 , 9746855287 </br>Email : mahsskodinhi@yahoo.com,</br>mahsskodinhi@gmail.com </br>";
+

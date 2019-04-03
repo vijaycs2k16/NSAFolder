@@ -1,0 +1,66 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24dp"
+        android:height="30dp"
+        android:viewportWidth="24.0"
+        android:viewportHeight="24.0">
+    <path
+        android:pathData="M1.992,20.25h20v1h-20z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M1.992,5.25h20v1h-20z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M1.992,21.25c-1.104,0 -2,-0.896 -2,-2h1c0,0.552 0.448,1 1,1V21.25z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M-0.008,7.25h1v12h-1z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M22.992,7.25h1v12h-1z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M21.992,21.25v-1c0.561,0 1.016,-0.456 1.016,-1.016h1C24.008,20.346 23.104,21.25 21.992,21.25z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M0.992,7.25h-1c0,-1.102 0.896,-2 2,-2v1C1.44,6.25 0.992,6.698 0.992,7.25z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M23.992,7.25h-1c0,-0.552 -0.448,-1 -1,-1v-1C23.096,5.25 23.992,6.148 23.992,7.25z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M6.492,7.75c-0.275,0 -0.5,-0.224 -0.5,-0.5v-4c0,-0.276 0.225,-0.5 0.5,-0.5c0.275,0 0.5,0.224 0.5,0.5v4C6.992,7.526 6.768,7.75 6.492,7.75z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M17.492,7.75c-0.275,0 -0.5,-0.224 -0.5,-0.5v-4c0,-0.276 0.225,-0.5 0.5,-0.5s0.5,0.224 0.5,0.5v4C17.992,7.526 17.768,7.75 17.492,7.75z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M2.992,10.25h2v2h-2z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M6.992,10.25h2v2h-2z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M10.992,10.25h2v2h-2z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M14.992,10.25h2v2h-2z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M18.992,10.25h2v2h-2z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M2.992,14.25h2v2h-2z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M6.992,14.25h2v2h-2z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M10.992,14.25h2v2h-2z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M14.992,14.25h2v2h-2z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+    <path
+        android:pathData="M18.992,14.25h2v2h-2z"
+        android:fillColor="@color/svgLayoutIconColor"/>
+</vector>

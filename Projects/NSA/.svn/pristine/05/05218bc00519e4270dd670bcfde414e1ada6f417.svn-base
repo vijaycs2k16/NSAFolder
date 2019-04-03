@@ -1,0 +1,61 @@
+<div class="form-holder _newForm">
+    <form method="">
+        <h4 class="_dialogMainTitle">Edit Subject </h4>
+        <div class="_formWrap _enlargedItemMargin">
+            <div class="_formBlock _equal">
+                <div class="_animateInputBox">
+                    <input type="text"
+                           class="_animate "
+                           id="name"
+                           required
+                           value="<%=model.subjectName%>"/>
+                    <label class="_animate">Name</label>
+                </div>
+                <div class="_animateInputBox">
+                    <input type="text"
+                           class="_animate "
+                           id="code"
+                           required
+                           maxlength="48"
+                           value="<%=model.subjectCode%>"/>
+                    <label class="_animate">Code</label>
+                </div>
+                <div class="_textGrey">
+                    <label>Status</label>
+                </div>
+                <div class="container">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-6">
+                            <div class="_tipsWrap">
+                                <label for="yes" class="">Active </label>
+                                <input type="radio"
+                                       name="question"
+                                       id="yes"
+                                       class="_circleRadioRadiance"
+                                <%=model.subjectStatus ? checked='checked' : ''%>
+                                value="1">
+                                <label for="yes"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_circleRadioRadianceWrap col m-6">
+                            <div class="_tipsWrap">
+                                <label for="no" class="">Deactive</label>
+                                <input type="radio"
+                                       name="question"
+                                       id="no"
+                                       value="0"
+                                <%=!model.subjectStatus ? checked='checked' : ''%>
+                                       class="_circleRadioRadiance">
+                                <label for="no"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

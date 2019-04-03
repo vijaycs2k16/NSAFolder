@@ -1,0 +1,53 @@
+<div class="form-holder _newForm">
+    <form method="post" action="" id="invoiceForm">
+        <h4 class="_dialogMainTitle">Add Assessment</h4>
+        <div class="_formWrap _enlargedItemMargin">
+            <div class="_formBlock _equal">
+                <div class="_animateInputBox">
+                    <input type="text"
+                           class="_animate "
+                           id="name"
+                           required
+                           value=""/>
+                    <label class="_animate">Name</label>
+                </div>
+                <div class="container hide">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-6">
+                            <div class="_tipsWrap">
+                                <label for="online" class="">Online</label>
+                                <input type="radio"
+                                       name="examMode"
+                                       id="online"
+                                       value="online"
+                                       checked=""
+                                       class="_circleRadioRadiance">
+                                <label for="online"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_animateSelectBox examConfigDiv">
+                    <span class="_selectTitle">Assessment Duration</span>
+                    <div class="_newSelectListWrap">
+                        <a id="examConfig"
+                           name="examConfig"
+                           class="current-selected"
+                           href="javascript:;">Select</a>
+                    </div>
+                </div>
+                <div class="_animateSelectBox paperConfigDiv">
+                    <span class="_selectTitle">Question Configuration</span>
+                    <div class="_newSelectListWrap">
+                        <a id="paperConfig"
+                           name="paperConfig"
+                           class="current-selected"
+                           href="javascript:;">Select</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

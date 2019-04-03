@@ -1,0 +1,180 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/overlayColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/overlayForegroundColor">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/overlayForegroundColor"
+            android:weightSum="2">
+            <TextView
+                android:text="schedules"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin12"
+                android:textAllCaps="true"
+                android:id="@+id/study_value"
+                android:paddingTop="@dimen/margin5"
+                android:textStyle="bold"
+                android:layout_weight="1.5"
+                android:background="@color/overlayForegroundColor"
+                android:paddingBottom="@dimen/margin5"
+                android:textSize="@dimen/common_text_size" />
+            <ImageView
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_help"
+                android:id="@+id/help"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height20" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/cardElevation1"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin5"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_marginBottom="@dimen/margin5"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/layoutBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="top"
+                android:background="@color/layoutBackground">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/student1"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/width3"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@color/svgLayoutIconColor"
+                        />
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_time_table"
+                        android:tint="@color/svgLayoutIconColor"
+                        android:layout_toRightOf="@+id/message_to"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/my_name"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height50"
+                        android:layout_weight="2.0"
+                        android:gravity="center_vertical"
+                        android:text="Arnab Mukerjee \n Class 8 A"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/common_text_size" />
+                    <RelativeLayout
+                        android:minHeight="@dimen/height20"
+                        android:minWidth= "@dimen/minWidth22"
+                        android:id="@+id/notify_nav_icons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:background="@drawable/badge">
+                        <TextView
+                            android:text="2"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/small_text_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/notification_count" />
+                    </RelativeLayout>
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_arrow_right"
+                        android:layout_toRightOf="@+id/message_to"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height1"
+                    android:background="@color/overlayForegroundColor"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_notes"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/width3"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@color/svgLayoutIconColor"
+                        />
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_notepad_line"
+                        android:tint="@color/svgLayoutIconColor"
+                        android:layout_toRightOf="@+id/message_to"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/notes_text"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height50"
+                        android:layout_weight="2.0"
+                        android:gravity="center_vertical"
+                        android:text="Class Notes"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/common_text_size" />
+                    <RelativeLayout
+                        android:minHeight="@dimen/height20"
+                        android:minWidth= "@dimen/minWidth22"
+                        android:id="@+id/notify_nav_icons1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:background="@drawable/badge">
+                        <TextView
+                            android:text="2"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/small_text_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/notification_count1" />
+                    </RelativeLayout>
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_arrow_right"
+                        android:layout_toRightOf="@+id/message_to"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height1"
+                    android:background="@color/overlayForegroundColor"/>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

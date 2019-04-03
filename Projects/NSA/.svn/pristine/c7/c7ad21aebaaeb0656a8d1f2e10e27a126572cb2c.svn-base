@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/routes/vRegistration.js" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://helixteamhub.cloud/nexrisetech/projects/nexrise-erp/repositories/subversion/nexrise-erp/branches" />
+                  <option value="https://helixteamhub.cloud/nexrisetech/projects/nexrise-erp/repositories/subversion/nexrise-erp/tag" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://helixteamhub.cloud/nexrisetech/projects/nexrise-erp/repositories/subversion/nexrise-erp/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>

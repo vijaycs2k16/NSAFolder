@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/overlayColor"
+    tools:context="nexrise.publication.in.nexrise.EventsFeature.EventsFeatureListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include layout="@layout/progress_bar"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"/>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/overlayForegroundColor"
+        android:paddingLeft="@dimen/padding5"
+        android:paddingRight="@dimen/padding5"
+        android:paddingTop="@dimen/padding5"
+        android:paddingBottom="@dimen/padding3"
+        android:id="@+id/events_feature_listview"/>
+
+</RelativeLayout>

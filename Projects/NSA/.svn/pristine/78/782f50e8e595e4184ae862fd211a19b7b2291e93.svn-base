@@ -1,0 +1,12 @@
+﻿<div class="_acountingTableBlock">
+    <table id="exampleJS" class="display">
+        <col width="50px">
+        <col width="50px">
+        <thead>
+        <tr>
+            <th class="text-left">School Name</th>
+            <th class="text-left">Action</th>
+        </thead>
+        <tbody id="listTable" class="enableTableOdd"></tbody>
+    </table>
+</div>

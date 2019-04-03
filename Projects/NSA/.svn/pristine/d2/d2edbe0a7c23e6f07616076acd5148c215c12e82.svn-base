@@ -1,0 +1,250 @@
+<style>
+    .forms {
+        margin: 0 auto;
+        padding: 2em;
+    }
+    .wrap {
+        width: 100%;
+        overflow:auto;
+    }
+
+    .fleft {
+        float:left;
+        width: 50%;
+    }
+
+    .fright {
+        float: right;
+        width: 50%;
+    }
+
+    .vr {
+        width:1px;
+        background-color:#000;
+        position:absolute;
+        top:45px;
+        bottom:0;
+        left:50%;
+        right:50%;
+    }
+
+    .bix-td-option {
+        vertical-align: middle;
+        padding: 7px;
+    }
+
+    .bix-td-qno {
+        line-height: 1.7;
+        width: 25px;
+    }
+    .bix-div-container {
+        padding: 7px;
+        line-height: 1.7;
+    }
+    .bix-div-container p {
+        line-height: 1.7;
+    }
+
+
+
+    section {
+        margin: 4px auto;
+        padding: 2em;
+        max-width: 870px;
+        background: #fff;
+        box-shadow:  unset !important;
+        border-bottom: none !important;
+    }
+
+    img.Wirisformula { width:25px !important; height:19px !important;}
+
+    section {
+        max-width: inherit !important;
+    }
+
+</style>
+
+<div class="formContentWrap">
+    <div class="formContentTitle">
+        <span class="closeBtn backBtn"></span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 align-center">
+        <button type="button" class="btn blue slim" id="printInfo">Download</button>
+    </div>
+</div>
+<div id="example-print" >
+<% for (var k = 0; k < model.length; k++) {
+var data = model[k]
+%>
+<div class="form-holder _newForm _ordersDialog select-disabled">
+    <form method="post" action="" id="createPersonsForm">
+        <h4 class="_dialogMainTitle"></h4><br/><br/>
+        <!--<div class="row">
+            <div class="_formWrap">
+                <div class="_formBlock">
+                    <div class="_animateSelectBox _withInfo col m-9">
+                        <div class="col m-9">
+                            <span class="_selectTitle">Course:</span><br/>
+                            <div id="variantsCenterBlock" class="_variantsBlock _varientCenter multi-select" style="width: 350px; bottom: 8px">
+                                <div class="_checkCategoriesWrap">
+                                    <ul id="checkedProductCenter" class="_checkCategories"></ul>
+                                    <span id="showCenterBtn" class="_arrow"></span>
+                                </div>
+                                <ul id="productCenterCategories" class="_categoriesList"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_formBlock ">
+                    <div class="_animateInputBox">
+                        <input type="text"
+                               class="_animate "
+                               id="subject"
+                               required
+                               value="<%=data.subject ? data.subject.subjectName : 'Subject Name'%>"/>
+                        <label class="_animate">Subject</label>
+                    </div>
+                </div>
+                <div class="_formBlock ">
+                    <div class="_animateInputBox">
+                        <input type="text"
+                               class="_animate "
+                               id="topics"
+                               required
+                               value="<%=data.topicData ? data.topicData.name : 'Topic Name'%>"/>
+                        <label class="_animate">Topic</label>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+
+        <table  id='customers' style="height: 340px; width: 95%; margin: 9px 229px; margin-left: 10px;;">
+            <tbody>
+            <!--<tr style="height: 23px;">
+                <td  class="custom" colspan="6" style="width: 382px; height: 23px;">
+                    <div class="_animateSelectBox _withInfo" >
+                        Type :
+                        <select id="createDiscountOrNot" class="createDiscountOrNot">
+                            <option value="multi">Multiple Choice</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>-->
+            <% for (var i = 0; i < data.form.length; i++) {%>
+            <tr style="height: 23px;">
+                <td style="width: 115px; height: 23px;">Q-Code</td>
+                <td style="width: 547px; height: 23px;" colspan="5">
+                    <div class="  m-12" >
+                        <div class="_animateTextareaBox counterWrap">
+                            <div><%=data.code%></div>
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+            <tr style="height: 23px;">
+                <td style="width: 115px; height: 23px;">Question :  <%= k+1%></td>
+                <td style="width: 547px; height: 23px;" >
+                    <div class="  m-12" >
+                        <div class="_animateSelectBox _withInfo">
+                            <div id="" class="editor">
+                                <%=data.form[i].desc%>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr style="height: 23px;">
+                <td style="width: 115px; height: 23px;">Description:</td>
+                <td style="width: 547px; height: 23px;" colspan="5">
+                    <div class="  m-12" >
+                        <div class="_animateTextareaBox counterWrap">
+                            <div><%=data.desc%></div>
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+            <tr style="height: 23px;">
+                <td  style="width: 115px; height: 23px;">&nbsp;Choice&nbsp;</td>
+                <td class="custom" style="width: 547px; height: 23px;" colspan="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+            <% for (var j = 0; j < data.form[0].ans.length; j++) { %>
+            <tr class="productItem deleteRow left-alignment _productRow" id="<%=model._id%>">
+                <td style="width: 115px; height: 23px;">
+                    <div class="container">
+                        <div class=" _forCheckBox" style="position: relative;">
+                            <label class="inputBox _newSelectListWrap">
+                                <label class="_animatedCheckbox">
+
+                                    <%if (data.form[i].ans[j].isValid === true) { %>
+                                    <input id="active" data-id="salesPurchases_isCustomer"
+                                           class="checkbox shippingRadio checkVakue active" checked
+                                           type="checkbox"/>
+                                    <span style="height: 17px;"></span>
+                                    <% } else { %>
+                                    <input id="active" data-id="salesPurchases_isCustomer"
+                                           class="checkbox shippingRadio checkVakue active"
+                                           type="checkbox"/>
+                                    <span style="height: 17px;"></span>
+
+                                    <% }  %>
+
+                                </label>
+                            </label>
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 547px; height: 23px;" colspan="4">
+                    <div class="  m-12" >
+                        <div class="_animateSelectBox _withInfo" style="margin-bottom: 0px;">
+                            <div><%=data.form[i].ans[j].desc%></div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <% } %>
+            <% } %>
+            <tr style="height: 23px;">
+                <td style="width: 115px; height: 23px;">&nbsp;&nbsp;    Answer <br/>Explanation:</td>
+                <td style="width: 547px; height: 23px;" colspan="5">
+                    <div class="  m-12" >
+                        <div class="_animateTextareaBox counterWrap">
+                            <div><%=data.form[0].explanation%></div>
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+
+            <!--<tr style="height: 23px;">
+                <td style="width: 547px; height: 23px;" colspan="5">
+                    <div class="_animateSelectBox _withInfo" style=" top: 11px;right: 4px;"> Weightage:
+                        <select id="Weightage" class="Weightage" style="position: relative; left: 5px; width: 38px; bottom: 2px">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+
+                        <div class="_animateSelectBox _withInfo" style="bottom: 26px; left: 120px">Score:
+                            <select id="point" class="point" style="position: relative; left: 5px; width: 38px; bottom: 1px">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                </td>
+            </tr>-->
+            </tbody>
+        </table>
+    </form>
+</div>
+<% } %>
+</div>

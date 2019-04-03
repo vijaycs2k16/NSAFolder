@@ -1,0 +1,3 @@
+{"_id":{"$oid":"5adecb1a35751f39a621038f"},"name":"School Visit","stages":[{"$oid":"5adebe33ad977705148e8785"},{"$oid":"5adebe5cad977705148e8786"},{"$oid":"5adebe7dad977705148e8787"},{"$oid":"5adebe9dad977705148e8788"},{"$oid":"5adebeb8ad977705148e8789"},{"$oid":"5adebeccad977705148e878a"}],"active":true,"createdDate":{"$date":"2018-04-24T06:13:46.629Z"}}
+{"_id":{"$oid":"5adecb1a35751f39a6210390"},"name":"House Visit","stages":[{"$oid":"5adebf01ad977705148e878b"},{"$oid":"5adebf21ad977705148e878c"}],"active":true,"createdDate":{"$date":"2018-04-24T06:13:46.629Z"}}
+{"_id":{"$oid":"5adecb1a35751f39a6210391"},"name":"Event/Road show","stages":[{"$oid":"5adebf58ad977705148e878d"}],"active":true,"createdDate":{"$date":"2018-04-24T06:13:46.629Z"}}

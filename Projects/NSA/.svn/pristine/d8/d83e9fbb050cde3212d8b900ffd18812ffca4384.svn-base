@@ -1,0 +1,259 @@
+import {Component, OnInit, ViewChild, ElementRef} from "@angular/core";
+import {UserGroupsComponent} from "../user-groups.component";
+import {CommonService} from "../../../../../../services/common/common.service";
+import {FormBuilder, Validators} from "@angular/forms";
+import {ServiceUrls, Constants} from "../../../../../../common/index";
+import {BaseService} from "../../../../../../services/index";
+import {ValidationService} from "../../../../../../services/validation/validation.service";
+declare var _: any;
+
+@Component({
+    selector: 'add-user-groups',
+    templateUrl: 'add-user-groups.html',
+})
+
+
+
+export class AddUserGroupsComponent implements OnInit {
+
+    public selected = [];
+    addUserGroupsForm:any;
+    public student = [];
+    public query = "";
+    public filteredList = [];
+    public elementRef;
+    constId:'00000000-0000-0000-0000-000000000000';
+
+    groupName: any;
+    editGroup: any = true;
+    id: any;
+
+    constructor(private baseService:BaseService,
+                private fb:FormBuilder,
+                private constants:Constants,
+                private serviceUrls:ServiceUrls,
+                private commonService:CommonService,
+                myElement: ElementRef) {
+
+        this.elementRef = myElement;
+
+    }
+
+    ngOnInit() {
+        this.baseService.setTitle('NSA-add-User Group');
+        this.createForm();
+        this.getGroupUserDetails();
+        this.filteredList = []
+    }
+
+    createForm() {
+        this.addUserGroupsForm = this.fb.group({
+            'name': ['', Validators.compose([Validators.required, ValidationService.specialcharValidator]),],
+            'userGroup': [[''], Validators.compose([Validators.required, ValidationService.specialcharValidator]),],
+        });
+    }
+
+    addUserGroups(event){
+        this.editGroup = true;
+        this.createForm();
+        this.baseService.openOverlay(event)
+    }
+
+    editUserGroups(event){
+        this.editGroup = false;
+        var data = {};
+        var obj = JSON.parse(event.target.value);
+        this.id  = obj.id;
+        this.commonService.get(this.serviceUrls.getGroupDetailsById + '/' + this.id ).then(
+            result => this.callBack(result, event));
+
+    }
+
+    callBack(value: any, event: any) {
+        var groupUser = value[0].group_user;
+        //this.duplicateFound(Object.keys(groupUser));
+        this.editForm(value);
+        if(groupUser != null || groupUser !=undefined) {
+            this.editFilter(groupUser);
+        }
+        this.baseService.openOverlay(event)
+    }
+
+    editFilter(value: any) {
+        var values = Object.keys(value);
+        for(var i=0; i < values.length; i++) {
+            this.commonService.get(this.serviceUrls.getStudentDetailsByName + values[i]).then(result => this.callBackStudent(result));
+        }
+    }
+
+    callBackStudent(result: any){
+        var res = result[0];
+        console.log('res.....',res)
+        this.selected.push(res);
+    }
+
+
+    editForm(val : any) {
+        this.addUserGroupsForm = this.fb.group({
+            'name': [val[0].group_name, Validators.compose([Validators.required, ValidationService.specialcharValidator]),],
+            'userGroup': [[''], Validators.compose([Validators.required, ValidationService.specialcharValidator]),],
+        });
+    }
+
+
+    closeOverlay(event: any){
+        this.baseService.closeOverlay('#addUserGroup');
+        this.createForm();
+        this.selected = [];
+        this.filteredList = [];
+    }
+
+    select(item){
+        var userName = [];
+        console.log('this.selected.....',this.selected)
+        var res = _.filter(this.selected, function(o){return o.userName == item.userName})
+        this.selected.push(item);
+        this.query = '';
+        this.filteredList = [];
+    }
+
+    remove(item){
+        this.selected.splice(this.selected.indexOf(item),1);
+    }
+
+    duplicateFound(user: any): boolean{
+        var duplicate = false;
+        var userName = [];
+        _.forEach(user, function(val:any){
+            userName = _.filter(user,{'userName': val.userName});
+            if(userName.length > 1){
+                duplicate = true;
+                return false;
+            }
+        })
+
+        if(duplicate){
+            this.baseService.showNotification('Please Remove the Duplicate Users. ', '', 'bg-danger');
+            return;
+        }
+        return duplicate
+    }
+
+    filter() {
+        if (this.query !== ""){
+            this.commonService.get(this.serviceUrls.searchEmpStud + this.query.toLowerCase()).then(
+                texts => this.filteredList = texts
+            )
+        }else{
+            this.filteredList = [];
+        }
+    }
+
+    search(event: any){
+        //console.log('selected....',this.selected)
+        //console.log('event.....',event)
+        //var findUser = _.find(this.selected, {'user_name': event.userName});
+        //console.log('findUser....',findUser)
+    }
+
+    handleClick(event){
+        var clickedComponent = event.target;
+        var inside = false;
+        do {
+            if (clickedComponent === this.elementRef.nativeElement) {
+                inside = true;
+            }
+            clickedComponent = clickedComponent.parentNode;
+        } while (clickedComponent);
+        if(!inside){
+            this.filteredList = [];
+        }
+    }
+
+
+    create(event: any){
+        var userGroup = [];
+        var data = {};
+        this.addUserGroupsForm._value.name =   this.baseService.capitalizeFirstLetter(this.addUserGroupsForm._value.name);
+        for( var i=0 ; i< this.selected.length ; i++) {
+            userGroup.push(this.selected[i])
+        }
+        data['groupName'] = this.addUserGroupsForm._value.name;
+        data['groupUser'] = userGroup;
+        data['members'] = userGroup.length;
+        var duplicate = this.duplicateFound(userGroup);
+        if(this.setValidations()) {
+            if(duplicate == false) {
+                this.commonService.post(this.serviceUrls.saveGroupDetails, data).then(
+                    result => this.saveCallBack(result, false),
+                    error => this.saveCallBack(<any>error, true))
+            }
+        }
+    }
+
+    setValidations() : boolean {
+        var dataFound = false;
+        if(this.addUserGroupsForm._value.name == '') {
+            this.baseService.showNotification('Please Enter The Group Name.', '', 'bg-danger');
+        } else if(this.selected.length < 1){
+            this.baseService.showNotification('Please Select Users To Be Added To The Group.', '', 'bg-danger');
+        } else {
+            dataFound = true;
+        }
+        return dataFound;
+    }
+
+    saveCallBack(result: any, err: boolean) {
+        if(err){
+            this.baseService.showNotification(result, "", 'bg-danger');
+        } else{
+            this.closeOverlay(null);
+            this.baseService.dataTableReload('datatable-user-group');
+            this.baseService.showNotification(result, "User Group Created.", 'bg-success');
+        }
+    }
+
+    resetDatatable() {
+        this.baseService.dataTableDestroy('datatable-user-group');
+        var constId = '00000000-0000-0000-0000-000000000000';
+        var url = this.serviceUrls.getGroupDetails + '/'+ constId ;
+        this.baseService.enableDataTable(url);
+    }
+
+    getGroupUserDetails() {
+        this.baseService.enableDataTable(this.serviceUrls.getGroupDetails);
+    }
+
+    update(event: any){
+        var userGroup = [];
+        var data = {};
+        this.addUserGroupsForm._value.name =   this.baseService.capitalizeFirstLetter(this.addUserGroupsForm._value.name);
+        for( var i=0 ; i< this.selected.length ; i++) {
+            userGroup.push(this.selected[i])
+        }
+        data['groupName'] = this.addUserGroupsForm._value.name;
+        data['groupUser'] = userGroup;
+        data['members'] = userGroup.length;
+        var duplicate = this.duplicateFound(userGroup);
+        if(this.setValidations()) {
+            if(duplicate == false) {
+                this.commonService.put(this.serviceUrls.updateGroupDetails + '/' + this.id, data).then(
+                    result => this.updateCallBack(result, false),
+                    error => this.updateCallBack(<any>error, true))
+            }
+        }
+    }
+
+
+    updateCallBack(result: any, err: boolean) {
+        if(err){
+            this.baseService.showNotification(result, "", 'bg-danger');
+        } else{
+            this.closeOverlay(null);
+            this.baseService.dataTableReload('datatable-user-group');
+            this.baseService.showNotification(result, "User Groups Updated.", 'bg-success');
+        }
+    }
+
+
+}

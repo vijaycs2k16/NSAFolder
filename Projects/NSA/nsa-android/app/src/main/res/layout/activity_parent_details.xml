@@ -1,0 +1,113 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6"
+    android:orientation="vertical"
+    android:id="@+id/activity_details"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/details_listview"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/overlayForegroundColor"/>
+    <android.support.v7.widget.CardView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="1dp"
+        android:layout_margin="@dimen/margin5"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardBackgroundColor="@color/layoutBackground"
+        app:cardUseCompatPadding="true"
+        android:layout_weight="0.1"
+        android:id="@+id/chatclick"
+        android:visibility="gone"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin3"
+                android:text="Conversation"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:paddingLeft="@dimen/margin10"
+                    android:id="@+id/student_name"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:text="2.30pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/timeTextColor"
+                    android:textSize="@dimen/small_text_size"
+                    android:textStyle="italic"
+                    android:id="@+id/posted_time"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:paddingRight="@dimen/margin10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/margin5"
+                android:weightSum="5">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/descriptionTextColor"
+                    android:textSize="@dimen/description_text_size"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:paddingLeft="@dimen/margin10"
+                    android:layout_weight="4"
+                    android:id="@+id/comments" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/comments_linear_layout"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/comments_badge_layout"
+                        android:background="@drawable/badge_appcolor">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:text="2"
+                            android:id="@+id/comments_badge_text"
+                            android:textSize="8sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

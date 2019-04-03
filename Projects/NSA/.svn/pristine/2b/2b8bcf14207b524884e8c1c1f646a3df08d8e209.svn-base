@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_album_select"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nexrise.publication.in.nexrise.Gallery.CustomGallery.Activities.AlbumSelectActivity">
+
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar_album_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/text_view_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/error_null_cursor"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchMode="columnWidth"
+            android:numColumns="auto_fit"
+            android:id="@+id/grid_view_album_select"
+            android:layout_margin="@dimen/margin5"
+            android:horizontalSpacing="@dimen/margin5"
+            android:verticalSpacing="@dimen/margin10"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

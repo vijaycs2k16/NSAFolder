@@ -1,0 +1,45 @@
+<% if(result != undefined) { %>
+<div class="_formWrap">
+    <h4 class="errorLog">Confirmation</h4>
+    <div class="_formBlock">
+        <table id="example5" class="" style="width:100%">
+
+            <thead>
+            <tr class="forToggle">
+                <th>
+                    <label class="_customCHeckbox">
+                        <input type="checkbox" id="checkAll"/>
+                        <span></span>
+                    </label>
+                </th>
+                <th class="text-left">Product Name</th>
+                <th class="text-left">SKQ Id</th>
+            </tr>
+            </thead>
+            <tbody class="forToggle" id="currencyTable">
+
+
+            <% result.product.forEach(function(elem,index){ %>
+            <% var obj = lodash.filter(orderRows , {product: elem._id}) %>
+            <% if(obj.length > 0 ) {
+            elem.status = obj[0].status
+            %>
+                <tr data-id="<%=elem._id%>">
+                    <td class="notForm centerCell">
+                        <label class="_customCHeckbox">
+                            <input id="<%=elem._id%>" type="checkbox" value="<%=elem._id%>" class="checkbox"
+                            <%= elem.status && elem.status.shipped ? checked='checked' : '' %>
+                            />
+                            <span></span>
+                        </label>
+                    </td>
+                    <td><%=elem.name %></td>
+                    <td><%=elem.info ? elem.info.SKU : " - " %></td>
+                </tr>
+            <%}%>
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>
+<% } %>

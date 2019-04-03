@@ -1,0 +1,35 @@
+<% if(result != undefined) { %>
+<div class="_formWrap">
+    <h4 class="errorLog">Latest Error Logs</h4>
+    <% if(isHide) { %>
+        <span class="_staticLabel" style="color: #021600;" > Total : <%= total %> </span> &nbsp; &nbsp;
+        <span class="_staticLabel" style="color: #ff3838;"> Failed : <%= result ? result.length : 0 %> </span>&nbsp; &nbsp;
+    <span class="_staticLabel" style="color: #067001;"> Success : <%= result ? total - result.length : 0 %> </span>
+    <% } %>
+    <div class="_formBlock">
+        <table id="example" class="" style="width:100%">
+
+            <thead>
+            <tr class="forToggle">
+                <th class="text-left">First Name</th>
+                <th class="text-left">Last Name</th>
+                <th class="text-left">Error</th>
+                <th class="text-left">Phone Number</th>
+            </tr>
+            </thead>
+            <tbody class="forToggle" id="currencyTable">
+            <%
+            result.forEach(function(elem,index){
+            %>
+            <tr data-id="<%=elem._id%>">
+                <td><%=elem.contactName.first ? elem.contactName.first : elem.name %></td>
+                <td><%=elem.contactName.last ? elem.contactName.last : " - " %></td>
+                <td><%=elem.notes ? elem.notes : "" %></td>
+                <td><%=elem.phones ? elem.phones : " - "%></td>
+            </tr>
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>
+<% } %>

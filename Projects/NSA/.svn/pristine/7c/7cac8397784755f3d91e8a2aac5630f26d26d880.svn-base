@@ -1,0 +1,92 @@
+<% var isStudent = App.currentUser.student %>
+<div class="_acountingTableWrap">
+    <% if(data.create) { %>
+    <div class="_acountingTitleBlock _forOverview">
+        <a href="javascript:;" class="btn blue slim icon-plus btnPositioned" title="Create"
+           id="top-bar-createBtn">New
+        </a>
+    </div>
+    <% } %>
+    <% if(isStudent == null) { %>
+    <div class="_acountingTableBlock">
+        <table id="example" class="display" style="width:100%">
+
+            <thead>
+            <tr class="forToggle">
+                <th class="text-left">Batch Name</th>
+                <th class="text-left">Center Name</th>
+                <th class="text-left">Course Name</th>
+                <th class="text-left">Duration</th>
+                <th class="text-left">Status</th>
+                <% if(data.update || data.delete) { %>
+                <th class="text-left">Action</th>
+                <% } %>
+            </tr>
+            </thead>
+            <tbody>
+            <%
+            collection.forEach(function(elem,index){
+            %>
+            <tr data-id="<%=elem._id%>">
+                <td><%=elem.batchName%></td>
+                <td><%=elem.center ? elem.center.centerName : ''%></td>
+                <td><%=elem.course ? elem.course.courseName : ''%></td>
+                <td><%=elem.startDate ? elem.startDate : '-'%> - <%=elem.endDate ? elem.endDate : '-'%></td>
+                <td><% if(elem.batchStatus)  {%>
+                    <span data-color="bgGreenLight" class="text-center _tagSmall">Active</span>
+                    <% } else { %>
+                    <span data-color="bgRed" class="text-center _tagSmall">Deactive</span>
+                    <% } %>
+                </td>
+                <% if(data.update || data.delete) { %>
+                    <td>
+                        <a href="javascript:;" class="icon-note goToEdit _actionCircleBtn show" aria-hidden="true" ></a>
+                        <a href="javascript:;" class="icon-trash goToRemove _actionCircleBtn show" aria-hidden="true" ></a>
+                    </td>
+                <% } %>
+            </tr>
+
+            <% }) %>
+            </tbody>
+            <tfoot>
+            <tr >
+                <th>Name</th>
+                <th>Center</th>
+                <th>Course</th>
+                <th>Duration</th>
+                <th>Status</th>
+                <% if(data.update || data.delete) { %>
+                <th></th>
+                <% } %>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+    <% } else { %>
+    <div class="form-holder _newForm">
+        <form style="padding: 10px">
+            <div class="infoStyle-body">
+                <div class="row"></div>
+                <div class="row">
+                    <label class="col-sm-2 paddingLeftMd form-control-label infoStyle-label"> Name</label>
+                    <label class="col-sm-4 form-control-label" id="batch-name">: <%= collection[0].batchName %></label>
+                </div>
+                <div class="row">
+                    <label class="col-sm-2 paddingLeftMd form-control-label infoStyle-label">Course</label>
+                    <label class="col-sm-4 form-control-label" id="course-name">: <%= collection[0].course.courseName %></label>
+                </div>
+                <div class="row">
+                    <label class="col-sm-2 paddingLeftMd form-control-label infoStyle-label">Center</label>
+                    <label class="col-sm-4 form-control-label" id="center-name">: <%= collection[0].center.centerName %></label>
+                </div>
+                <div class="row">
+                    <label class="col-sm-2 paddingLeftMd form-control-label infoStyle-label">Start Date</label>
+                    <label class="col-sm-4 form-control-label" id="start-date">: <%= collection[0].startDate ? collection[0].startDate : '-' %></label>
+                    <label class="col-sm-2 paddingLeftMd form-control-label infoStyle-label">End Date</label>
+                    <label class="col-sm-4 form-control-label" id="end-date">: <%= collection[0].endDate ? collection[0].endDate : '-' %></label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <% } %>
+</div>

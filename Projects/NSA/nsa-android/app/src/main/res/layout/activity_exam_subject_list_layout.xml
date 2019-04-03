@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height40">
+
+        <TableRow
+            android:minHeight="@dimen/minHeight50"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height30">
+
+            <TextView
+                android:background="@drawable/border_table"
+                android:id="@+id/exam_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Second column"
+                android:textSize="@dimen/common_text_size"
+                android:gravity="center"/>
+
+            <TextView
+                android:background="@drawable/border_style"
+                android:id="@+id/subect"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/common_text_size"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Maths"/>
+
+            <TextView
+                android:background="@drawable/border_style"
+                android:id="@+id/exam_session"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/common_text_size"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="FN 09:30 - 10:30"/>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/portion_linear"
+                android:background="@drawable/border_style">
+
+                <ImageView
+                    android:layout_height="@dimen/height25"
+                    android:layout_width="@dimen/width25"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/margin10"
+
+                    android:id="@+id/notes_attachment"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/ic_download"/>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height20"
+                    android:id="@+id/badge_layout"
+                    android:layout_gravity="center"
+                    android:background="@drawable/badge_appcolor">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:id="@+id/badge_text"
+                        android:text="25"
+                        android:textSize="@dimen/text8"/>
+                </FrameLayout>
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

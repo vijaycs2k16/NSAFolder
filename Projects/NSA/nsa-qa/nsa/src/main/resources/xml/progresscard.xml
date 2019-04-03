@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="progressCard">
+	
+	<parameter name="exam_Clsname" value="Class 1"></parameter>
+	<parameter name="exam_Secname" value="Section A"></parameter>
+	<parameter name="exam_name" value="Mid Term EXAMINATION"></parameter>
+	<parameter name="ex_Studentname" value="SHALINI KANNAN"></parameter>
+	<parameter name="grade" value="1.1-2"></parameter>
+	
+	<test name="ProgressCard">
+		<classes>
+			<class name="com.nsa.testing.tests.ProgressCard" />
+		</classes>
+	</test>
+</suite> 

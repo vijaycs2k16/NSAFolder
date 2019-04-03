@@ -1,0 +1,18 @@
+<div id="listTable">
+    <% users.forEach(function(user, index){ %>
+    <div data-id="<%=user._id%>"
+         class="compactView _compactView ">
+        <div class="checkboxRow ">
+            <label class="_customCHeckbox">
+                <input type="checkbox" class="checkbox" data-id="<%=user._id ? user._id: null%>" value="<%=user._id ? user._id: null%>"/>
+                <span></span>
+            </label>
+        </div>
+        <div class="compactRowWrap">
+            <div class="compactRow">
+                <div class="firstName _growed _mainTitle"><%=user.studentName ? user.studentName: null%></div>
+            </div>
+        </div>
+    </div>
+    <% }) %>
+</div>

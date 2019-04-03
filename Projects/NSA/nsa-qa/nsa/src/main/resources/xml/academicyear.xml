@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="academicyear">
+<parameter name="scholname" value="01-Jan-2018"></parameter>
+	<test name="AcademicYear">
+		<classes>
+			<class name="com.nsa.testing.tests.AcademicYear"/>
+		</classes>
+	</test>
+</suite> 

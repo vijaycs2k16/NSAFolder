@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_parent_transport"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nexrise.publication.in.nexrise.TransportManager.TeacherTransportActivity">
+
+    <include layout="@layout/progress_bar"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlayForegroundColor"
+        android:id="@+id/routes_listview"/>
+</LinearLayout>

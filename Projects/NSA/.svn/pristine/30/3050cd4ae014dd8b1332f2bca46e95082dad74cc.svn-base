@@ -1,0 +1,36 @@
+module.exports = (function () {
+    require('./ClassDetails.js');
+    require('./SubTopics.js');
+    require('./section.js');
+    require('./subjectTitle.js');
+    require('./subjectTitleTerm.js');
+    require('./schoolSubjectTitle.js');
+    require('./subjectTermTopics.js');
+    require('./title.js');
+    require('./vSubject.js');
+    require('./vSubjectTopics');
+    require('./vClass.js');
+    require('./vAssessments.js');
+    require('./vAssessmentDetails.js');
+    require('./vStudentNotifications');
+    require('./vQuestion');
+    require('./vSheet');
+    require('./vExamConfig');
+    require('./vExam');
+    require('./vCodeType');
+    require('./vSubjectMetrics');
+    require('./vExamSchedule');
+    require('./vStudentExam');
+    require('./vQuestionMetrics');
+    require('./vExamScheduleLog');
+    require('./vStudyContent');
+    require('./testConfiguration');
+    require('./questionUsage');
+    require('./7pmSubjectMetrics');
+    require('./7pmStudentExam');
+    require('./7pmQuestionMetrics');
+    require('./school_notification');
+    require('./school_media_usage_log');
+    //For NSA End
+
+})();

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fee_defaulters_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="nexrise.publication.in.nexrise.FeeManagement.FeeDefaultersDetailsActivity">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:paddingLeft="@dimen/padding10"
+        android:textSize="@dimen/common_text_size"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlack"
+        android:background="@color/layoutBackground"
+        android:id="@+id/textView19" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@color/overlayForegroundColor"></View>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding5"
+        android:paddingRight="@dimen/padding5"
+        android:paddingTop="@dimen/padding5"
+        android:paddingBottom="@dimen/padding3"
+        android:layout_weight="1"
+        android:background="@color/layoutBackground"
+        android:id="@+id/fee_defaulters_details_listview"/>
+
+
+
+</LinearLayout>

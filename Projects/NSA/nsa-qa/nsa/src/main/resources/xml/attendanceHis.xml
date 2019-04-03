@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="attendanceHis">
+	<test name="AttendanceHis">
+	    <parameter name="selClass" value="Class 1"></parameter>	
+	    <parameter name="selSection" value="Section A"></parameter>
+		<classes>
+			<class name="com.nsa.testing.tests.AttendanceHis" />
+		</classes>
+	</test>
+</suite> 

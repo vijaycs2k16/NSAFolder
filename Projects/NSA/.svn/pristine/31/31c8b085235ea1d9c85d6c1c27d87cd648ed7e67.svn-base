@@ -1,0 +1,36 @@
+<%
+collection.forEach(function(elem,index){
+%>
+<tr data-id="<%=elem._id%>">
+    <td class="notForm">
+        <label class="_customCHeckbox">
+            <input type="checkbox" value="<%=elem._id%>" class="checkbox"/>
+            <span></span>
+        </label>
+    </td>
+    <td class="text-left"><%=elem.code%></td>
+    <% for (var x in elem.form){%>
+    <% var question = elem.form[x].desc%>
+    <td><%=question%></td>
+    <% break; } %>
+    <td class=" ">
+        <span title="Allocated" class=""><%=elem.subject ? elem.subject.subjectName : ' - '%></span>
+    </td>
+    <td class=" ">
+        <span title="Allocated" class=""><%=elem.classDetail ? elem.classDetail.className : ' - '%></span>
+    </td>
+    <td class=" ">
+        <span title="Allocated" class=""><%=elem.title ? elem.title.titleName : ' - '%></span>
+    </td>
+    <td class=" ">
+        <span title="Allocated" class=""><%=elem.topicData ? elem.topicData.name : ' - '%></span>
+    </td>
+    <!--<td class=" ">
+        <span title="Allocated" class=""><%=elem.weightage == 1 ? 'Easy' : elem.weightage == 2 ? 'Medium' : 'Hard'  %></span>
+    </td>-->
+    <td class=" ">
+        <span title="Fulfilled"><%=elem.point%></span>
+    </td>
+    <td class="editable"><%=elem.lastModified ? moment(elem.lastModified).format('LLL') : '-'%></td>
+</tr>
+<% }) %>

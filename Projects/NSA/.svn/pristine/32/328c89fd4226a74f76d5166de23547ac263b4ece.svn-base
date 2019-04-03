@@ -1,0 +1,41 @@
+module.exports = (function () {
+    var mongoose = require('mongoose');
+    var ObjectId = mongoose.Schema.Types.ObjectId;
+
+    var AnswerSchema = mongoose.Schema({
+        desc   : {type: String, default: ""},
+        isValid: {type: Boolean}
+    });
+
+    var FormSchema = mongoose.Schema({
+        desc       : {type: String, required: true},
+        explanation: {type: String, default: null},
+        images     : [{type: String}],
+        ans        : [AnswerSchema]
+    });
+
+    var questionSchema = mongoose.Schema({
+        desc        : {type: String},
+        code        : {type: String, required: true, index: {unique: true}},
+        lastModified: {type: Date},
+        type        : {type: String, index: true, required: true},
+        subject     : {type: ObjectId, ref: 'Subject'},
+        classDetail : {type: ObjectId, ref: 'ClassDetails'},
+        topic       : {type: ObjectId, ref: 'SubjectTopics'},
+        topics      : {type: ObjectId, ref: 'SubjectTopics'},
+        subTopic    : {type: ObjectId, ref: 'SubTopics', default : null},
+        point       : {type: Number, default: 1, required: true},
+        weightage   : {type: String,required: true},
+        form        : [FormSchema],
+        numForm     : {type: Number},
+        title       : {type: ObjectId, ref:'title'}
+    }, {collection: 'Question'});
+
+    mongoose.model('Question', questionSchema);
+
+    if (!mongoose.Schemas) {
+        mongoose.Schemas = {};
+    }
+
+    mongoose.Schemas.Question = questionSchema;
+})();

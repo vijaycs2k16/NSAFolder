@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "33430604485",
+    "firebase_url": "https://netaji-3121c.firebaseio.com",
+    "project_id": "netaji-3121c",
+    "storage_bucket": "netaji-3121c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33430604485:android:b8cd4eb6807226b8",
+        "android_client_info": {
+          "package_name": "netaji.management.in.nellore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33430604485-jkodf42p0aq0qsulq1nalvp3igb03mqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY_YbrOgfDK8Pf-G4FIfTQEzqbPwgxf3A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+{
+  "apps" : [{
+    "name"        : "server",
+    "script"      : "server.js",
+    "ignoreWatch" : ["node_modules", "public"],
+    "watch": ["handlers", "routes", "config", "models", "services", "utils", "converters", "config", "helpers"]
+  }]
+}

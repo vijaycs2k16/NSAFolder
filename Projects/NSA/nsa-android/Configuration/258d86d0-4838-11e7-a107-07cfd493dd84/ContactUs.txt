@@ -1,0 +1,1 @@
+String myData = "</br><b> No. 216, Saraswathi Ramachandran School Street</b></br>Edayarpalaym Main Road,</br>Menambedu Main Road</br>Sun Garden, Edayarpalayam, Kuniamuthur</br>Coimbatore, Tamil Nadu 641008</br>0422 647 3731 </br>E-mail : srvschool.yahoo.co.in</br>";

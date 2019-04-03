@@ -1,0 +1,60 @@
+use nsa;
+
+DROP TABLE IF EXISTS nsa.school_subject_content;
+CREATE TABLE nsa.school_subject_content (
+tenant_id timeuuid,,
+school_id uuid,
+academic_year text,
+subject_id uuid,
+subject_name text,
+term_id uuid,
+term_name text,
+title text,
+descrption text,
+active boolean,
+url text,
+updated_by text,
+updated_date timestamp,
+updated_firstname text,
+created_by text,
+created_date timestamp,
+created_firstname text,
+image_url  text,
+content_title text,
+content_type text,
+topic_name text,
+PRIMARY KEY ((tenant_id, school_id, academic_year), subject_id, content_title, title)
+);
+
+
+DROP TABLE IF EXISTS nsa.subject_content;
+CREATE TABLE nsa.subject_content (
+tenant_id timeuuid,,
+school_id uuid,
+academic_year text,
+subject_id uuid,
+subject_name text,
+term_id uuid,
+term_name text,
+title text,
+descrption text,
+active boolean,
+url text,
+updated_by text,
+updated_date timestamp,
+updated_firstname text,
+created_by text,
+created_date timestamp,
+created_firstname text,
+image_url  text,
+content_title text,
+content_type text,
+topic_name text,
+PRIMARY KEY ((subject_id), content_title, title)
+);
+
+
+ALTER table nsa.school_details add school_management boolean;
+ALTER table nsa.user add school_management boolean;
+
+

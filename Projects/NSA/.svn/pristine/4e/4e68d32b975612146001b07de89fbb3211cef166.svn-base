@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="reportcard">
+	<parameter name="class_nme" value="Class 4"></parameter>
+	<parameter name="sec" value="Section A"></parameter>
+	<parameter name="term" value="Termwise"></parameter>
+	<parameter name="termnme" value="Term 1"></parameter>
+	<test name="ReportCardTest">
+		<classes>
+			<class name="com.nsa.testing.tests.ReportCardTest" />
+		</classes>
+	</test>
+</suite> 

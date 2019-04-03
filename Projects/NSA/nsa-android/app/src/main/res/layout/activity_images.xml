@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="nexrise.publication.in.nexrise.Gallery.ImagesActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include layout="@layout/progress_bar"
+        android:visibility="gone"/>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchMode="columnWidth"
+        android:numColumns="auto_fit"
+        android:id="@+id/video_gridview"
+        android:layout_margin="@dimen/margin5"
+        android:horizontalSpacing="@dimen/margin5"
+        android:verticalSpacing="@dimen/margin10"/>
+
+</LinearLayout>

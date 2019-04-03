@@ -1,0 +1,544 @@
+{
+  "resource": [
+    {
+      "school_name": "Nexrise Technologies",
+      "tenant_id": "8eb846a0-4549-11e7-9543-276f818a8422",
+      "project_number": "294402446315",
+      "access_id": "8eb846a0-4549-11e7-9543-276f818a8422",
+      "map_api_key": "AIzaSyDNonblY7CqbOFJb5FWM0GCE0R_vwX1fzk",
+      "server_api_key": "AAAARIvA0-s:APA91bF5eOXD3C5sDmx8fuKNx0lEc4-eTFOdUAq0GpVjYxS33rfDFHwWcrbhIQg6io6W0GdumG5BZ1F36Dlc1mm6MQVSMjZMZPeoS1IwZIkUJ9YpQ8pPyC3dUe-Vl8blR3QYlUWF3Eg5",
+      "package_name": "nexrise.publication.in.nexrise",
+      "app_name": "NexschoolApp"
+    },
+    {
+      "school_name": "Saraswathi ramachandran vidyalaya coimbatore",
+      "tenant_id": "258d86d0-4838-11e7-a107-07cfd493dd84",
+      "project_number": "183259244832",
+      "access_id": "258d86d0-4838-11e7-a107-07cfd493dd84",
+      "map_api_key": "AIzaSyCgXwedaqItYfOT2Gi1eR4ycjVSzcqQCX8",
+      "server_api_key": "AAAAKqsaKSA:APA91bEvdTGAVFLD0qaP2oFrUgvdbrjy_Mz5gkDPKa5T5BB4t4Eu9fgI-w3kEH7BFaQvba27GEpbr2TsKW08mOWQKwsaj9h_hvwgvJ546suTpFnT0yAkMQcARnpEmwQoTSnmRKQqxKeq",
+      "package_name": "nexrise.publication.in.srv",
+      "app_name": "SRV Kovai"
+    },
+    {
+      "school_name": "Bhashyam Blooms",
+      "tenant_id": "85834430-5d87-11e7-8234-4be92e1eb721",
+      "project_number": "1038360472986",
+      "access_id": "85834430-5d87-11e7-8234-4be92e1eb721",
+      "map_api_key": "AIzaSyDe0khwa-h8tJWHmiC-JBV83NjPRatMm-E",
+      "server_api_key": "AAAA8cMbbZo:APA91bGVy_YLk2Imb_2PnAnn8EAx7lRBqPEzL0h9bqSz-PiDcZhCJcJyq5JLEUQxZ50TDp78PYArArStziVc2C_t4yY8z47GF1VivnvH0wJw0lBEh8g2lepXdSGBaszlEQ4VUr3x_aQB",
+      "package_name": "bhashyam.publication.in.guntur",
+      "app_name": "Bhashyam Blooms"
+    },
+    {
+      "school_name": "St Rita's Kochi",
+      "tenant_id": "214a6e60-4da8-11e7-8abe-adec971199c2",
+      "project_number": "945515151730",
+      "access_id": "214a6e60-4da8-11e7-8abe-adec971199c2",
+      "map_api_key": "AIzaSyDaD_SXWlfwA2CX36SeOosYwiBXLidgBHw",
+      "server_api_key": "AAAA3CUYQXI:APA91bFx9lJaY5R16wHo7qUKYKFe_IdvN3QnsIQ7kv7lDKD8M6RZYt1Od7D84sew-xh6MrDRP1smsn5J6PmhjJi2JINuycpcEpnaAzCSFhGQKNnISHCwMXlts8yKtRRUFLtVTlHoA1SW",
+      "package_name": "ritas.publication.in.kochi",
+      "app_name": "ST.RITAs"
+    },
+    {
+      "school_name":"Auxilium English Medium School",
+      "tenant_id": "be3184d0-500e-11e7-9f5f-87d439384c1d",
+      "project_number":"358503597805",
+      "access_id": "be3184d0-500e-11e7-9f5f-87d439384c1d",
+      "map_api_key": "AIzaSyCCtVFYAj7G-RxcHXXSzDCPPzazyZ6cu10",
+      "server_api_key": "AAAAU3h6xu0:APA91bF0VNhAq0zsT4e9Y1oAOzcGNy1QZ2UNrrTxICzAHSMr91DQ7WvBStefPcP6HL95GOvfEHXP26hGKqvSG0Q3I_kuteoRNsd_Ztl2tnej-Y32MLpy36xfjDd80BUPtp-keSYPxjJy",
+      "package_name": "auxilium.publication.in.palluruthy",
+      "app_name": "Auxilium"
+    },
+    {
+      "school_name": "ST.PATRICK'S ACADEMY Hr.Sec.School",
+      "tenant_id": "e78a58d0-7bff-11e7-b2c8-3bbeadcdc431",
+      "project_number": "424970851839",
+      "access_id": "e78a58d0-7bff-11e7-b2c8-3bbeadcdc431",
+      "map_api_key": "AIzaSyD1gY5hbN8pH5wP_qLGAyrCZwO7W8rAJm8",
+      "server_api_key": "AAAAYvI8lf8:APA91bEbXH_U-KFnH7jqW53Oyslo6eX5V_pJLpywQiDGkkle81yg8WTtBGznaXOTBi7djeArNtQ3MMZDaBU0hDWOUkNuJpflX4MULFM1y-tETsCffs4A_YzQaZjKvQXhGJsDjGfOXJsB",
+      "package_name": "patricks.management.in.dindigul",
+      "app_name": "ST.PATRICKs DINDIGUL"
+    },
+    {
+      "school_name": "Madrasathul Anwar Higher Secondary School",
+      "tenant_id": "d9006970-8e20-11e7-add6-b3e4fd55f3b5",
+      "project_number": "674297906211",
+      "access_id": "d9006970-8e20-11e7-add6-b3e4fd55f3b5",
+      "map_api_key": "AIzaSyA-Mkd26zQGFIjp_ai4janeuR-P8TjPmvE",
+      "server_api_key": "AAAAnP9JhCM:APA91bFu3DSctTrnwCkYkVxe72BTMTZQQztbO2alRkC-ww663kjZmpvo8ZJEyy5x2rKuQqSizHBaqG4sPr7HTe23WT-SrVzGj7VLuEKaIF9yo45IgR7AfAXHXwkhb2amkwyhTGp02OLU",
+      "package_name": "mahss.management.in.kodinhi",
+      "app_name": "MAHSS Kodinhi"
+    },
+    {
+      "school_name": "St. Aloysius Convent ISC School",
+      "tenant_id": "d04943a0-d175-11e6-a2c8-c95cdbee5e46",
+      "project_number": "201925306539",
+      "access_id": "d04943a0-d175-11e6-a2c8-c95cdbee5e46",
+      "map_api_key": "AIzaSyAzTP-zka6uPkFWZ2e5zBPoycaLvL79bPk",
+      "server_api_key": "AAAALwOvqKs:APA91bG9tR4nB3pTM87sNK6V7OOTgvAPm_OSw3pLFba01tDuEzv7JexHCstVxpYLaOYB5amMaei_9Zh3PWnB9U84ZSnHbvMqiadJIK3WG_fajn5Toe0IM40uwyNrUHdnB2ykrHDQldpJ",
+      "package_name": "aloysius.management.in.palluruthy",
+      "app_name": "St Aloysius"
+    },
+   {
+      "school_name": "BRILLIANT MPT",
+      "tenant_id": "d0965e30-10c4-11e8-8997-03b688923c75",
+      "project_number": "148753873008",
+      "access_id": "d0965e30-10c4-11e8-8997-03b688923c75",
+      "map_api_key": "AIzaSyCkcLlqI7ZpB2_muzC9mWGKmwalW38CPA4",
+      "server_api_key": "AAAAIqJr-HA:APA91bHMcK0XlGR2pabeMbRvOGvz-l2Yvauf53-hXzy4Zbp7ld8bXHxxHehfGEX0fQ5O1IDnnNIvAGGlaamXtMQPqNE2wgmo5En4v90l9_q6EPAQRT6UmlgKe4emVsBALHUXTJgvOt_o",
+      "package_name": "brilliant.management.in.muthupet",
+      "app_name": "Brilliant Mpt"
+  },
+ {
+      "school_name": "St. Patrick's High School [I.C.S.E.], Adyar",
+      "tenant_id": "e74e3a00-6d34-11e7-ace1-b38d7197d91b",
+      "project_number": "866293485196",
+      "access_id": "e74e3a00-6d34-11e7-ace1-b38d7197d91b",
+      "map_api_key": "AIzaSyA4QwGSpqW-oz7Dhr3bCvvqMpCHNtnXa0M",
+      "server_api_key": 	"AAAAybMdjow:APA91bG-zEnz0DnYFa8VIOc5TENco_T64923K2vg_nuFCZBqFK7H9pAlWOL9fwRaZJRKrBD0uW_pULAcBVcHCeDQW2kT2tkR_58V-2c_Usn5WBbyYdkiJcyQcv4ysr74O4PNLfU-2h5A",
+      "package_name": "patricks.management.in.adyar",
+      "app_name": "SPICSE"
+    },
+   {
+        "school_name": "St.Vincent's ICSE School",
+        "tenant_id": "9cf40230-6ec1-11e7-bc55-678dc4f8b437",
+        "project_number" : "98215237170",
+        "access_id": "9cf40230-6ec1-11e7-bc55-678dc4f8b437",
+        "map_api_key" : "AIzaSyBGk0zNOIL3_ZsMWhSELfJ6372JZdepmsU",
+        "server_api_key: "AAAAFt4VljI:APA91bHg9cciJEsUJ74tHs9IRpBqfBXHnGSytOFeKeCOmNcgwHlCTCofSwWpFVQzlgp1rt5_tUHx_llnjXX9c3eB5ncbUS-3mrAurhhY_gTMPxNVA0vmijvLN3gyHoD5Q1DX_n4kbFt5",
+        "package_name":"vincent.management.in.keralapuram" ,
+        "app_name":"SVS Keralapuram" 
+   },
+   {
+      "school_name": "S.A.S.Matriculation School Punganur",
+      "tenant_id": "15893290-75db-11e7-b9b7-9d68767f2473",
+      "project_number": "1006362893641",
+      "access_id": "15893290-75db-11e7-b9b7-9d68767f2473",
+      "map_api_key" : "AIzaSyDjSFBiWa_-xCorbR5TgcQQMrLpd3U_39o"
+      "server_api_key": "AAAA6k_nHUk:APA91bH26-vPghm_faKaVTeYpQ8LjDT6rkqLYd3oCx8GyKJpBMhpsNXrj9HMIlwtg9eScMNmdGubeV4cUwTKgj8-EBJXh_xmJ6vSc7ZujlyxT-SNeM8Bq044RS7hI11N0KTbNrJuO4X4",
+      "package_name": "sas.management.in.trichy",
+      "app_name": "SASMAT"
+   },
+  {
+      "school_name": "SHIFAN NOOR GLOBAL ACADEMY",
+      "tenant_id": "f59968c0-7809-11e7-9e7b-bff6e4bbd24d",
+      "project_number": "87106980221",
+      "access_id": "f59968c0-7809-11e7-9e7b-bff6e4bbd24d",
+      "map_api_key": "AIzaSyAssQps40b6Z9YHeGKrtcq3vrmNT7xZ5ew",
+      "server_api_key": "AAAAFEf7CX0:APA91bGe_mzcGiQDyXG6N9Nl3Q2-auu4GEu42LLQEex0qBSzlF7_xamqmLMLm-rFEk41cGTAmLCfGe2pJBWSu0KL9vl2VIhALNEwXIlw5IYZHnfuLko72Ij8-1ogJQKewBz-c7QG18kl",
+      "package_name": "snga.management.in.ramanathapuram",
+      "app_name": "SNGA (CBSE)"
+  },
+{
+      "school_name": "WINGS HIGH SCHOOL, BHAINSA",
+      "tenant_id": "a31355c0-9956-11e7-9121-35a9e6d565f0",
+      "project_number": "620101480959",
+      "access_id": "a31355c0-9956-11e7-9121-35a9e6d565f0",
+      "map_api_key": "AIzaSyDwiEbzKoj2geEH1sOCulyppa0rmvg58Bk",
+      "server_api_key": "AAAAkGDtsf8:APA91bHSTYj71njCruFVU2n8n6lxnAveDVYsG7cF2LQLU7hvXMqdJGJvsvw7JoMYCTKHG_tRFt2Yw6YJU9EuaalOv5yoS-2b3TaCGSPwYxdIe3VPPOGTwT--Xuik_VPYImnWKpphwaUD",
+      "package_name": "wings.management.in.bhainsa",
+      "app_name": "WINGS KINGS"
+    },
+{
+      "school_name": "Universal Techno School",
+      "tenant_id": "edb2f3a0-955b-11e7-8da2-8b71efe3f2c1",
+      "project_number": "692047917135",
+      "access_id": "edb2f3a0-955b-11e7-8da2-8b71efe3f2c1",
+      "map_api_key": "AIzaSyAV0M7pYYpXjhhXtCXRptUr5HIVlFyfTHc",
+      "server_api_key": "AAAAoSFFME8:APA91bE2-XcJyScnfSvJqS-4QqCDCCeS4zRQVdUbjs8CcnINsvdmt7OCWhsnchxw3I8gHZg0FKKBXqRcD7V_VMB1zyeaDEw5eX-aF3Hsxz2N42YeKafBa5k4txaeLG9r8UaVNw_REBaB",
+      "package_name": "universal.management.in.andhra",
+      "app_name": "UHS App"
+    },
+{
+      "school_name": "Vedham School of Excellence, Bhainsa",
+      "tenant_id": "f1090b20-988a-11e7-8be3-e91671c1fd63",
+      "project_number": "424340288214",
+      "access_id": "f1090b20-988a-11e7-8be3-e91671c1fd63",
+      "map_api_key": "AIzaSyA_xp52tFTyYmxmFUP_1ZuEHb9f2yKonf4",
+      "server_api_key": "AAAAYsym8tY:APA91bH7luwuqFHfGYXcyhnGcqCfR5lxvRFxU_vjsanob4Xr0KIbvOAbSF-bq87Cahl6YMMIy-whuINSJl15xTgX4_lLqz7n3_-CVAb2NuzUOh07g2p-D2o0kqLM-u__OXxqzVk9MtKS",
+      "package_name": "vedham.management.in.bhainsa",
+      "app_name": "Vedham School"
+    },
+{
+      "school_name": "HOLY  CHILD  ENGLISH ACADEMY",
+      "tenant_id": "262df660-a83c-11e7-9a0d-fd3cd1c47716",
+      "project_number": "1051858127274",
+      "access_id": "262df660-a83c-11e7-9a0d-fd3cd1c47716",
+      "map_api_key": "AIzaSyAOZaTy18OwaJM0rQJT_aADHTtUiHRvZf4",
+      "server_api_key": "AAAA9OehSao:APA91bGJ5H-e1wU7K-vI7mMbddLOC1CFEVGazuqxUa_vyevKt7o3Dr-1pkJjUuy6H51TSYphko60Yf6Bt0rEF1BHcL0WCEEnHhXGNPSv79PFF-_gtIQp1blvFkO8bC_fZjl-n8ZKoyIk",
+      "package_name": "holychild.management.in.malda",
+      "app_name": "HOLY CHILD"
+},
+{
+      "school_name": "Sri Netaji MSR Pilot High School",
+      "tenant_id": "27ff5b00-a83c-11e7-9a0d-fd3cd1c47716",
+      "project_number": "33430604485",
+      "access_id": "27ff5b00-a83c-11e7-9a0d-fd3cd1c47716",
+      "map_api_key": "AIzaSyA9szpSJSvW93PChvXg1XSfUH9s6czRpFg",
+      "server_api_key": "AAAAB8ieisU:APA91bFzG6WvuDJ09aqVJCb2d35y2zB9cVJVQXXSyr6RVtvxlR4nRPteAXhP1j6vt-_4E7Btuinl5M3Ko6RFnQ-oC4tf_X1IJca1SiqbvL8kFDh8K17fThk4SmwzPvlEVmVEhFZgUbRj",
+      "package_name": "netaji.management.in.nellore",
+      "app_name": "NETAJI (MSR)"
+},
+{
+      "school_name": "MONTFORT SCHOOL, ANAKKARA",
+      "tenant_id": "2f1e69a0-ace5-11e7-b30b-5bccbaba580d",
+      "project_number": "91810778544",
+      "access_id": "2f1e69a0-ace5-11e7-b30b-5bccbaba580d",
+      "map_api_key": "AIzaSyAZMpcveaN_tZzITr9ft5p0SLTLBsdsfyA",
+      "server_api_key": "AAAAFWBZTbA:APA91bGkCuBlTG4JffdeiettfMIl3X-ypWis5YtW-_itNel7ujP0jgnawRYuS89XO09jQX3n9Ls9FOa036tf-EqNYPt755J37IqrwcV7ZQal3hUQweTRcsv4n8tAmDy-CV4g9kxo7ELW",
+      "package_name": "montfort.management.in.anakkara",
+      "app_name": "MONTFORT"
+    },
+{
+      "school_name": "Our Lady Of Mercy Higher Secondary School",
+      "tenant_id": "32efdce0-b87e-11e7-b4ae-5360a2e8933b",
+      "project_number": "722184622652",
+      "access_id": "32efdce0-b87e-11e7-b4ae-5360a2e8933b",
+      "map_api_key": "AIzaSyByYL-4CN3H8RBZhL5TTgRhlOD6olYmmgk",
+      "server_api_key": "AAAAqCWO0jw:APA91bGurYEIkBMQbgQmEsFICCen2zX-GNspFHeg3FUADgmbp6fJ4mdn14TyaZa2fMFte2w3iLtO3afMOIMlK8eijovkzYnehYchd6oJ9IJrqEnvxCC0ahG92ghX-TVpxFkrKi29ixfT",
+      "package_name": "mercyschool.management.in.aroor",
+      "app_name": "Mercy School"
+    },
+{
+      "school_name": "THE COLONEL HILL HIGH SCHOOL, BANGALORE",
+      "tenant_id": "3bba2130-ba0b-11e7-a0fa-5d320aed5014",
+      "project_number": "577228613130",
+      "access_id": "3bba2130-ba0b-11e7-a0fa-5d320aed5014",
+      "map_api_key": "AIzaSyAuSbN9r4VtjlxtXNRGa1zruVjtJ9cRPAA",
+      "server_api_key": "AAAAhmWBpgo:APA91bHzJzMSIpbiH6cd5s1uab8sYmwM2Sl2iw5a__Lj9rVMnA94m0YbBCHqaLVLvSIGNBvR55aP9C7CniDSh884_xjsPpv91544Via7P0-r1c88ADzf5eedz5dCHas3-j-Y0RftxCuQ",
+      "package_name": "colonel.management.in.bangalore",
+      "app_name": "Colonel Hill"
+    },
+{
+      "school_name": "INDIA MISSION SECONDARY SCHOOL, BASANTH NAGAR",
+      "tenant_id": "9d1ab960-bbf7-11e7-a84e-b77135fa0f20",
+      "project_number": "653372886157",
+      "access_id": "9d1ab960-bbf7-11e7-a84e-b77135fa0f20",
+      "map_api_key": "AIzaSyD21QcAL4ejdJX2lwbmJIUH__AaGx5kBU0",
+      "server_api_key": "AAAAmCAPDI0:APA91bHkDvldMZOvKw7Wfh-K1kGlj171yfGBiwuYCjvXThYpec1qZP1tjEBkdrZoqG5s0z5bmk6dxmChLIw2zujZVzj-f9t7scEhFoUG36WCv4R0-wcjnyV5HvpDoScmdpaREAmUsIzP",
+      "package_name": "indiamission.management.in.telangana",
+      "app_name": "IMS SCHOOL"
+    },
+{
+      "school_name": "CHRISTUJYOTHY PUBLIC SCHOOL RAJAKKAD",
+      "tenant_id": "4e6a76f0-c13f-11e7-a45c-5facc5daeedc",
+      "project_number": "784697840460",
+      "access_id": "4e6a76f0-c13f-11e7-a45c-5facc5daeedc",
+      "map_api_key": "AIzaSyCOSBFFEceLtgxo2HMk7Nb251GcrRHB8m0",
+      "server_api_key": "AAAAtrOi00w:APA91bFS1akNJjnuYKMpo-BBSqgwHWc8BzG3bPOoyfIiZ3hHbhlSL_9N9YSe5FBGGl4kOM2S6dabsnsPCS33ZoEYFMOZVHWHHJqRYZKgCb9My_ui3_FCPl3FI3P9l2ErPCbpDoqA6J42",
+      "package_name": "christujyothy.management.in.rajakkad",
+      "app_name": "CHRISTU JYOTHY"
+    },
+{
+      "school_name": "ST.THOMAS PUBLIC SCHOOL KARIMPAN",
+      "tenant_id": "ab2ee9c0-c383-11e7-9f53-f9ff8a61b624",
+      "project_number": "571854910079",
+      "access_id": "ab2ee9c0-c383-11e7-9f53-f9ff8a61b624",
+      "map_api_key": "AIzaSyBNO43ouDxN8T4GTC9D1k2j8uBFCws2AR8",
+      "server_api_key": "AAAAhSU1cn8:APA91bGuZAjAdP0lCam-kDQQbcGfDLVdVW8YOTg1nqq4LXE4VXGLZYcF8JXTXB0zs-kSSP4H_PdfrXdY3mz7anD3UYpRTHBHNnw861Di8fFnQyEF23todtFUskcTXubuouDCXwecLF8-",
+      "package_name": "stthomas.management.in.karimpan",
+      "app_name": "ST.THOMAS SCHOOL APP"
+    },
+{
+      "school_name": "SREE NARAYANA VIDYA MANDIR SENIOR SECONDARY SCHOOL",
+      "tenant_id": "5b1f0f60-c85f-11e7-93e8-93bf23d262ce",
+      "project_number": "272250007473",
+      "access_id": "5b1f0f60-c85f-11e7-93e8-93bf23d262ce",
+      "map_api_key": "AIzaSyB4r3FERl_t3oPBRq9vKYUd9UZTQxyh5-4",
+      "server_api_key": "AAAAP2Ndb7E:APA91bHlSre0sQwSY-ZjkPBpfWx0l8oCgLRPjq5GhQXww5Hs2QsUyAlolNlhyk9wC5D6Sl3jYSGXGBNYEFyL_g-jPJxF5QaIVr01-23rue2vy6aaqxSrxD6nL3fClP0CbZ5_LMnK5KzK",
+      "package_name": "narayana.management.in.kannur",
+      "app_name": "SNVM TALAP"
+    },
+{
+      "school_name": "A J I ENGLISH SCHOOL Parakatta",
+      "tenant_id": "aa5fdb50-c8a4-11e7-8b91-3d8788617281",
+      "project_number": "451784333541",
+      "access_id": "aa5fdb50-c8a4-11e7-8b91-3d8788617281",
+      "map_api_key": "AIzaSyC9Z6PHdLazin9oGMyrxeupJxIIsTG9uvo",
+      "server_api_key": "AAAAaTBx2OU:APA91bGTiuFanb8Zh2-zFjxQDeskChw70UTWqi10z0Vzh2HEzfrrx7MMNMsmvsMGfRXj9f-U7IFmgJomZgfgQJYXycHfdkXhlIc6hF4IOatrwv_56MKbDjnQjqFObvJWj3zrUSgexgEl",
+      "package_name": "aji.management.in.parakatta",
+      "app_name": "AJI School App"
+    },
+{
+      "school_name": "JAYA  JAYA SANKARA INTERNATIONAL SCHOOL",
+      "tenant_id": "0f25b5e0-ce73-11e7-9388-b98aacb3e3ce",
+      "project_number": "415428326708",
+      "access_id": "0f25b5e0-ce73-11e7-9388-b98aacb3e3ce",
+      "map_api_key": "AIzaSyCNBTdJCPWVmO1swoVR4kIZuqmC4hwMX6k",
+      "server_api_key": "AAAAYLl1NTQ:APA91bHA4TvbHwppUSKkiWn5fNRipV-HlCJo5Is86F3j_DP37ahylSDcCRN26EKTTIJjo9zXHowA6bHSm5wmNT65jRGIftIVrV8-9JVGkhqcSPNS-a3zqMKlLhKxRBh6eSCIqZFPmG1Z",
+      "package_name": "jayasankara.management.in.chennai",
+      "app_name": "JJSIS"
+},
+{
+      "school_name": "AMALAMBIKA CONVENT ENGLISH SCHOOL THEKKADY",
+      "tenant_id": "cc592650-ceb0-11e7-9388-b98aacb3e3ce",
+      "project_number": "263646062359",
+      "access_id": "cc592650-ceb0-11e7-9388-b98aacb3e3ce",
+      "map_api_key": "AIzaSyC1TtWHtZwQtdliQ_z3CmlylxKEhQ1oUYs",
+      "server_api_key": "AAAAPWKHpxc:APA91bFmv5XAK4imC7fvhQWjVcD5O9IJvYbZ6za-NLgZPX7NDyBEA0lUSaZJI-PvKWa28ugxaWor6u7CzGx0R3A5lfDxbgrU7R35-sDfruM_pzcKR2WVJKSJEoyw3xZOOk9B53xXFQek",
+      "package_name": "amalambika.management.in.thekkady",
+      "app_name": "Amalambika"
+    },
+{
+      "school_name": "RABINDRA PATH BHABAN ACADEMY",
+      "tenant_id": "34a7c210-d385-11e7-8137-878b5f7a0481",
+      "project_number": "484557965592",
+      "access_id": "34a7c210-d385-11e7-8137-878b5f7a0481",
+      "map_api_key": "AIzaSyCAJWUpGYFSsqrjYlJxY1Q_zMu3OmLtIO8",
+      "server_api_key": "AAAAcNHnyRg:APA91bEi-c-QcUC16I0xHeAu-XVigvyQZu4d2ptkvzs2BiZSHi8gnbSROwvU6sEB6oDxTt9yB-TgT0VK0n7cqkVGvYYVgddjkTGKiaez6My6CxyByX20VBq3_kXouYN3LW9H4IsemBZx",
+      "package_name": "rabindra.management.in.belgharia",
+      "app_name": "Rabindra Path Bhaban"
+},
+{
+      "school_name": "Mary Giri Vidya Mandir School",
+      "tenant_id": "64005600-d590-11e7-9240-2d89ba540588",
+      "project_number": "521415795613",
+      "access_id": "64005600-d590-11e7-9240-2d89ba540588",
+      "map_api_key": "AIzaSyCrXJhd02nQx42AIPDs1jLhWJm-SFIustc",
+      "server_api_key": "AAAAeWbNo50:APA91bEF1nACCLI5dajnz_bWtOyGdwsHTy0qQh_3FtNUl4QuFU3Z0wfGoP4tjGRuu3dLBx4cE_1j0FCZR8SShAp0x0fL26T6EP56A9rrjRtMs9f3OCpcL2uHGyVdkgoe1lZQYTHkHFvg",
+      "package_name": "mary.management.in.punalur",
+      "app_name": "Mary Giri Vidya Mandir"
+},
+{
+      "school_name": "UNIVERSAL ACADEMY SENIOR SECONDARY SCHOOL",
+      "tenant_id": "d8b07440-da49-11e7-9d2e-b7be0e254fec",
+      "project_number": "160008442247",
+      "access_id": "d8b07440-da49-11e7-9d2e-b7be0e254fec",
+      "map_api_key": "AIzaSyD0KJqidDOpTUP6rP3auzc3CvKK5NAXPBA",
+      "server_api_key": "AAAAJUE_EYc:APA91bGjoCpTLjxfPG4gTuFqYFS6rHpfWC2T0ffsf4DXU-4V9CAhz2bAamb38x_cDFrJzBqkoA2fKSp0xGp_BDTKY3hzGxN-GrOapQBNHaDl-f1tVdSRNtA0-8viCZLVw7f7VCzHwq86",
+      "package_name": "universal.management.in.karaikal",
+      "app_name": "UNIVERSAL ACADEMY KKL"
+},
+{
+      "school_name": "Al-Ameen Public School",
+      "tenant_id": "5bbf6d40-e0f9-11e7-b3fe-0bfad8d3b82e",
+      "project_number": "591355607850",
+      "access_id": "5bbf6d40-e0f9-11e7-b3fe-0bfad8d3b82e",
+      "map_api_key": "AIzaSyAz8OwS-3VJpWBbx_ApN1xfCTPgi-B-tNE",
+      "server_api_key": "AAAAia-Keyo:APA91bEBWvac2-XcwCuzJNFRVRYQjLrS_DcDpTFYyqhWhWa7selPPK9RgY73sgf4CQzePf8vOOb67Rtu0nhfxlH_bse8NrrH__XgX8ZwuSR5BWpu4sIniuQ8ReRmEsgizEXMeKVHw2eF",
+      "package_name": "alameen.management.in.kollam",
+      "app_name": "ALAMEEN-PTM"
+},
+{
+      "school_name": "Delta Central School",
+      "tenant_id": "43aa71f0-dfc3-11e7-8f93-f37bf5fae828",
+      "project_number": "1066831077413",
+      "access_id": "43aa71f0-dfc3-11e7-8f93-f37bf5fae828",
+      "map_api_key": "AIzaSyDR8a3SxK21mrcEcgW5OcMPDaGRUq7s-ao",
+      "server_api_key": "AAAA-GQWYCU:APA91bG2HyrzHP8ZO1NCriBm-m1lYQ8LZ7dt9RjZvF7vvHPB12FDb-WVWzLrXwoIiSHKnZpM_wLRkkhoGmmRaOImFrigvRmgj4V6eM4watM0P3bux4_x3tVRoAkTvoX0rz3Tb2rHhtZs",
+      "package_name": "delta.management.in.kollam",
+      "app_name": "DELTASMS"
+},
+{
+      "school_name": "St.James English Medium Convent",
+      "tenant_id": "6cc633d0-e1ad-11e7-a2c9-8b34a9ad4fe8",
+      "project_number": "919507657306",
+      "access_id": "6cc633d0-e1ad-11e7-a2c9-8b34a9ad4fe8",
+      "map_api_key": "AIzaSyBeFiqqP9kPs4DsPGB9_SjsalNZ5mQTORc",
+      "server_api_key": "AAAA1hbtYlo:APA91bEGRdVYk7zN2F2rFbburBwMbcM_sGk8fzJigi8XQ5l33WqbpV2t9wBrk8Bx-LS9_zA45lVSig6EbzYFq_G6FHWiUqeuIKttpfc5xgfxpJOGq2jDglSlFcm1O9JwEt-ciNK4a_Hh",
+      "package_name": "stjames.management.in.kannur",
+      "app_name": "ST.JAMESEMCS"
+},
+{
+      "school_name": "Godson Public School",
+      "tenant_id": "0fc00a10-e3bc-11e7-ac6c-d72b83ece3a3",
+      "project_number": "431227645833",
+      "access_id": "0fc00a10-e3bc-11e7-ac6c-d72b83ece3a3",
+      "map_api_key": "AIzaSyCb3nXugU51OuzPLO9S39FB0HfgA9anRds",
+      "server_api_key": "AAAAZGcrr4k:APA91bH33OqBVHhaIA5TPA_rN3Hk1cc_ZXS4EXmq4D84jhVH9MoLDY3LjG3XjSfbqedCaMRciyrnHSUNzjTK7xJwjCim6B88U8bflvuKOehHAx-K-Kt2TyxYOj67eySBqnuafLh4zVkW",
+      "package_name": "godson.management.in.chennai",
+      "app_name": "GODSONSCHL"
+},
+{
+      "school_name": "BHASHYAM BROOKS THE FORMULA SCHOOL",
+      "tenant_id": "eb80e9b0-ab5a-11e7-8bb9-33263ca28e8e",
+      "project_number": "486875545205",
+      "access_id": "eb80e9b0-ab5a-11e7-8bb9-33263ca28e8e",
+      "map_api_key": "AIzaSyCinhpIbobGj5qPuwd1q8gDj9Hf3gkOL7k",
+      "server_api_key": "AAAAcVwLPnU:APA91bHihc5nDmDl_7JUUc73W8sbdo6ib43RIXiFQhJpGHPlAdgw4oxP97YwZeftq7jkYcE8H2Hcp503IwbP1iVXmmbc6h6lMg9BSBaHMMPxqoOA7Rb4_GGdcnxoNNpQhSdGAxPlP4LT",
+      "package_name": "brooks.management.in.hyderabad",
+      "app_name": "BHASHYAM BROOKS"
+},
+{
+      "school_name": "SOUTH EAST ASIAN INTERNATIONAL SCHOOL",
+      "tenant_id": "c7580f00-e63d-11e7-8c9d-418682c211dd",
+      "project_number": "1057293553742",
+      "access_id": "c7580f00-e63d-11e7-8c9d-418682c211dd",
+      "map_api_key": "AIzaSyBYCkjHZ5rk1MMAE0qYwoGvDmlmAYTfrrc",
+      "server_api_key": "AAAA9iubUE4:APA91bGn7VhT_rqvahEmZBaHj1ld4FP7YqoZeWtVuyyEqxxZY0SgwBSoFeMRfLLzaFSXJIl_LlEdHNLekUF-__FaAs8-rFEoy6YTyJY1eVLtZIrxqw7CJs-FvRIhOBZNqx2ppFrbxrgA",
+      "package_name": "seainternational.management.in.bangalore",
+      "app_name": "SEAICSE APP"
+},
+{
+      "school_name": "SOUTH EAST ASIAN PRIMARY AND HIGHER SECONDARY SCHOOL",
+      "tenant_id": "356006b0-e62a-11e7-8c9d-418682c211dd",
+      "project_number": "283353331054",
+      "access_id": "356006b0-e62a-11e7-8c9d-418682c211dd",
+      "map_api_key": "AIzaSyBeFjsFJyuKLcNQfYScAqLv_7QLgZHMtS8",
+      "server_api_key": "AAAAQfkstW4:APA91bFVvNemPPJdppGfqNft7rhDl5aPDG_Id0pElTWEdITy9fPSXh5adOW5A7oI5USEmjChBhQWjGifYHeNb3SAFHUJfznKQLhtidlgCihT3i066-JdEuoHFfkpjK_CgLb3MFgKcm9-",
+      "package_name": "seaprimary.management.in.bangalore",
+      "app_name": "SEAPHSS APP"
+},
+{
+      "school_name": "Geeta International Public School",
+      "tenant_id": "5bf0c690-fc0d-11e7-952f-59d1d1e5ed24",
+      "project_number": "688121029390",
+      "access_id": "5bf0c690-fc0d-11e7-952f-59d1d1e5ed24",
+      "map_api_key": "AIzaSyBr-u45hm6DAYz7niRfi77yV68ryRBAj_M",
+      "server_api_key": "AAAAoDc1ow4:APA91bEzgue6EXrWEa-p_-DWbWu2BCItccDY41v1T8LHbisYBI41opvGbeexxupBuHx9irKZJBSrcJFA7e6juBabQRMJm77sg5P_i1Esey5yVWl0s_oJXYsGa0fIOaBecET_J4bQ6zZL",
+      "package_name": "nexrise.tech.android.geeta",
+      "app_name": "GIPS App"
+},
+{
+      "school_name": "ST MARY'S HIGHER SECONDARY SCHOOL",
+      "tenant_id": "569498e0-00c0-11e8-b00f-73e20a516076",
+      "project_number": "688121029390",
+      "access_id": "569498e0-00c0-11e8-b00f-73e20a516076",
+      "map_api_key": "AIzaSyBr-u45hm6DAYz7niRfi77yV68ryRBAj_M",
+      "server_api_key": "AAAAoDc1ow4:APA91bEzgue6EXrWEa-p_-DWbWu2BCItccDY41v1T8LHbisYBI41opvGbeexxupBuHx9irKZJBSrcJFA7e6juBabQRMJm77sg5P_i1Esey5yVWl0s_oJXYsGa0fIOaBecET_J4bQ6zZL",
+      "package_name": "nexrise.tech.android.stmarys",
+      "app_name": "ST MARYs"
+},
+{
+      "school_name": "J.B. LUDHANI HIGH SCHOOL",
+      "tenant_id": "ac09d510-0a7f-11e8-9d65-7b54a53a3e63",
+      "project_number": "688121029390",
+      "access_id": "ac09d510-0a7f-11e8-9d65-7b54a53a3e63",
+      "map_api_key": "AIzaSyBr-u45hm6DAYz7niRfi77yV68ryRBAj_M",
+      "server_api_key": "AAAAoDc1ow4:APA91bEzgue6EXrWEa-p_-DWbWu2BCItccDY41v1T8LHbisYBI41opvGbeexxupBuHx9irKZJBSrcJFA7e6juBabQRMJm77sg5P_i1Esey5yVWl0s_oJXYsGa0fIOaBecET_J4bQ6zZL",
+      "package_name": "nexrise.tech.android.jbludhani",
+      "app_name": "JBLSCHOOL"
+},
+{
+      "school_name": "LUDHANI VIDYA MANDIR",
+      "tenant_id": "af3b4c30-0afe-11e8-9ca0-d939b9ef5273",
+      "project_number": "688121029390",
+      "access_id": "af3b4c30-0afe-11e8-9ca0-d939b9ef5273",
+      "map_api_key": "AIzaSyBr-u45hm6DAYz7niRfi77yV68ryRBAj_M",
+      "server_api_key": "AAAAoDc1ow4:APA91bEzgue6EXrWEa-p_-DWbWu2BCItccDY41v1T8LHbisYBI41opvGbeexxupBuHx9irKZJBSrcJFA7e6juBabQRMJm77sg5P_i1Esey5yVWl0s_oJXYsGa0fIOaBecET_J4bQ6zZL",
+      "package_name": "nexrise.tech.android.ludhani",
+      "app_name": "LVMSCHOOL"
+},
+{
+      "school_name": "SRI VIDYA MANDIR HR SEC SCHOOL",
+      "tenant_id": "18af60e0-2105-11e8-a7fe-759a6972da5c",
+      "project_number": "688121029390",
+      "access_id": "18af60e0-2105-11e8-a7fe-759a6972da5c",
+      "map_api_key": "AIzaSyDNonblY7CqbOFJb5FWM0GCE0R_vwX1fzk",
+      "server_api_key": "AAAAoDc1ow4:APA91bEzgue6EXrWEa-p_-DWbWu2BCItccDY41v1T8LHbisYBI41opvGbeexxupBuHx9irKZJBSrcJFA7e6juBabQRMJm77sg5P_i1Esey5yVWl0s_oJXYsGa0fIOaBecET_J4bQ6zZL",
+      "package_name": "nexrise.tech.android.svmhss",
+      "app_name": "SVMHS"
+},
+{
+      "school_name": "Sacred Heart School",
+      "tenant_id": "40af2700-2124-11e8-a7fe-759a6972da5c",
+      "project_number": "688121029390",
+      "access_id": "40af2700-2124-11e8-a7fe-759a6972da5c",
+      "map_api_key": "AIzaSyDNonblY7CqbOFJb5FWM0GCE0R_vwX1fzk",
+      "server_api_key": "AAAAoDc1ow4:APA91bEzgue6EXrWEa-p_-DWbWu2BCItccDY41v1T8LHbisYBI41opvGbeexxupBuHx9irKZJBSrcJFA7e6juBabQRMJm77sg5P_i1Esey5yVWl0s_oJXYsGa0fIOaBecET_J4bQ6zZL",
+      "package_name": "nexrise.tech.android.heart",
+      "app_name": "SACRED HEART"
+},
+{
+      "school_name": "St. Helen's School",
+      "tenant_id": "47b25fd0-2215-11e8-9fac-45f301cf603a",
+      "project_number": "688121029390",
+      "access_id": "47b25fd0-2215-11e8-9fac-45f301cf603a",
+      "map_api_key": "AIzaSyDNonblY7CqbOFJb5FWM0GCE0R_vwX1fzk",
+      "server_api_key": "AAAAoDc1ow4:APA91bEzgue6EXrWEa-p_-DWbWu2BCItccDY41v1T8LHbisYBI41opvGbeexxupBuHx9irKZJBSrcJFA7e6juBabQRMJm77sg5P_i1Esey5yVWl0s_oJXYsGa0fIOaBecET_J4bQ6zZL",
+      "package_name": "nexrise.tech.android.helen",
+      "app_name": "ST.HELENS"
+},
+{
+      "school_name": "HDPY Senior Secondary School",
+      "tenant_id": "2f5417c0-2356-11e8-aa0d-3bb554bafac8",
+      "project_number": "688121029390",
+      "access_id": "2f5417c0-2356-11e8-aa0d-3bb554bafac8",
+      "map_api_key": "AIzaSyDNonblY7CqbOFJb5FWM0GCE0R_vwX1fzk",
+      "server_api_key": "AAAAoDc1ow4:APA91bEzgue6EXrWEa-p_-DWbWu2BCItccDY41v1T8LHbisYBI41opvGbeexxupBuHx9irKZJBSrcJFA7e6juBabQRMJm77sg5P_i1Esey5yVWl0s_oJXYsGa0fIOaBecET_J4bQ6zZL",
+      "package_name": "nexrise.tech.android.hdpyem",
+      "app_name": "HDPY SCHOOL"
+},
+{
+      "school_name": "St. Peter's School",
+      "tenant_id": "9abf4320-2cc7-11e8-8efa-490df17a278d",
+      "project_number": "688121029390",
+      "access_id": "9abf4320-2cc7-11e8-8efa-490df17a278d",
+      "map_api_key": "AIzaSyDNonblY7CqbOFJb5FWM0GCE0R_vwX1fzk",
+      "server_api_key": "AAAAoDc1ow4:APA91bEzgue6EXrWEa-p_-DWbWu2BCItccDY41v1T8LHbisYBI41opvGbeexxupBuHx9irKZJBSrcJFA7e6juBabQRMJm77sg5P_i1Esey5yVWl0s_oJXYsGa0fIOaBecET_J4bQ6zZL",
+      "package_name": "nexrise.tech.android.peters",
+      "app_name": "St.Peters School"
+},
+{
+      "school_name": "M.N.B. Memorial Public School",
+      "tenant_id": "b4749580-3272-11e8-92be-b17b657b3f06",
+      "project_number": "688121029390",
+      "access_id": "b4749580-3272-11e8-92be-b17b657b3f06",
+      "map_api_key": "AIzaSyDNonblY7CqbOFJb5FWM0GCE0R_vwX1fzk",
+      "server_api_key": "AAAAoDc1ow4:APA91bEzgue6EXrWEa-p_-DWbWu2BCItccDY41v1T8LHbisYBI41opvGbeexxupBuHx9irKZJBSrcJFA7e6juBabQRMJm77sg5P_i1Esey5yVWl0s_oJXYsGa0fIOaBecET_J4bQ6zZL",
+      "package_name": "nexrise.tech.android.mnb",
+      "app_name": "MNBMPS"
+},
+{
+      "school_name": "ABBOT SHISHU HALL",
+      "tenant_id": "e6464c50-430e-11e8-9bff-d564d8630245",
+      "project_number": "688121029390",
+      "access_id": "e6464c50-430e-11e8-9bff-d564d8630245",
+      "map_api_key": "AIzaSyDNonblY7CqbOFJb5FWM0GCE0R_vwX1fzk",
+      "server_api_key": "AAAAoDc1ow4:APA91bEzgue6EXrWEa-p_-DWbWu2BCItccDY41v1T8LHbisYBI41opvGbeexxupBuHx9irKZJBSrcJFA7e6juBabQRMJm77sg5P_i1Esey5yVWl0s_oJXYsGa0fIOaBecET_J4bQ6zZL",
+      "package_name": "nexrise.tech.android.abbot",
+      "app_name": "ABBOT APP"
+},
+{
+      "school_name": "ALANGAD JAMA-ATH SENIOR SECONDARY SCHOOL",
+      "tenant_id": "08393580-43c7-11e8-8a03-7b65b1d920f7",
+      "project_number": "688121029390",
+      "access_id": "08393580-43c7-11e8-8a03-7b65b1d920f7",
+      "map_api_key": "AIzaSyDNonblY7CqbOFJb5FWM0GCE0R_vwX1fzk",
+      "server_api_key": "AAAAoDc1ow4:APA91bEzgue6EXrWEa-p_-DWbWu2BCItccDY41v1T8LHbisYBI41opvGbeexxupBuHx9irKZJBSrcJFA7e6juBabQRMJm77sg5P_i1Esey5yVWl0s_oJXYsGa0fIOaBecET_J4bQ6zZL",
+      "package_name": "nexrise.tech.android.alangad",
+      "app_name": "AJPS"
+},
+{
+      "school_name": "ST JULIANA'S E. M. NURSERY SCHOOL",
+      "tenant_id": "8e74c4c0-4480-11e8-8a03-7b65b1d920f7",
+      "project_number": "688121029390",
+      "access_id": "8e74c4c0-4480-11e8-8a03-7b65b1d920f7",
+      "map_api_key": "AIzaSyDNonblY7CqbOFJb5FWM0GCE0R_vwX1fzk",
+      "server_api_key": "AAAAoDc1ow4:APA91bEzgue6EXrWEa-p_-DWbWu2BCItccDY41v1T8LHbisYBI41opvGbeexxupBuHx9irKZJBSrcJFA7e6juBabQRMJm77sg5P_i1Esey5yVWl0s_oJXYsGa0fIOaBecET_J4bQ6zZL",
+      "package_name": "nexrise.tech.android.stjulianas",
+      "app_name": "ST JULIANAs"
+},
+{
+      "school_name": "SREE SARADA VIDYALAYA SCHOOL ",
+      "tenant_id": "2dc1b890-4a11-11e8-a258-25a60bab63dc",
+      "project_number": "688121029390",
+      "access_id": "2dc1b890-4a11-11e8-a258-25a60bab63dc",
+      "map_api_key": "AIzaSyDNonblY7CqbOFJb5FWM0GCE0R_vwX1fzk",
+      "server_api_key": "AAAAoDc1ow4:APA91bEzgue6EXrWEa-p_-DWbWu2BCItccDY41v1T8LHbisYBI41opvGbeexxupBuHx9irKZJBSrcJFA7e6juBabQRMJm77sg5P_i1Esey5yVWl0s_oJXYsGa0fIOaBecET_J4bQ6zZL",
+      "package_name": "nexrise.tech.android.sarada",
+      "app_name": "Sree Sarada SchoolApp"
+},
+{
+      "school_name": "AS - SHAMS PRE SCHOOL",
+      "tenant_id": "d424b0b0-5291-11e8-89d5-e7c25cebd72d",
+      "project_number": "688121029390",
+      "access_id": "d424b0b0-5291-11e8-89d5-e7c25cebd72d",
+      "map_api_key": "AIzaSyDNonblY7CqbOFJb5FWM0GCE0R_vwX1fzk",
+      "server_api_key": "AAAAoDc1ow4:APA91bEzgue6EXrWEa-p_-DWbWu2BCItccDY41v1T8LHbisYBI41opvGbeexxupBuHx9irKZJBSrcJFA7e6juBabQRMJm77sg5P_i1Esey5yVWl0s_oJXYsGa0fIOaBecET_J4bQ6zZL",
+      "package_name": "nexrise.tech.android.shams",
+      "app_name": "AS - SHAMS PRE SCHOOL"
+},
+{
+      "school_name": "ST. FRANCIS ACADEMY",
+      "tenant_id": "42f9af90-5814-11e8-9562-2b545835044b",
+      "project_number": "688121029390",
+      "access_id": "42f9af90-5814-11e8-9562-2b545835044b",
+      "map_api_key": "AIzaSyDNonblY7CqbOFJb5FWM0GCE0R_vwX1fzk",
+      "server_api_key": "AAAAoDc1ow4:APA91bEzgue6EXrWEa-p_-DWbWu2BCItccDY41v1T8LHbisYBI41opvGbeexxupBuHx9irKZJBSrcJFA7e6juBabQRMJm77sg5P_i1Esey5yVWl0s_oJXYsGa0fIOaBecET_J4bQ6zZL",
+      "package_name": "nexrise.tech.android.stfrancis",
+      "app_name": "ST. FRANCIS ACADEMY"
+}
+  ]
+}

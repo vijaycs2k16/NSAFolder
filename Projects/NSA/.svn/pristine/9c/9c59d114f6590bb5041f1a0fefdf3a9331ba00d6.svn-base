@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:weightSum="4">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:text="Attendance Details"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/green"
+            android:text="Present:25"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/margin10"
+            android:id="@+id/present_count"
+            android:padding="@dimen/padding10"
+            android:textSize="@dimen/headings"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorRed"
+            android:id="@+id/absent_count"
+            android:text="Absent:25"
+            android:padding="@dimen/padding10"
+            android:textSize="@dimen/headings"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin10"
+            android:padding="@dimen/padding10"
+            android:text="Notification"
+            android:id="@+id/notificationtitle"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="@dimen/common_text_size"
+            />
+
+    <CheckBox
+        android:text="SMS"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/sms" />
+
+    <CheckBox
+        android:id="@+id/push"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/margin5"
+        android:text="App" />
+
+    <CheckBox
+        android:text="EMAIL"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email" />
+    </LinearLayout>
+    <Button
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox_ok"
+        android:layout_gravity="center_horizontal"
+        style="@style/RoundedCornerButton"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginBottom="@dimen/margin10"/>
+</LinearLayout>

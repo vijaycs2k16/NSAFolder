@@ -1,0 +1,2 @@
+INSERT INTO nsa.permissions (id,description,feature_id,name) VALUES (
+3abf21fe-94d3-4371-aac9-86f36fa09258,'user_level_permission',849525dd-6813-4fd3-aa9d-1b721da04fa7,'user_level_permission');

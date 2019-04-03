@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin10">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10"
+        android:background="@drawable/border_table_style"
+        >
+
+        <TableRow
+            android:layout_gravity="center"
+            android:minHeight="@dimen/height30"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+
+                android:background="@drawable/border_overlay"
+                android:layout_width="@dimen/height100"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Exam/Sub" />
+            <TextView
+                android:background="@drawable/border_overlay"
+                android:gravity="center"
+                android:layout_width="@dimen/height100"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1"
+                android:text="E" />
+            <TextView
+                android:background="@drawable/border_overlay"
+                android:gravity="center"
+                android:layout_width="@dimen/height100"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1"
+                android:text="M" />
+            <TextView
+                android:background="@drawable/border_overlay"
+                android:gravity="center"
+                android:layout_width="@dimen/height100"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1"
+                android:text="T" />
+            <TextView
+                android:background="@drawable/border_overlay"
+                android:gravity="center"
+                android:layout_width="@dimen/height100"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1"
+                android:text="Sc" />
+            <TextView
+                android:background="@drawable/border_overlay"
+                android:gravity="center"
+                android:layout_width="@dimen/height100"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1"
+                android:text="SS" />
+
+            <TextView
+                android:background="@drawable/border_overlay"
+                android:gravity="center"
+                android:layout_width="@dimen/height100"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1"
+                android:text="S" />
+
+        </TableRow>
+
+        <ListView
+            android:id="@+id/tableListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"/>
+
+
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+/**
+ * Created by kiranmai on 16/02/18.
+ */
+
+/**
+ * Table structure sheet {
+ * name test paper name
+ * num the total amount of the current statistics is the total number of topics
+ * remark remark
+ detail detail of test questions
+ * category from which chapter
+ * type question type
+ * num number of questions
+ *}
+ * @type {Schema}
+ */
+var mongoose = require('mongoose');
+var vSchema = mongoose.Schema({
+    title: {type: String, default: ''},
+    url  : {type: String, default: "0"},
+    read : {type: Boolean, default: false}
+});
+
+var pSchema = mongoose.Schema({
+    title: {type: String, default: ''},
+    url  : {type: String, default: "0"},
+    read : {type: Boolean, default: false}
+});
+
+module.exports = (function () {
+    var mongoose = require('mongoose');
+    var ObjectId = mongoose.Schema.Types.ObjectId;
+
+    var studyContentSchema = mongoose.Schema({
+        topic      : {type: ObjectId, ref: 'Topic'},
+        subject    : {type: ObjectId, ref: 'Subject'},
+        classDetail: {type: ObjectId, ref: 'ClassDetails'},
+        videos     : [vSchema],
+        pdf        : [pSchema],
+    }, {collection: 'study_content'});
+
+    mongoose.model('StudyContent', studyContentSchema);
+
+    if (!mongoose.Schemas) {
+        mongoose.Schemas = {};
+    }
+
+    mongoose.Schemas.StudyContent = studyContentSchema;
+})();

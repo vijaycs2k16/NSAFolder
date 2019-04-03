@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_past_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nexrise.publication.in.nexrise.EventsFeature.PastEventDetailActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height50"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding10"
+    android:weightSum="2">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height30"
+        android:layout_weight="1"
+        android:text="Title"
+        android:textSize="@dimen/common_text_size"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height30"
+        android:textSize="@dimen/common_text_size"
+        android:layout_weight="1"
+        android:text="Sports Meet"
+        android:id="@+id/event_title"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack"/>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height1"
+        android:background="@color/overlayForegroundColor" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:padding="@dimen/padding10"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height30"
+            android:layout_weight="1"
+            android:text="Start Date"
+            android:textSize="@dimen/common_text_size"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height30"
+            android:textSize="@dimen/common_text_size"
+            android:layout_weight="1"
+            android:text="1 hr"
+            android:id="@+id/start_time"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height1"
+        android:background="@color/overlayForegroundColor" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:padding="@dimen/padding10"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height30"
+            android:layout_weight="1"
+            android:text="End Date"
+            android:textSize="@dimen/common_text_size"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height30"
+            android:textSize="@dimen/common_text_size"
+            android:layout_weight="1"
+            android:text="1 hr"
+            android:id="@+id/end_time"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height1"
+        android:background="@color/overlayForegroundColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding10"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height30"
+            android:layout_weight="1"
+            android:text="Category"
+            android:textSize="@dimen/common_text_size"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height30"
+            android:textSize="@dimen/common_text_size"
+            android:layout_weight="1"
+            android:text="Sports"
+            android:id="@+id/category"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height1"
+        android:background="@color/overlayForegroundColor" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:padding="@dimen/padding10"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height30"
+            android:layout_weight="1"
+            android:text="Teacher"
+            android:textSize="@dimen/common_text_size"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height30"
+            android:textSize="@dimen/common_text_size"
+            android:layout_weight="1"
+            android:text="Hema Banu"
+            android:id="@+id/teacher_name"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height1"
+        android:background="@color/overlayForegroundColor" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:padding="@dimen/padding10"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height30"
+            android:layout_weight="1"
+            android:text="Description"
+            android:textSize="@dimen/common_text_size"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height30"
+            android:textSize="@dimen/common_text_size"
+            android:layout_weight="1"
+            android:text="description"
+            android:maxLines="2"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:id="@+id/event_description"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height1"
+        android:background="@color/overlayForegroundColor" />
+
+</LinearLayout>

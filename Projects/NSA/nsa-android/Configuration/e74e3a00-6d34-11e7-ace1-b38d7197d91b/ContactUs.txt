@@ -1,0 +1,5 @@
+"<b>St.Patrick's High School [I.C.S.E.]</b></br> </br>Gandhi Nagar, </br>Adyar, </br>Chennai - 600 020. </br>Ph: 044 - 6450 3646."
+
+lat lang(13.012544, 80.252616)
+
+app color : 00A956

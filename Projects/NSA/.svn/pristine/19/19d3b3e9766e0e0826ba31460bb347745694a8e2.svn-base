@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "919507657306",
+    "firebase_url": "https://stjames-90fb8.firebaseio.com",
+    "project_id": "stjames-90fb8",
+    "storage_bucket": "stjames-90fb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919507657306:android:502da060b0d69f04",
+        "android_client_info": {
+          "package_name": "stjames.management.in.kannur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919507657306-mhr1qspu7l8r5sahc46r8rmebr3oq18l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC69b8YU2IOxPX5QhRX2km0h0Xwlsf56ds"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

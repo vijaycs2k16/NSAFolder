@@ -1,0 +1,31 @@
+﻿<div class="_tableUsers">
+<table class="list stripedList" style=" width: 100%;">
+    <colgroup>
+        <col width="20px">
+        <col width="50px">
+        <col width="50px">
+        <col width="50px">
+        <col width="30px">
+    </colgroup>
+    <thead>
+    <tr>
+        <th class="centerCell">
+            <label class="_customCHeckbox">
+                <input type="checkbox" id="checkAll"/>
+                <span></span>
+            </label>
+        </th>
+        <th class="oe_sortable text-left" data-sort="name">Name<span class="arrow down"></span><span
+                class="arrow up"></span></th>
+        <th class="oe_sortable text-left" data-sort="timeBegin">Start Time<span class="arrow down"></span><span
+                class="arrow up"></span></th>
+        <th class="oe_sortable text-left" data-sort="timeEnd">End Time<span class="arrow down"></span><span
+                class="arrow up"></span></th>
+        <%if(data.update || data.delete) { %>
+        <th class="oe_sortable text-left" data-sort="profile">Action<span class="arrow down" style="width: 200%"></span><span
+                class="arrow up"></span></th>
+        <% } %>
+    </tr>
+    </thead>
+    <tbody id="listTable" class="enableTableOdd"></tbody>
+</table></div>

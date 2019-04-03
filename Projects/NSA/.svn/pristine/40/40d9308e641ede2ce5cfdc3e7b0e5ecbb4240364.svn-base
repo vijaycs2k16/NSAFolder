@@ -1,0 +1,42 @@
+
+
+<div class="productItem deleteRow  _productRow" id="<%=elem._id%>">
+    <div class="col m-3">
+        <div class="_animateInputBox">
+            <input type="number"
+                   class="_animate duration"
+                   id="duration"
+                   required
+                   maxlength="48"
+                   value=""/>
+            <label class="_animate">Duration(Month)</label>
+        </div>
+    </div>
+    <div class="col m-3">
+        <div class="_animateInputBox">
+            <input type="number"
+                   class="_animate installments"
+                   id="installments"
+                   required
+                   maxlength="48"
+                   value=""/>
+            <label class="_animate">Installments</label>
+        </div>
+    </div>
+    <div class="col m-5">
+        <div class="_animateInputBox">
+            <input type="number"
+                   class="_animate feeDuration"
+                   id="feeDuration"
+                   required
+                   maxlength="48"
+                   value=""/>
+            <label class="_animate">Fee Duration(Month)</label>
+        </div>
+    </div>
+    <div class="col m-1">
+        <div class="_animateInputBox _withInfo">
+            <span href="javascript:;" class="icon-trash tips goToRemove removeJob _actionCircleBtn show" aria-hidden="true"></span>
+        </div>
+    </div>
+</div>

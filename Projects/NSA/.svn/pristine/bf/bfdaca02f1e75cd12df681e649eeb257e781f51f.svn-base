@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Employee">
+	<parameter name="fName" value="Kowsi"></parameter>
+	<parameter name="mName" value="Shalini"></parameter>
+	<parameter name="lName" value="Kamala"></parameter>
+	<parameter name="shortName" value="KSK"></parameter>
+	<parameter name="empDob" value="27-Dec-1985"></parameter>
+	<parameter name="empGender" value="Female"></parameter>
+	<parameter name="empNation" value="Indian"></parameter>
+	<parameter name="empDept" value="Communication"></parameter>
+	<parameter name="empDesign" value="Senior Staff"></parameter>
+	<parameter name="empUserCode" value="KSK007"></parameter>
+	<parameter name="empDoJ" value="27-Oct-2017"></parameter>
+	<parameter name="empEmail" value="test@gmail.com"></parameter>
+	<parameter name="empPhone" value="8754107254"></parameter>
+	<parameter name="empPassword" value="1234"></parameter>
+	<test name="EmploeeTest">
+		<classes>
+		   <class name="com.nsa.testing.tests.EmployeeTest" /> 
+		</classes>
+	</test>
+</suite> 

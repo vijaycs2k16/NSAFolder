@@ -1,0 +1,426 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:background="@drawable/splash"
+    tools:context="nexrise.publication.in.nexrise.Dashboard.DashboardFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/dashboard_scroll"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/overlayColor">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height200"
+                    android:layout_margin="@dimen/dashboardMargin">
+
+                   <com.daimajia.slider.library.SliderLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/slider_layout">
+
+                    </com.daimajia.slider.library.SliderLayout>
+
+                    <com.daimajia.slider.library.Indicators.PagerIndicator
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height370"
+                    android:layout_weight="4">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height120"
+                        android:layout_marginLeft="@dimen/dashboardMargin"
+                        android:layout_marginRight="@dimen/dashboardMargin"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/linear_layout1"
+                            android:layout_marginRight="@dimen/dashboardMargin"
+                            android:background="@color/transparentRed"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/dashboardMargin"
+                                android:tint="@color/colorWhite"
+                                app:srcCompat="@drawable/ic_notification_menu_selected"
+                                android:id="@+id/imageView12" />
+
+                            <TextView
+                                android:text="Robotics semnar for class 5 and above"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/height50"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/description_text_size"
+                                android:paddingLeft="@dimen/padding5"
+                                android:paddingRight="@dimen/padding5"
+                                android:maxLines="5"
+                                android:ellipsize="end"
+                                android:textColor="@color/colorWhite"
+                                android:id="@+id/textView54" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/linear_layout2"
+                            android:background="@color/transparentGreen"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/dashboardMargin"
+                                app:srcCompat="@drawable/ic_notification_menu_selected"
+                                android:tint="@color/colorWhite"
+                                android:id="@+id/imageView13" />
+
+                            <TextView
+                                android:text="Swimming competition for classes above 5th"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/height50"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/padding5"
+                                android:paddingRight="@dimen/padding5"
+                                android:maxLines="5"
+                                android:ellipsize="end"
+                                android:textSize="@dimen/description_text_size"
+                                android:textColor="@color/colorWhite"
+                                android:id="@+id/textView55" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height115"
+                        android:layout_marginLeft="@dimen/dashboardMargin"
+                        android:layout_marginRight="@dimen/dashboardMargin"
+                        android:layout_marginTop="@dimen/dashboardMargin"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/dashboardMargin"
+                            android:id="@+id/linear_layout3"
+                            android:background="@color/transparentBlue"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/dashboardMargin"
+                                android:tint="@color/colorWhite"
+                                app:srcCompat="@drawable/ic_notification_menu_selected"
+                                android:id="@+id/imageView15" />
+
+                            <TextView
+                                android:text="Aero show Parade ground Chennai"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/height50"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/description_text_size"
+                                android:maxLines="5"
+                                android:ellipsize="end"
+                                android:paddingLeft="@dimen/padding5"
+                                android:paddingRight="@dimen/padding5"
+                                android:textColor="@color/colorWhite"
+                                android:id="@+id/textView57" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height55"
+                                android:orientation="vertical"
+                                android:background="@color/transparentYellow"
+                                android:layout_marginBottom="@dimen/dashboardMargin">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/height15"
+                                    android:layout_margin="@dimen/dashboardMargin"
+                                    app:srcCompat="@drawable/ic_notification_menu_selected"
+                                    android:tint="@color/colorWhite"
+                                    android:id="@+id/imageView14" />
+
+                                <TextView
+                                    android:text="Science exhibition"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/height20"
+                                    android:paddingLeft="@dimen/padding5"
+                                    android:paddingRight="@dimen/padding5"
+                                    android:gravity="center_vertical"
+                                    android:textSize="@dimen/description_text_size"
+                                    android:layout_marginBottom="@dimen/dashboardMargin"
+                                    android:textColor="@color/colorWhite"
+                                    android:id="@+id/textView56" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height55"
+                                android:orientation="vertical"
+                                android:background="@color/transparentPurple"
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/height15"
+                                    android:layout_margin="@dimen/dashboardMargin"
+                                    app:srcCompat="@drawable/ic_notification_menu_selected"
+                                    android:tint="@color/colorWhite"
+                                    android:id="@+id/imageView20" />
+
+                                <TextView
+                                    android:text="NexRise Art works"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/height20"
+                                    android:gravity="center_vertical"
+                                    android:textSize="@dimen/description_text_size"
+                                    android:paddingLeft="@dimen/padding5"
+                                    android:paddingRight="@dimen/padding5"
+                                    android:textColor="@color/colorWhite"
+                                    android:id="@+id/textView58" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height115"
+                        android:layout_marginLeft="@dimen/dashboardMargin"
+                        android:layout_marginRight="@dimen/dashboardMargin"
+                        android:layout_marginTop="@dimen/dashboardMargin"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height55"
+                                android:orientation="vertical"
+                                android:background="@color/transparentRed"
+                                android:layout_marginBottom="@dimen/dashboardMargin">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/height15"
+                                    android:layout_margin="@dimen/dashboardMargin"
+                                    app:srcCompat="@drawable/ic_notification_menu_selected"
+                                    android:tint="@color/colorWhite"
+                                    android:id="@+id/imageView22" />
+
+                                <TextView
+                                    android:text="Bus has arrived"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/height20"
+                                    android:paddingLeft="@dimen/padding5"
+                                    android:paddingRight="@dimen/padding5"
+                                    android:gravity="center_vertical"
+                                    android:minHeight="@dimen/height40"
+                                    android:textSize="@dimen/description_text_size"
+                                    android:textColor="@color/colorWhite"
+                                    android:id="@+id/textView61" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height55"
+                                android:orientation="vertical"
+                                android:background="@color/transparentPurple"
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/height15"
+                                    android:layout_margin="@dimen/dashboardMargin"
+                                    app:srcCompat="@drawable/ic_notification_menu_selected"
+                                    android:tint="@color/colorWhite"
+                                    android:id="@+id/imageView23" />
+
+                                <TextView
+                                    android:text="Exam dates announced for all classes"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/height20"
+                                    android:minHeight="@dimen/height40"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="@dimen/padding5"
+                                    android:textSize="@dimen/description_text_size"
+                                    android:textColor="@color/colorWhite"
+                                    android:id="@+id/textView62" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dashboardMargin"
+                            android:background="@color/transparentBlue"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/dashboardMargin"
+                                android:tint="@color/colorWhite"
+                                app:srcCompat="@drawable/ic_notification_menu_selected"
+                                android:id="@+id/imageView21" />
+
+                            <TextView
+                                android:text="Inter school sports competition for classes 10 -12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/height50"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/padding5"
+                                android:paddingRight="@dimen/padding5"
+                                android:maxLines="5"
+                                android:ellipsize="end"
+                                android:textSize="@dimen/description_text_size"
+                                android:textColor="@color/colorWhite"
+                                android:id="@+id/textView59" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout_new">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:baselineAligned="false"
+            android:id="@+id/footer"
+            android:weightSum="3"
+            android:layout_alignParentStart="true">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:id="@+id/first_footer"
+                android:background="@color/appColor"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/margin5"
+                    app:srcCompat="@drawable/ic_assignment_menu_selected"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/homework"
+                    android:textSize="@dimen/common_text_size"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingRight="@dimen/padding5"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:id="@+id/second_footer"
+                android:background="@color/appColor"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/margin5"
+                    app:srcCompat="@drawable/ic_gallery_solid"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/gallery"
+                    android:textSize="@dimen/common_text_size"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingRight="@dimen/padding5"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:id="@+id/third_footer"
+                android:background="@color/appColor"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/margin5"
+                    app:srcCompat="@drawable/ic_bus_selected"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/tracking"
+                    android:textSize="@dimen/common_text_size"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingRight="@dimen/padding5"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

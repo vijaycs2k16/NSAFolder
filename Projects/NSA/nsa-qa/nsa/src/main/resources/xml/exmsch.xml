@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="examschedule">
+	<parameter name="nvtabmv" value="Exam Schedule"></parameter>
+	<parameter name="setexmclss" value="Class 1"></parameter>
+	<parameter name="exmname" value="Mid term EXAMINATION"></parameter>
+	<parameter name="setexmsec" value="Section A"></parameter>
+	<parameter name="selsubexm" value="Psychology"></parameter>
+	<parameter name="selsubexm1" value="Value Education"></parameter>
+	<parameter name="selsubexm2" value="Zoology"></parameter>
+	<parameter name="selsubexm3" value="Geography"></parameter>
+	<test name="ExamSchedule">
+		<classes>
+		   <!--  <class name="com.nsa.testing.tests.ExamSchedule"/> -->
+			<class name="com.nsa.testing.tests.ExamSchedule"/>
+		</classes>
+	</test>
+</suite> 

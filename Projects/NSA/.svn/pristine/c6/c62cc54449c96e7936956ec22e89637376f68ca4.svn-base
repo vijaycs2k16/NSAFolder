@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="categories">
+	<parameter name="examname" value="MID TERM EXAMINATION"></parameter>
+	<parameter name="examcode" value="MTE"></parameter>
+	<parameter name="decsription" value="Mid term examination"></parameter>
+	<test name="WrittenExam">
+		<classes>
+		   <!--  <class name="com.nsa.testing.tests.HomeworkTypesTest" /> -->
+			<class name="com.nsa.testing.tests.WrittenExam" />
+		</classes>
+	</test>
+</suite> 

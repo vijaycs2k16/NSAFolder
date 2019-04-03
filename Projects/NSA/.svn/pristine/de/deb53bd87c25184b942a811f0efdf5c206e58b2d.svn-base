@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nexrise.publication.in.nexrise">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="${applicationId}.android.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <!-- HTC -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+    <permission
+        android:name="${applicationId}.android.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name="nexrise.publication.in.nexrise.Common.ReplaceFont"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="nexrise.publication.in.nexrise.Common.SplashScreenActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="nexrise.publication.in.nexrise.Common.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.HomeworkFeature.AddHomeWorkActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.HomeworkFeature.HomeworkTypeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.ReusedActivities.DueDateActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.ReusedActivities.DueTimeActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.ReusedActivities.AttachmentActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.HomeworkFeature.DetailsPageActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.TimetableFeature.ClassActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.NavigationDrawerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="nexrise.publication.in.nexrise.FeeManagement.FeeManagementParentActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.TimetableFeature.CreatingExam" />
+        <activity android:name="nexrise.publication.in.nexrise.TimetableFeature.TeacherActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.TimetableFeature.ClassWeekActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.EventsFeature.EventDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.EventsFeature.AddEventActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.EventsFeature.AttendeesActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.EventsFeature.LocationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDNonblY7CqbOFJb5FWM0GCE0R_vwX1fzk" />
+
+        <activity
+            android:name="nexrise.publication.in.nexrise.EventsFeature.DurationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.EventsFeature.PastEventsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name="nexrise.publication.in.nexrise.FeeManagement.FeeDefaultersActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.FeeManagement.FeesDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.FeeManagement.FeeDefaultersDetailsActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.Notifications.CreateNotification"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.Notifications.NotificationDetailsActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.Notifications.MyNotificationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.Profile.ProfileActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.Attendence.AttendenceActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.Attendence.AttendanceHistoryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.Attendence.AttendanceActivityFragment"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.Attendence.ApplyLeaveActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="nexrise.publication.in.nexrise.Profile.ProfileUpdateActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.ProgressReportFeature.ProgressReportActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.ProgressReportFeature.ProgressResultsActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.ProgressReportFeature.StudentDetailsActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.ProgressReportFeature.OverallReportActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.ProgressReportFeature.GradeActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.TransportManager.ParentTransportActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.TransportManager.TransportMapActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.Gallery.GalleryActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.Gallery.FullImageActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.Gallery.GalleryView" />
+        <activity android:name="nexrise.publication.in.nexrise.Gallery.CreateAlbumActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.Gallery.CreateVideoActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.Gallery.CustomGallery.Activities.AlbumSelectActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.Gallery.CustomGallery.Activities.HelperActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.Gallery.CustomGallery.Activities.ImageSelectActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.Gallery.ShareWithActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.PasswordChangeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.FeedbackActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.ContactUsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.AboutUsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.ParentFeatures.Attendance.ParentAttendanceActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.ParentFeatures.ParentLogin.ParentLogin" />
+        <activity android:name="nexrise.publication.in.nexrise.ParentFeatures.Attendance.StatusAttendanceActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.ProgressReportFeature.ParentStudentLogin.StudentDetailsActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.TimetableFeature.ViewNotesActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.ParentFeatures.HomeworkFeature.ParentDetailsActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.HomeworkFeature.SubjectHomeWorkActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.UploadActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.EventsFeature.PastEventDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.Gallery.SelectOptionActivity" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="nexrise.publication.in.nexrise.PushNotification.MyReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="nexrise.publication.in.nexrise.PushNotification.MessageReceivingService"
+            android:enabled="true"
+            android:label=".PushNotification.MessageReceivingService">
+            <intent-filter>
+
+                <!-- <action android:name=".Common.AndroidMobilePushApp" /> -->
+                <action android:name="NavigationDrawerActivity" />
+                <action android:name=".PushNotification.MyReceiver" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="nexrise.publication.in.nexrise.Gallery.SelectedImagesActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.Gallery.CustomGallery.Activities.VideoSelectActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.Gallery.CustomGallery.Activities.VideoAlbumSelectActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.Taxanomy.TaxonomyActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.FeeManagement.WebviewActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.Notifications.NotificationLogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.FeeManagement.FeeManagementEmployeeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+
+        <activity
+            android:name="nexrise.publication.in.nexrise.TimetableFeature.ViewNotesCalendarActivity"
+            android:configChanges="orientation" />
+        <activity android:name="nexrise.publication.in.nexrise.Attendence.OverallAttendanceActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.EventsFeature.AttendeesListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.Common.AttachmentPreviewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.Attendence.LeaveApprovalActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.Attendence.ApprovalDetailActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.TransportManager.TeacherTransportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.ParentProfileActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.ParentFeatures.HomeworkFeature.ParentHomeworkActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.HomeworkFeature.HomeworkActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.Gallery.AlbumsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.Gallery.ImagesActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.EventsFeature.EventsFeatureActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.ExamFeature.ExamActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.ExamFeature.ExamDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.ExamFeature.StudentReportTableActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.Gallery.BaseImageActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.Common.BaseActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.Gallery.VideoPreviewActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.HallOfFame.HallOfFameActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.HallOfFame.HallOfFameDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.HomeworkFeature.AdminHomeworkActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.ParentFeatures.ParentLogin.MultipleSchoolsActivity" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.MMS.ReceivedMMSActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.MMS.CreateMMSActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="nexrise.publication.in.nexrise.MMS.AudioAttachmentActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="nexrise.publication.in.nexrise.MMS.AudioGalleryActivity" />
+        <activity android:name="nexrise.publication.in.nexrise.MMS.MyMMSActivity"></activity>
+    </application>
+
+</manifest>

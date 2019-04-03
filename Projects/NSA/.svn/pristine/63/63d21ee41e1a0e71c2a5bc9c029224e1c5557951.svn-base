@@ -1,0 +1,35 @@
+{
+  "name": "dragtable",
+  "version": "2.0.15",
+  "homepage": "http://akottr.github.io/dragtable",
+  "authors": [
+    "Andres <akottr@gmail.com>"
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "description": "A draggable column table plugin for jquery.",
+  "main": "jquery.dragtable.js",
+  "keywords": [
+    "table",
+    "jquery",
+    "draggable"
+  ],
+  "license": "MIT GPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "2.0.15",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.0.15",
+    "commit": "5e85369f7fdfcbfbccf6216dcbba9cade061f65d"
+  },
+  "_source": "https://github.com/akottr/dragtable.git",
+  "_target": "^2.0.15",
+  "_originalSource": "dragtable"
+}

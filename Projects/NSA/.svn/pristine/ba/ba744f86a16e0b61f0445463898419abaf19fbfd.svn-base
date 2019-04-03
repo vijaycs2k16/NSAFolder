@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_profile_update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding10"
+        tools:context="nexrise.publication.in.nexrise.Profile.ProfileUpdateActivity">
+
+
+        <nexrise.publication.in.nexrise.Utils.RoundedImageView
+            android:id="@+id/civProfilePic"
+            android:layout_width="@dimen/round_image"
+            android:layout_height="@dimen/round_image"
+            android:layout_gravity="center"
+            android:src="@drawable/user_icon"
+            />
+        <View
+            android:layout_marginTop="@dimen/margin20"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/overlayForegroundColor"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="@dimen/margin5"
+                android:layout_weight="0.5"
+                android:text="Name "/>
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height40"
+                android:textSize="@dimen/description_text_size"
+                android:layout_weight="1.5"
+                android:layout_margin="@dimen/margin5"
+                android:background="@drawable/edit_text_border"
+                android:padding="@dimen/padding10"
+                android:id="@+id/profile_name"
+                android:text="School Info :"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="@dimen/margin5"
+                android:text="Email "/>
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height40"
+                android:layout_weight="1.5"
+                android:textSize="@dimen/description_text_size"
+                android:layout_margin="@dimen/margin5"
+                android:id="@+id/profile_email"
+                android:padding="@dimen/padding10"
+                android:background="@drawable/edit_text_border"
+                android:text="School Info :"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="0.5"
+                android:layout_margin="@dimen/margin5"
+                android:text="Mobile"/>
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height40"
+                android:textSize="@dimen/description_text_size"
+                android:layout_margin="@dimen/margin5"
+                android:layout_weight="1.5"
+                android:id="@+id/profile_mobile"
+                android:padding="@dimen/padding10"
+                android:background="@drawable/edit_text_border"
+                android:text="School Info :"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="@dimen/margin5"
+                android:text="Address"/>
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:textSize="@dimen/description_text_size"
+                android:layout_weight="1.5"
+                android:layout_margin="@dimen/margin5"
+                android:id="@+id/profile_address"
+                android:padding="@dimen/padding10"
+                android:background="@drawable/edit_text_border"
+                android:text="School Info :"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

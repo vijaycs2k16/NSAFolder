@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/actionbar_tablayout_color"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <nexrise.publication.in.nexrise.Utils.RoundedImageView
+        android:id="@+id/civProfilePic"
+        android:layout_width="@dimen/width80"
+        android:layout_height="@dimen/height80"
+        android:src="@drawable/user" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding10"
+        android:paddingRight="@dimen/padding5"
+        android:paddingTop="@dimen/padding10"
+        android:text="TEXT"
+        android:id="@+id/nav_header_textview"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/common_text_size"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>

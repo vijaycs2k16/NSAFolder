@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/layoutBackground"
+    android:layout_marginTop="@dimen/margin2"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_reminder"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/padding5"
+            android:visibility="visible"
+            android:id="@+id/icons" />
+        <TextView
+            android:text="Notification :"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/common_text_size"
+            android:paddingLeft="@dimen/padding15"
+            android:layout_weight="1.3"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/textView4" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="SMS"
+            android:id="@+id/smscheck"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_weight="0.9"/>
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="App"
+            android:id="@+id/pushcheck"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_weight="0.9"/>
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="E-MAIL"
+            android:id="@+id/emailcheck"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_weight="0.9"/>
+    </LinearLayout>
+
+</LinearLayout>

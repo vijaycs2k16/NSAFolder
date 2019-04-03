@@ -1,0 +1,42 @@
+<div class="paddingMd">
+    <table id="example" class="display" style="width:100%">
+        <thead>
+        <tr>
+            <th >Name</th>
+            <th >School id</th>
+            <th >Status</th>
+            <th >Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <%model.forEach(function(obj, index){%>
+        <tr>
+            <td class=""><%=obj.studentName%></td>
+            <td class=""><%=obj.school_id%></td>
+            <td class="">
+                <% if(obj.isSubmit){ %>
+                <span data-color="bgGreenLight" class="_tagLabelSmall">Attended</span>
+                <% } else { %>
+                <span data-color="bgRed" class="_tagLabelSmall">Not Attended</span>
+                <% }%>
+
+            </td>
+            <td class=""><%=obj.score%> / <%=obj.totalScore%></td>
+        </tr>
+        <% }) %>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th >Name</th>
+            <th >School id</th>
+            <th >Status</th>
+            <th >Score</th>
+        </tr>
+        </tfoot>
+    </table>
+    <div class="formContentWrap">
+        <div class="formContentTitle">
+            <span class="closeBtn backBtn"></span>
+        </div>
+    </div>
+</div>

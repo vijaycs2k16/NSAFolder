@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="login">
+	<parameter name="feeName" value="Student Fee"></parameter>
+	<parameter name="langName" value="English"></parameter>
+	<parameter name="feeAmt" value="7000"></parameter>
+	<parameter name="dueDate" value="12-Jun-2018"></parameter>
+	<test name="LoginTest">
+		<classes>
+		   <class name="com.nsa.testing.tests.AssignFeeTest" /> 
+		</classes>
+	</test>
+</suite>

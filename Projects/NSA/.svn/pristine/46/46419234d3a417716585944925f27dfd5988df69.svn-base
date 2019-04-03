@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin10"
+    tools:context="nexrise.publication.in.nexrise.TimetableFeature.TomorrowTimeTableFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:textSize="@dimen/headings"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:id="@+id/tomDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/tomorrow"/>
+
+    <include layout="@layout/progress_bar"
+        android:visibility="gone"
+        android:id="@+id/progress_bar"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_table_style">
+        <include layout="@layout/progress_bar"
+            android:visibility="gone"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4"
+            android:minHeight="50dp"
+            >
+
+            <TextView
+                android:background="@drawable/border_overlay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:text="@string/time_caps"
+                android:textStyle="bold"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"/>
+
+            <TextView
+                android:background="@drawable/border_overlay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:text="@string/subject"/>
+
+            <TextView
+                android:background="@drawable/border_overlay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="@dimen/common_text_size"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/teacher_caps"/>
+        </TableRow>
+
+        <ListView
+            android:id="@+id/listview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            >
+        </ListView>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1006362893641",
+    "firebase_url": "https://sas-trichy.firebaseio.com",
+    "project_id": "sas-trichy",
+    "storage_bucket": "sas-trichy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006362893641:android:f6159b724917de4d",
+        "android_client_info": {
+          "package_name": "sas.management.in.trichy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006362893641-158knn7jat7n7uuu8s859megbqq4i2p5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1zSfME8M-ep0-4qvZNx5peO0eNe221tE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

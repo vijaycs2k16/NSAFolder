@@ -1,0 +1,26 @@
+﻿<div class="_tableWrap _tableOrderList">
+    <table class="list stripedList unstrip order-list">
+        <colgroup>
+            <col width="40px">
+            <col width="80px">
+            <col width="80px">
+        </colgroup>
+        <thead>
+        <tr>
+            <th class="" data-sort="name">Name
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="" data-sort="name">Center
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="" data-sort="name">Batch
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+        </tr>
+        </thead>
+        <tbody id="listTable" class="enableTableOdd"></tbody>
+    </table>
+</div>

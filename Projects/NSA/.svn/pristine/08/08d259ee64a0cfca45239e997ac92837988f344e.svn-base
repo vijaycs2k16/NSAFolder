@@ -1,0 +1,53 @@
+<div class="_acountingTableWrap">
+    <div class="_acountingTitleBlock _forOverview">
+        <% if(data.create) { %>
+        <a href="javascript:;" class="btn blue slim icon-plus btnPositioned" title="Create"
+           id="top-bar-createBtn">New</a>
+        <% } %>
+    </div>
+    <div class="_acountingTableBlock">
+        <table id="example" class="display" style="width:100%">
+
+            <thead>
+            <tr class="forToggle">
+                <th class="text-left">Name</th>
+                <th class="text-left">Duration (mins)</th>
+                <th class="text-left">Time Begin</th>
+                <th class="text-left">Time End</th>
+                <% if(data.update || data.delete) { %>
+                <th class="text-left">Action</th>
+                <% } %>
+            </tr>
+            </thead>
+                <%
+            collection.forEach(function(elem,index){
+            %>
+            <%
+            function getResult(time){
+            var newDate = new Date(time);
+            var hours = newDate.getHours() > 12 ? newDate.getHours() - 12 : newDate.getHours()
+            var am_pm = newDate.getHours() >= 12 ? "PM" : "AM"
+            hours = hours < 10 ? "0" + hours : hours
+            var minutes = newDate.getMinutes() < 10 ? "0" + newDate.getMinutes() : newDate.getMinutes()
+            var seconds = newDate.getSeconds() < 10 ? "0" + newDate.getSeconds() : newDate.getSeconds()
+            return hours + ":" + minutes + ":" + seconds + " " + am_pm;
+            }
+            elem.timeBegin = getResult(elem.timeBegin)
+            elem.timeEnd = getResult(elem.timeEnd)%>
+            <tr data-id="<%=elem._id%>">
+                <td><%=elem.name%></td>
+                <td><%=elem.duration%></td>
+                <td><%=elem.timeBegin%></td>
+                <td><%=elem.timeEnd%></td>
+                <% if(data.update || data.delete) { %>
+                <td>
+                    <a href="javascript:;" class="icon-note goToEdit _actionCircleBtn show" aria-hidden="true" ></a>
+                    <a href="javascript:;" class="icon-trash goToRemove _actionCircleBtn show" aria-hidden="true" ></a>
+                </td>
+                <% } %>
+            </tr>
+
+            <% }) %>
+        </table>
+    </div>
+</div>

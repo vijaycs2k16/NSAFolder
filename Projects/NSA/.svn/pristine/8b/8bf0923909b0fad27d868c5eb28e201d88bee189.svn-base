@@ -1,0 +1,7 @@
+alter table nsa.fee_transaction_details add (user_code text, class_id uuid,class_name text, section_id uuid, section_name text,fee_amount decimal, mode	text, first_name text, fee_name text, fee_structure_id uuid);
+
+
+
+// NexApp enable
+alter table nsa.school_feature add(is_mobile boolean);
+

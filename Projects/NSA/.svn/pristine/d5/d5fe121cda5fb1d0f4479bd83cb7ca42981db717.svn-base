@@ -1,0 +1,1378 @@
+[
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_txt.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_txt.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_more_menu2.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_more_menu2.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\round_corner_bg.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.github.michaelye.easydialog\\easydialog\\1.4\\res\\drawable\\round_corner_bg.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_edit.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_edit.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_attendancemenu.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_attendancemenu.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_total.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_total.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_today.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_today.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_dialog_material_background_dark.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_alarm.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_alarm.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_agenda.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_agenda.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_books.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_books.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_homework.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_homework.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_calendar_solid.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_calendar_solid.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_events.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_events.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_completed.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_completed.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_notification.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_notification.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_ic_visibility.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\drawable\\design_ic_visibility.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_focused.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.1\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\edit_text_border.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\edit_text_border.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_home_selected.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_menu_home_selected.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_connecting_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_skip_prev.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_notification_skip_prev.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\upload_download_progressbar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\upload_download_progressbar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_more_menu_selected.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_more_menu_selected.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\triangle_right.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.github.michaelye.easydialog\\easydialog\\1.4\\res\\drawable\\triangle_right.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_cast_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.1\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disable_cell.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.roomorama\\caldroid\\3.0.1\\res\\drawable\\disable_cell.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_notification_forward.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\border_bottom.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\border_bottom.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_progress_card_line.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_progress_card_line.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_stop.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_expanded_controller_stop.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_bus.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_bus.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shadow.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\shadow.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_eventicon.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_eventicon.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_album.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_album.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_exam_solid.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_exam_solid.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_notepad.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_notepad.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_competitions.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_competitions.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_play.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_mini_controller_play.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\border_table_style.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\border_table_style.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user_icon.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\user_icon.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_upload_button.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_upload_button.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.1\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_closed_caption.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_mini_controller_closed_caption.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_calendar_1.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_calendar_1.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\caldroid_attachment.jpg",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\caldroid_attachment.jpg"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\drop_down.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\drop_down.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disabled_cell_dark.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.roomorama\\caldroid\\3.0.1\\res\\drawable\\disabled_cell_dark.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\triangle_left.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.github.michaelye.easydialog\\easydialog\\1.4\\res\\drawable\\triangle_left.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cell_bg.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.roomorama\\caldroid\\3.0.1\\res\\drawable\\cell_bg.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\triangle_bottom.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.github.michaelye.easydialog\\easydialog\\1.4\\res\\drawable\\triangle_bottom.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.1\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\play_button.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\play_button.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\round_green.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\round_green.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_photo_gallery_selected.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_photo_gallery_selected.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_gallery_line.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_gallery_line.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\black_border.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\black_border.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_vertical_dots.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_vertical_dots.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_attendance.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_attendance.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_forward30.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_mini_controller_forward30.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\list_selector.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\list_selector.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_swimming.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_swimming.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red_border.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.roomorama\\caldroid\\3.0.1\\res\\drawable\\red_border.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_pdf.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_pdf.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_collapse.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\ic_collapse.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\side_nav_bar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_rewind30.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_mini_controller_rewind30.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_dark.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_cast_dark.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_mute.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_expanded_controller_mute.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_location_pin1.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_location_pin1.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_grid_layout.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_grid_layout.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_pause.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_mini_controller_pause.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_journals.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_journals.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_all_activities.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_all_activities.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\to_textview.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\to_textview.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_about_us.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_about_us.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_dashboard.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_dashboard.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_skip_next.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_mini_controller_skip_next.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_rewind30.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_notification_rewind30.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_normal.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.1\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_download.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_download.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_pastevents.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_pastevents.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_exam1.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_exam1.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_progressbar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_progressbar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_technology.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_technology.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_progress_card_selected.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_progress_card_selected.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_progress_card.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_progress_card.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_money.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_money.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_teacher_timetable.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_teacher_timetable.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_table_grid.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_table_grid.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_play_button.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_play_button.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_transport_selected.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_transport_selected.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\login_bg.jpg",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\login_bg.jpg"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\bg.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_assignment_menu.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_assignment_menu.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_disconnect.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_notification_disconnect.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_lab.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_lab.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_check.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_check.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_exam.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_exam.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\spinner.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\spinner.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_close_dark.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_close_dark.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_close_dark.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_close_dark.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_hall_of_fame.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_hall_of_fame.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_cc.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_cc.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_user_name.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_user_name.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_delete.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_delete.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_done_white.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_done_white.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_focused.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.1\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_assignment_menu_selected.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_assignment_menu_selected.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_doc.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_doc.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_help.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_help.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bell.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\notification_bell.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_repeat.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_repeat.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_timetable_menu.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_timetable_menu.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_skip_previous.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_expanded_controller_skip_previous.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_dark.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_connecting_dark.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_time_table.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_time_table.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_video_call.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_video_call.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pdf.jpg",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\pdf.jpg"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_play_large.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_mini_controller_play_large.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.1\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\image_placeholder.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\image_placeholder.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\user.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\txt_file_format.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\txt_file_format.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_rewind.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_notification_rewind.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_reminder.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_reminder.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\about_us.jpg",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\about_us.jpg"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_notification_menu_selected.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_notification_menu_selected.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_image_gallery.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_image_gallery.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_arrow.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.roomorama\\caldroid\\3.0.1\\res\\drawable\\right_arrow.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_video_camera.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_video_camera.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_photo_gallery.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_photo_gallery.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\camera_icon.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\camera_icon.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pdf_file_format.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\pdf_file_format.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_portions_solid.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_portions_solid.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_open_gallery.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_open_gallery.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_jpg.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_jpg.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_pause_large.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_mini_controller_pause_large.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\other_file_format.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\other_file_format.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_tomorrow.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_tomorrow.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cell_shape.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\cell_shape.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_actionbar_bg_gradient_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_expanded_controller_actionbar_bg_gradient_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_corner_bg.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.daimajia.slider\\library\\1.1.5\\res\\drawable\\indicator_corner_bg.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_document_with_paper_clip.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_document_with_paper_clip.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_skip_next.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_expanded_controller_skip_next.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_weekly_calendar.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_weekly_calendar.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_sports.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_sports.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_videoconference.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_videoconference.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_photo_camera.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_photo_camera.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_mini_controller_progress_drawable.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_mini_controller_progress_drawable.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pic1.JPG",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\pic1.JPG"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_skip_prev.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_mini_controller_skip_prev.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_newspaper.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_newspaper.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_fee_solid.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_fee_solid.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_play.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_notification_play.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_full_screen.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_action_full_screen.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red_border_gray_bg.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.roomorama\\caldroid\\3.0.1\\res\\drawable\\red_border_gray_bg.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_pause.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_expanded_controller_pause.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_result_solid.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_result_solid.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_attendance_line.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_attendance_line.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_bg_gradient_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_expanded_controller_bg_gradient_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_mini_controller_gradient_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_mini_controller_gradient_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash.jpg",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\splash.jpg"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_rewind10.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_notification_rewind10.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_academic.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_academic.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_forward30.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_expanded_controller_forward30.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_play_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_password.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_password.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_expand.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\ic_expand.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_not_completed2.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_not_completed2.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_uniform.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_uniform.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\round_red.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\round_red.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_disabled.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.1\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_return_from_full_screen.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_action_return_from_full_screen.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gallery_icon.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\gallery_icon.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward30.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_notification_forward30.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_exam_solid1.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_exam_solid1.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_stop.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_mini_controller_stop.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_gallery_solid.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_gallery_solid.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_clip.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_clip.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\border_overlay.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\border_overlay.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_input_add1.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_input_add1.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_on_dark.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_on_dark.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_invitation.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_invitation.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_small_icon.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_notification_small_icon.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\minus_symbol.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\minus_symbol.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.1\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\button.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_play.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_expanded_controller_play.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_arrow_drop_down.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_arrow_drop_down.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_background.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\tab_background.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_arrow.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.roomorama\\caldroid\\3.0.1\\res\\drawable\\left_arrow.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_pause_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_dark.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_mono_dark.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_seekbar_thumb.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_expanded_controller_seekbar_thumb.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\status_bar_icon.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\status_bar_icon.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notes.jpg",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\notes.jpg"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_mono_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_gallery.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_gallery.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_close_light.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_close_light.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_home.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_home.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pic3.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\pic3.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_duetime.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_duetime.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\doc_file_format.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\doc_file_format.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_airplane_mode.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_airplane_mode.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_notepad_line.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_notepad_line.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_type.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_type.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\one_sided_border.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\one_sided_border.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_normal.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.1\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_audiotrack_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_audiotrack_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_search.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_seekbar_track.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_expanded_controller_seekbar_track.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_arrow_back.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_arrow_back.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_footer_events.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_footer_events.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_feedback.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_feedback.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\one_sided_border_without_padding.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\one_sided_border_without_padding.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_book_selected.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_book_selected.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_dark.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_pause_dark.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_connectingparents.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_connectingparents.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo1.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\logo1.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\border_left.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\border_left.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_rewind30.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_expanded_controller_rewind30.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cancel.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\cancel.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tick.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\tick.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_result_line.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_result_line.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\triangle_top.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.github.michaelye.easydialog\\easydialog\\1.4\\res\\drawable\\triangle_top.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\border.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\border.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_id_card.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_id_card.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\two_sided_border.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\two_sided_border.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\round_button.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\round_button.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\video_thumbnail.jpg",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\video_thumbnail.jpg"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_tiny_video_symbol.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_tiny_video_symbol.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_transportmenu.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_transportmenu.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\from_textview.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\from_textview.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\actionbar_tablayout_color.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\actionbar_tablayout_color.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_timetable_menu_selected.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_timetable_menu_selected.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_profile.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_profile.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_week.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_week.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_normal.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.1\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_stop_live_stream.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_notification_stop_live_stream.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_education.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_education.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\one_sided_border_with_padding.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\one_sided_border_with_padding.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_portions_outline.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_portions_outline.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_normal.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.1\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_dialog_material_background_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_fee.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_fee.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_arrow_up_circle.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_arrow_up_circle.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_library.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_library.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\loading.jpg",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\loading.jpg"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\header.jpg",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\header.jpg"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red_border_dark.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.roomorama\\caldroid\\3.0.1\\res\\drawable\\red_border_dark.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_log_out.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_log_out.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_more_menu.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_more_menu.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_attendance_selected.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_attendance_selected.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_day.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_day.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_class_timetable.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_class_timetable.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_disabled.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.1\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_arrow_right.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_arrow_right.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_arrow_down_circle.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_arrow_down_circle.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_pin_lock.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_pin_lock.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_dark.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_play_dark.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_attendance_solid.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_attendance_solid.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\badge_appcolor.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\badge_appcolor.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\one_side_border_without_bgcolor.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\one_side_border_without_bgcolor.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_events_menu_selected.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_events_menu_selected.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_transport.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_transport.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_close_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_close_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\teacher1.jpg",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\teacher1.jpg"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_events_menu.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_events_menu.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_home.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_menu_home.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\passowrd.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\passowrd.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\curveborder.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\curveborder.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_priority.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_priority.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_skip_ad_label_border.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_skip_ad_label_border.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\curver_border_1.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\curver_border_1.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_stop_large.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_mini_controller_stop_large.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_pause.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_notification_pause.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_background_selected.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\tab_background_selected.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_on_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_on_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\broken_image.jpg",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\broken_image.jpg"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_connecting.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\10.2.1\\res\\drawable\\cast_ic_notification_connecting.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_ecc.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_ecc.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_location_pin.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_location_pin.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\login_border.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\login_border.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward10.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_notification_forward10.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tickmark.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\tickmark.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_skip_next.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_notification_skip_next.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_bus_selected.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_bus_selected.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\border_style.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\border_style.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cell_bg_dark.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.roomorama\\caldroid\\3.0.1\\res\\drawable\\cell_bg_dark.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_send_button.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_send_button.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_fee_line.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_fee_line.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_not_completed.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_not_completed.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_mute.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_mini_controller_mute.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.1\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_calendar_line.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_calendar_line.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\border_table.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\border_table.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_download.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_action_download.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_notification_menu.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_notification_menu.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\badge.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\badge.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pic2.png",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\pic2.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pic4.jpg",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\pic4.jpg"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_class.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_class.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_book.xml",
+        "source": "E:\\android\\app\\src\\main\\res\\drawable\\ic_book.xml"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_closed_caption.xml",
+        "source": "E:\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.2.1\\res\\drawable\\cast_ic_expanded_controller_closed_caption.xml"
+    }
+]

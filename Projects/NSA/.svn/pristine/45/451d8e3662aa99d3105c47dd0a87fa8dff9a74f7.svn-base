@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="login">
+	<parameter name="hwname" value="Telugu Homework"></parameter>
+	<parameter name="description" value="description"></parameter>
+	<parameter name="subject" value="Telugu"></parameter>
+	<test name="LoginTest">
+		<classes>
+			<class name="com.nsa.testing.tests.CreateHomeworkTest" />
+		</classes>
+	</test>
+</suite> 

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_attendees"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/overlayForegroundColor"
+    tools:context="nexrise.publication.in.nexrise.EventsFeature.AttendeesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/margin5"
+        android:id="@+id/classtimtable"
+        android:visibility="visible"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/classSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin5"
+            android:layout_weight="1"
+            android:padding="@dimen/padding5"
+            android:background="@drawable/spinner"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/sectionSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_weight="1"
+            android:background="@drawable/spinner"
+            android:gravity="center">
+
+        </Spinner>
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height40"
+        android:hint="search"
+        android:paddingLeft="@dimen/padding5"
+        android:textColorHint="@color/colorGray"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin5"
+        android:layout_marginBottom="@dimen/margin5"
+        android:background="@drawable/curveborder"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:layout_below="@+id/classtimtable"
+        android:id="@+id/search"/>
+
+    <include layout="@layout/progress_bar"
+        android:id="@+id/progress_bar_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin5"
+        android:id="@+id/listviews"
+        android:weightSum="2"
+        android:layout_below="@+id/search"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/to_be_selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/margin5"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height40"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:layout_weight="2.5"
+                android:layout_marginTop="@dimen/margin3"
+                android:paddingLeft="@dimen/padding15"
+                android:id="@+id/class_section"/>
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_arrow_up_circle" />
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/margin5"
+            android:paddingRight="@dimen/margin5"
+            android:layout_marginBottom="@dimen/margin5"
+            android:background="@color/overlayForegroundColor"
+            android:id="@+id/students_list"/>
+
+        <LinearLayout
+            android:id="@+id/selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height40"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:layout_weight="2"
+                android:paddingLeft="@dimen/padding15"
+                android:text="Selected"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height40"
+                android:textColor="@color/appColor"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:id="@+id/count"/>
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_arrow_up_circle" />
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/margin5"
+            android:paddingRight="@dimen/margin5"
+            android:paddingTop="@dimen/padding5"
+            android:paddingBottom="@dimen/padding3"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@color/overlayForegroundColor"
+            android:id="@+id/selected_list"/>
+    </LinearLayout>
+</RelativeLayout>

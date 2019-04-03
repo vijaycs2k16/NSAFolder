@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/height50">
+
+    <TextView
+        android:background="@drawable/border_table"
+        android:textSize="@dimen/table_data"
+        android:id="@+id/date"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:layout_gravity="center"
+        android:layout_weight="0.9"
+        android:padding="@dimen/padding5"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height50"
+        android:text="date"/>
+
+    <TextView
+        android:background="@drawable/border_style"
+        android:textSize="@dimen/table_data"
+        android:id="@+id/day"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding5"
+        android:layout_width="0dp"
+        android:textColor="@color/colorBlack"
+        android:layout_weight="0.7"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height50"
+        android:text="day"/>
+
+    <TextView
+        android:background="@drawable/border_style"
+        android:textSize="@dimen/table_data"
+        android:id="@+id/time"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding3"
+        android:layout_width="0dp"
+        android:textColor="@color/colorBlack"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height50"
+        android:text="Time"/>
+    <TextView
+        android:background="@drawable/border_style"
+        android:textSize="@dimen/table_data"
+        android:id="@+id/subject"
+        android:gravity="center"
+        android:padding="@dimen/padding5"
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:textColor="@color/colorBlack"
+        android:layout_weight="1.0"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height50"
+        android:text="Subject" />
+
+    <TextView
+        android:background="@drawable/border_style"
+        android:textSize="@dimen/table_data"
+        android:id="@+id/max_marks"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/colorBlack"
+        android:padding="@dimen/padding5"
+        android:layout_width="0dp"
+        android:layout_weight="0.7"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height50"
+        android:text="marks" />
+</LinearLayout>

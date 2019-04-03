@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="nexrise.publication.in.nexrise.EventsFeature.AddEventActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_add_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/height50"
+            android:inputType="textPersonName"
+            android:paddingLeft="@dimen/padding15"
+            android:hint="Activity name *"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/common_text_size"
+            android:ems="10"
+            android:id="@+id/event_name"
+            android:background="@drawable/border"
+            android:layout_weight="1" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_type_layout"
+            android:weightSum="2">
+            <ImageButton
+                android:layout_width="@dimen/image_btn_size"
+                android:layout_height="@dimen/image_btn_size"
+                android:background="@color/colorWhite"
+                app:srcCompat="@drawable/ic_events"/>
+            <TextView
+                android:text="Activity type"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:paddingLeft="@dimen/padding10"
+                android:textSize="@dimen/common_text_size"
+                android:id="@+id/activity_type"
+                android:layout_weight="0.8" />
+            <Spinner
+                android:id="@+id/activity_type_spin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_weight="1.2"
+                android:background="@drawable/spinner"
+                android:gravity="center"
+                android:padding="@dimen/padding5"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height50"
+        android:background="@color/colorWhite"
+        android:id="@+id/duration_layout"
+        android:weightSum="2">
+          <ImageButton
+              android:layout_width="@dimen/image_btn_size"
+              android:layout_height="@dimen/image_btn_size"
+              android:layout_gravity="center_vertical"
+              android:background="@color/colorWhite"
+              app:srcCompat="@drawable/ic_duetime"/>
+
+        <TextView
+            android:text="Duration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/height50"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="@dimen/padding10"
+            android:textSize="@dimen/common_text_size"
+            android:id="@+id/duration"
+            android:layout_weight="0.8" />
+
+        <TextView
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/height50"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="@dimen/padding10"
+            android:textSize="@dimen/common_text_size"
+            android:id="@+id/duration_value"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            app:srcCompat="@drawable/ic_arrow_right"
+            android:layout_toRightOf="@+id/message_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView17" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height50"
+        android:weightSum="2"
+        android:id="@+id/location_layout"
+        android:background="@color/colorWhite">
+
+        <ImageButton
+            android:layout_width="@dimen/image_btn_size"
+            android:minHeight="@dimen/image_btn_size"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorWhite"
+            app:srcCompat="@drawable/ic_location_pin"/>
+        <TextView
+            android:text="Location"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:minHeight="@dimen/height50"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="@dimen/padding10"
+            android:textSize="@dimen/common_text_size"
+            android:id="@+id/location"
+            android:layout_weight="0.8" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/height50"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="@dimen/padding10"
+            android:textSize="@dimen/common_text_size"
+            android:id="@+id/location_value"
+            android:layout_weight="1" />
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            app:srcCompat="@drawable/ic_arrow_right"
+            android:layout_toRightOf="@+id/message_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView18" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height50"
+        android:weightSum="2"
+        android:id="@+id/description_layout"
+        android:background="@color/colorWhite">
+
+        <ImageButton
+            android:layout_width="@dimen/image_btn_size"
+            android:minHeight="@dimen/image_btn_size"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorWhite"
+            app:srcCompat="@drawable/ic_agenda"/>
+        <TextView
+            android:text="Add description"
+            android:layout_width="0dp"
+            android:minHeight="@dimen/height50"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="@dimen/padding10"
+            android:textSize="@dimen/common_text_size"
+            android:id="@+id/add_description_key"
+            android:layout_weight="0.8" />
+        <TextView
+            android:text=""
+            android:layout_width="0dp"
+            android:minHeight="@dimen/height50"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="@dimen/padding10"
+            android:textSize="@dimen/common_text_size"
+            android:id="@+id/add_description_value"
+            android:layout_weight="1" />
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            app:srcCompat="@drawable/ic_arrow_right"
+            android:layout_toRightOf="@+id/message_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView21" />
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@+id/attendees_layout"
+        android:background="@color/colorWhite">
+
+        <ImageButton
+            android:layout_width="@dimen/image_btn_size"
+            android:layout_height="@dimen/image_btn_size"
+            android:background="@color/colorWhite"
+            app:srcCompat="@drawable/ic_class"/>
+        <TextView
+            android:text="Classes &amp; Sections"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="@dimen/padding10"
+            android:textSize="@dimen/common_text_size"
+            android:id="@+id/attendees"
+            android:layout_weight="0.8"/>
+        <TextView
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height50"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="@dimen/padding10"
+            android:textSize="@dimen/common_text_size"
+            android:id="@+id/classes"
+            android:layout_weight="1" />
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            app:srcCompat="@drawable/ic_arrow_right"
+            android:layout_toRightOf="@+id/message_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView19" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height1"
+        android:background="@color/overlayForegroundColor" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:id="@+id/students_layout"
+            android:background="@color/colorWhite">
+
+            <ImageButton
+                android:layout_width="@dimen/image_btn_size"
+                android:layout_height="@dimen/image_btn_size"
+                android:background="@color/colorWhite"
+                app:srcCompat="@drawable/ic_attendance"/>
+            <TextView
+                android:text="Students"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:paddingLeft="@dimen/padding10"
+                android:textSize="@dimen/common_text_size"
+                android:id="@+id/students"
+                android:layout_weight="0.8" />
+            <TextView
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:paddingLeft="@dimen/padding10"
+                android:textSize="@dimen/common_text_size"
+                android:id="@+id/students_value"
+                android:layout_weight="1" />
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                app:srcCompat="@drawable/ic_arrow_right"
+                android:layout_toRightOf="@+id/message_to"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView22" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/category_layout"
+            android:weightSum="2">
+
+            <ImageButton
+                android:layout_width="@dimen/image_btn_size"
+                android:layout_height="@dimen/image_btn_size"
+                android:background="@color/colorWhite"
+                app:srcCompat="@drawable/ic_events"
+                android:id="@+id/imageButton7" />
+
+            <TextView
+                android:text="Categories"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height50"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:paddingLeft="@dimen/padding10"
+                android:textSize="@dimen/common_text_size"
+                android:id="@+id/event_category"
+                android:layout_weight="0.8" />
+            <Spinner
+                android:id="@+id/typespin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_weight="1.2"
+                android:background="@drawable/spinner"
+                android:gravity="center"
+                android:padding="@dimen/padding5"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="@color/colorWhite">
+
+        <ImageButton
+            android:layout_width="@dimen/image_btn_size"
+            android:layout_height="@dimen/image_btn_size"
+            android:background="@color/colorWhite"
+            app:srcCompat="@drawable/ic_invitation"/>
+
+        <Switch
+            android:text="Mandatory event"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height50"
+            android:id="@+id/mandatory"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:paddingRight="@dimen/padding30"
+            android:paddingLeft="@dimen/padding10"
+            android:textSize="@dimen/common_text_size"
+            android:layout_weight="1" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@+id/attachment_layout"
+        android:background="@color/colorWhite">
+
+        <ImageButton
+            android:layout_width="@dimen/image_btn_size"
+            android:layout_height="@dimen/image_btn_size"
+            android:background="@color/colorWhite"
+            app:srcCompat="@drawable/ic_clip"/>
+        <TextView
+            android:text="Attachments"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height50"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="@dimen/padding10"
+            android:textSize="@dimen/common_text_size"
+            android:id="@+id/attachment"
+            android:layout_weight="0.8" />
+
+        <TextView
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height50"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="@dimen/padding10"
+            android:textSize="@dimen/common_text_size"
+            android:id="@+id/attachment_value"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            app:srcCompat="@drawable/ic_arrow_right"
+            android:layout_toRightOf="@+id/message_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView20" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <include layout="@layout/add_homework_listview_footer"
+            android:visibility="gone"
+            android:id="@+id/channel"/>
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/overlayForegroundColor" />
+
+
+</LinearLayout>
+</ScrollView>

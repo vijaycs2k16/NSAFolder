@@ -1,0 +1,78 @@
+﻿<div id="searchContainer"></div>
+<div class="_tableWrap _tableOrderList">
+    <table class="list stripedList order-list">
+        <colgroup>
+            <col width="42px">
+            <col width="150">
+            <col width="100">
+            <col width="200px">
+            <col width="80px">
+            <col width="75px">
+            <col width="75px">
+            <col width="65px">
+            <col width="100px">
+            <col width="100px">
+            <col width="100px">
+            <col width="110px">
+            <col width="200px">
+        </colgroup>
+        <thead>
+
+        <tr>
+            <th class="centerCell">
+                <label class="_customCHeckbox">
+                    <input type="checkbox" id="checkAll"/>
+                    <span></span>
+                </label>
+            </th>
+            <th class="oe_sortable text-left" data-sort="name"><b>Reference</b>
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="oe_sortable centerCell smallPadding" data-sort="student"><b>Reg No</b>
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="oe_sortable centerCell" data-sort="supplier.name"><b>Customer</b>
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="oe_sortable centerCell smallPadding" data-sort="status.allocateStatus"><b>Allocated</b>
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="oe_sortable centerCell smallPadding" data-sort="status.fulfillStatus"><b>Fulfilled</b>
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="oe_sortable centerCell smallPadding" data-sort="status.shippingStatus"><b>Shipped</b>
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="oe_sortable smallPadding" data-sort="workflow.name"><b>Status</b>
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="oe_sortable" data-sort="paymentBalance"><b>Balance</b>
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="oe_sortable" data-sort="paymentsPaid"><b>Prepaid</b>
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="oe_sortable" data-sort="paymentInfo.total"><b>Total</b>
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="oe_sortable sortDn" data-sort="orderDate"><b>Order Date</b>
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th><b>Channel</b></th>
+        </tr>
+        </thead>
+        <tbody id="listTable" class="enableTableOdd"></tbody>
+        <tfoot id="listTotal"></tfoot>
+    </table>
+</div>

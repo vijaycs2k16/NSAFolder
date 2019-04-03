@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/common_text_size"
+        android:textAllCaps="true"
+        android:paddingLeft="@dimen/padding10"
+        android:paddingTop="@dimen/padding10"
+        android:paddingBottom="@dimen/padding10"
+        android:visibility="gone"
+        android:id="@+id/events_feature_tag"/>
+
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="@dimen/width3"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/svgLayoutIconColor"
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adapter"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/events_feature_linear"
+            android:background="@color/layoutBackground"
+            android:weightSum="2">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding15"
+                android:id="@+id/events_feature_name"
+                android:paddingTop="@dimen/padding5"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:paddingBottom="@dimen/padding5"
+                android:textSize="@dimen/title_text_size"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/timeTextColor"
+                android:gravity="end"
+                android:id="@+id/events_feature_date"
+                android:paddingTop="@dimen/padding5"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="italic"
+                android:paddingBottom="@dimen/padding5"
+                android:paddingRight="@dimen/padding15"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/layoutBackground">
+            <TextView
+                android:text="TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/descriptionTextColor"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingTop="@dimen/padding5"
+                android:paddingBottom="@dimen/padding5"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_weight="2"
+                android:textSize="@dimen/description_text_size"
+                android:id="@+id/events_feature_description" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

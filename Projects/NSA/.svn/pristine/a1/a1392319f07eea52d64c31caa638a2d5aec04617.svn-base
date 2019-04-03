@@ -1,0 +1,28 @@
+[
+    {
+        "outputFile": "E:\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 4,
+                    "endColumn": 12,
+                    "endOffset": 161
+                },
+                "from": {
+                    "file": "E:\\android\\app\\src\\main\\res\\values-v16\\styles.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endLine": 5,
+                        "endColumn": 12,
+                        "endOffset": 167
+                    }
+                }
+            }
+        ]
+    }
+]

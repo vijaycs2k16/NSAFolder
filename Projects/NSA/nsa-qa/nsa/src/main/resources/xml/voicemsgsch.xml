@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="voicemsgsch">
+	<parameter name="navsch_name" value="Schedules"></parameter>
+	<parameter name="mob_No" value="8122719508"></parameter>
+	<parameter name="sel_audionames" value="RecordTesting"></parameter>
+	<parameter name="audionames_sel" value="12th fees.mp3"></parameter>
+	<test name="VceMsgSch">
+		<classes>
+			<class name="com.nsa.testing.tests.VceMsgSch" />
+		</classes>
+	</test>
+</suite> 

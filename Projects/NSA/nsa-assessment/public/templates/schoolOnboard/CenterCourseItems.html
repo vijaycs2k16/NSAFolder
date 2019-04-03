@@ -1,0 +1,49 @@
+<table class="_productTable">
+    <thead>
+    </thead>
+    <tbody id="productList">
+    <% if(!_.isEmpty(model)) { %>
+    <tr class="productItem deleteRow _productRow" id="<%=model._id%>">
+        <td data-name="productName" class="text-left">
+            <div class="_animateSelectBox">
+                <div class="_newSelectListWrap">
+                    <a id="titleDd"
+                       class="current-selected titleId"
+                       data-id="<%=model.title ? model.title._id: null%>"
+                       href="javascript:;"><%=model.title ? model.title.titleName : 'Select Title'%></a>
+                </div>
+            </div>
+        </td>
+        <td data-name="productName" class="text-left">
+            <div class="_animateSelectBox">
+                <div class="_newSelectListWrap">
+                    <a id="termId"
+                       class="current-selected termId"
+                       data-id="<%=termObj._id ? termObj._id: ''%>"
+                       href="javascript:;"><%=termObj.name ? termObj.name : 'Select Term'%>
+                    </a>
+                </div>
+            </div>
+        </td>
+        <td> <div id="topicBlocks" class="_variantsBlock _variantsTopics" style="z-index: auto">
+            <div class="_checkCategoriesWrap">
+                <ul id="checkedTopics" class="_checkCategories">
+                    <li><span class="checkedTopics" data-value="<%= model.subject.subjectName%>" data-id="<%=model.subject._id%>"><%= model.subject.subjectName%></span><span class="deleteTag1 icon-close3"></span></li>
+
+                </ul>
+                <span id="showBtn1" class="_arrow"></span>
+            </div>
+            <ul id="topicCategories" class="_categoriesList"></ul>
+        </div></td>
+        <td class="deleteCell" style="text-align: center">
+            <span title="Delete" class="icon-close5 removeJob"></span>
+        </td>
+    </tr>
+    <% } %>
+    </tbody>
+    <tr class="" id="newItem">
+        <td class="addProductItem">
+            <a href="javascript:;" class="btn blue slim" style="width: 170px">Add Title</a>
+        </td>
+    </tr>
+</table>

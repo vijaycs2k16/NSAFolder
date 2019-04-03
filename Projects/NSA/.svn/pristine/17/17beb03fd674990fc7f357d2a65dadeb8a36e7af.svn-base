@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_done_white.png",
+        "source": "E:\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_done_white.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_arrow_back.png",
+        "source": "E:\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_arrow_back.png"
+    },
+    {
+        "merged": "E:\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "E:\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    }
+]

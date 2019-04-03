@@ -1,0 +1,286 @@
+<div class="form-holder _newForm">
+    <form method="post" action="" id="invoiceForm">
+        <h4 class="_dialogMainTitle">Add Test Configuration</h4>
+        <div class="_formWrap _enlargedItemMargin newItem">
+            <div class="_formBlock _equal">
+                <!--<div class="container" style="margin-left:-15px;">
+                    <div class="canReadAndWrite row">
+                        <div class="_animateSelectBox col m-12">
+                            <span class="_selectTitle margin-left-15" style="font-size: 12px">Title</span>
+                            <div class="_newSelectListWrap">
+                                <a id="schltitle"
+                                   name="schltitle"
+                                   class="current-selected"
+                                   href="javascript:;">Select</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="container" style="margin-left:-15px;">
+                    <div class="canReadAndWrite row">
+                        <div class="_animateSelectBox col m-12">
+                            <span class="_selectTitle margin-left-15" style="font-size: 12px">Class</span>
+                            <div class="_newSelectListWrap">
+                                <a id="classpc"
+                                   name="classpc"
+                                   class="current-selected"
+                                   href="javascript:;">Select</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="_animateSelectBox _withInfo ">
+                    <span class="_variantsLabel" style="color: #7eadcc">Subjects</span>
+                    <div id="variantsCategoriesBlock" class="_variantsBlock _variantsSubjects"  style="z-index: auto">
+                        <div class="_checkCategoriesWrap">
+                            <ul id="checkedProductCategories" class="_checkCategories"></ul>
+                            <span id="showBtn" class="_arrow"></span>
+                        </div>
+                        <ul id="productCategories" class="_categoriesList"></ul>
+                    </div>
+                </div>-->
+                <div class="text-danger indicators-config">
+                    <span class="_selectTitle margin-left-15"> # - Contains Questions </span>
+                </div>
+                <div class="_animateSelectBox _withInfo ">
+                    <span class="_variantsLabel" style="color: #7eadcc">Topics</span>
+                    <div id="topicBlocks" class="_variantsBlock _variantsTopics"  style="z-index: auto">
+                        <div class="_checkCategoriesWrap">
+                            <ul id="checkedTopics" class="_checkCategories"></ul>
+                            <span id="showBtn1" class="_arrow"></span>
+                        </div>
+                        <ul id="topicCategories" class="_categoriesList"></ul>
+                    </div>
+                </div><br/>
+               <!-- <div class="_animateSelectBox _withInfo">
+                    <span class="_variantsLabel" style="color: #7eadcc">Subtopics</span>
+                    <div id="variantsSubTopicBlock" class="_variantsBlock _varientSubTopic" style=" z-index: auto;">
+                        <div class="_checkCategoriesWrap">
+                            <ul id="checkedSubTopic" class="_checkCategories"></ul>
+                            <span id="showSubTopic" class="_arrow"></span>
+                        </div>
+                        <ul id="productSubTopic" class="_categoriesList"></ul>
+                    </div>
+                </div>
+                <br/>-->
+                <div class="canReadAndWrite row" >
+                    <div class="_animateInputBox _withInfo col m-4" >
+                        <span class="_selectTitle style-input">Duration (mins)</span>
+                        <input type="number"
+                               value="7"
+                               name="examDuration"
+                               class="_animate"
+                               id="examDuration"
+                        />
+                    </div>
+                    <div class="_animateInputBox _withInfo col m-4" >
+                        <span class="_selectTitle style-input">Each Question Marks</span>
+                        <input type="number"
+                               value="1"
+                               name="questionMarks"
+                               class="_animate"
+                               id="questionMarks"
+                        />
+                    </div>
+                    <div class="_animateInputBox _withInfo col m-4">
+                        <span class="_selectTitle style-input">Negative Marks</span>
+                        <input type="number"
+                               value="0"
+                               name="nagetiveMarks"
+                               class="_animate"
+                               id="nagetiveMarks"
+                        />
+                    </div>
+                </div>
+                <div class="canReadAndWrite row">
+                    <div class="_animateInputBox _withtime _withinfo col m-6">
+                        <span class="_selectTitle style-input">Start Time</span>
+                        <div class="inputdateactionblock" style="
+                           position: relative;
+                           display: block;
+                           padding: 0 20px 0 0;
+                           border: none;
+                           min-height: 26px;
+                           cursor: pointer;
+                           border-bottom: 1px solid #c8c8d3;
+                           font-size: 13px;
+                           margin-top: 5px!important;
+                           color: #999 !important;
+                           ">
+                            <input maxlength="2"
+                                   name="startTime"
+                                   id="startTime"
+                                   readonly/>
+                        </div>
+                    </div>
+                    <div class="_animateInputBox _withtime _withinfo col m-6">
+                        <span class="_selectTitle style-input">End Time</span>
+                        <div class="inputdateactionblock" style="
+                           position: relative;
+                           display: block;
+                           padding: 0 20px 0 0;
+                           border: none;
+                           min-height: 26px;
+                           cursor: pointer;
+                           margin-top: 5px!important;
+                           border-bottom: 1px solid #c8c8d3;
+                           font-size: 13px;
+                           color: #999 !important;
+                           ">
+                            <input maxlength="2"
+                                   name="endTime"
+                                   id="endTime"
+                                   readonly/>
+                        </div>
+                        <span class="tips " data-id="examEndTime"></span>
+                    </div>
+                </div>
+                <div class="canReadAndWrite row">
+                    <div class="_animateInputBox _withinfo col m-6">
+                        <span class="_selectTitle style-input">Schedule</span>
+                        <input type="text"
+                               name="scheduleDate"
+                               class="_animate"
+                               id="scheduleDate"
+                               placeholder="Select"
+                               readonly/>
+                    </div>
+                    <div class="_animateInputBox _withinfo col m-6">
+                        <span class="_selectTitle style-input">No Of Questions</span>
+                        <input type="number"
+                               class="_animate "
+                               id="questions"
+                               name="questions"
+                               maxlength="48"
+                               value="50"/>
+                    </div>
+                </div>
+                <div class="canReadAndWrite row">
+                    <div class="_circleRadioRadianceWrap col m-6">
+                        <label class="_customCHeckbox">
+                            <input type="checkbox" name="autoCorrect" checked="" class="checkbox" id="autoCorrect"/>
+                            <span class="clr-black margin-left-14">&nbsp;Auto Correct</span>
+                        </label>
+                    </div>
+                    <div class="_circleRadioRadianceWrap col m-6">
+                        <label class="_customCHeckbox">
+                            <input type="checkbox" name="canReview" checked="" class="checkbox" id="canReview"/>
+                            <span class="clr-black margin-left-24">&nbsp;Can Review</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="container counterRep">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-6">
+                            <div class="_tipsWrap">
+                                <label for="ManualQuestions" class="">Manual</label>
+                                <input type="radio"
+                                       name="questionType"
+                                       id="ManualQuestions"
+                                       class="_circleRadioRadiance"
+                                       value="ManualQuestions"
+                                >
+                                <label for="ManualQuestions"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_circleRadioRadianceWrap margin-left-10 col m-6">
+                            <div class="_tipsWrap">
+                                <label for="Random" class="">Random</label>
+                                <input type="radio"
+                                       name="questionType"
+                                       id="Random"
+                                       value="Random"
+                                       class="_circleRadioRadiance">
+                                <label for="Random"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div><br/>
+                <div class="container counterWrap">
+                    <div class="canReadAndWrite row">
+                        <div class="_circleRadioRadianceWrap col m-6">
+                            <div class="_tipsWrap">
+                                <label for="quesMethodOne" class="">Can Select(Without Replace)</label>
+                                <input type="radio"
+                                       name="methodType"
+                                       id="quesMethodOne"
+                                       class="_circleRadioRadiance"
+                                       value="true"
+                                >
+                                <label for="quesMethodOne"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_circleRadioRadianceWrap margin-left-10 col m-6">
+                            <div class="_tipsWrap">
+                                <label for="quesMethodTwo" class="">Can Select(Replace)</label>
+                                <input type="radio"
+                                       name="methodType"
+                                       id="quesMethodTwo"
+                                       value="false"
+                                       class="_circleRadioRadiance">
+                                <label for="quesMethodTwo"
+                                       class="_circleRadioRadianceLabel">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div><br/>
+                <div class="container">
+                    <div class="canReadAndWrite manualQuestions hide row">
+                        <span class="text-danger indicators-config">* - Contains Repeated Questions</span>
+                        <div class="col m-6">
+                            <div class="_bundleListTitle">Questions List</div>
+                            <ul id='questionList' class="_productsForBundle"></ul>
+                        </div>
+                        <div class="col m-6">
+                            <div class="_bundleListTitle">Selected Questions</div>
+                            <ul id='productsBundle' class="_productsBundle"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="canReadAndWrite weightQuestions hide row">
+                        <div class="inner-holder">
+                            <div class="workflow-list-wrapper left">
+                                <ul class="workflow-list"></ul>
+                            </div>
+                            <div id="workflowAccord" class="left">
+                                <div id="workflowNames"></div>
+                                <div id="details" class="workflow-details">
+                                    <div id="workflowSubAccord" class="left">
+                                        <div id="sub-details" class="workflow-details">
+                                            <div class="listWorkflow">
+                                                <div id="workflows"></div>
+                                                <div id="addedStatus"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br/><br/>
+                <div class="container">
+                    <div class="canReadAndWrite generatedQuestions hide row">
+                        <div class="col m-12">
+                            <div class="_bundleListTitle">Questions</div>
+                            <span class="text-danger indicators-config">* - Contains Repeated Questions</span>
+                            <ul id='generatedQues' class="_productsForBundle"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="canReadAndWrite randomQuestions hide row">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

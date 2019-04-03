@@ -1,0 +1,41 @@
+<div id="genReportCard" class="overlay-popup footer-popup" style="display: none;">
+    <!-- RIGHT PANEL STARTS -->
+    <div class="cd-panel">
+        <div class="cd-panel-header">
+            <!-- <div class="hidden-xs simple-field-hf"></div> -->
+            <div class="simple-field-hf">
+            </div>
+            <a (click)="closeOverlay($event)" class="cd-panel-close">Close</a>
+        </div>
+        <div class="cd-panel-container">
+            <div class="cd-panel-content" id="side-panel-container">
+                <div style="overflow: scroll" id="printThis">
+                    <div class="visible-prints">
+                        <table id="table" class="table table1 table-striped table-bordered table-bordered1" style="width: 100%">
+                        </table>
+                    </div>
+
+                </div>
+
+                <!--<table id="example" class="display" style="width:100%">
+                    <thead>
+                    <tr>
+                        <th rowspan="2">Name</th>
+                            <th colspan="2" >dsfd</th>
+
+                    </tr>
+                    <tbody></tbody>
+
+                </table>-->
+            </div>
+
+        </div>
+        <div class="overlay-footer">
+            <div class="right-align overlay-footer-content-rt">
+                <button type="button" class="btn btn-default" (click)="closeOverlay($event)">Close</button>
+                <!--<button  type="button" id="publishParent" (click)="publishUpdate($event)" class="btn btn-primary btn-ladda btn-ladda-spinner" data-style="expand-right" data-spinner-size="20"><span class="ladda-label">Publish For Parents</span></button>-->
+                <button  type="button" id="PrintC"  class="btn btn-primary">Print</button>
+            </div>
+        </div>
+    </div>
+</div>

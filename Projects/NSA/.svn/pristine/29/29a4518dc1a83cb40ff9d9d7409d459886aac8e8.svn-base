@@ -1,0 +1,88 @@
+﻿<!--<div id="searchContainer"></div>-->
+<!--<div id="startLetter">
+
+    <div class="_formWrap">
+            <div class="_animateSelectBox _withInfo">
+                <span class="_selectTitleCustom">Subject</span>
+                    <select id="createDiscountOrNot" class="createDiscountOrNot">
+                        <option value="multi">Multiple Choice</option>
+                    </select>
+            </div>
+
+            <div class="_animateSelectBox _withInfo">
+                <span class="_selectTitleCustom">Topic</span>
+                <select id="createDiscountOrNot" class="createDiscountOrNot">
+                    <option value="multi">Multiple Choice</option>
+                </select>
+            </div>
+
+        <div class="_animateSelectBox _withInfo">
+            <span class="_selectTitleCustom">Weightable</span>
+            <select id="createDiscountOrNot" class="createDiscountOrNot">
+                <option value="multi">Multiple Choice</option>
+            </select>
+        </div>
+
+        </div>
+
+
+</div>-->
+<script src="../../../../js/libs/ckeditor/samples/js/sample.js"></script>
+<div class="_tableWrap _tableOrderList">
+    <div id="searchContainer"></div>
+    <table class="list stripedList unstrip order-list">
+        <colgroup>
+            <col width="10%">
+            <col width="20%">
+            <col width="20%">
+            <col width="20%">
+            <col width="20%">
+            <col width="20%">
+            <col width="20%">
+            <col width="20%">
+            <col width="25%">
+        </colgroup>
+        <thead>
+        <tr>
+            <th class="centerCell">
+                <label class="_customCHeckbox">
+                    <input type="checkbox" id="checkAll"/>
+                    <span></span>
+                </label>
+            </th>
+            <th class="text-left" data-sort="name">Q-Code
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="" data-sort="name">Question
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="" data-sort="name">Class
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="" data-sort="name">Subject
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="" data-sort="name">Topic
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="" data-sort="supplier.name">Weightage
+            </th>
+            <th class="" data-sort="status.allocateStatus">Score
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+            <th class="" data-sort="lastModified.date">Modified Date
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+            </th>
+        </tr>
+        </thead>
+        <tbody id="listTable" class="enableTableOdd"></tbody>
+        <!--<tfoot id="listTotal"></tfoot>-->
+    </table>
+</div>

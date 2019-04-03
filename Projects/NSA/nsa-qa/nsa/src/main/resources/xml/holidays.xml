@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="holidays">
+<parameter name="holiname" value="Festival Season"></parameter>
+<parameter name="holitype" value="Winter Holiday"></parameter>
+	<test name="Holidays">
+		<classes>
+			<class name="com.nsa.testing.tests.Holidays" />
+		</classes>
+	</test>
+</suite> 

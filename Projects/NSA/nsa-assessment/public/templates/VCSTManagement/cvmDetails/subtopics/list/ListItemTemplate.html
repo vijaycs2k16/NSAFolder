@@ -1,0 +1,12 @@
+﻿﻿<%if(model) { %>
+<div class="name" style="text-overflow: ellipsis;overflow: hidden;width: 300px;white-space: nowrap;"
+     id="<%=model._id%>"
+     data-id="<%=id%>" title="<%=model ? model.name:''%>" >
+    <span class="name"><%=model.name%></span>
+</div>
+<% } %>
+<div class="edit-status" style="width: 254px;">
+    <a class="btn slim blue edit" href="javascript:;">Edit</a>
+    <a class="btn slim delete" href="javascript:;">Delete</a>
+</div>
+<div class="clearfix"></div>

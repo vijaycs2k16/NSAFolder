@@ -1,0 +1,49 @@
+<div class="form-holder _newForm">
+    <form method="post" action="" id="invoiceForm" style="height: 410px; overflow: auto">
+        <h4 class="_dialogMainTitle">New Topic</h4>
+        <div >
+            <div class="_formWrap _enlargedItemMargin">
+                <div class="_formBlock _equal">
+                    <div class="_animateSelectBox _withInfo">
+                        <span class="_selectTitle">Subject</span>
+                        <div class="_newSelectListWrap">
+                            <a id="subject"
+                               name="subject"
+                               class="current-selected"
+                               data-id=""
+                               href="javascript:;">Select Subject</a>
+                        </div>
+                        <span class="tips icon-info" data-id="subject"></span>
+                    </div>
+                    <!--<div class="_animateSelectBox _withInfo">
+                        <span class="_selectTitle">Course</span>
+                        <div class="_newSelectListWrap">
+                            <a id="course"
+                               name="course"
+                               class="current-selected"
+                               data-id=""
+                               href="javascript:;">Select Course</a>
+                        </div>
+                        <span class="tips icon-info" data-id="course"></span>
+                    </div>-->
+                    <div class="container">
+                        <div class="canReadAndWrite _animateSelectBox row">
+                            <div class="col m-12">
+                                <span class="_selectTitle">Course:</span><br/>
+                                <div id="variantsCenterBlock" class="_variantsBlock _varientCenter multi-select" style="width: 526px;">
+                                    <div class="_checkCategoriesWrap">
+                                        <ul id="checkedProductCenter" class="_checkCategories"></ul>
+                                        <span id="showCenterBtn" class="_arrow"></span>
+                                    </div>
+                                    <ul id="productCenterCategories" class="_categoriesList"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-grey">Please add atleast one topic</span><span class="text-danger">*</span>
+                    <br/><br/>
+                    <div id="productItemsHolder"></div>
+            </div>
+        </div>
+    </form>
+</div>

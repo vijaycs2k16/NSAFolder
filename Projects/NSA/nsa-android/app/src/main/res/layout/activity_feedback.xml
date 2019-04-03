@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context="nexrise.publication.in.nexrise.FeedbackActivity">
+
+    <TextView
+        android:padding="@dimen/padding15"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/feedback"
+        android:textStyle="bold"
+        android:textSize="@dimen/common_text_size"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:inputType="textPersonName|textMultiLine"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:hint="@string/type_here"
+        android:padding="@dimen/padding10"
+        android:gravity="left"
+        android:textSize="@dimen/common_text_size"
+        android:maxLines="5"
+        android:background="@drawable/curveborder"
+        android:id="@+id/feedback"/>
+
+    <Button
+        android:text="@string/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        style="@style/RoundedCornerButton"
+        android:id="@+id/button" />
+
+</LinearLayout>
+
+
+

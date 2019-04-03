@@ -1,0 +1,169 @@
+<div class="form-holder _newForm">
+    <form method="post" action="" class="_stockCorrectionForm" id="stockCorrection">
+        <div class="_acountingTableWrap">
+            <div class="dialog-tabs-item">
+                <h4 class="_dialogMainTitle">Monthly Faculty Logs</h4>
+                <div class="_formWrap">
+                    <div class="_formBlock _equal" style="width: 30%">
+                        <div class="_animateSelectBox _withInfo">
+                            <span class="_selectTitle">Center Name</span>
+                                <input type="text" name="center" class="_animate select-disabled" value="<%=center ? center.centerName : 'Center Name'%>" id="center"
+                                       data-id="<%=center ? center._id : ''%>">
+                        </div>
+                    </div>
+                    <div class="_formBlock _equal" style="width: 23%">
+                        <div class="_animateSelectBox _withInfo">
+                            <span class="_selectTitle">Department Name</span>
+                            <input type="text" name="department" class="_animate select-disabled" value="<%=center ? center.depName : 'Department Name'%>" id="department"
+                                   data-id="<%=center ? center.depId : ''%>">
+                        </div>
+                    </div>
+                    <div class="_formBlock _equal" style="width: 22%">
+                        <div class="_animateSelectBox _withInfo">
+                            <span class="_selectTitle">Faculty Name</span>
+                            <input type="text" name="facultyName" class="_animate select-disabled " value="<%=center ? center.facultyName : 'Faculty Name'%>" id="facultyName"
+                                   data-id="<%=center ? center.facultyId : ''%>">
+                        </div>
+                    </div>
+                    <div class="_formBlock _equal" style="width: 25%">
+                        <div class="_animateSelectBox _withInfo">
+                            <span class="_selectTitle ">Month</span>
+                            <div class="_newSelectListWrap">
+                                <a id="month"
+                                   class="current-selected month"
+                                   data-id="<%=monthObj ? moment(monthObj).format('MMMM'): ''%>"
+                                   href="javascript:;"><%=monthObj ? moment(monthObj).format('MMMM') : 'Select Month'%></a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="_acountingTableBlock">
+                <table id="example5" class="display">
+                    <thead>
+                    <tr class="forToggle">
+                        <th class=" details-control"></th>
+                        <th class="text-left">Date</th>
+                        <th class="text-left">Batch Name</th>
+                        <th class="text-left">Subject</th>
+                        <th class="text-left">Topic</th>
+                        <th class="text-left">Reporting Point</th>
+                        <th class="text-left">Type Of Class</th>
+                        <th class="text-left">In-Time</th>
+                        <th class="text-left">Out-Time</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <% _.forEach(dataObj, function(value, index) { %>
+                    <tr class="productItem deleteRow _productRow" data-id="<%=value._id%>">
+                        <td>
+                            <% var isTrue = %>
+                            <% if(isTrue) { %>
+                            <span class=" details-control icon-plus" style="color: green; font-size: 15px;"></span>
+                            <% } else { %>
+                            <span class=" details-control icon-minus" style="color: red; font-size: 15px;"></span>
+                            <% } %>
+                        </td>
+                        <td data-name="classDate" class="text-left select-disabled">
+                            <div class="_animateTextareaBox ">
+                                <div class="datafield _inputwrap">
+                                    <input class="_animate extrainfo classDate"
+                                           style="color: #666682;"
+                                           type="text"
+                                           name="classDate"
+                                           id="classDate"
+                                           value="<%= value.classDate ? moment(value.classDate).format('D MMM, YYYY'): null%>"
+                                    />
+                                </div>
+                            </div>
+                        </td>
+                        <td data-name="batch" class="text-left select-disabled">
+                            <div class="_animateSelectBox">
+                                <div class="_newSelectListWrap">
+                                    <a id="batch"
+                                       class="current-selected batch"
+                                       value="<%=value.batch ? value.batch.course: null%>"
+                                       data-id="<%=value.batch ? value.batch._id : null%>"
+                                       href="javascript:;"><%=value.batch ? value.batch.batchName: 'Select'%></a>
+                                    </a>
+                                </div>
+                                <span class="tips " data-id="batch"></span>
+                            </div>
+                        </td>
+                        <td data-name="subject" class="text-left select-disabled">
+                            <div class="_animateSelectBox">
+                                <div class="_newSelectListWrap">
+                                    <a id="subject"
+                                       name="subject"
+                                       class="current-selected"
+                                       data-id="<%=value.subject ? value.subject._id: null%>"
+                                       href="javascript:;"><%=value.subject ? value.subject.subjectName : 'Select'%></a>
+                                </div>
+                                <span class="tips " data-id="subject"></span>
+                            </div>
+                        </td>
+                        <td data-name="topics" class="text-left select-disabled">
+                            <div class="_animateSelectBox">
+                                <div class="_newSelectListWrap">
+                                    <a id="topics"
+                                       name="topics"
+                                       class="current-selected"
+                                       data-id="<%=value.topicData ? value.topicData._id: null%>"
+                                       href="javascript:;"><%=value.topicData ? value.topicData.name : 'Select'%></a>
+                                </div>
+                                <span class="tips" data-id="topics"></span>
+                            </div>
+                        </td>
+                        <td data-name="reportingPoint" class="text-left select-disabled">
+                            <div class="_animateSelectBox">
+                                <div class="_newSelectListWrap">
+                                    <a id="reportingPoint"
+                                       name="reportingPoint"
+                                       class="current-selected"
+                                       data-id="<%=value.reportingPoint ? value.reportingPoint._id: null%>"
+                                       href="javascript:;"><%=value.reportingPoint ? value.reportingPoint.name : 'Select'%></a>
+                                </div>
+                                <span class="tips " data-id="reportingPoint"></span>
+                            </div>
+                        </td>
+                        <td data-name="typeofClass" class="text-left select-disabled">
+                            <div class="_animateSelectBox">
+                                <div class="_newSelectListWrap">
+                                    <a id="typeofClass"
+                                       name="typeofClass"
+                                       class="current-selected"
+                                       data-id="<%=value.typeOfClass ? value.typeOfClass._id: null%>"
+                                       href="javascript:;"><%=value.typeOfClass ? value.typeOfClass.className : 'Select'%></a>
+                                </div>
+                                <span class="tips " data-id="typeofClass"></span>
+                            </div>
+                        </td>
+                        <td data-name="timepickerOne" class="select-disabled">
+                            <div class="_animateinputbox _withtime _withinfo time_pick1">
+                                <input maxlength="2"
+                                       name="timepickerOne"
+                                       class="timepickerOne"
+                                       id="timepickerOne<%=index%>"
+                                       value="<%=value ? moment(value.inTime).format('hh:mm A'): moment(value.classStartTime).format('hh:mm A')%>"/>
+                                <span class="tips " data-id="classStartTime"></span>
+                            </div>
+                        </td>
+                        <td data-name="timepickerTwo" class="select-disabled">
+                            <div class="_animateinputbox _withtime _withinfo time_pick1">
+                                <input maxlength="2"
+                                       name="timepickerTwo"
+                                       class="timepickerTwo"
+                                       id="timepickerTwo<%=index%>"
+                                       value="<%=value ? moment(value.outTime).format('hh:mm A'): moment(value.classEndTime).format('hh:mm A')%>"/>
+                                <span class="tips " data-id="classEndTime"></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <% })%>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>

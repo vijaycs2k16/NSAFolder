@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:id="@+id/frame"
+    tools:context="nexrise.publication.in.nexrise.HomeworkFeature.StatusFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10"
+        android:id="@+id/fragment_status_listview"
+        android:groupIndicator="@null"
+        android:background="@color/colorWhite"/>
+
+</LinearLayout>
+

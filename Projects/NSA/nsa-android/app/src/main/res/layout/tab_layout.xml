@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/tab_layout_linear">-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding5"
+    android:id="@+id/tab_layout_frame">
+
+
+    <ImageView
+        android:maxWidth="@dimen/width25"
+        android:maxHeight="@dimen/width25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_events_menu"
+        android:id="@+id/tab_layout_imageview" />
+
+    <RelativeLayout
+        android:minHeight="@dimen/height20"
+        android:minWidth= "@dimen/minWidth22"
+        android:id="@+id/notify_nav_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:background="@drawable/badge">
+
+
+        <TextView
+            android:text="2"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/small_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/notification_count" />
+    </RelativeLayout>
+</FrameLayout>
+
+  <!--  <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/textView65" />
+
+
+</LinearLayout> -->

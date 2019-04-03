@@ -1,0 +1,23 @@
+<div class="_breadcrunmbs">
+    <span class="_breadcrunmbItem">Exam Management</span>
+</div>
+<div class="form-holder tabsHolder">
+    <div class="inner">
+        <ul class="dialog-tabs _forOverview">
+            <li>
+                <a href="javascript:;" class="<%=!paper ? 'active': ''%>">Exam Configuration</a>
+            </li>
+            <li>
+                <a href="javascript:;" class="<%=paper ? 'active': ''%>">Paper Configuration</a>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+        <div class="dialog-tabs-items">
+            <div class="dialog-tabs-item <%=!paper ? 'active': ''%>" id="examConfigTab">
+            </div>
+            <div class="dialog-tabs-item <%=paper ? 'active': ''%>" id="paperConfigTab">
+            </div>
+        </div>
+    </div>
+</div>
+

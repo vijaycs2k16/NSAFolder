@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="voicemsgrec">
+	<parameter name="navaudi_name" value="Audio"></parameter>
+	<parameter name="audio_Name" value="riseaudio"></parameter>
+	<parameter name="sel_audioname" value="riseaudio.mp3"></parameter>
+	<test name="VoiceMsgRec">
+		<classes>
+			<class name="com.nsa.testing.tests.VoiceMsgRec" />
+		</classes>
+	</test>
+</suite> 

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "577228613130",
+    "firebase_url": "https://colonelhill-4c291.firebaseio.com",
+    "project_id": "colonelhill-4c291",
+    "storage_bucket": "colonelhill-4c291.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577228613130:android:87153af7c7b35f42",
+        "android_client_info": {
+          "package_name": "colonel.management.in.bangalore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577228613130-25br09qr84hhdpml5k0q07tep2t1djuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIelFhqRfj_to2_gbVxYd7nWfaqtvsGmM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

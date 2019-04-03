@@ -1,0 +1,12 @@
+// create index for attendance 
+
+GET  localhost:3333/rest/api/v1/nsa/es/attendance
+
+
+//  save   index  attendance
+
+POST  localhost:3333/rest/api/v1/nsa/promotions/populate/attendance
+
+{
+	"academicYear": "2017-2018"
+}

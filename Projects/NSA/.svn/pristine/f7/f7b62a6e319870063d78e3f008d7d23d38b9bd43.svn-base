@@ -1,0 +1,235 @@
+<script src="../../../../js/libs/ckeditor/samples/js/sample.js"></script>
+<style>
+    .forms {
+        margin: 0 auto;
+        padding: 2em;
+    }
+    .wrap {
+        width: 100%;
+        overflow:auto;
+    }
+
+    .fleft {
+        float:left;
+        width: 50%;
+    }
+
+    .fright {
+        float: right;
+        width: 50%;
+    }
+
+    .vr {
+        width:1px;
+        background-color:#000;
+        position:absolute;
+        top:45px;
+        bottom:0;
+        left:50%;
+        right:50%;
+    }
+
+    .bix-td-option {
+        vertical-align: middle;
+        padding: 7px;
+    }
+
+    .bix-td-qno {
+        line-height: 1.7;
+        width: 25px;
+    }
+    .bix-div-container {
+        padding: 7px;
+        line-height: 1.7;
+    }
+    .bix-div-container p {
+        line-height: 1.7;
+    }
+
+
+
+    section {
+        margin: 4px auto;
+        padding: 2em;
+        max-width: 870px;
+        background: #fff;
+        box-shadow:  unset !important;
+        border-bottom: none !important;
+    }
+
+    img.Wirisformula { width:25px !important; height:19px !important;}
+
+    section {
+        max-width: inherit !important;
+    }
+
+</style>
+
+<div class="formContentWrap">
+    <div class="formContentTitle">
+        <span class="closeBtn backBtn1"></span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 align-center">
+        <button type="button" class="btn blue slim" id="printInfo">Download</button>
+    </div>
+</div>
+
+<div id="example-print" >
+    <div class="wrap forms" style="position: relative;">
+        <h2 class="text-center" style=" text-transform: capitalize;     font-size: 14px;"><%= model.name %></h2>
+        <hr>
+        <% var index = 0; %>
+        <div class="fleft bix-div-container" >
+            <% for(var i = 0; i < model.questions.length; i++) {
+
+            var data = model.questions[i];
+            if(data) {
+            var index = index + 1;
+            i = i + 1;
+
+            %>
+
+            <table class="bix-tbl-container" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tbody>
+                <tr>
+                    <td class="bix-td-qno jq-qno-5327" rowspan="2" valign="top" align="left"><%=index %>)</td>
+
+
+                    <td class="bix-td-qtxt" valign="top"><%= data.form[0].desc %></td>
+                    <br/>
+
+                </tr>
+                <tr>
+                    <td class="bix-td-miscell" valign="top">
+
+                        <table class="bix-tbl-options" id="tblOption__<%=i%>" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                            <tbody>
+                            <% for(var j= 0; j < data.form[0].ans.length; j++) {
+                            var ans = data.form[0].ans[j];
+                            var answeOptions;
+                            switch(j) {
+                            case 0:
+                            answeOptions = 'a)'
+                            break;
+                            case 1:
+                            answeOptions = 'b)'
+                            break;
+                            case 2:
+                            answeOptions = 'c)'
+                            break;
+                            case 3:
+                            answeOptions = 'd)'
+                            break;
+                            case 4:
+                            answeOptions = 'e)'
+                            break;
+                            default:
+                            answeOptions = 'f)'
+                            }
+
+                            %>
+                            <tr>
+                                <td class="bix-td-option" width="1%"><%=answeOptions%></td>
+                                <td class="bix-td-option" width="99%" id="tdOptionDt_A_<%=j%>">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="bix-inner-td-option"><%= ans.desc %></td>
+
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <% } %>
+                            </tbody>
+                        </table>
+
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <% }  }%>
+        </div>
+
+        <div class="vr">&nbsp;</div>
+        <div class="fright bix-div-container">
+            <% for(var i = 1; i < model.questions.length; i++) {
+
+            var data = model.questions[i];
+            if(data) {
+
+            var index = index + 1;
+            i = i + 1;
+            %>
+
+            <table class="bix-tbl-container" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tbody>
+                <tr>
+                    <td class="bix-td-qno jq-qno-5327" rowspan="2" valign="top" align="left"><%=index %>)</td>
+                    <td class="bix-td-qtxt" valign="top"><p><%= data.form[0].desc %></p></td>
+                    <br/>
+
+                </tr>
+                <tr>
+
+                    <td class="bix-td-miscell" valign="top">
+
+                        <table class="bix-tbl-options" id="tblOption_<%=i%>" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                            <br/>
+                            <% for(var j= 0; j < data.form[0].ans.length; j++) {
+                            var ans = data.form[0].ans[j];
+                            var answeOptions;
+                            switch(j) {
+                            case 0:
+                            answeOptions = 'a)'
+                            break;
+                            case 1:
+                            answeOptions = 'b)'
+                            break;
+                            case 2:
+                            answeOptions = 'c)'
+                            break;
+                            case 3:
+                            answeOptions = 'd)'
+                            break;
+                            case 4:
+                            answeOptions = 'e)'
+                            break;
+                            default:
+                            answeOptions = 'f)'
+                            }
+                            %>
+                            <tr>
+                                <td class="bix-td-option" width="1%"><%=answeOptions%></td>
+
+                                <td class="bix-td-option" width="99%" id="tdOptionDt_A_<%=j%>">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="bix-inner-td-option"><%= ans.desc %></td>
+
+
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <% } %>
+                            </tbody>
+                        </table>
+
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <% }  }%>
+        </div>
+
+    </div>
+</div>
+

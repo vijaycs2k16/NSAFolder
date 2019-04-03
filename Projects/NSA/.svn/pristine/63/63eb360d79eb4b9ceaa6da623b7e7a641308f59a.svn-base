@@ -1,0 +1,38 @@
+<div class="_breadcrunmbs">
+    <span class="_breadcrunmbItem"> Course Management</span>
+</div>
+<div class="form-holder tabsHolder">
+    <div class="inner">
+        <ul class="dialog-tabs _forOverview">
+            <!--<li>
+                <a href="javascript:;" class="" id="course">Courses</a>
+            </li>-->
+            <li>
+                <a id="subjects" class="hide" href="javascript:;">Subjects</a>
+            </li>
+            <li>
+                <a id="subjectTopics" class="hide" href="javascript:;">Subject Topics</a>
+            </li>
+            <li>
+                <a id="subTopics" class="" href="javascript:;">SubTopics</a>
+            </li>
+            <li>
+                <a id="topics" class="hide" href="javascript:;">Topics</a>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+        <div class="dialog-tabs-items">
+            <!--<div class="dialog-tabs-item " id="courseTab">
+            </div>-->
+            <div class="dialog-tabs-item hide" id="subjectTab">
+            </div>
+            <div class="dialog-tabs-item hide" id="subjectTopicsTab">
+            </div>
+            <div class="dialog-tabs-item hide" id="subtopicsTab">
+            </div>
+            <div class="dialog-tabs-item hide" id="topicsTab">
+            </div>
+        </div>
+    </div>
+</div>
+

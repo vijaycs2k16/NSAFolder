@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="sectionlist">
+<parameter name="secname" value="Section F"></parameter>
+<parameter name="seccode" value="F"></parameter>
+<parameter name="secstatus" value="Active"></parameter>
+
+	<test name="SectionList">
+		<classes>
+			<class name="com.nsa.testing.tests.SectionList" />
+		</classes>
+	</test>
+</suite> 

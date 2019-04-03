@@ -1,0 +1,83 @@
+<table class="bundleMoveItem _productTable left-alignment" >
+    <col width="100px">
+    <col width="50px">
+    <col width="50px">
+    <col width="50px">
+    <col width="50px">
+    <thead>
+    <tr class="productListItemsColumns _deleteHeader">
+        <th class="" data-sort="Batch">
+            Bundle Product (<%= data.name %>)
+        </th>
+        <th data-sort="unitPrice">
+            Total Quantity
+        </th>
+        <th data-sort="taxes">
+            Adjust Quantity
+        </th>
+        <th>
+
+        </th>
+        <th data-sort="taxes">
+            Available Product Quantity
+        </th>
+    </tr>
+    </thead>
+    <tbody id="productList">
+    <% if(data) { %>
+    <% _.forEach(data.bundles, function(value, index) {
+    %>
+    <tr class="productItem deleteRow left-alignment _productRow" id="<%=value._id%>">
+        <td data-name="productName" class="text-left">
+            <div class="_animateInputBox select-disabled">
+                <input type="text"
+                       class="_animate duration"
+                       id="productName"
+                       required
+                       maxlength="30"
+                       value="<%=value.product ? value.product[0].name: null%>"
+                       data-id="<%=value.product ? value.product[0]._id: null%>" data-pid="<%=value.productAvail ? value.productAvail._id: null%>"/>
+            </div>
+        </td>
+        <td data-name="totalQuatity" class="text-left">
+            <div class="_animateInputBox select-disabled">
+                <input type="number"
+                       class="_animate duration"
+                       id="totalQuatity"
+                       required
+                       maxlength="10"
+                       data-value="<%=value.productAvail ? value.productAvail.onHand : null%>"
+                       value="<%=value.onHand? value.onHand: 0%>"
+                       data-id="<%=value._id ? value._id: 0%>"/>
+            </div>
+        </td>
+        <td data-name="adjustQuantity" class="text-left">
+            <div class="_animateInputBox">
+                <input type="text"
+                       class="number quantity statusInfo _productInput"
+                       id="adjustQuantity"
+                       required
+                       maxlength="10"
+                       value="0"
+                       data-id=""/>
+            </div>
+        </td>
+        <td style="text-align: center"> <span class="icon-arrow-right-circle" title="Move" style="font-size: 18px;"></span> </td>
+
+        <td data-name="availableQuantity" class="text-left">
+            <div class="_animateInputBox select-disabled">
+                <input type="text"
+                       class="_animate duration"
+                       id="availableQuantity"
+                       required
+                       maxlength="10"
+                       value="<%=value.quantity? value.quantity: 0%>"
+                       data-id="<%=value._id ? value._id: 0%>"/>
+            </div>
+        </td>
+    </tr>
+    <% }) }%>
+
+    </tbody>
+</table>
+<div id="totalAmountContainer" class="_totalAmountContainer _createPopup"></div>

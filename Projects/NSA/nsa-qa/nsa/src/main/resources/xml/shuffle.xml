@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="shuffle">
+<parameter name="scholname" value="01-Jan-2018"></parameter>
+	<test name="ShuffleStudents">
+		<classes>
+			<class name="com.nsa.testing.tests.ShuffleStudents"/>
+		</classes>
+	</test>
+</suite> 
